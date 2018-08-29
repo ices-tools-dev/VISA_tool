@@ -1,0 +1,18 @@
+#TOC {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100px;
+  height:50%;
+  overflow:auto;
+  background: images/iceslogo.png;
+  background-size: contain;
+  padding-top: 80px !important;
+  background-repeat: no-repeat;
+}
+body {
+  max-width: 800px;
+  margin: auto;
+  margin-left:210px;
+  line-height: 20px;
+}

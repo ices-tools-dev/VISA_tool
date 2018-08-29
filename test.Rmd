@@ -53,7 +53,7 @@ The spawning-stock biomass (SSB) has increased significantly since 2006 and is w
  library(gridExtra)
  library(dygraphs)
  library(htmltools)
- data <- read.csv("hkedata.csv")
+ data <- read.csv("Data/hke/hkedata.csv")
  
  dyBarChart <- function(dygraph) {
   dyPlotter(dygraph = dygraph,
@@ -151,7 +151,7 @@ SSB <- data %>% select(Year, low_SSB, SSB,high_SSB, Blim, Bpa, MSYBtrigger)
 library(knitr)
 library(readr)
 library(kableExtra)
-dt <- read.csv("hkecatchoptionsbasis.csv",header = T, row.names = 1)
+dt <- read.csv("Data/hke/hkecatchoptionsbasis.csv",header = T, row.names = 1)
 # dt <- dt [,-1] 
 kable(dt, "html")%>%kable_styling(position = "center", full_width = T, font_size = 12)%>%
   row_spec(0, bold = T, color = "black", background = "lightgrey", align = "c")%>%
@@ -172,7 +172,7 @@ kable(dt, "html")%>%kable_styling(position = "center", full_width = T, font_size
 library(knitr)
 library(readr)
 library(kableExtra)
-dt <- read.csv("hkecatchoptions.csv", header = T, row.names = 1)
+dt <- read.csv("Data/hke/hkecatchoptions.csv", header = T, row.names = 1)
 # dt <- dt [,-1]
 dt <- dt[complete.cases(dt),]
  kable(dt, "html") %>% kable_styling(position = "center")%>%
@@ -184,7 +184,7 @@ dt <- dt[complete.cases(dt),]
 
 ```{r}
 library(magrittr)
- readLines("hkecatchoptions.csv") %>% 
+ readLines("Data/hke/hkecatchoptions.csv") %>% 
    paste0(collapse="\n") %>% 
    openssl::base64_encode() -> encoded
 ```
@@ -196,7 +196,7 @@ library(magrittr)
 
 
 ```{r, out.width = "600px"}
-knitr::include_graphics("hkescenariosplot.png")
+knitr::include_graphics("images/hkescenariosplot.png")
 
 ```
 
@@ -204,7 +204,7 @@ knitr::include_graphics("hkescenariosplot.png")
 ```{r echo = FALSE, fig.height = 4, fig.width = 6, fig.align = "left"}
 library(ggplot2)
 library(plotly)
- catchoptions <- read.csv("hkescenariosplot.csv")
+ catchoptions <- read.csv("Data/hke/hkescenariosplot.csv")
  labels <- catchoptions$Basis
  labels <- as.character(labels)
  mypalette<-ggthemes::tableau_color_pal('tableau20')
@@ -329,22 +329,6 @@ labels <- as.character(labels)
  ggplotly(p2, width = 600, height = 300)
 ```
 
- 
- ```{}
- 
-
- ```
-
-Herring in Subarea 4 and divisions 3.a and 7.d, autumn spawners. The intermediate year (2017) assumptions. Weights arein tonnes.
-<br>
-
-***
-```{r graph, echo=FALSE}
-
-
-```
-
-
 <br>
 
 # Basis of the advice  
@@ -355,7 +339,7 @@ Herring in Subarea 4 and divisions 3.a and 7.d, autumn spawners. The intermediat
 library(knitr)
 library(readr)
 library(kableExtra)
-dt <- read.csv("hkeadvicebasis.csv", header = FALSE)
+dt <- read.csv("Data/hke/hkeadvicebasis.csv", header = FALSE)
 dt <- dt [,-1] 
 kable(dt, "html")%>%kable_styling(position = "center")%>%
   column_spec(1, bold = T, color = "black", background = "lightgrey")
@@ -379,7 +363,7 @@ Herring in Subarea 4 and divisions 3.a and 7.d, autumn spawners. Reference point
 library(knitr)
 library(readr)
 library(kableExtra)
-dt <- read.csv("hkereferencepoints.csv")
+dt <- read.csv("Data/hke/hkereferencepoints.csv")
 dt <- dt [,-1] 
 kable(dt, "html")%>%kable_styling(position = "center")%>%
   row_spec(0, bold = T, color = "black", background = "lightgrey")
@@ -395,7 +379,7 @@ Herring in Subarea 4 and divisions 3.a and 7.d, autumn spawners. Basis of the as
 library(knitr)
 library(readr)
 library(kableExtra)
-dt <- read.csv("hkeassessmentbasis.csv")
+dt <- read.csv("Data/hke/hkeassessmentbasis.csv")
 dt <- dt [,-1] 
 kable(dt, "html")%>%kable_styling(position = "center")%>%
   row_spec(0, bold = T, color = "black", background = "lightgrey")
@@ -406,12 +390,12 @@ kable(dt, "html")%>%kable_styling(position = "center")%>%
 
 ```{r, echo=FALSE}
 library(googleVis)
-kobe <- read_csv("kobe_data_2.csv")
-herring <- kobe %>% filter(StockCode =="her.27.3a47d")
-vis<- gvisMotionChart(herring, idvar = "StockCode", timevar = "Year", xvar = "SSB.MSYBtrigger",
-  yvar = "F.Fmsy", colorvar = "EcoRegion", sizevar = "", date.format = "%Y/%m/%d",
-  options = list())
-vis
+# kobe <- read_csv("kobe_data_2.csv")
+# herring <- kobe %>% filter(StockCode =="her.27.3a47d")
+# vis<- gvisMotionChart(herring, idvar = "StockCode", timevar = "Year", xvar = "SSB.MSYBtrigger",
+#   yvar = "F.Fmsy", colorvar = "EcoRegion", sizevar = "", date.format = "%Y/%m/%d",
+#   options = list())
+# vis
 ```
 
 
