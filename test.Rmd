@@ -1,10 +1,16 @@
 ---
-output: 
-  html_document: 
+output:
+  html_document:
+    code_folding: hide
+    fig_height: 3
+    fig_width: 3
+    keep_md: yes
     toc: yes
     toc_depth: 2
-    toc_float: true
-    code_folding: hide
+    toc_float: yes
+  pdf_document:
+    toc: yes
+    toc_depth: '2'
 ---
 
 ![](images/iceslogo.png)
@@ -46,12 +52,13 @@ ICES advises that when the MSY approach is applied, catches in 2018 should be no
 The spawning-stock biomass (SSB) has increased significantly since 2006 and is well above historical estimates. Fishing mortality (F) has decreased significantly after 2005, and has been below FMSY since 2012. The recruitment (R) estimate for 2016 is above average
  
  
-```{r cars, echo = FALSE, fig.height = 4, fig.width = 5, fig.align = "top"}
+```{r cars, echo=FALSE, fig.height=3, fig.width=3}
  library(htmlwidgets)
  library(dplyr)
  library(ggplot2)
  library(gridExtra)
  library(dygraphs)
+ library(plotly)
  library(htmltools)
  data <- read.csv("Data/hke/hkedata.csv")
  
@@ -61,28 +68,62 @@ The spawning-stock biomass (SSB) has increased significantly since 2006 and is w
             path = system.file("examples/plotters/barchart.js",
                                package = "dygraphs"))
 }
- 
+
  catches <- data %>% select(Year, catches)
  catches$catches <- catches[, "catches"]/1000
  recruitment<- data %>% select(Year, low_recruitment, recruitment, high_recruitment)
+
+  x <- list(
+  title = ""
+)
+y <- list(
+  title = "Catches in 1000 t"
+)
+  
+ p1 <- plot_ly(data, x = ~Year, y = ~catches, type = 'bar', showlegend = T)%>%
+          layout(title= "Catches", xaxis = x, yaxis = y)
  
- dygraph(catches, main = "Catches") %>% 
+ x <- list(
+  title = ""
+)
+y <- list(
+  title = "Recruitment in millions"
+)
+  
+ p2 <- plot_ly(data, x = ~Year, y = ~recruitment, type = 'bar', showlegend = T)%>%
+          layout(title= "Recruitment (age 0)", xaxis = x, yaxis = y)
+ 
+ subplot(p1,p2)
+ 
+ a<-dygraph(catches, main = "Catches")%>%
    dyRangeSelector()%>%
    dyOptions(colors = RColorBrewer::brewer.pal(3, "Set2"), drawGrid = FALSE,maxNumberWidth = 4)%>%
    dyAxis("y", label = "Catches in 1000 t")%>%
    dyBarChart()
- dygraph(recruitment, main = "Recruitment(age 0)") %>%
+ b<-dygraph(recruitment, main = "Recruitment(age 0)") %>%
    dyRangeSelector()%>%
    # dyOptions(colors = RColorBrewer::brewer.pal(3, "Set2"))%>%
    dyAxis("y", label = "Recruitment in millions")%>%
    dyBarChart()
  
-
+ browsable(
+  tagList(list(
+    tags$div(
+      style = 'width:50%;display:block;float:right',
+      a
+    ),
+    tags$div(
+      style = 'width:50%;display:block;float:right',
+      b
+    )
+  ))
+)
+ 
 ```
  
   
  
-```{r, echo = FALSE, fig.height = 4, fig.width = 6, fig.align = "left"}
+```{r, echo = FALSE, fig.height = 5, fig.width = 5, fig.align = "left"}
 library(dygraphs)
 library(htmlwidgets)
 library(dplyr)
