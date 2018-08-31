@@ -1,28 +1,31 @@
 ---
 output:
   html_document:
-    code_folding: hide
-    fig_height: 3
-    fig_width: 3
-    keep_md: yes
+    keep_md: true
+    fig_height: 1
+    fig_width: 1
     toc: yes
-    toc_depth: 2
+    toc_depth: 1
     toc_float: yes
   pdf_document:
     toc: yes
     toc_depth: '2'
+    code_folding: hide
+---
+<style>
+#TOC {
+  background:url("images/iceslogo.png") ;
+  background-size: contain;
+  padding-top: 120px !important;
+  background-repeat: no-repeat;
+}
+</style>
 ---
 
-![](images/iceslogo.png)
+# ICES advice 2018
 
----
+## "Hake (*Merluccius merluccius*) in subareas 4, 6, and 7, and in divisions 3.a, 8.a–b, and 8.d, Northern stock (Greater North Sea, Celtic Seas, and the northern Bay of Biscay)"
 
-# ICES advice 2018 for hke.27.3a46-8abd
-
-"Hake (*Merluccius merluccius*) in subareas 4, 6, and 7, and in divisions 3.a, 8.a–b, and 8.d, Northern stock
-(Greater North Sea, Celtic Seas, and the northern Bay of Biscay)"
-
-<a href="#top">Back to top</a>
 ---
 
 ```{r setup, include=FALSE}
@@ -31,11 +34,15 @@ knitr::opts_chunk$set(
 	message = FALSE,
 	warning = FALSE
 )
+#<a href="#top">Back to top</a>
 ```
 
 ***
+```{r  out.width = "60%"}
+knitr::include_graphics("images/hake.png")
+knitr::include_graphics("images/map.png")
+```
 
-![](images/hake.png) ![](images/map.png)
 
 [Link to latest advice](http://ices.dk/sites/pub/Publication%20Reports/Advice/2017/2017/hke.27.3a46-8abd.pdf)  
 [Link to Standard Graphs page](https://standardgraphs.ices.dk/manage/ViewGraphsAndTables.aspx?key=8988)
@@ -51,8 +58,11 @@ ICES advises that when the MSY approach is applied, catches in 2018 should be no
 # Stock development over time
 The spawning-stock biomass (SSB) has increased significantly since 2006 and is well above historical estimates. Fishing mortality (F) has decreased significantly after 2005, and has been below FMSY since 2012. The recruitment (R) estimate for 2016 is above average
  
+
+-------------------------------------
  
 ```{r cars, echo=FALSE, fig.height=3, fig.width=3}
+
  library(htmlwidgets)
  library(dplyr)
  library(ggplot2)
@@ -73,54 +83,83 @@ The spawning-stock biomass (SSB) has increased significantly since 2006 and is w
  catches$catches <- catches[, "catches"]/1000
  recruitment<- data %>% select(Year, low_recruitment, recruitment, high_recruitment)
 
-  x <- list(
-  title = ""
-)
-y <- list(
-  title = "Catches in 1000 t"
-)
-  
- p1 <- plot_ly(data, x = ~Year, y = ~catches, type = 'bar', showlegend = T)%>%
-          layout(title= "Catches", xaxis = x, yaxis = y)
- 
- x <- list(
-  title = ""
-)
-y <- list(
-  title = "Recruitment in millions"
-)
-  
- p2 <- plot_ly(data, x = ~Year, y = ~recruitment, type = 'bar', showlegend = T)%>%
-          layout(title= "Recruitment (age 0)", xaxis = x, yaxis = y)
- 
- subplot(p1,p2)
+#   x <- list(
+#   title = ""
+# )
+# y <- list(
+#   title = "Catches in 1000 t"
+# )
+#   
+#  p1 <- plot_ly(data, x = ~Year, y = ~catches, type = 'bar', showlegend = T)%>%
+#           layout(title= "Catches", xaxis = x, yaxis = y)
+#  
+#  x <- list(
+#   title = ""
+# )
+# y <- list(
+#   title = "Recruitment in millions"
+# )
+#   
+#  p2 <- plot_ly(data, x = ~Year, y = ~recruitment, type = 'bar', showlegend = T)%>%
+#           layout(title= "Recruitment (age 0)", xaxis = x, yaxis = y)
+#  
+#  subplot(p1,p2)
  
  a<-dygraph(catches, main = "Catches")%>%
    dyRangeSelector()%>%
    dyOptions(colors = RColorBrewer::brewer.pal(3, "Set2"), drawGrid = FALSE,maxNumberWidth = 4)%>%
    dyAxis("y", label = "Catches in 1000 t")%>%
    dyBarChart()
+ 
  b<-dygraph(recruitment, main = "Recruitment(age 0)") %>%
    dyRangeSelector()%>%
    # dyOptions(colors = RColorBrewer::brewer.pal(3, "Set2"))%>%
    dyAxis("y", label = "Recruitment in millions")%>%
    dyBarChart()
- 
+
  browsable(
   tagList(list(
     tags$div(
-      style = 'width:50%;display:block;float:right',
+      style = 'width:40%;display:inline-block;float:left',
       a
     ),
     tags$div(
-      style = 'width:50%;display:block;float:right',
+      style = 'width:40%;display:inline-block;float:right',
       b
     )
   ))
 )
  
 ```
+
+
+
+```{r cars2, echo=FALSE, fig.height=3, fig.width=3}
+ library(htmlwidgets)
+ library(dplyr)
+ library(ggplot2)
+ library(gridExtra)
+ library(dygraphs)
+ library(plotly)
+ library(htmltools)
+ data <- read.csv("Data/hke/hkedata.csv")
  
+ dyBarChart <- function(dygraph) {
+  dyPlotter(dygraph = dygraph,
+            name = "BarChart",
+            path = system.file("examples/plotters/barchart.js",
+                               package = "dygraphs"))
+ }
+  recruitment<- data %>% select(Year, low_recruitment, recruitment, high_recruitment)
+  
+  b<-dygraph(recruitment, main = "Recruitment(age 0)") %>%
+   dyRangeSelector()%>%
+   # dyOptions(colors = RColorBrewer::brewer.pal(3, "Set2"))%>%
+   dyAxis("y", label = "Recruitment in millions")%>%
+   dyBarChart()
+  b
+ 
+```
   
  
 ```{r, echo = FALSE, fig.height = 5, fig.width = 5, fig.align = "left"}
