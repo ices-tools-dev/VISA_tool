@@ -1,5 +1,2 @@
-"","doc_index","table_name","is_header","row_id","cell_id","text"
-"1",35,"advicebasis",TRUE,1,1,"Advice basis"
-"2",35,"advicebasis",FALSE,2,1,"Management plan"
-"3",35,"advicebasis",TRUE,1,2,"MSY approach."
-"4",35,"advicebasis",FALSE,2,2,"The current recovery plan (EU, 2004) is based on precautionary reference points that are no longer appropriate. ICES has not evaluated this plan."
+Advice basis,MSY approach.
+Management plan,"The current recovery plan (EU, 2004) is based on precautionary reference points that are no longer appropriate. ICES has not evaluated this plan."
