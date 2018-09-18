@@ -1,0 +1,577 @@
+---
+output:
+  html_document:
+    keep_md: true
+    fig_height: 1
+    fig_width: 1
+    toc: yes
+    toc_depth: 1
+    toc_float: yes
+  pdf_document:
+    toc: yes
+    toc_depth: '2'
+    code_folding: hide
+---
+<style>
+    body .main-container {
+        width: 2000px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+#TOC {
+  background:url("images/iceslogo.png") ;
+  background-size: contain;
+  padding-top: 100px !important;
+  background-repeat: no-repeat;
+  position: fixed;
+  font-size: 12px;
+  left: 0;
+  top: 0;
+  width: 200px;
+  height: 80%;
+  overflow:auto;
+}
+</style>
+
+<style type="text/css"> body, td { font-size: 16px; } width: 800px code.r{ font-size: 12px; } pre { font-size: 12px }
+
+h1 { /* Header 1 */
+  font-size: 24px;
+  color: Grey;
+}
+h2 { /* Header 2 */
+    font-size: 18px;
+  color: Black;
+}
+ .col2 {
+    columns: 2 220px;         /* number of columns and width in pixels*/
+    -webkit-columns: 2 220px; /* chrome, safari */
+    -moz-columns: 2 220px;    /* firefox */
+  }
+</style>
+
+---
+<a id="top"></a>
+
+# ICES advice 2018
+
+## "Blue ling (Molva dypterygia) in subareas 6–7 and Division 5.b (Celtic Seas, English Channel, and Faroes grounds)"
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+	echo = FALSE,
+	message = FALSE,
+	warning = FALSE
+)
+#<a href="#top">Back to top</a>
+```
+
+***
+```{r  out.width = "50%"}
+knitr::include_graphics("images/blueling.png")
+knitr::include_graphics("images/blimap.png")
+```
+
+
+[Go to latest advice](http://ices.dk/sites/pub/Publication%20Reports/Advice/2018/2018/bli-5b67.pdf)  
+[Go to Standard Graphs page](https://standardgraphs.ices.dk/manage/ViewGraphsAndTables.aspx?key=9467)  
+[Go to Transparent Assessment Framework page](https://github.com/ices-taf/2016_cod-347d)
+
+***
+
+# ICES advice on fishing opportunities
+ICES advises that when the MSY approach is applied, catches should be no more than 11 778 tonnes in 2019 and no more than 11 150 tonnes in 2020.
+ <br> 
+
+***
+
+# Stock development over time
+The spawning-stock biomass (SSB) has increased since 2004 and has been above MSY Btrigger since 2010. Fishing mortality has
+decreased since 2002 and has been lower than FMSY since 2004. Recruitment is estimated to be stable.
+
+<div class="col2">
+```{r sag1, echo=FALSE, fig.height=3.5, fig.width=3.5}
+
+ library(htmlwidgets)
+ library(dplyr)
+ library(ggplot2)
+ library(dygraphs)
+ library(htmltools)
+ library(widgetframe)
+ data <- read.csv("Data/bli/blidata.csv")
+
+ dyBarChart <- function(dygraph) {
+  dyPlotter(dygraph = dygraph,
+            name = "BarChart",
+            path = system.file("examples/plotters/barchart.js",
+                               package = "dygraphs"))
+}
+
+ catches <- data %>% select(Year, catches)
+ catches$catches <- catches[, "catches"]/1000
+ recruitment<- data %>% select(Year, low_recruitment, recruitment, high_recruitment)
+ 
+ dygraph(catches, main = "Catches")%>%
+   dyRangeSelector()%>%
+   dyOptions(colors = RColorBrewer::brewer.pal(3, "Set2"), drawGrid = FALSE,maxNumberWidth = 4)%>%
+   dyAxis("y")%>%
+   dyBarChart()
+ 
+ dygraph(recruitment, main = "Recruitment(age 0)") %>%
+   dyRangeSelector()%>%
+   # dyOptions(colors = RColorBrewer::brewer.pal(3, "Set2"))%>%
+   dyAxis("y")%>%
+   dyBarChart()
+
+ 
+```
+</div>
+<div class="col2">
+```{r sag3, echo = FALSE, fig.height = 3.5, fig.width = 3.5}
+library(dygraphs)
+library(htmlwidgets)
+library(dplyr)
+library(ggplot2)
+library(gridExtra)
+library(dygraphs)
+
+dyBarChart <- function(dygraph) {
+  dyPlotter(dygraph = dygraph,
+            name = "BarChart",
+            path = system.file("examples/plotters/barchart.js",
+                               package = "dygraphs"))
+} 
+
+F <- data %>% select(Year, low_F, F,high_F, FLim, Fpa, FMSY )
+ dygraph(F, main = "F") %>%
+  dySeries(c("low_F", "F", "high_F"))%>%
+   dyLimit(as.numeric(F[, 5]), color = "red")%>%
+   dyRangeSelector()%>%
+   dyOptions(colors = RColorBrewer::brewer.pal(3, "Set2"),
+             drawGrid= FALSE,maxNumberWidth = 4)%>%
+   dyAxis("y")
+SSB <- data %>% select(Year, low_SSB, SSB,high_SSB, Blim, Bpa, MSYBtrigger)
+ dygraph(SSB, main = "SSB") %>%
+  dySeries(c("low_SSB", "SSB", "high_SSB"))%>%
+   dyLimit(as.numeric(F[, 5]), color = "red")%>%
+   dyRangeSelector()%>%
+   dyOptions(colors = RColorBrewer::brewer.pal(3, "Set2"),
+             drawGrid= FALSE,maxNumberWidth = 4)%>%
+   dyAxis("y")
+ 
+```
+</div>
+
+
+**Figure 1**  Hake in subareas 4, 6, and 7, and in divisions 3.a, 8.a–b, and 8.d, Northern stock. Summary of the stock assessment.Recruitment, F, and SSB plots show 95% confidence intervals (shaded area). Assumed recruitment values are unshaded.
+<br>
+
+## Summary of the assessment
+
+Hake in subareas 4, 6, and 7, and in divisions 3.a, 8.a–b, and 8.d, Northern stock. Assessment summary. Weights are in tonnes. Highs and lows are 95% confidence intervals
+
+```{r summarysag, echo=FALSE}
+library(icesSAG)
+
+SAGsummary <- getSAG("hke.27.3a46-8abd", 2017, data = "summary", combine = TRUE, purpose = "Advice")
+write.csv(SAGsummary, file = "SAGsummary.csv")
+
+```
+
+```{r download4}
+library(magrittr)
+ readLines("SAGsummary.csv") %>% 
+   paste0(collapse="\n") %>% 
+   openssl::base64_encode() -> encoded
+```
+
+[Download CSV](`r sprintf('data:text/csv;base64,%s', encoded)`)
+ ***  
+[Go to Top](#top)
+
+# Stock and explotation status
+
+<br>
+**State of the stock and fishery relative to reference points**
+<br>
+![](images/MSY_1.png)
+
+
+***  
+
+# Catch scenarios
+
+<br>
+**Table 2 Hake in subareas 4, 6, and 7, and in divisions 3.a, 8.a–b, and 8.d, Northern stock. The basis for the catch scenarios. All weights are in tonnes.**
+<br>
+```{r catchoptionsbasis, echo=FALSE}
+library(knitr)
+library(readr)
+library(kableExtra)
+dt <- read.csv("Data/hke/hkecatchoptionsbasis.csv",header = T, row.names = 1)
+# dt <- dt [,-1] 
+kable(dt, "html")%>% 
+  row_spec(0, bold = T, color = "black", background = "lightgrey", align = "c")%>%
+  column_spec(1, width = "20em")%>%
+  column_spec(4, width = "45em")%>%
+  column_spec(3, width = "15em")%>%
+  kable_styling(position = "center", full_width = F, font_size = 7)
+
+```
+
+<br>
+
+***
+
+**Table 3 Hake in subareas 4, 6, and 7, and in divisions 3.a, 8.a–b, and 8.d, Northern stock. Annual catch options. All weights are in tonnes.**
+
+<button class="btn btn-primary" data-toggle="collapse" data-target="#BlockName"> Show/Download Table </button>  
+<div id="BlockName" class="collapse"> 
+<br>
+```{r catchoptionstable, echo=FALSE}
+library(knitr)
+library(readr)
+library(kableExtra)
+dt <- read.csv("Data/hke/hkecatchoptions.csv", header = T, row.names = 1)
+# dt <- dt [,-1]
+dt <- dt[complete.cases(dt),]
+ kable(dt, "html") %>% kable_styling(position = "center")%>%
+   row_spec(0, bold = T, color = "black", background = "lightgrey")%>%
+   column_spec(1, width = "30em")%>%
+         column_spec(2:10, width = "10em")%>%
+   group_rows("ICES advice basis",1,1) %>%
+   group_rows("Other options",2,9)
+```
+
+```{r download}
+library(magrittr)
+ readLines("Data/hke/hkecatchoptions.csv") %>% 
+   paste0(collapse="\n") %>% 
+   openssl::base64_encode() -> encoded
+```
+
+[Download CSV](`r sprintf('data:text/csv;base64,%s', encoded)`)
+</div>
+<br>
+<br>
+```{r catchscenariostable, echo=FALSE, fig.width=3}
+library(knitr)
+library(readr)
+library(kableExtra)
+dt <- read.csv("Data/hke/hkescenariosplot.csv") %>%
+        select(Basis, F, Catch, SSB)
+write.table (dt, "thing.txt",sep = ",")
+
+colnames(dt)<- c("Basis", "F", "Catch 2018", "SSB 2019")
+ kable(dt, "html") %>% kable_styling(position = "center")%>%
+  kable_styling(bootstrap_options = "striped", full_width = F, font_size = 7)
+
+```
+
+Basis | F | Catch 2018 | SSB2019
+------|---|------------|--------
+MSY approach: FMSY | 0.280 | 115335 | 295193
+F = 0 | 0.000 | 0 | 401929
+Fpa | 0.620 | 211827 | 206120
+Flim | 0.870 | 261716 | 160047
+
+
+
+## Version 1
+```{r catchoptionsgraph, echo = FALSE,fig.height = 5, fig.width = 7}
+library(ggplot2)
+library(plotly)
+ catchoptions <- read.csv("Data/bliscenariosplot.csv")
+ labels <- catchoptions$Basis
+ labels <- as.character(labels)
+ mypalette<-ggthemes::tableau_color_pal('tableau20')
+ 
+ data <- catchoptions[order(catchoptions$F),] 
+ 
+ 
+ p1 <- plot_ly(data, x = ~F) %>%
+         layout(hovermode="TRUE", showlegend = TRUE,
+           shapes = list(
+             list(type = "line", fillcolor = "red", 
+               line    = list(color = "red",
+               width = 2,
+               dash = "dot"),
+               opacity = 0.5,
+               x0      = 0.87,
+               x1      = 0.87,
+               xref    = "Flim",
+               y0      = 0,
+               y1      = 450000,
+               yref    = "y",
+               name = "Flim"),
+             list(type = "line", fillcolor = "green", 
+               line    = list(color = "green",
+               width = 2,
+               dash = "dot"), 
+               opacity = 0.2, 
+               x0      = 0.28,
+               x1      = 0.28,
+               xref    = "Fmsy",
+               y0      = 0,
+               y1      = 450000,
+               yref    = "y",
+               name = "Fmsy"),
+             list(type = "line", fillcolor = "orange", 
+               line    = list(color = "orange",
+               width = 2,
+               dash = "dot"), 
+               opacity = 1, 
+               x0      = 0.62,
+               x1      = 0.62,
+               xref    = "Fpa",
+               y0      = 0,
+               y1      = 450000,
+               yref    = "y",
+               name = "Fpa"),
+             list(type = "line", fillcolor = "blue", 
+               line    = list(color = "blue",
+               width = 2,
+               dash = "dash"), 
+               opacity = 0.3, 
+               x0      = -0.3,
+               x1      = 3,
+               xref    = "x",
+               y0      = 32000,
+               y1      = 32000,
+               yref    = "Blim",
+               name = "Blim"),
+             list(type = "line", fillcolor = "lightblue", 
+               line    = list(color = "lightblue",
+               width = 2,
+               dash = "dash"), 
+               opacity = 0.3, 
+               x0      = -0.3,
+               x1      = 3,
+               xref    = "x",
+               y0      = 45000,
+               y1      = 45000,
+               yref    = "Bpa = MSY Btrigger",
+               text = "Bpa = MSY Btrigger",
+               textposition = "bottom right"),
+             list(type = "rect", fillcolor = "green", opacity = 0.2,
+                  line = list(color = "green", opacity=0.2),
+                  x0 = -0.3, x1 = 0.62, xref = "x",
+                  y0 = 0, y1 = 450000, yref = "y"),
+             list(type = "rect", fillcolor = "orange", opacity = 0.2,
+                  line = list(color = "orange", opacity=0.2),
+                  x0 = 0.62, x1 = 0.87, y0 = 0, y1 = 450000),
+             list(type = "rect", fillcolor = "red", opacity = 0.2,
+                  line = list(color = "red", opacity=0.2),
+                  x0 = 0.87, x1 = 3, y0 = 0, y1 = 450000)),
+           yaxis= list(title = 'tonnes', showgrid =FALSE),
+    xaxis=list(title = 'Fishing mortality according to catch scenarios', showgrid= FALSE, tickmode = "array",tickvals = c(0.28,0.62,0.87), ticktext = c("Fmsy","Fpa", "Flim"), tickangle = 45),
+    annotations=
+        list(
+            x= 3,
+            y=c(32000,45000),
+            xref= '1',
+            yref='y',
+            text=c('Blim','Bpa = MSY Btrigger'),
+            showarrow = TRUE,
+            ax= 70,
+            ay= 0
+        ) 
+    )%>%
+         add_trace(y = ~ SSB, name= 'SSB 2019', type = 'bar',opacity = 0.8, width= 0.2, color = ~ SSB,colors=c("darkblue","Yellow"), text = data$Basis, hoverinfo = "text + x+ y") %>%
+          add_trace(y = ~ Catch, name = 'Catch 2018', mode = 'lines+markers',text = data$Basis, hoverinfo = "text + x+ y")
+                  
+  p1$elementId <- NULL
+  p1
+```
+ 
+## Version 2:
+ 
+```{r catchoptionsgraphv2}
+library(ggplot2)
+library(plotly)
+ catchoptions <- read.csv("Data/hke/hkescenariosplot.csv")
+ labels <- catchoptions$Basis
+ labels <- as.character(labels)
+ mypalette<-ggthemes::tableau_color_pal('tableau20')
+ 
+ data <- catchoptions[order(catchoptions$F),]
+ p1 <- ggplot(catchoptions, aes(F, colour = )) + theme_bw() +
+    geom_rect(xmin = -Inf, ymin = -Inf, xmax = 0.62, ymax = Inf,
+              fill = "lightgreen", alpha=0.50)+theme_bw()+
+    # geom_rect(xmin = 0.280, ymin = -Inf, xmax = 0.282, ymax = Inf,
+    #           fill = "gold", alpha=0.50)+theme_bw()+
+    geom_rect(xmin = 0.62, ymin = -Inf, xmax = 0.87, ymax = Inf,
+              fill = "coral")+theme_bw()+
+    geom_rect(xmin = 0.87, ymin = -Inf, xmax = Inf, ymax = Inf,
+              fill = "brown1")+theme_bw()+
+    geom_hline(yintercept=45000, linetype="dashed", color = "yellowgreen")+
+    geom_hline(yintercept=32000, linetype="dashed", color = "yellow4")+
+    geom_vline(xintercept = 0.28,linetype = "dotted",
+               color = "violet", size = 0.5)+
+    geom_vline(xintercept = 0.62, linetype="dotted",
+               color = "violetred", size=0.5)+
+    geom_vline(xintercept = 0.87, linetype="dotted",
+               color = "violetred1", size=0.5)+
+    # geom_col(aes(y = Catch), width = 0.15)+
+    geom_point(aes(y = Catch),size = 2) +
+    geom_line(aes(y = Catch),size = 0.5, colour= "orangered")+
+    geom_point(aes(y=SSB), size = 2)+
+    geom_line(aes(y = SSB),size = 0.5, colour= "lightskyblue")+
+    scale_y_continuous("tonnes",sec.axis = sec_axis(~., name = "SSB"))+
+    # scale_x_continuous(breaks = catchoptions$F)+
+    xlab("Fish mortality")+
+    ylab("Catches and SSB in tonnes")
+ 
+  p2 <- p1 + theme(axis.text.x = element_text(face="bold", color="Black",
+                             size=10, angle=45))+
+    theme(legend.text = element_text(colour="blue", size = 16, face = "bold"))
+  # p3<- p2+ guide_colorbar(title = "Spawning Stock Biomass", label= TRUE,barheight = )
+ # p3<- p2 + geom_hline(yintercept=45000, linetype="dashed", color = "red")+
+ #   geom_hline(yintercept=32000, linetype="dashed", color = "black")+
+ #   geom_vline(xintercept = 0.28,
+ #                 color = "yellow", size=3)+
+ #   geom_vline(xintercept = 0.62, linetype="dotted",
+ #                   color = "blue", size=0.5)+
+ #   geom_vline(xintercept = 0.87, linetype="dotted",
+ #                 color = "blue", size=0.5)
+
+
+ ggplotly(p1, width = 600, height = 300)
+
+```
+  
+## Version 3: 
+ 
+```{r catchoptionsgraphv3, echo = FALSE}
+library(ggplot2)
+library(plotly)
+ catchoptions <- read.csv("Data/hke/hkescenariosplot.csv")
+ labels <- catchoptions$Basis
+ labels <- as.character(labels)
+ mypalette<-ggthemes::tableau_color_pal('tableau20')
+ 
+ data <- catchoptions[order(catchoptions$F),]
+ catchoptions <- catchoptions[!duplicated(catchoptions[,c('F')]),]
+catch <- catchoptions %>% select(c(F,Catch))
+ssb <- catchoptions %>% select(c(F,SSB))
+labels <- catchoptions$F
+labels <- as.character(labels)
+
+ p1 <- ggplot(catchoptions, aes(F))+
+    geom_col(data= ssb,aes(y = ssb$SSB, fill = SSB), width = 0.20)+
+     scale_fill_gradient(low="gray90", high="blue")+
+    geom_point(data= catch,aes(y= catch$Catch,size = Catch))+
+    geom_line(aes(y = catch$Catch))+
+    scale_x_continuous(breaks = round(seq(min(catchoptions$F), max(catchoptions$F), by = 0.5),3))+
+    xlab("Fishing mortality")+
+    ylab("tonnes")+
+         theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
+panel.background = element_blank(), axis.line = element_line(colour = "grey"))
+ 
+  p2 <- p1 + theme(axis.text.x = element_text(face="bold", color="Black",
+                             size=10, angle=45))+
+    theme(legend.text = element_text(colour="blue", size = 16, face = "bold"))
+  
+
+ ggplotly(p2, width = 600, height = 300)
+
+```
+ 
+<br>
+
+[Go to Top](#top)
+
+# Basis of the advice  
+***
+<br>
+**Table 4** Hake in subareas 4, 6, and 7, and in divisions 3.a, 8.a–b, and 8.d, Northern stock. The basis of the advice.
+```{r advicebasis, echo=FALSE}
+library(knitr)
+library(readr)
+library(kableExtra)
+dt <- read.csv("Data/hke/hkeadvicebasis.csv", header = FALSE)
+#dt <- dt [-1,] 
+colnames(dt) <- NULL
+kable(dt, "html")%>%kable_styling(position = "center")%>%
+  column_spec(1, bold = T, color = "black", background = "lightgrey")
+
+```
+
+<br>
+
+# Quality of the assessment  
+***
+<br>
+The uncertainty in the assessment is relatively high, with large changes in biomass estimates in consecutive years. The model confidence intervals are an underestimate of uncertainty because they are narrower than interannual changes in estimates in consecutive years.
+There is a lack of tuning data for the earlier years of the assessment, for some areas outside of subareas 7 and 8, and for the larger individuals in the population. Given the expansion of the stock into northern areas (ICES, 2017b), there is a potential that not all catches are reported for this stock. Biological sampling from these areas is also limited.
+The data compilation of this stock is very complicated because it is exploited by several countries and the assessment model configuration is complex. In turn, the assessment model is very sensitive to the data and the settings used. Hence, it is extremely important for the quality of the assessment to have the complete data for all the countries on time and in the right format.
+
+# Reference Points  
+***
+<br>
+Herring in Subarea 4 and divisions 3.a and 7.d, autumn spawners. Reference points, values, and their technical basis.
+```{r referencepoints, echo=FALSE}
+library(knitr)
+library(readr)
+library(kableExtra)
+dt <- read.csv("Data/hke/hkereferencepoints.csv")
+dt <- dt [,-1] 
+kable(dt, "html")%>%kable_styling(position = "center")%>%
+  row_spec(0, bold = T, color = "black", background = "lightgrey")
+
+```
+<br>
+```{r download2}
+library(magrittr)
+ readLines("Data/hke/hkereferencepoints.csv") %>% 
+   paste0(collapse="\n") %>% 
+   openssl::base64_encode() -> encoded
+```
+[Download CSV](`r sprintf('data:text/csv;base64,%s', encoded)`)
+
+# Basis of the assessment  
+***
+<br>
+Herring in Subarea 4 and divisions 3.a and 7.d, autumn spawners. Basis of the assessment and advice
+```{r advicebla, echo=FALSE}
+library(knitr)
+library(readr)
+library(kableExtra)
+dt <- read.csv("Data/hke/hkeassessmentbasis.csv")
+dt <- dt [,-1] 
+kable(dt, "html")%>%kable_styling(position = "center")%>%
+  row_spec(0, bold = T, color = "black", background = "lightgrey")
+
+```
+
+```{r download3}
+library(magrittr)
+ readLines("Data/hke/hkeassessmentbasis.csv") %>% 
+   paste0(collapse="\n") %>% 
+   openssl::base64_encode() -> encoded
+```
+[Download CSV](`r sprintf('data:text/csv;base64,%s', encoded)`)
+[Go to Top](#top)
+
+# Historical trends
+
+```{r, echo=FALSE}
+library(googleVis)
+library(tidyr)
+kobe <- read_csv("data/hke/kobe_data_2.csv")
+hke <- kobe %>% filter(StockCode == "hke.27.3a46-8abd", EcoRegion == "Greater North Sea Ecoregion")
+hke$StockCode <- NULL
+hke$FisheriesGuild <- NULL
+hke$EcoRegion <- NULL
+
+bla <- hke %>% gather(Measures, value, -Year, -`F/Fmsy`, -`SSB/MSYBtrigger`)
+# library(reshape2)
+# hkelong <- melt(hke, id.vars = c("Year", "F", "SSB", "FMSY", "MSYBtrigger","catches", "landings", "discards"))
+
+vis<- gvisMotionChart(bla, idvar= "Measures", timevar = "Year")
+plot(vis)
+```
+
+http://127.0.0.1:30673/custom/googleVis/MotionChartID7603b1f6d16.html
+
