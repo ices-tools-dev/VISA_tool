@@ -166,15 +166,22 @@ SSB <- data %>% select(Year, low_SSB, SSB,high_SSB, Blim, Bpa, MSYBtrigger)
 **Figure 1**  Hake in subareas 4, 6, and 7, and in divisions 3.a, 8.a–b, and 8.d, Northern stock. Summary of the stock assessment.Recruitment, F, and SSB plots show 95% confidence intervals (shaded area). Assumed recruitment values are unshaded.
 <br>
 
-## Summary of the assessment
+# Summary of the assessment
 
 Hake in subareas 4, 6, and 7, and in divisions 3.a, 8.a–b, and 8.d, Northern stock. Assessment summary. Weights are in tonnes. Highs and lows are 95% confidence intervals
-
-```{r summarysag, echo=FALSE}
+<br>
+<button class="btn btn-primary" data-toggle="collapse" data-target="#BlockName"> Show/Download Table </button>  
+<div id="BlockName" class="collapse"> 
+<br>
+```{r summarysag, echo=FALSE }
 library(icesSAG)
-
+library(kableExtra)
 SAGsummary <- getSAG("hke.27.3a46-8abd", 2017, data = "summary", combine = TRUE, purpose = "Advice")
 write.csv(SAGsummary, file = "SAGsummary.csv")
+kable(SAGsummary, "html")%>% 
+  row_spec(0, bold = T, color = "black", background = "lightgrey", align = "c")%>%
+         kable_styling(bootstrap_options = "striped", font_size = 10)%>%
+        scroll_box(width = "700px", height = "200px")
 
 ```
 
@@ -186,9 +193,12 @@ library(magrittr)
 ```
 
 [Download CSV](`r sprintf('data:text/csv;base64,%s', encoded)`)
- ***  
+</div>
+<br>
+<br>
 [Go to Top](#top)
 
+***  
 # Stock and explotation status
 
 <br>
@@ -202,7 +212,7 @@ library(magrittr)
 # Catch scenarios
 
 <br>
-**Table 2 Hake in subareas 4, 6, and 7, and in divisions 3.a, 8.a–b, and 8.d, Northern stock. The basis for the catch scenarios. All weights are in tonnes.**
+**Table 2** Hake in subareas 4, 6, and 7, and in divisions 3.a, 8.a–b, and 8.d, Northern stock. The basis for the catch scenarios. All weights are in tonnes.
 <br>
 ```{r catchoptionsbasis, echo=FALSE}
 library(knitr)
@@ -215,33 +225,37 @@ kable(dt, "html")%>%
   column_spec(1, width = "20em")%>%
   column_spec(4, width = "45em")%>%
   column_spec(3, width = "15em")%>%
-  kable_styling(position = "center", full_width = F, font_size = 7)
+  kable_styling(position = "center", full_width = F, font_size = 10)
 
 ```
+
+```{r download5}
+library(magrittr)
+ readLines("Data/hke/hkecatchoptionsbasis.csv") %>% 
+   paste0(collapse="\n") %>% 
+   openssl::base64_encode() -> encoded
+```
+
+[Download CSV](`r sprintf('data:text/csv;base64,%s', encoded)`)
 
 <br>
 
 ***
 
-**Table 3 Hake in subareas 4, 6, and 7, and in divisions 3.a, 8.a–b, and 8.d, Northern stock. Annual catch options. All weights are in tonnes.**
-
-<button class="btn btn-primary" data-toggle="collapse" data-target="#BlockName"> Show/Download Table </button>  
-<div id="BlockName" class="collapse"> 
+**Table 3** Hake in subareas 4, 6, and 7, and in divisions 3.a, 8.a–b, and 8.d, Northern stock. Annual catch options. All weights are in tonnes.
 <br>
-```{r catchoptionstable, echo=FALSE}
-library(knitr)
-library(readr)
-library(kableExtra)
-dt <- read.csv("Data/hke/hkecatchoptions.csv", header = T, row.names = 1)
-# dt <- dt [,-1]
-dt <- dt[complete.cases(dt),]
- kable(dt, "html") %>% kable_styling(position = "center")%>%
-   row_spec(0, bold = T, color = "black", background = "lightgrey")%>%
-   column_spec(1, width = "30em")%>%
-         column_spec(2:10, width = "10em")%>%
-   group_rows("ICES advice basis",1,1) %>%
-   group_rows("Other options",2,9)
-```
+
+Basis| F |Catch 2018|SSB2019
+-----|---|----------|-------
+MSY approach: FMSY|0.280|115335|295193
+F = 0|0.000|0|401929
+Fpa|0.620|211827|206120
+Flim | 0.870 | 261716 |160047
+SSB (2019) = Blim| 2.293|383469|44975
+SSB (2019) = Bpa| 2.731|395825|32001
+SSB (2019) = MSY Btrigger|2.731|395825|32001
+F = F2017|0.259| 108119|301860
+EU Recovery Plan^^|0.250|104736|304987
 
 ```{r download}
 library(magrittr)
@@ -251,33 +265,8 @@ library(magrittr)
 ```
 
 [Download CSV](`r sprintf('data:text/csv;base64,%s', encoded)`)
-</div>
-<br>
-<br>
-```{r catchscenariostable, echo=FALSE, fig.width=3}
-library(knitr)
-library(readr)
-library(kableExtra)
-dt <- read.csv("Data/hke/hkescenariosplot.csv") %>%
-        select(Basis, F, Catch, SSB)
-write.table (dt, "thing.txt",sep = ",")
 
-colnames(dt)<- c("Basis", "F", "Catch 2018", "SSB 2019")
- kable(dt, "html") %>% kable_styling(position = "center")%>%
-  kable_styling(bootstrap_options = "striped", full_width = F, font_size = 7)
-
-```
-
-Basis | F | Catch 2018 | SSB2019
-------|---|------------|--------
-MSY approach: FMSY | 0.280 | 115335 | 295193
-F = 0 | 0.000 | 0 | 401929
-Fpa | 0.620 | 211827 | 206120
-Flim | 0.870 | 261716 | 160047
-
-
-
-## Version 1
+## Catch scenarios Plots. Version 1
 ```{r catchoptionsgraph, echo = FALSE,fig.height = 5, fig.width = 7}
 library(ggplot2)
 library(plotly)
@@ -364,7 +353,7 @@ library(plotly)
                   line = list(color = "red", opacity=0.2),
                   x0 = 0.87, x1 = 3, y0 = 0, y1 = 450000)),
            yaxis= list(title = 'tonnes', showgrid =FALSE),
-    xaxis=list(title = 'Fishing mortality according to catch scenarios', showgrid= FALSE, tickmode = "array",tickvals = c(0.28,0.62,0.87), ticktext = c("Fmsy","Fpa", "Flim"), tickangle = 45),
+    xaxis=list(title = 'F', showgrid= FALSE, tickmode = "array",tickvals = c(0.28,0.62,0.87), ticktext = c("Fmsy","Fpa", "Flim")),
     annotations=
         list(
             x= 3,
@@ -385,7 +374,6 @@ library(plotly)
 ```
  
 ## Version 2:
- 
 ```{r catchoptionsgraphv2}
 library(ggplot2)
 library(plotly)
@@ -441,7 +429,6 @@ library(plotly)
 ```
   
 ## Version 3: 
- 
 ```{r catchoptionsgraphv3, echo = FALSE}
 library(ggplot2)
 library(plotly)
@@ -476,13 +463,13 @@ panel.background = element_blank(), axis.line = element_line(colour = "grey"))
  ggplotly(p2, width = 600, height = 300)
 
 ```
- 
 <br>
 
 [Go to Top](#top)
 
-# Basis of the advice  
 ***
+
+# Basis of the advice  
 <br>
 **Table 4** Hake in subareas 4, 6, and 7, and in divisions 3.a, 8.a–b, and 8.d, Northern stock. The basis of the advice.
 ```{r advicebasis, echo=FALSE}
@@ -496,20 +483,27 @@ kable(dt, "html")%>%kable_styling(position = "center")%>%
   column_spec(1, bold = T, color = "black", background = "lightgrey")
 
 ```
-
 <br>
 
-# Quality of the assessment  
 ***
+# Quality of the assessment  
 <br>
 The uncertainty in the assessment is relatively high, with large changes in biomass estimates in consecutive years. The model confidence intervals are an underestimate of uncertainty because they are narrower than interannual changes in estimates in consecutive years.
 There is a lack of tuning data for the earlier years of the assessment, for some areas outside of subareas 7 and 8, and for the larger individuals in the population. Given the expansion of the stock into northern areas (ICES, 2017b), there is a potential that not all catches are reported for this stock. Biological sampling from these areas is also limited.
 The data compilation of this stock is very complicated because it is exploited by several countries and the assessment model configuration is complex. In turn, the assessment model is very sensitive to the data and the settings used. Hence, it is extremely important for the quality of the assessment to have the complete data for all the countries on time and in the right format.
+**missing graphs**
+
+***
+# Issues relevant for the advice
+Discarding of juvenile hake can be substantial in some areas and fleets. Discarding of large individuals has increased in recent years because of quota restrictions in certain fleets.
+
+Some fleets fishing this stock have been under the EU landing obligation since 2016.
+
+***
 
 # Reference Points  
-***
 <br>
-Herring in Subarea 4 and divisions 3.a and 7.d, autumn spawners. Reference points, values, and their technical basis.
+**Table 5** Herring in Subarea 4 and divisions 3.a and 7.d, autumn spawners. Reference points, values, and their technical basis.
 ```{r referencepoints, echo=FALSE}
 library(knitr)
 library(readr)
@@ -521,6 +515,7 @@ kable(dt, "html")%>%kable_styling(position = "center")%>%
 
 ```
 <br>
+
 ```{r download2}
 library(magrittr)
  readLines("Data/hke/hkereferencepoints.csv") %>% 
@@ -529,30 +524,37 @@ library(magrittr)
 ```
 [Download CSV](`r sprintf('data:text/csv;base64,%s', encoded)`)
 
-# Basis of the assessment  
 ***
+# Basis of the assessment  
 <br>
-Herring in Subarea 4 and divisions 3.a and 7.d, autumn spawners. Basis of the assessment and advice
+**Table 6** Herring in Subarea 4 and divisions 3.a and 7.d, autumn spawners. Basis of the assessment and advice
 ```{r advicebla, echo=FALSE}
 library(knitr)
 library(readr)
 library(kableExtra)
 dt <- read.csv("Data/hke/hkeassessmentbasis.csv")
 dt <- dt [,-1] 
+colnames(dt) <- NULL
 kable(dt, "html")%>%kable_styling(position = "center")%>%
-  row_spec(0, bold = T, color = "black", background = "lightgrey")
+  column_spec(1, width = "15em",bold = T, color = "black", background = "lightgrey")
+
 
 ```
 
-```{r download3}
+```{r download7}
 library(magrittr)
  readLines("Data/hke/hkeassessmentbasis.csv") %>% 
    paste0(collapse="\n") %>% 
    openssl::base64_encode() -> encoded
 ```
 [Download CSV](`r sprintf('data:text/csv;base64,%s', encoded)`)
-[Go to Top](#top)
 
+
+***
+# Information from stakeholders
+There is no information available
+
+***
 # Historical trends
 
 ```{r, echo=FALSE}
@@ -572,5 +574,48 @@ vis<- gvisMotionChart(bla, idvar= "Measures", timevar = "Year")
 plot(vis)
 ```
 
-http://127.0.0.1:30673/custom/googleVis/MotionChartID7603b1f6d16.html
+[Go to visualization](http://127.0.0.1:14045/custom/googleVis/MotionChartID12405be8754e.html)
+
+***
+
+
+# History of the advice, catch, and management
+
+**Table 7** Hake in subareas 4, 6, and 7, and in divisions 3.a, 8.a–b, and 8.d, Northern stock. ICES advice and catch. All weights are
+in tonnes
+
+<br> 
+<button class="btn btn-primary" data-toggle="collapse" data-target="#BlockName"> Show/Download Table </button>   
+<div id="BlockName" class="collapse">  
+<br> 
+```{r history, echo=FALSE}
+library(knitr)
+library(readr)
+library(kableExtra)
+dt <- read.csv("Data/hke/hkecatchhistory.csv")
+# dt <- dt [,-1] 
+# colnames(dt) <- NULL
+kable(dt, "html")%>%kable_styling(position = "center")%>%
+  row_spec(0,bold = T, color = "black", background = "lightgrey")
+
+```
+
+```{r downloadhistory}
+library(magrittr)
+ readLines("Data/hke/hkecatchhistory.csv") %>% 
+   paste0(collapse="\n") %>% 
+   openssl::base64_encode() -> encoded
+```
+
+[Download CSV](`r sprintf('data:text/csv;base64,%s', encoded)`) 
+<div>
+
+<br>
+***
+
+# History of the catch and landings
+**Table 8** Hake in subareas 4, 6, and 7, and in divisions 3.a, 8.a–b, and 8.d, Northern stock. Catch distribution by fleet in 2016 as estimated by ICES.
+<br>
+***
+
 
