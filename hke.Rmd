@@ -33,7 +33,10 @@ output:
 }
 </style>
 
-<style type="text/css"> body, td { font-size: 16px; } width: 800px code.r{ font-size: 12px; } pre { font-size: 12px }
+<style type="text/css"> 
+body{
+  font-size: 16pt;
+}body, td { font-size: 16px; } width: 800px code.r{ font-size: 12px; } pre { font-size: 12px }
 
 h1 { /* Header 1 */
   font-size: 24px;
@@ -557,10 +560,13 @@ There is no information available
 ***
 # Historical trends
 
-```{r, echo=FALSE}
+```{r, echo=FALSE, results= 'asis'}
 library(googleVis)
 library(tidyr)
-kobe <- read_csv("data/hke/kobe_data_2.csv")
+library(dplyr)
+library(readr)
+op <- options(gvis.plot.tag='chart')
+kobe <- read_csv("Data/hke/kobe_data_2.csv")
 hke <- kobe %>% filter(StockCode == "hke.27.3a46-8abd", EcoRegion == "Greater North Sea Ecoregion")
 hke$StockCode <- NULL
 hke$FisheriesGuild <- NULL
@@ -574,7 +580,6 @@ vis<- gvisMotionChart(bla, idvar= "Measures", timevar = "Year")
 plot(vis)
 ```
 
-[Go to visualization](http://127.0.0.1:14045/custom/googleVis/MotionChartID12405be8754e.html)
 
 ***
 
