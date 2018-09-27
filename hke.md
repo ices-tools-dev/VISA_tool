@@ -19,7 +19,8 @@ output:
         margin-right: 20px;
     }
 #TOC {
-  background:url("images/iceslogo.png") ;
+  background:url("http://ices.dk/_layouts/15/1033/images/icesimg/iceslogo.png") ;
+  background: <a href="#top">Back to top</a>
   background-size: contain;
   padding-top: 100px !important;
   background-repeat: no-repeat;
@@ -54,12 +55,12 @@ h2 { /* Header 2 */
 </style>
 
 ---
-<a id="top"></a>
 
-# ICES advice 2018
+# ICES advice 2017                              
 
 ## "Hake (*Merluccius merluccius*) in subareas 4, 6, and 7, and in divisions 3.a, 8.a–b, and 8.d, Northern stock (Greater North Sea, Celtic Seas, and the northern Bay of Biscay)"
 
+Published 30 June 2017
 
 
 
@@ -83,23 +84,23 @@ ICES advises that when the MSY approach is applied, catches in 2018 should be no
 The spawning-stock biomass (SSB) has increased significantly since 2006 and is well above historical estimates. Fishing mortality (F) has decreased significantly after 2005, and has been below FMSY since 2012. The recruitment (R) estimate for 2016 is above average
 
 <div class="col2">
-<!--html_preserve--><div id="htmlwidget-a115e2e987ce4699cb09" style="width:336px;height:336px;" class="dygraphs html-widget"></div>
-<script type="application/json" data-for="htmlwidget-a115e2e987ce4699cb09">{"x":{"attrs":{"axes":{"x":{"pixelsPerLabel":60,"drawAxis":true},"y":{"drawAxis":true}},"colors":["#66C2A5","#FC8D62","#8DA0CB"],"title":"Catches","labels":["Year","catches"],"legend":"auto","retainDateWindow":false,"showRangeSelector":true,"rangeSelectorHeight":40,"rangeSelectorPlotFillColor":" #A7B1C4","rangeSelectorPlotStrokeColor":"#808FAB","interactionModel":"Dygraph.Interaction.defaultModel","stackedGraph":false,"fillGraph":false,"fillAlpha":0.15,"stepPlot":false,"drawPoints":false,"pointSize":1,"drawGapEdgePoints":false,"connectSeparatedPoints":false,"strokeWidth":1,"strokeBorderColor":"white","colorValue":0.5,"colorSaturation":1,"includeZero":false,"drawAxesAtZero":false,"logscale":false,"axisTickSize":3,"axisLineColor":"black","axisLineWidth":0.3,"axisLabelColor":"black","axisLabelFontSize":14,"axisLabelWidth":60,"drawGrid":false,"gridLineWidth":0.3,"rightGap":5,"digitsAfterDecimal":2,"labelsKMB":false,"labelsKMG2":false,"labelsUTC":false,"maxNumberWidth":4,"animatedZooms":false,"mobileDisableYTouch":true},"annotations":[],"shadings":[],"events":[],"format":"numeric","data":[[1978,1979,1980,1981,1982,1983,1984,1985,1986,1987,1988,1989,1990,1991,1992,1993,1994,1995,1996,1997,1998,1999,2000,2001,2002,2003,2004,2005,2006,2007,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017],[50.551,51.096,57.265,53.918,54.994,57.507,63.286,56.099,57.092,63.369,64.823,66.473,59.954,58.129,56.617,52.144,51.259,57.621,47.21,42.465,35.06,39.814,42.026,36.675,40.105,44.555,49.029,51.133,42.691,47.258,51.19,69.814,84.878,101.403,100.47,93.108,99.7,105.9,118.634,null]],"fixedtz":false,"tzone":"","plotter":"BarChart"},"evals":["attrs.interactionModel"],"jsHooks":[]}</script><!--/html_preserve--><!--html_preserve--><div id="htmlwidget-c901d835c3181d3eee0c" style="width:336px;height:336px;" class="dygraphs html-widget"></div>
-<script type="application/json" data-for="htmlwidget-c901d835c3181d3eee0c">{"x":{"attrs":{"axes":{"x":{"pixelsPerLabel":60},"y":[]},"title":"Recruitment(age 0)","labels":["Year","low_recruitment","recruitment","high_recruitment"],"legend":"auto","retainDateWindow":false,"showRangeSelector":true,"rangeSelectorHeight":40,"rangeSelectorPlotFillColor":" #A7B1C4","rangeSelectorPlotStrokeColor":"#808FAB","interactionModel":"Dygraph.Interaction.defaultModel"},"annotations":[],"shadings":[],"events":[],"format":"numeric","data":[[1978,1979,1980,1981,1982,1983,1984,1985,1986,1987,1988,1989,1990,1991,1992,1993,1994,1995,1996,1997,1998,1999,2000,2001,2002,2003,2004,2005,2006,2007,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017],[254980,234714,265874,528359,358954,121149,254653,615192,367147,439098,483117,464222,495101,289331,302205,567230,306851,151842,378109,254427,423626,205605,184613,321169,248360,145792,310705,202988,276403,427272,696685,226664,237649,242474,443645,282088,187744,260703,418429,303346],[304112,283534,316489,599540,418396,152160,295900,686703,412289,487329,530902,506464,538463,317821,330559,602754,329784,165603,401880,275848,452656,223378,199135,341926,265328,157143,329055,217285,292674,452723,734328,247176,257528,265486,487330,318837,217489,309968,529458,335071],[362711,342511,376737,680311,487682,191109,343830,766526,462981,540858,583411,552550,585622,349116,361573,640500,354433,180611,427143,299072,483675,242690,214799,364027,283455,169378,348489,232589,309904,479690,774005,269542,279068,290682,535317,360376,251947,368540,669948,370115]],"plotter":"BarChart"},"evals":["attrs.interactionModel"],"jsHooks":[]}</script><!--/html_preserve-->
+<!--html_preserve--><div id="htmlwidget-208f0b048003bf1fa5bf" style="width:336px;height:336px;" class="dygraphs html-widget"></div>
+<script type="application/json" data-for="htmlwidget-208f0b048003bf1fa5bf">{"x":{"attrs":{"axes":{"x":{"pixelsPerLabel":60,"drawAxis":true},"y":{"drawAxis":true}},"colors":["#66C2A5","#FC8D62","#8DA0CB"],"title":"Catches","labels":["Year","catches"],"legend":"auto","retainDateWindow":false,"showRangeSelector":true,"rangeSelectorHeight":40,"rangeSelectorPlotFillColor":" #A7B1C4","rangeSelectorPlotStrokeColor":"#808FAB","interactionModel":"Dygraph.Interaction.defaultModel","stackedGraph":false,"fillGraph":false,"fillAlpha":0.15,"stepPlot":false,"drawPoints":false,"pointSize":1,"drawGapEdgePoints":false,"connectSeparatedPoints":false,"strokeWidth":1,"strokeBorderColor":"white","colorValue":0.5,"colorSaturation":1,"includeZero":false,"drawAxesAtZero":false,"logscale":false,"axisTickSize":3,"axisLineColor":"black","axisLineWidth":0.3,"axisLabelColor":"black","axisLabelFontSize":14,"axisLabelWidth":60,"drawGrid":false,"gridLineWidth":0.3,"rightGap":5,"digitsAfterDecimal":2,"labelsKMB":false,"labelsKMG2":false,"labelsUTC":false,"maxNumberWidth":4,"animatedZooms":false,"mobileDisableYTouch":true},"annotations":[],"shadings":[],"events":[],"format":"numeric","data":[[1978,1979,1980,1981,1982,1983,1984,1985,1986,1987,1988,1989,1990,1991,1992,1993,1994,1995,1996,1997,1998,1999,2000,2001,2002,2003,2004,2005,2006,2007,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017],[50.551,51.096,57.265,53.918,54.994,57.507,63.286,56.099,57.092,63.369,64.823,66.473,59.954,58.129,56.617,52.144,51.259,57.621,47.21,42.465,35.06,39.814,42.026,36.675,40.105,44.555,49.029,51.133,42.691,47.258,51.19,69.814,84.878,101.403,100.47,93.108,99.7,105.9,118.634,null]],"fixedtz":false,"tzone":"","plotter":"BarChart"},"evals":["attrs.interactionModel"],"jsHooks":[]}</script><!--/html_preserve--><!--html_preserve--><div id="htmlwidget-5e09bcb2a4461aa608ba" style="width:336px;height:336px;" class="dygraphs html-widget"></div>
+<script type="application/json" data-for="htmlwidget-5e09bcb2a4461aa608ba">{"x":{"attrs":{"axes":{"x":{"pixelsPerLabel":60},"y":[]},"title":"Recruitment(age 0)","labels":["Year","low_recruitment","recruitment","high_recruitment"],"legend":"auto","retainDateWindow":false,"showRangeSelector":true,"rangeSelectorHeight":40,"rangeSelectorPlotFillColor":" #A7B1C4","rangeSelectorPlotStrokeColor":"#808FAB","interactionModel":"Dygraph.Interaction.defaultModel"},"annotations":[],"shadings":[],"events":[],"format":"numeric","data":[[1978,1979,1980,1981,1982,1983,1984,1985,1986,1987,1988,1989,1990,1991,1992,1993,1994,1995,1996,1997,1998,1999,2000,2001,2002,2003,2004,2005,2006,2007,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017],[254980,234714,265874,528359,358954,121149,254653,615192,367147,439098,483117,464222,495101,289331,302205,567230,306851,151842,378109,254427,423626,205605,184613,321169,248360,145792,310705,202988,276403,427272,696685,226664,237649,242474,443645,282088,187744,260703,418429,303346],[304112,283534,316489,599540,418396,152160,295900,686703,412289,487329,530902,506464,538463,317821,330559,602754,329784,165603,401880,275848,452656,223378,199135,341926,265328,157143,329055,217285,292674,452723,734328,247176,257528,265486,487330,318837,217489,309968,529458,335071],[362711,342511,376737,680311,487682,191109,343830,766526,462981,540858,583411,552550,585622,349116,361573,640500,354433,180611,427143,299072,483675,242690,214799,364027,283455,169378,348489,232589,309904,479690,774005,269542,279068,290682,535317,360376,251947,368540,669948,370115]],"plotter":"BarChart"},"evals":["attrs.interactionModel"],"jsHooks":[]}</script><!--/html_preserve-->
 </div>
 <div class="col2">
-<!--html_preserve--><div id="htmlwidget-b09dcd1b4aeae171fa0a" style="width:336px;height:336px;" class="dygraphs html-widget"></div>
-<script type="application/json" data-for="htmlwidget-b09dcd1b4aeae171fa0a">{"x":{"attrs":{"axes":{"x":{"pixelsPerLabel":60,"drawAxis":true},"y":{"drawAxis":true}},"series":{"F":{"axis":"y"}},"colors":["#66C2A5","#FC8D62","#8DA0CB"],"title":"F","labels":["Year","FLim","Fpa","FMSY","F"],"legend":"auto","retainDateWindow":false,"customBars":true,"showRangeSelector":true,"rangeSelectorHeight":40,"rangeSelectorPlotFillColor":" #A7B1C4","rangeSelectorPlotStrokeColor":"#808FAB","interactionModel":"Dygraph.Interaction.defaultModel","stackedGraph":false,"fillGraph":false,"fillAlpha":0.15,"stepPlot":false,"drawPoints":false,"pointSize":1,"drawGapEdgePoints":false,"connectSeparatedPoints":false,"strokeWidth":1,"strokeBorderColor":"white","colorValue":0.5,"colorSaturation":1,"includeZero":false,"drawAxesAtZero":false,"logscale":false,"axisTickSize":3,"axisLineColor":"black","axisLineWidth":0.3,"axisLabelColor":"black","axisLabelFontSize":14,"axisLabelWidth":60,"drawGrid":false,"gridLineWidth":0.3,"rightGap":5,"digitsAfterDecimal":2,"labelsKMB":false,"labelsKMG2":false,"labelsUTC":false,"maxNumberWidth":4,"animatedZooms":false,"mobileDisableYTouch":true},"annotations":[],"shadings":[],"events":[{"pos":[0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87],"labelLoc":"left","color":"red","strokePattern":[7,3],"axis":"y"}],"format":"numeric","data":[[1978,1979,1980,1981,1982,1983,1984,1985,1986,1987,1988,1989,1990,1991,1992,1993,1994,1995,1996,1997,1998,1999,2000,2001,2002,2003,2004,2005,2006,2007,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017],[[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87]],[[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62]],[[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28]],[[0.475,0.52,0.565],[0.499,0.55,0.601],[0.587,0.65,0.713],[0.588,0.67,0.752],[0.631,0.69,0.749],[0.589,0.63,0.671],[0.614,0.67,0.726],[0.696,0.8,0.904],[0.843,0.91,0.977],[0.943,1,1.057],[0.953,1.02,1.087],[1.022,1.09,1.158],[0.92,1,1.08],[0.891,0.94,0.989],[0.956,1.01,1.064],[1.009,1.08,1.151],[1.054,1.1,1.146],[1.086,1.13,1.174],[0.957,1.01,1.063],[1.017,1.07,1.123],[0.945,1.01,1.075],[0.943,0.99,1.037],[0.876,0.92,0.964],[0.73,0.78,0.83],[0.786,0.83,0.874],[0.782,0.82,0.858],[0.779,0.83,0.881],[0.923,0.97,1.017],[0.823,0.87,0.917],[0.712,0.76,0.808],[0.584,0.63,0.676],[0.475,0.51,0.545],[0.365,0.39,0.415],[0.288,0.31,0.332],[0.238,0.26,0.282],[0.233,0.26,0.287],[0.228,0.26,0.292],[0.212,0.25,0.288],[0.216,0.27,0.324],[null,null,null]]],"fixedtz":false,"tzone":""},"evals":["attrs.interactionModel"],"jsHooks":[]}</script><!--/html_preserve--><!--html_preserve--><div id="htmlwidget-134e75cc4df07302b1fa" style="width:336px;height:336px;" class="dygraphs html-widget"></div>
-<script type="application/json" data-for="htmlwidget-134e75cc4df07302b1fa">{"x":{"attrs":{"axes":{"x":{"pixelsPerLabel":60,"drawAxis":true},"y":{"drawAxis":true}},"series":{"SSB":{"axis":"y"}},"colors":["#66C2A5","#FC8D62","#8DA0CB"],"title":"SSB","labels":["Year","Blim","Bpa","MSYBtrigger","SSB"],"legend":"auto","retainDateWindow":false,"customBars":true,"showRangeSelector":true,"rangeSelectorHeight":40,"rangeSelectorPlotFillColor":" #A7B1C4","rangeSelectorPlotStrokeColor":"#808FAB","interactionModel":"Dygraph.Interaction.defaultModel","stackedGraph":false,"fillGraph":false,"fillAlpha":0.15,"stepPlot":false,"drawPoints":false,"pointSize":1,"drawGapEdgePoints":false,"connectSeparatedPoints":false,"strokeWidth":1,"strokeBorderColor":"white","colorValue":0.5,"colorSaturation":1,"includeZero":false,"drawAxesAtZero":false,"logscale":false,"axisTickSize":3,"axisLineColor":"black","axisLineWidth":0.3,"axisLabelColor":"black","axisLabelFontSize":14,"axisLabelWidth":60,"drawGrid":false,"gridLineWidth":0.3,"rightGap":5,"digitsAfterDecimal":2,"labelsKMB":false,"labelsKMG2":false,"labelsUTC":false,"maxNumberWidth":4,"animatedZooms":false,"mobileDisableYTouch":true},"annotations":[],"shadings":[],"events":[{"pos":[0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87],"labelLoc":"left","color":"red","strokePattern":[7,3],"axis":"y"}],"format":"numeric","data":[[1978,1979,1980,1981,1982,1983,1984,1985,1986,1987,1988,1989,1990,1991,1992,1993,1994,1995,1996,1997,1998,1999,2000,2001,2002,2003,2004,2005,2006,2007,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017],[[32000,32000,32000],[32000,32000,32000],[32000,32000,32000],[32000,32000,32000],[32000,32000,32000],[32000,32000,32000],[32000,32000,32000],[32000,32000,32000],[32000,32000,32000],[32000,32000,32000],[32000,32000,32000],[32000,32000,32000],[32000,32000,32000],[32000,32000,32000],[32000,32000,32000],[32000,32000,32000],[32000,32000,32000],[32000,32000,32000],[32000,32000,32000],[32000,32000,32000],[32000,32000,32000],[32000,32000,32000],[32000,32000,32000],[32000,32000,32000],[32000,32000,32000],[32000,32000,32000],[32000,32000,32000],[32000,32000,32000],[32000,32000,32000],[32000,32000,32000],[32000,32000,32000],[32000,32000,32000],[32000,32000,32000],[32000,32000,32000],[32000,32000,32000],[32000,32000,32000],[32000,32000,32000],[32000,32000,32000],[32000,32000,32000],[32000,32000,32000]],[[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000]],[[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000]],[[63811,76696,89581],[87349,97911,108473],[90440,100483,110526],[77086,86475,95863],[61574,70398,79222],[61116,69158,77200],[76028,83620,91213],[73628,80312,86995],[54953,61012,67071],[42178,47228,52278],[45273,49688,54103],[43936,47762,51587],[41185,44295,47404],[41551,44539,47527],[42211,45268,48325],[40525,43205,45886],[31109,33366,35622],[30106,32134,34162],[35229,37306,39383],[29729,31651,33574],[24381,25997,27613],[27404,29147,30891],[30098,31971,33845],[35428,37514,39600],[35477,37769,40061],[35162,37543,39925],[39631,42139,44647],[37587,40113,42638],[30176,32475,34774],[35583,38281,40979],[41253,44733,48212],[61685,67034,72383],[113783,123089,132395],[185528,201049,216570],[206375,227026,247677],[203272,228246,253220],[210157,241117,272077],[230885,272795,314705],[234898,290234,345570],[197000,265666,334331]]],"fixedtz":false,"tzone":""},"evals":["attrs.interactionModel"],"jsHooks":[]}</script><!--/html_preserve-->
+<!--html_preserve--><div id="htmlwidget-b1e8ca0feb9f001577bd" style="width:336px;height:336px;" class="dygraphs html-widget"></div>
+<script type="application/json" data-for="htmlwidget-b1e8ca0feb9f001577bd">{"x":{"attrs":{"axes":{"x":{"pixelsPerLabel":60,"drawAxis":true},"y":{"drawAxis":true}},"series":{"F":{"axis":"y"}},"colors":["#66C2A5","#FC8D62","#8DA0CB"],"title":"F","labels":["Year","FLim","Fpa","FMSY","F"],"legend":"auto","retainDateWindow":false,"customBars":true,"showRangeSelector":true,"rangeSelectorHeight":40,"rangeSelectorPlotFillColor":" #A7B1C4","rangeSelectorPlotStrokeColor":"#808FAB","interactionModel":"Dygraph.Interaction.defaultModel","stackedGraph":false,"fillGraph":false,"fillAlpha":0.15,"stepPlot":false,"drawPoints":false,"pointSize":1,"drawGapEdgePoints":false,"connectSeparatedPoints":false,"strokeWidth":1,"strokeBorderColor":"white","colorValue":0.5,"colorSaturation":1,"includeZero":false,"drawAxesAtZero":false,"logscale":false,"axisTickSize":3,"axisLineColor":"black","axisLineWidth":0.3,"axisLabelColor":"black","axisLabelFontSize":14,"axisLabelWidth":60,"drawGrid":false,"gridLineWidth":0.3,"rightGap":5,"digitsAfterDecimal":2,"labelsKMB":false,"labelsKMG2":false,"labelsUTC":false,"maxNumberWidth":4,"animatedZooms":false,"mobileDisableYTouch":true},"annotations":[],"shadings":[],"events":[{"pos":[0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87],"labelLoc":"left","color":"red","strokePattern":[7,3],"axis":"y"}],"format":"numeric","data":[[1978,1979,1980,1981,1982,1983,1984,1985,1986,1987,1988,1989,1990,1991,1992,1993,1994,1995,1996,1997,1998,1999,2000,2001,2002,2003,2004,2005,2006,2007,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017],[[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87]],[[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62]],[[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28]],[[0.475,0.52,0.565],[0.499,0.55,0.601],[0.587,0.65,0.713],[0.588,0.67,0.752],[0.631,0.69,0.749],[0.589,0.63,0.671],[0.614,0.67,0.726],[0.696,0.8,0.904],[0.843,0.91,0.977],[0.943,1,1.057],[0.953,1.02,1.087],[1.022,1.09,1.158],[0.92,1,1.08],[0.891,0.94,0.989],[0.956,1.01,1.064],[1.009,1.08,1.151],[1.054,1.1,1.146],[1.086,1.13,1.174],[0.957,1.01,1.063],[1.017,1.07,1.123],[0.945,1.01,1.075],[0.943,0.99,1.037],[0.876,0.92,0.964],[0.73,0.78,0.83],[0.786,0.83,0.874],[0.782,0.82,0.858],[0.779,0.83,0.881],[0.923,0.97,1.017],[0.823,0.87,0.917],[0.712,0.76,0.808],[0.584,0.63,0.676],[0.475,0.51,0.545],[0.365,0.39,0.415],[0.288,0.31,0.332],[0.238,0.26,0.282],[0.233,0.26,0.287],[0.228,0.26,0.292],[0.212,0.25,0.288],[0.216,0.27,0.324],[null,null,null]]],"fixedtz":false,"tzone":""},"evals":["attrs.interactionModel"],"jsHooks":[]}</script><!--/html_preserve--><!--html_preserve--><div id="htmlwidget-3b8beff3f0c4e249eae9" style="width:336px;height:336px;" class="dygraphs html-widget"></div>
+<script type="application/json" data-for="htmlwidget-3b8beff3f0c4e249eae9">{"x":{"attrs":{"axes":{"x":{"pixelsPerLabel":60,"drawAxis":true},"y":{"drawAxis":true}},"series":{"SSB":{"axis":"y"}},"colors":["#66C2A5","#FC8D62","#8DA0CB"],"title":"SSB","labels":["Year","Blim","Bpa","MSYBtrigger","SSB"],"legend":"auto","retainDateWindow":false,"customBars":true,"showRangeSelector":true,"rangeSelectorHeight":40,"rangeSelectorPlotFillColor":" #A7B1C4","rangeSelectorPlotStrokeColor":"#808FAB","interactionModel":"Dygraph.Interaction.defaultModel","stackedGraph":false,"fillGraph":false,"fillAlpha":0.15,"stepPlot":false,"drawPoints":false,"pointSize":1,"drawGapEdgePoints":false,"connectSeparatedPoints":false,"strokeWidth":1,"strokeBorderColor":"white","colorValue":0.5,"colorSaturation":1,"includeZero":false,"drawAxesAtZero":false,"logscale":false,"axisTickSize":3,"axisLineColor":"black","axisLineWidth":0.3,"axisLabelColor":"black","axisLabelFontSize":14,"axisLabelWidth":60,"drawGrid":false,"gridLineWidth":0.3,"rightGap":5,"digitsAfterDecimal":2,"labelsKMB":false,"labelsKMG2":false,"labelsUTC":false,"maxNumberWidth":4,"animatedZooms":false,"mobileDisableYTouch":true},"annotations":[],"shadings":[],"events":[{"pos":[0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87],"labelLoc":"left","color":"red","strokePattern":[7,3],"axis":"y"}],"format":"numeric","data":[[1978,1979,1980,1981,1982,1983,1984,1985,1986,1987,1988,1989,1990,1991,1992,1993,1994,1995,1996,1997,1998,1999,2000,2001,2002,2003,2004,2005,2006,2007,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017],[[32000,32000,32000],[32000,32000,32000],[32000,32000,32000],[32000,32000,32000],[32000,32000,32000],[32000,32000,32000],[32000,32000,32000],[32000,32000,32000],[32000,32000,32000],[32000,32000,32000],[32000,32000,32000],[32000,32000,32000],[32000,32000,32000],[32000,32000,32000],[32000,32000,32000],[32000,32000,32000],[32000,32000,32000],[32000,32000,32000],[32000,32000,32000],[32000,32000,32000],[32000,32000,32000],[32000,32000,32000],[32000,32000,32000],[32000,32000,32000],[32000,32000,32000],[32000,32000,32000],[32000,32000,32000],[32000,32000,32000],[32000,32000,32000],[32000,32000,32000],[32000,32000,32000],[32000,32000,32000],[32000,32000,32000],[32000,32000,32000],[32000,32000,32000],[32000,32000,32000],[32000,32000,32000],[32000,32000,32000],[32000,32000,32000],[32000,32000,32000]],[[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000]],[[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000]],[[63811,76696,89581],[87349,97911,108473],[90440,100483,110526],[77086,86475,95863],[61574,70398,79222],[61116,69158,77200],[76028,83620,91213],[73628,80312,86995],[54953,61012,67071],[42178,47228,52278],[45273,49688,54103],[43936,47762,51587],[41185,44295,47404],[41551,44539,47527],[42211,45268,48325],[40525,43205,45886],[31109,33366,35622],[30106,32134,34162],[35229,37306,39383],[29729,31651,33574],[24381,25997,27613],[27404,29147,30891],[30098,31971,33845],[35428,37514,39600],[35477,37769,40061],[35162,37543,39925],[39631,42139,44647],[37587,40113,42638],[30176,32475,34774],[35583,38281,40979],[41253,44733,48212],[61685,67034,72383],[113783,123089,132395],[185528,201049,216570],[206375,227026,247677],[203272,228246,253220],[210157,241117,272077],[230885,272795,314705],[234898,290234,345570],[197000,265666,334331]]],"fixedtz":false,"tzone":""},"evals":["attrs.interactionModel"],"jsHooks":[]}</script><!--/html_preserve-->
 </div>
 
 
-**Figure 1**  Hake in subareas 4, 6, and 7, and in divisions 3.a, 8.a–b, and 8.d, Northern stock. Summary of the stock assessment.Recruitment, F, and SSB plots show 95% confidence intervals (shaded area). Assumed recruitment values are unshaded.
+**Figure 1** . Summary of the stock assessment of hake in subareas 4, 6, and 7, and in divisions 3.a, 8.a–b, and 8.d, Northern stock.Recruitment, F, and SSB plots show 95% confidence intervals (shaded area). Assumed recruitment values are unshaded.
 <br>
 
 # Summary of the assessment
 
-Hake in subareas 4, 6, and 7, and in divisions 3.a, 8.a–b, and 8.d, Northern stock. Assessment summary. Weights are in tonnes. Highs and lows are 95% confidence intervals
+ Assessment summary for hake in subareas 4, 6, and 7, and in divisions 3.a, 8.a–b, and 8.d, Northern stock. Weights are in tonnes. Highs and lows are 95% confidence intervals
 <br>
 <button class="btn btn-primary" data-toggle="collapse" data-target="#BlockName"> Show/Download Table </button>  
 <div id="BlockName" class="collapse"> 
@@ -1199,7 +1200,7 @@ Hake in subareas 4, 6, and 7, and in divisions 3.a, 8.a–b, and 8.d, Northern s
 # Catch scenarios
 
 <br>
-**Table 2** Hake in subareas 4, 6, and 7, and in divisions 3.a, 8.a–b, and 8.d, Northern stock. The basis for the catch scenarios. All weights are in tonnes.
+**Table 2**  The basis for the catch scenarios of hake in subareas 4, 6, and 7, and in divisions 3.a, 8.a–b, and 8.d, Northern stock. All weights are in tonnes.
 <br>
 <table class="table" style="font-size: 10px; margin-left: auto; margin-right: auto;">
  <thead>
@@ -1258,7 +1259,7 @@ Hake in subareas 4, 6, and 7, and in divisions 3.a, 8.a–b, and 8.d, Northern s
 
 ***
 
-**Table 3** Hake in subareas 4, 6, and 7, and in divisions 3.a, 8.a–b, and 8.d, Northern stock. Annual catch options. All weights are in tonnes.
+**Table 3**  Annual catch scenarios for hake in subareas 4, 6, and 7, and in divisions 3.a, 8.a–b, and 8.d, Northern stock. All weights are in tonnes.
 <br>
 
 Basis| F |Catch 2018|SSB2019
@@ -1278,16 +1279,13 @@ EU Recovery Plan^^|0.250|104736|304987
 [Download CSV](data:text/csv;base64,QmFzaXMsVG90YWwgY2F0Y2ggKDIwMTgpLFdhbnRlZCBjYXRjaCAoMjAxOCksVW53YW50ZWQgY2F0Y2ggKDIwMTgpLEZ0b3RhbCAoMjAxOCksRndhbnRlZCAoMjAxOCksRnVud2FudGVkICgyMDE4KSxTU0IgKDIwMTkpLCUgU1NCIGNoYW5nZSAsJSBBZHZpY2UgY2hhbmdlIApJQ0VTIGFkdmljZSBiYXNpcyxOQSxOQSxOQSxOQSxOQSxOQSxOQSxOQSxOQQpNU1kgYXBwcm9hY2g6IEZNU1ksMTE1MzM1LDEwNDA2MCwxMTI3NSwwLjI4LDAuMjMzLDAuMDQ3LDI5NTE5MywxMCUsLTclCk90aGVyIG9wdGlvbnMsTkEsTkEsTkEsTkEsTkEsTkEsTkEsTkEsTkEKRiA9IDAsMCwwLDAsMCwwLDAsNDAxOTI5LDUwJSwtMTAwJQpGcGEsMjExODI3LDE5MDE3MiwyMTY1NSwwLjYyLDAuNTE1LDAuMTA1LDIwNjEyMCwtMjMlLDcxJQpGbGltLDI2MTcxNiwyMzQxNTAsMjc1NjYsMC44NywwLjcyMywwLjE0NywxNjAwNDcsLTQwJSwxMTElClNTQiAoMjAxOSkgPSBCbGltLDM4MzQ2OSwzMzc3MjIsNDU3NDYsMi4yOTMsMS45MDQsMC4zODksNDQ5NzUsLTgzJSwyMTAlClNTQiAoMjAxOSkgPSBCcGEsMzk1ODI1LDM0NzM5Miw0ODQzMywyLjczMSwyLjI2OCwwLjQ2MywzMjAwMSwtODglLDIyMCUKU1NCICgyMDE5KSA9IE1TWaBCdHJpZ2dlciwzOTU4MjUsMzQ3MzkyLDQ4NDMzLDIuNzMxLDIuMjY4LDAuNDYzLDMyMDAxLC04OCUsMjIwJQpGID0gRjIwMTcsMTA4MTE5LDk3NTgwLDEwNTQwLDAuMjU5LDAuMjE1LDAuMDQ0LDMwMTg2MCwxMyUsLTEzJQpFVSBSZWNvdmVyeSBQbGFuXl4sMTA0NzM2LDk0NTM5LDEwMTk2LDAuMjUsMC4yMDgsMC4wNDIsMzA0OTg3LDE0JSwtMTUl)
 
 ## Catch scenarios Plots. Version 1
-<!--html_preserve--><div id="htmlwidget-ccea3c9804589f804b4d" style="width:672px;height:480px;" class="plotly html-widget"></div>
-<script type="application/json" data-for="htmlwidget-ccea3c9804589f804b4d">{"x":{"visdat":{"2f381c917af8":["function () ","plotlyVisDat"]},"cur_data":"2f381c917af8","attrs":{"2f381c917af8":{"x":{},"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"y":{},"name":"SSB 2019","type":"bar","opacity":0.8,"width":0.2,"color":{},"colors":["darkblue","Yellow"],"text":["F = 0","EU Recovery Plan^^","F = F2017","MSY approach: FMSY","Fpa","Flim","SSB (2019) = Blim","SSB (2019) = Bpa","SSB (2019) = MSY Btrigger"],"hoverinfo":"text + x+ y","inherit":true},"2f381c917af8.1":{"x":{},"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"y":{},"name":"Catch 2018","mode":"lines+markers","text":["F = 0","EU Recovery Plan^^","F = F2017","MSY approach: FMSY","Fpa","Flim","SSB (2019) = Blim","SSB (2019) = Bpa","SSB (2019) = MSY Btrigger"],"hoverinfo":"text + x+ y","inherit":true}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"hovermode":"TRUE","showlegend":true,"shapes":[{"type":"line","fillcolor":"red","line":{"color":"red","width":2,"dash":"dot"},"opacity":0.5,"x0":0.87,"x1":0.87,"xref":"Flim","y0":0,"y1":450000,"yref":"y","name":"Flim"},{"type":"line","fillcolor":"green","line":{"color":"green","width":2,"dash":"dot"},"opacity":0.2,"x0":0.28,"x1":0.28,"xref":"Fmsy","y0":0,"y1":450000,"yref":"y","name":"Fmsy"},{"type":"line","fillcolor":"orange","line":{"color":"orange","width":2,"dash":"dot"},"opacity":1,"x0":0.62,"x1":0.62,"xref":"Fpa","y0":0,"y1":450000,"yref":"y","name":"Fpa"},{"type":"line","fillcolor":"blue","line":{"color":"blue","width":2,"dash":"dash"},"opacity":0.3,"x0":-0.3,"x1":3,"xref":"x","y0":32000,"y1":32000,"yref":"Blim","name":"Blim"},{"type":"line","fillcolor":"lightblue","line":{"color":"lightblue","width":2,"dash":"dash"},"opacity":0.3,"x0":-0.3,"x1":3,"xref":"x","y0":45000,"y1":45000,"yref":"Bpa = MSY Btrigger","text":"Bpa = MSY Btrigger","textposition":"bottom right"},{"type":"rect","fillcolor":"green","opacity":0.2,"line":{"color":"green","opacity":0.2},"x0":-0.3,"x1":0.62,"xref":"x","y0":0,"y1":450000,"yref":"y"},{"type":"rect","fillcolor":"orange","opacity":0.2,"line":{"color":"orange","opacity":0.2},"x0":0.62,"x1":0.87,"y0":0,"y1":450000},{"type":"rect","fillcolor":"red","opacity":0.2,"line":{"color":"red","opacity":0.2},"x0":0.87,"x1":3,"y0":0,"y1":450000}],"yaxis":{"domain":[0,1],"title":"tonnes","showgrid":false},"xaxis":{"domain":[0,1],"title":"F","showgrid":false,"tickmode":"array","tickvals":[0.28,0.62,0.87],"ticktext":["Fmsy","Fpa","Flim"]},"annotations":[{"x":3,"y":32000,"xref":"1","yref":"y","text":"Blim","showarrow":true,"ax":70,"ay":0},{"x":3,"y":45000,"xref":"1","yref":"y","text":"Bpa = MSY Btrigger","showarrow":true,"ax":70,"ay":0}],"legend":{"yanchor":"top","y":0.5}},"source":"A","config":{"modeBarButtonsToAdd":[{"name":"Collaborate","icon":{"width":1000,"ascent":500,"descent":-50,"path":"M487 375c7-10 9-23 5-36l-79-259c-3-12-11-23-22-31-11-8-22-12-35-12l-263 0c-15 0-29 5-43 15-13 10-23 23-28 37-5 13-5 25-1 37 0 0 0 3 1 7 1 5 1 8 1 11 0 2 0 4-1 6 0 3-1 5-1 6 1 2 2 4 3 6 1 2 2 4 4 6 2 3 4 5 5 7 5 7 9 16 13 26 4 10 7 19 9 26 0 2 0 5 0 9-1 4-1 6 0 8 0 2 2 5 4 8 3 3 5 5 5 7 4 6 8 15 12 26 4 11 7 19 7 26 1 1 0 4 0 9-1 4-1 7 0 8 1 2 3 5 6 8 4 4 6 6 6 7 4 5 8 13 13 24 4 11 7 20 7 28 1 1 0 4 0 7-1 3-1 6-1 7 0 2 1 4 3 6 1 1 3 4 5 6 2 3 3 5 5 6 1 2 3 5 4 9 2 3 3 7 5 10 1 3 2 6 4 10 2 4 4 7 6 9 2 3 4 5 7 7 3 2 7 3 11 3 3 0 8 0 13-1l0-1c7 2 12 2 14 2l218 0c14 0 25-5 32-16 8-10 10-23 6-37l-79-259c-7-22-13-37-20-43-7-7-19-10-37-10l-248 0c-5 0-9-2-11-5-2-3-2-7 0-12 4-13 18-20 41-20l264 0c5 0 10 2 16 5 5 3 8 6 10 11l85 282c2 5 2 10 2 17 7-3 13-7 17-13z m-304 0c-1-3-1-5 0-7 1-1 3-2 6-2l174 0c2 0 4 1 7 2 2 2 4 4 5 7l6 18c0 3 0 5-1 7-1 1-3 2-6 2l-173 0c-3 0-5-1-8-2-2-2-4-4-4-7z m-24-73c-1-3-1-5 0-7 2-2 3-2 6-2l174 0c2 0 5 0 7 2 3 2 4 4 5 7l6 18c1 2 0 5-1 6-1 2-3 3-5 3l-174 0c-3 0-5-1-7-3-3-1-4-4-5-6z"},"click":"function(gd) { \n        // is this being viewed in RStudio?\n        if (location.search == '?viewer_pane=1') {\n          alert('To learn about plotly for collaboration, visit:\\n https://cpsievert.github.io/plotly_book/plot-ly-for-collaboration.html');\n        } else {\n          window.open('https://cpsievert.github.io/plotly_book/plot-ly-for-collaboration.html', '_blank');\n        }\n      }"}],"cloud":false},"data":[{"x":[0,0.25,0.259,0.28,0.62,0.87,2.293,2.731,2.731],"y":[401929,304987,301860,295193,206120,160047,44975,32001,32001],"name":"SSB 2019","type":"bar","opacity":0.8,"width":[0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2],"text":["F = 0","EU Recovery Plan^^","F = F2017","MSY approach: FMSY","Fpa","Flim","SSB (2019) = Blim","SSB (2019) = Bpa","SSB (2019) = MSY Btrigger"],"hoverinfo":["text + x+ y","text + x+ y","text + x+ y","text + x+ y","text + x+ y","text + x+ y","text + x+ y","text + x+ y","text + x+ y"],"marker":{"colorbar":{"title":"SSB","ticklen":2},"cmin":32001,"cmax":401929,"colorscale":[["0","rgba(0,0,139,1)"],["0","rgba(0,0,139,1)"],["0","rgba(0,0,139,1)"],["0","rgba(0,0,139,1)"],["0.0116905632086965","rgba(18,3,139,1)"],["0.0233811264173929","rgba(29,6,138,1)"],["0.0350716896260894","rgba(38,9,138,1)"],["0.138760335344535","rgba(81,37,133,1)"],["0.242448981062982","rgba(110,62,129,1)"],["0.346137626781428","rgba(134,87,123,1)"],["0.387652912638856","rgba(143,97,120,1)"],["0.429168198496284","rgba(152,107,118,1)"],["0.470683484353712","rgba(160,117,115,1)"],["0.550945048766246","rgba(176,137,108,1)"],["0.631206613178781","rgba(191,157,101,1)"],["0.711468177591315","rgba(205,178,91,1)"],["0.717475652919848","rgba(206,180,91,1)"],["0.72348312824838","rgba(207,181,90,1)"],["0.729490603576912","rgba(209,183,89,1)"],["0.732308268996489","rgba(209,184,89,1)"],["0.735125934416066","rgba(210,184,88,1)"],["0.737943599835644","rgba(210,185,88,1)"],["0.825295733223762","rgba(225,208,74,1)"],["0.912647866611881","rgba(240,231,53,1)"],["1","rgba(255,255,0,1)"]],"showscale":false,"color":[401929,304987,301860,295193,206120,160047,44975,32001,32001],"line":{"colorbar":{"title":"","ticklen":2},"cmin":32001,"cmax":401929,"colorscale":[["0","rgba(0,0,139,1)"],["0","rgba(0,0,139,1)"],["0","rgba(0,0,139,1)"],["0","rgba(0,0,139,1)"],["0.0116905632086965","rgba(18,3,139,1)"],["0.0233811264173929","rgba(29,6,138,1)"],["0.0350716896260894","rgba(38,9,138,1)"],["0.138760335344535","rgba(81,37,133,1)"],["0.242448981062982","rgba(110,62,129,1)"],["0.346137626781428","rgba(134,87,123,1)"],["0.387652912638856","rgba(143,97,120,1)"],["0.429168198496284","rgba(152,107,118,1)"],["0.470683484353712","rgba(160,117,115,1)"],["0.550945048766246","rgba(176,137,108,1)"],["0.631206613178781","rgba(191,157,101,1)"],["0.711468177591315","rgba(205,178,91,1)"],["0.717475652919848","rgba(206,180,91,1)"],["0.72348312824838","rgba(207,181,90,1)"],["0.729490603576912","rgba(209,183,89,1)"],["0.732308268996489","rgba(209,184,89,1)"],["0.735125934416066","rgba(210,184,88,1)"],["0.737943599835644","rgba(210,185,88,1)"],["0.825295733223762","rgba(225,208,74,1)"],["0.912647866611881","rgba(240,231,53,1)"],["1","rgba(255,255,0,1)"]],"showscale":false,"color":[401929,304987,301860,295193,206120,160047,44975,32001,32001]}},"xaxis":"x","yaxis":"y","frame":null},{"x":[0,0.25,0.259,0.28,0.62,0.87,2.293,2.731,2.731],"y":[0,104736,108119,115335,211827,261716,383469,395825,395825],"name":"Catch 2018","mode":"lines+markers","text":["F = 0","EU Recovery Plan^^","F = F2017","MSY approach: FMSY","Fpa","Flim","SSB (2019) = Blim","SSB (2019) = Bpa","SSB (2019) = MSY Btrigger"],"hoverinfo":["text + x+ y","text + x+ y","text + x+ y","text + x+ y","text + x+ y","text + x+ y","text + x+ y","text + x+ y","text + x+ y"],"type":"scatter","marker":{"color":"rgba(255,127,14,1)","line":{"color":"rgba(255,127,14,1)"}},"error_y":{"color":"rgba(255,127,14,1)"},"error_x":{"color":"rgba(255,127,14,1)"},"line":{"color":"rgba(255,127,14,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[0,2.731],"y":[0,401929],"type":"scatter","mode":"markers","opacity":0,"hoverinfo":"none","showlegend":false,"marker":{"colorbar":{"title":"SSB","ticklen":2,"len":0.5,"lenmode":"fraction","y":1,"yanchor":"top"},"cmin":32001,"cmax":401929,"colorscale":[["0","rgba(0,0,139,1)"],["0","rgba(0,0,139,1)"],["0","rgba(0,0,139,1)"],["0","rgba(0,0,139,1)"],["0.0116905632086965","rgba(18,3,139,1)"],["0.0233811264173929","rgba(29,6,138,1)"],["0.0350716896260894","rgba(38,9,138,1)"],["0.138760335344535","rgba(81,37,133,1)"],["0.242448981062982","rgba(110,62,129,1)"],["0.346137626781428","rgba(134,87,123,1)"],["0.387652912638856","rgba(143,97,120,1)"],["0.429168198496284","rgba(152,107,118,1)"],["0.470683484353712","rgba(160,117,115,1)"],["0.550945048766246","rgba(176,137,108,1)"],["0.631206613178781","rgba(191,157,101,1)"],["0.711468177591315","rgba(205,178,91,1)"],["0.717475652919848","rgba(206,180,91,1)"],["0.72348312824838","rgba(207,181,90,1)"],["0.729490603576912","rgba(209,183,89,1)"],["0.732308268996489","rgba(209,184,89,1)"],["0.735125934416066","rgba(210,184,88,1)"],["0.737943599835644","rgba(210,185,88,1)"],["0.825295733223762","rgba(225,208,74,1)"],["0.912647866611881","rgba(240,231,53,1)"],["1","rgba(255,255,0,1)"]],"showscale":true,"color":[32001,401929],"line":{"color":"rgba(44,160,44,1)"}},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1}},"base_url":"https://plot.ly"},"evals":["config.modeBarButtonsToAdd.0.click"],"jsHooks":[]}</script><!--/html_preserve-->
+<!--html_preserve--><div id="htmlwidget-96c55a01a260b28bd15b" style="width:672px;height:480px;" class="plotly html-widget"></div>
+<script type="application/json" data-for="htmlwidget-96c55a01a260b28bd15b">{"x":{"visdat":{"254825234620":["function () ","plotlyVisDat"]},"cur_data":"254825234620","attrs":{"254825234620":{"x":{},"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"y":{},"name":"SSB 2019","type":"bar","opacity":0.8,"width":0.2,"color":{},"colors":["darkblue","Yellow"],"text":["F = 0","EU Recovery Plan^^","F = F2017","MSY approach: FMSY","Fpa","Flim","SSB (2019) = Blim","SSB (2019) = Bpa","SSB (2019) = MSY Btrigger"],"hoverinfo":"text + x+ y","inherit":true},"254825234620.1":{"x":{},"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"y":{},"name":"Catch 2018","mode":"lines+markers","text":["F = 0","EU Recovery Plan^^","F = F2017","MSY approach: FMSY","Fpa","Flim","SSB (2019) = Blim","SSB (2019) = Bpa","SSB (2019) = MSY Btrigger"],"hoverinfo":"text + x+ y","inherit":true}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"hovermode":"TRUE","showlegend":true,"shapes":[{"type":"line","fillcolor":"red","line":{"color":"red","width":2,"dash":"dot"},"opacity":0.5,"x0":0.87,"x1":0.87,"xref":"Flim","y0":0,"y1":450000,"yref":"y","name":"Flim"},{"type":"line","fillcolor":"green","line":{"color":"green","width":2,"dash":"dot"},"opacity":0.2,"x0":0.28,"x1":0.28,"xref":"Fmsy","y0":0,"y1":450000,"yref":"y","name":"Fmsy"},{"type":"line","fillcolor":"orange","line":{"color":"orange","width":2,"dash":"dot"},"opacity":1,"x0":0.62,"x1":0.62,"xref":"Fpa","y0":0,"y1":450000,"yref":"y","name":"Fpa"},{"type":"line","fillcolor":"blue","line":{"color":"blue","width":2,"dash":"dash"},"opacity":0.3,"x0":-0.3,"x1":3,"xref":"x","y0":32000,"y1":32000,"yref":"Blim","name":"Blim"},{"type":"line","fillcolor":"lightblue","line":{"color":"lightblue","width":2,"dash":"dash"},"opacity":0.3,"x0":-0.3,"x1":3,"xref":"x","y0":45000,"y1":45000,"yref":"Bpa = MSY Btrigger","text":"Bpa = MSY Btrigger","textposition":"bottom right"},{"type":"rect","fillcolor":"green","opacity":0.2,"line":{"color":"green","opacity":0.2},"x0":-0.3,"x1":0.62,"xref":"x","y0":0,"y1":450000,"yref":"y"},{"type":"rect","fillcolor":"orange","opacity":0.2,"line":{"color":"orange","opacity":0.2},"x0":0.62,"x1":0.87,"y0":0,"y1":450000},{"type":"rect","fillcolor":"red","opacity":0.2,"line":{"color":"red","opacity":0.2},"x0":0.87,"x1":3,"y0":0,"y1":450000}],"yaxis":{"domain":[0,1],"title":"tonnes","showgrid":false},"xaxis":{"domain":[0,1],"title":"F","showgrid":false,"tickmode":"array","tickvals":[0.28,0.62,0.87],"ticktext":["Fmsy","Fpa","Flim"],"showarrow":true,"tickangle":45},"annotations":[{"x":3,"y":32000,"xref":"1","yref":"y","text":"Blim","showarrow":true,"ax":70,"ay":0},{"x":3,"y":45000,"xref":"1","yref":"y","text":"Bpa = MSY Btrigger","showarrow":true,"ax":70,"ay":0}],"legend":{"yanchor":"top","y":0.5}},"source":"A","config":{"modeBarButtonsToAdd":[{"name":"Collaborate","icon":{"width":1000,"ascent":500,"descent":-50,"path":"M487 375c7-10 9-23 5-36l-79-259c-3-12-11-23-22-31-11-8-22-12-35-12l-263 0c-15 0-29 5-43 15-13 10-23 23-28 37-5 13-5 25-1 37 0 0 0 3 1 7 1 5 1 8 1 11 0 2 0 4-1 6 0 3-1 5-1 6 1 2 2 4 3 6 1 2 2 4 4 6 2 3 4 5 5 7 5 7 9 16 13 26 4 10 7 19 9 26 0 2 0 5 0 9-1 4-1 6 0 8 0 2 2 5 4 8 3 3 5 5 5 7 4 6 8 15 12 26 4 11 7 19 7 26 1 1 0 4 0 9-1 4-1 7 0 8 1 2 3 5 6 8 4 4 6 6 6 7 4 5 8 13 13 24 4 11 7 20 7 28 1 1 0 4 0 7-1 3-1 6-1 7 0 2 1 4 3 6 1 1 3 4 5 6 2 3 3 5 5 6 1 2 3 5 4 9 2 3 3 7 5 10 1 3 2 6 4 10 2 4 4 7 6 9 2 3 4 5 7 7 3 2 7 3 11 3 3 0 8 0 13-1l0-1c7 2 12 2 14 2l218 0c14 0 25-5 32-16 8-10 10-23 6-37l-79-259c-7-22-13-37-20-43-7-7-19-10-37-10l-248 0c-5 0-9-2-11-5-2-3-2-7 0-12 4-13 18-20 41-20l264 0c5 0 10 2 16 5 5 3 8 6 10 11l85 282c2 5 2 10 2 17 7-3 13-7 17-13z m-304 0c-1-3-1-5 0-7 1-1 3-2 6-2l174 0c2 0 4 1 7 2 2 2 4 4 5 7l6 18c0 3 0 5-1 7-1 1-3 2-6 2l-173 0c-3 0-5-1-8-2-2-2-4-4-4-7z m-24-73c-1-3-1-5 0-7 2-2 3-2 6-2l174 0c2 0 5 0 7 2 3 2 4 4 5 7l6 18c1 2 0 5-1 6-1 2-3 3-5 3l-174 0c-3 0-5-1-7-3-3-1-4-4-5-6z"},"click":"function(gd) { \n        // is this being viewed in RStudio?\n        if (location.search == '?viewer_pane=1') {\n          alert('To learn about plotly for collaboration, visit:\\n https://cpsievert.github.io/plotly_book/plot-ly-for-collaboration.html');\n        } else {\n          window.open('https://cpsievert.github.io/plotly_book/plot-ly-for-collaboration.html', '_blank');\n        }\n      }"}],"cloud":false},"data":[{"x":[0,0.25,0.259,0.28,0.62,0.87,2.293,2.731,2.731],"y":[401929,304987,301860,295193,206120,160047,44975,32001,32001],"name":"SSB 2019","type":"bar","opacity":0.8,"width":[0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2],"text":["F = 0","EU Recovery Plan^^","F = F2017","MSY approach: FMSY","Fpa","Flim","SSB (2019) = Blim","SSB (2019) = Bpa","SSB (2019) = MSY Btrigger"],"hoverinfo":["text + x+ y","text + x+ y","text + x+ y","text + x+ y","text + x+ y","text + x+ y","text + x+ y","text + x+ y","text + x+ y"],"marker":{"colorbar":{"title":"SSB","ticklen":2},"cmin":32001,"cmax":401929,"colorscale":[["0","rgba(0,0,139,1)"],["0","rgba(0,0,139,1)"],["0","rgba(0,0,139,1)"],["0","rgba(0,0,139,1)"],["0.0116905632086965","rgba(18,3,139,1)"],["0.0233811264173929","rgba(29,6,138,1)"],["0.0350716896260894","rgba(38,9,138,1)"],["0.138760335344535","rgba(81,37,133,1)"],["0.242448981062982","rgba(110,62,129,1)"],["0.346137626781428","rgba(134,87,123,1)"],["0.387652912638856","rgba(143,97,120,1)"],["0.429168198496284","rgba(152,107,118,1)"],["0.470683484353712","rgba(160,117,115,1)"],["0.550945048766246","rgba(176,137,108,1)"],["0.631206613178781","rgba(191,157,101,1)"],["0.711468177591315","rgba(205,178,91,1)"],["0.717475652919848","rgba(206,180,91,1)"],["0.72348312824838","rgba(207,181,90,1)"],["0.729490603576912","rgba(209,183,89,1)"],["0.732308268996489","rgba(209,184,89,1)"],["0.735125934416066","rgba(210,184,88,1)"],["0.737943599835644","rgba(210,185,88,1)"],["0.825295733223762","rgba(225,208,74,1)"],["0.912647866611881","rgba(240,231,53,1)"],["1","rgba(255,255,0,1)"]],"showscale":false,"color":[401929,304987,301860,295193,206120,160047,44975,32001,32001],"line":{"colorbar":{"title":"","ticklen":2},"cmin":32001,"cmax":401929,"colorscale":[["0","rgba(0,0,139,1)"],["0","rgba(0,0,139,1)"],["0","rgba(0,0,139,1)"],["0","rgba(0,0,139,1)"],["0.0116905632086965","rgba(18,3,139,1)"],["0.0233811264173929","rgba(29,6,138,1)"],["0.0350716896260894","rgba(38,9,138,1)"],["0.138760335344535","rgba(81,37,133,1)"],["0.242448981062982","rgba(110,62,129,1)"],["0.346137626781428","rgba(134,87,123,1)"],["0.387652912638856","rgba(143,97,120,1)"],["0.429168198496284","rgba(152,107,118,1)"],["0.470683484353712","rgba(160,117,115,1)"],["0.550945048766246","rgba(176,137,108,1)"],["0.631206613178781","rgba(191,157,101,1)"],["0.711468177591315","rgba(205,178,91,1)"],["0.717475652919848","rgba(206,180,91,1)"],["0.72348312824838","rgba(207,181,90,1)"],["0.729490603576912","rgba(209,183,89,1)"],["0.732308268996489","rgba(209,184,89,1)"],["0.735125934416066","rgba(210,184,88,1)"],["0.737943599835644","rgba(210,185,88,1)"],["0.825295733223762","rgba(225,208,74,1)"],["0.912647866611881","rgba(240,231,53,1)"],["1","rgba(255,255,0,1)"]],"showscale":false,"color":[401929,304987,301860,295193,206120,160047,44975,32001,32001]}},"xaxis":"x","yaxis":"y","frame":null},{"x":[0,0.25,0.259,0.28,0.62,0.87,2.293,2.731,2.731],"y":[0,104736,108119,115335,211827,261716,383469,395825,395825],"name":"Catch 2018","mode":"lines+markers","text":["F = 0","EU Recovery Plan^^","F = F2017","MSY approach: FMSY","Fpa","Flim","SSB (2019) = Blim","SSB (2019) = Bpa","SSB (2019) = MSY Btrigger"],"hoverinfo":["text + x+ y","text + x+ y","text + x+ y","text + x+ y","text + x+ y","text + x+ y","text + x+ y","text + x+ y","text + x+ y"],"type":"scatter","marker":{"color":"rgba(255,127,14,1)","line":{"color":"rgba(255,127,14,1)"}},"error_y":{"color":"rgba(255,127,14,1)"},"error_x":{"color":"rgba(255,127,14,1)"},"line":{"color":"rgba(255,127,14,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[0,2.731],"y":[0,401929],"type":"scatter","mode":"markers","opacity":0,"hoverinfo":"none","showlegend":false,"marker":{"colorbar":{"title":"SSB","ticklen":2,"len":0.5,"lenmode":"fraction","y":1,"yanchor":"top"},"cmin":32001,"cmax":401929,"colorscale":[["0","rgba(0,0,139,1)"],["0","rgba(0,0,139,1)"],["0","rgba(0,0,139,1)"],["0","rgba(0,0,139,1)"],["0.0116905632086965","rgba(18,3,139,1)"],["0.0233811264173929","rgba(29,6,138,1)"],["0.0350716896260894","rgba(38,9,138,1)"],["0.138760335344535","rgba(81,37,133,1)"],["0.242448981062982","rgba(110,62,129,1)"],["0.346137626781428","rgba(134,87,123,1)"],["0.387652912638856","rgba(143,97,120,1)"],["0.429168198496284","rgba(152,107,118,1)"],["0.470683484353712","rgba(160,117,115,1)"],["0.550945048766246","rgba(176,137,108,1)"],["0.631206613178781","rgba(191,157,101,1)"],["0.711468177591315","rgba(205,178,91,1)"],["0.717475652919848","rgba(206,180,91,1)"],["0.72348312824838","rgba(207,181,90,1)"],["0.729490603576912","rgba(209,183,89,1)"],["0.732308268996489","rgba(209,184,89,1)"],["0.735125934416066","rgba(210,184,88,1)"],["0.737943599835644","rgba(210,185,88,1)"],["0.825295733223762","rgba(225,208,74,1)"],["0.912647866611881","rgba(240,231,53,1)"],["1","rgba(255,255,0,1)"]],"showscale":true,"color":[32001,401929],"line":{"color":"rgba(44,160,44,1)"}},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1}},"base_url":"https://plot.ly"},"evals":["config.modeBarButtonsToAdd.0.click"],"jsHooks":[]}</script><!--/html_preserve-->
  
 ## Version 2:
-<!--html_preserve--><div id="htmlwidget-99a8bcaff7a7935173ff" style="width:600px;height:300px;" class="plotly html-widget"></div>
-<script type="application/json" data-for="htmlwidget-99a8bcaff7a7935173ff">{"x":{"data":[{"x":[null,null,0.62,0.62,null,null,null,null,0.62,0.62,null,null,null,null,0.62,0.62,null,null,null,null,0.62,0.62,null,null,null,null,0.62,0.62,null,null,null,null,0.62,0.62,null,null,null,null,0.62,0.62,null,null,null,null,0.62,0.62,null,null,null,null,0.62,0.62,null],"y":[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],"text":"","type":"scatter","mode":"lines","line":{"width":1.88976377952756,"color":"transparent","dash":"solid"},"fill":"toself","fillcolor":"rgba(144,238,144,0.5)","hoveron":"fills","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[0.62,0.62,0.87,0.87,0.62,null,0.62,0.62,0.87,0.87,0.62,null,0.62,0.62,0.87,0.87,0.62,null,0.62,0.62,0.87,0.87,0.62,null,0.62,0.62,0.87,0.87,0.62,null,0.62,0.62,0.87,0.87,0.62,null,0.62,0.62,0.87,0.87,0.62,null,0.62,0.62,0.87,0.87,0.62,null,0.62,0.62,0.87,0.87,0.62],"y":[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],"text":"","type":"scatter","mode":"lines","line":{"width":1.88976377952756,"color":"transparent","dash":"solid"},"fill":"toself","fillcolor":"rgba(255,127,80,1)","hoveron":"fills","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[0.87,0.87,null,null,0.87,null,0.87,0.87,null,null,0.87,null,0.87,0.87,null,null,0.87,null,0.87,0.87,null,null,0.87,null,0.87,0.87,null,null,0.87,null,0.87,0.87,null,null,0.87,null,0.87,0.87,null,null,0.87,null,0.87,0.87,null,null,0.87,null,0.87,0.87,null,null,0.87],"y":[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],"text":"","type":"scatter","mode":"lines","line":{"width":1.88976377952756,"color":"transparent","dash":"solid"},"fill":"toself","fillcolor":"rgba(255,64,64,1)","hoveron":"fills","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[-0.13655,2.86755],"y":[45000,45000],"text":"yintercept: 45000","type":"scatter","mode":"lines","line":{"width":1.88976377952756,"color":"rgba(154,205,50,1)","dash":"dash"},"hoveron":"points","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[-0.13655,2.86755],"y":[32000,32000],"text":"yintercept: 32000","type":"scatter","mode":"lines","line":{"width":1.88976377952756,"color":"rgba(139,139,0,1)","dash":"dash"},"hoveron":"points","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[0.28,0.28],"y":[-20096.45,422025.45],"text":"xintercept: 0.28","type":"scatter","mode":"lines","line":{"width":1.88976377952756,"color":"rgba(238,130,238,1)","dash":"dot"},"hoveron":"points","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[0.62,0.62],"y":[-20096.45,422025.45],"text":"xintercept: 0.62","type":"scatter","mode":"lines","line":{"width":1.88976377952756,"color":"rgba(208,32,144,1)","dash":"dot"},"hoveron":"points","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[0.87,0.87],"y":[-20096.45,422025.45],"text":"xintercept: 0.87","type":"scatter","mode":"lines","line":{"width":1.88976377952756,"color":"rgba(255,62,150,1)","dash":"dot"},"hoveron":"points","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[0.28,0,0.62,0.87,2.293,2.731,2.731,0.259,0.25],"y":[115335,0,211827,261716,383469,395825,395825,108119,104736],"text":["Catch: 115335<br />F: 0.280","Catch:      0<br />F: 0.000","Catch: 211827<br />F: 0.620","Catch: 261716<br />F: 0.870","Catch: 383469<br />F: 2.293","Catch: 395825<br />F: 2.731","Catch: 395825<br />F: 2.731","Catch: 108119<br />F: 0.259","Catch: 104736<br />F: 0.250"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,0,0,1)","opacity":1,"size":7.55905511811024,"symbol":"circle","line":{"width":1.88976377952756,"color":"rgba(0,0,0,1)"}},"hoveron":"points","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[0,0.25,0.259,0.28,0.62,0.87,2.293,2.731,2.731],"y":[0,104736,108119,115335,211827,261716,383469,395825,395825],"text":["Catch:      0<br />F: 0.000","Catch: 104736<br />F: 0.250","Catch: 108119<br />F: 0.259","Catch: 115335<br />F: 0.280","Catch: 211827<br />F: 0.620","Catch: 261716<br />F: 0.870","Catch: 383469<br />F: 2.293","Catch: 395825<br />F: 2.731","Catch: 395825<br />F: 2.731"],"type":"scatter","mode":"lines","line":{"width":1.88976377952756,"color":"rgba(255,69,0,1)","dash":"solid"},"hoveron":"points","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[0.28,0,0.62,0.87,2.293,2.731,2.731,0.259,0.25],"y":[295193,401929,206120,160047,44975,32001,32001,301860,304987],"text":["SSB: 295193<br />F: 0.280","SSB: 401929<br />F: 0.000","SSB: 206120<br />F: 0.620","SSB: 160047<br />F: 0.870","SSB:  44975<br />F: 2.293","SSB:  32001<br />F: 2.731","SSB:  32001<br />F: 2.731","SSB: 301860<br />F: 0.259","SSB: 304987<br />F: 0.250"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,0,0,1)","opacity":1,"size":7.55905511811024,"symbol":"circle","line":{"width":1.88976377952756,"color":"rgba(0,0,0,1)"}},"hoveron":"points","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[0,0.25,0.259,0.28,0.62,0.87,2.293,2.731,2.731],"y":[401929,304987,301860,295193,206120,160047,44975,32001,32001],"text":["SSB: 401929<br />F: 0.000","SSB: 304987<br />F: 0.250","SSB: 301860<br />F: 0.259","SSB: 295193<br />F: 0.280","SSB: 206120<br />F: 0.620","SSB: 160047<br />F: 0.870","SSB:  44975<br />F: 2.293","SSB:  32001<br />F: 2.731","SSB:  32001<br />F: 2.731"],"type":"scatter","mode":"lines","line":{"width":1.88976377952756,"color":"rgba(135,206,250,1)","dash":"solid"},"hoveron":"points","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null}],"layout":{"margin":{"t":30.6118721461187,"r":7.30593607305936,"b":44.5662100456621,"l":54.7945205479452},"plot_bgcolor":"rgba(255,255,255,1)","paper_bgcolor":"rgba(255,255,255,1)","font":{"color":"rgba(0,0,0,1)","family":"","size":14.6118721461187},"xaxis":{"domain":[0,1],"type":"linear","autorange":false,"range":[-0.13655,2.86755],"tickmode":"array","ticktext":["0","1","2"],"tickvals":[0,1,2],"categoryorder":"array","categoryarray":["0","1","2"],"nticks":null,"ticks":"outside","tickcolor":"rgba(51,51,51,1)","ticklen":3.65296803652968,"tickwidth":0.66417600664176,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.689497716895},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(235,235,235,1)","gridwidth":0.66417600664176,"zeroline":false,"anchor":"y","title":"Fish mortality","titlefont":{"color":"rgba(0,0,0,1)","family":"","size":14.6118721461187},"hoverformat":".2f"},"yaxis":{"domain":[0,1],"type":"linear","autorange":false,"range":[-20096.45,422025.45],"tickmode":"array","ticktext":["0e+00","1e+05","2e+05","3e+05","4e+05"],"tickvals":[0,100000,200000,300000,400000],"categoryorder":"array","categoryarray":["0e+00","1e+05","2e+05","3e+05","4e+05"],"nticks":null,"ticks":"outside","tickcolor":"rgba(51,51,51,1)","ticklen":3.65296803652968,"tickwidth":0.66417600664176,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.689497716895},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(235,235,235,1)","gridwidth":0.66417600664176,"zeroline":false,"anchor":"x","title":"tonnes","titlefont":{"color":"rgba(0,0,0,1)","family":"","size":14.6118721461187},"hoverformat":".2f"},"shapes":[{"type":"rect","fillcolor":"transparent","line":{"color":"rgba(51,51,51,1)","width":0.66417600664176,"linetype":"solid"},"yref":"paper","xref":"paper","x0":0,"x1":1,"y0":0,"y1":1}],"showlegend":false,"legend":{"bgcolor":"rgba(255,255,255,1)","bordercolor":"transparent","borderwidth":1.88976377952756,"font":{"color":"rgba(0,0,0,1)","family":"","size":11.689497716895}},"hovermode":"closest","width":600,"height":300,"barmode":"relative"},"config":{"doubleClick":"reset","modeBarButtonsToAdd":[{"name":"Collaborate","icon":{"width":1000,"ascent":500,"descent":-50,"path":"M487 375c7-10 9-23 5-36l-79-259c-3-12-11-23-22-31-11-8-22-12-35-12l-263 0c-15 0-29 5-43 15-13 10-23 23-28 37-5 13-5 25-1 37 0 0 0 3 1 7 1 5 1 8 1 11 0 2 0 4-1 6 0 3-1 5-1 6 1 2 2 4 3 6 1 2 2 4 4 6 2 3 4 5 5 7 5 7 9 16 13 26 4 10 7 19 9 26 0 2 0 5 0 9-1 4-1 6 0 8 0 2 2 5 4 8 3 3 5 5 5 7 4 6 8 15 12 26 4 11 7 19 7 26 1 1 0 4 0 9-1 4-1 7 0 8 1 2 3 5 6 8 4 4 6 6 6 7 4 5 8 13 13 24 4 11 7 20 7 28 1 1 0 4 0 7-1 3-1 6-1 7 0 2 1 4 3 6 1 1 3 4 5 6 2 3 3 5 5 6 1 2 3 5 4 9 2 3 3 7 5 10 1 3 2 6 4 10 2 4 4 7 6 9 2 3 4 5 7 7 3 2 7 3 11 3 3 0 8 0 13-1l0-1c7 2 12 2 14 2l218 0c14 0 25-5 32-16 8-10 10-23 6-37l-79-259c-7-22-13-37-20-43-7-7-19-10-37-10l-248 0c-5 0-9-2-11-5-2-3-2-7 0-12 4-13 18-20 41-20l264 0c5 0 10 2 16 5 5 3 8 6 10 11l85 282c2 5 2 10 2 17 7-3 13-7 17-13z m-304 0c-1-3-1-5 0-7 1-1 3-2 6-2l174 0c2 0 4 1 7 2 2 2 4 4 5 7l6 18c0 3 0 5-1 7-1 1-3 2-6 2l-173 0c-3 0-5-1-8-2-2-2-4-4-4-7z m-24-73c-1-3-1-5 0-7 2-2 3-2 6-2l174 0c2 0 5 0 7 2 3 2 4 4 5 7l6 18c1 2 0 5-1 6-1 2-3 3-5 3l-174 0c-3 0-5-1-7-3-3-1-4-4-5-6z"},"click":"function(gd) { \n        // is this being viewed in RStudio?\n        if (location.search == '?viewer_pane=1') {\n          alert('To learn about plotly for collaboration, visit:\\n https://cpsievert.github.io/plotly_book/plot-ly-for-collaboration.html');\n        } else {\n          window.open('https://cpsievert.github.io/plotly_book/plot-ly-for-collaboration.html', '_blank');\n        }\n      }"}],"cloud":false},"source":"A","attrs":{"2f3860e64e36":{"x":{},"type":"scatter"},"2f38f3558ca":{"x":{}},"2f38279e47dc":{"x":{}},"2f387a5652e6":{"yintercept":{}},"2f3868aa2d5e":{"yintercept":{}},"2f388cb84b":{"xintercept":{}},"2f38411e2d51":{"xintercept":{}},"2f385eea674d":{"xintercept":{}},"2f38b994cc4":{"y":{},"x":{}},"2f385cec629f":{"y":{},"x":{}},"2f385fca218":{"y":{},"x":{}},"2f383a972c3":{"y":{},"x":{}}},"cur_data":"2f3860e64e36","visdat":{"2f3860e64e36":["function (y) ","x"],"2f38f3558ca":["function (y) ","x"],"2f38279e47dc":["function (y) ","x"],"2f387a5652e6":["function (y) ","x"],"2f3868aa2d5e":["function (y) ","x"],"2f388cb84b":["function (y) ","x"],"2f38411e2d51":["function (y) ","x"],"2f385eea674d":["function (y) ","x"],"2f38b994cc4":["function (y) ","x"],"2f385cec629f":["function (y) ","x"],"2f385fca218":["function (y) ","x"],"2f383a972c3":["function (y) ","x"]},"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1}},"base_url":"https://plot.ly"},"evals":["config.modeBarButtonsToAdd.0.click"],"jsHooks":[]}</script><!--/html_preserve-->
+<!--html_preserve--><div id="htmlwidget-7432ad806d1d6eaa13aa" style="width:600px;height:300px;" class="plotly html-widget"></div>
+<script type="application/json" data-for="htmlwidget-7432ad806d1d6eaa13aa">{"x":{"data":[{"x":[null,null,0.62,0.62,null,null,null,null,0.62,0.62,null,null,null,null,0.62,0.62,null,null,null,null,0.62,0.62,null,null,null,null,0.62,0.62,null,null,null,null,0.62,0.62,null,null,null,null,0.62,0.62,null,null,null,null,0.62,0.62,null,null,null,null,0.62,0.62,null],"y":[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],"text":"","type":"scatter","mode":"lines","line":{"width":1.88976377952756,"color":"transparent","dash":"solid"},"fill":"toself","fillcolor":"rgba(144,238,144,0.5)","hoveron":"fills","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[0.62,0.62,0.87,0.87,0.62,null,0.62,0.62,0.87,0.87,0.62,null,0.62,0.62,0.87,0.87,0.62,null,0.62,0.62,0.87,0.87,0.62,null,0.62,0.62,0.87,0.87,0.62,null,0.62,0.62,0.87,0.87,0.62,null,0.62,0.62,0.87,0.87,0.62,null,0.62,0.62,0.87,0.87,0.62,null,0.62,0.62,0.87,0.87,0.62],"y":[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],"text":"","type":"scatter","mode":"lines","line":{"width":1.88976377952756,"color":"transparent","dash":"solid"},"fill":"toself","fillcolor":"rgba(255,127,80,1)","hoveron":"fills","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[0.87,0.87,null,null,0.87,null,0.87,0.87,null,null,0.87,null,0.87,0.87,null,null,0.87,null,0.87,0.87,null,null,0.87,null,0.87,0.87,null,null,0.87,null,0.87,0.87,null,null,0.87,null,0.87,0.87,null,null,0.87,null,0.87,0.87,null,null,0.87,null,0.87,0.87,null,null,0.87],"y":[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],"text":"","type":"scatter","mode":"lines","line":{"width":1.88976377952756,"color":"transparent","dash":"solid"},"fill":"toself","fillcolor":"rgba(255,64,64,1)","hoveron":"fills","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[-0.13655,2.86755],"y":[45000,45000],"text":"yintercept: 45000","type":"scatter","mode":"lines","line":{"width":1.88976377952756,"color":"rgba(154,205,50,1)","dash":"dash"},"hoveron":"points","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[-0.13655,2.86755],"y":[32000,32000],"text":"yintercept: 32000","type":"scatter","mode":"lines","line":{"width":1.88976377952756,"color":"rgba(139,139,0,1)","dash":"dash"},"hoveron":"points","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[0.28,0.28],"y":[-20096.45,422025.45],"text":"xintercept: 0.28","type":"scatter","mode":"lines","line":{"width":1.88976377952756,"color":"rgba(238,130,238,1)","dash":"dot"},"hoveron":"points","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[0.62,0.62],"y":[-20096.45,422025.45],"text":"xintercept: 0.62","type":"scatter","mode":"lines","line":{"width":1.88976377952756,"color":"rgba(208,32,144,1)","dash":"dot"},"hoveron":"points","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[0.87,0.87],"y":[-20096.45,422025.45],"text":"xintercept: 0.87","type":"scatter","mode":"lines","line":{"width":1.88976377952756,"color":"rgba(255,62,150,1)","dash":"dot"},"hoveron":"points","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[0.28,0,0.62,0.87,2.293,2.731,2.731,0.259,0.25],"y":[115335,0,211827,261716,383469,395825,395825,108119,104736],"text":["Catch: 115335<br />F: 0.280","Catch:      0<br />F: 0.000","Catch: 211827<br />F: 0.620","Catch: 261716<br />F: 0.870","Catch: 383469<br />F: 2.293","Catch: 395825<br />F: 2.731","Catch: 395825<br />F: 2.731","Catch: 108119<br />F: 0.259","Catch: 104736<br />F: 0.250"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,0,0,1)","opacity":1,"size":7.55905511811024,"symbol":"circle","line":{"width":1.88976377952756,"color":"rgba(0,0,0,1)"}},"hoveron":"points","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[0,0.25,0.259,0.28,0.62,0.87,2.293,2.731,2.731],"y":[0,104736,108119,115335,211827,261716,383469,395825,395825],"text":["Catch:      0<br />F: 0.000","Catch: 104736<br />F: 0.250","Catch: 108119<br />F: 0.259","Catch: 115335<br />F: 0.280","Catch: 211827<br />F: 0.620","Catch: 261716<br />F: 0.870","Catch: 383469<br />F: 2.293","Catch: 395825<br />F: 2.731","Catch: 395825<br />F: 2.731"],"type":"scatter","mode":"lines","line":{"width":1.88976377952756,"color":"rgba(255,69,0,1)","dash":"solid"},"hoveron":"points","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[0.28,0,0.62,0.87,2.293,2.731,2.731,0.259,0.25],"y":[295193,401929,206120,160047,44975,32001,32001,301860,304987],"text":["SSB: 295193<br />F: 0.280","SSB: 401929<br />F: 0.000","SSB: 206120<br />F: 0.620","SSB: 160047<br />F: 0.870","SSB:  44975<br />F: 2.293","SSB:  32001<br />F: 2.731","SSB:  32001<br />F: 2.731","SSB: 301860<br />F: 0.259","SSB: 304987<br />F: 0.250"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,0,0,1)","opacity":1,"size":7.55905511811024,"symbol":"circle","line":{"width":1.88976377952756,"color":"rgba(0,0,0,1)"}},"hoveron":"points","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[0,0.25,0.259,0.28,0.62,0.87,2.293,2.731,2.731],"y":[401929,304987,301860,295193,206120,160047,44975,32001,32001],"text":["SSB: 401929<br />F: 0.000","SSB: 304987<br />F: 0.250","SSB: 301860<br />F: 0.259","SSB: 295193<br />F: 0.280","SSB: 206120<br />F: 0.620","SSB: 160047<br />F: 0.870","SSB:  44975<br />F: 2.293","SSB:  32001<br />F: 2.731","SSB:  32001<br />F: 2.731"],"type":"scatter","mode":"lines","line":{"width":1.88976377952756,"color":"rgba(135,206,250,1)","dash":"solid"},"hoveron":"points","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null}],"layout":{"margin":{"t":30.6118721461187,"r":7.30593607305936,"b":44.5662100456621,"l":54.7945205479452},"plot_bgcolor":"rgba(255,255,255,1)","paper_bgcolor":"rgba(255,255,255,1)","font":{"color":"rgba(0,0,0,1)","family":"","size":14.6118721461187},"xaxis":{"domain":[0,1],"type":"linear","autorange":false,"range":[-0.13655,2.86755],"tickmode":"array","ticktext":["0","1","2"],"tickvals":[0,1,2],"categoryorder":"array","categoryarray":["0","1","2"],"nticks":null,"ticks":"outside","tickcolor":"rgba(51,51,51,1)","ticklen":3.65296803652968,"tickwidth":0.66417600664176,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.689497716895},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(235,235,235,1)","gridwidth":0.66417600664176,"zeroline":false,"anchor":"y","title":"Fish mortality","titlefont":{"color":"rgba(0,0,0,1)","family":"","size":14.6118721461187},"hoverformat":".2f"},"yaxis":{"domain":[0,1],"type":"linear","autorange":false,"range":[-20096.45,422025.45],"tickmode":"array","ticktext":["0e+00","1e+05","2e+05","3e+05","4e+05"],"tickvals":[0,100000,200000,300000,400000],"categoryorder":"array","categoryarray":["0e+00","1e+05","2e+05","3e+05","4e+05"],"nticks":null,"ticks":"outside","tickcolor":"rgba(51,51,51,1)","ticklen":3.65296803652968,"tickwidth":0.66417600664176,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.689497716895},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(235,235,235,1)","gridwidth":0.66417600664176,"zeroline":false,"anchor":"x","title":"tonnes","titlefont":{"color":"rgba(0,0,0,1)","family":"","size":14.6118721461187},"hoverformat":".2f"},"shapes":[{"type":"rect","fillcolor":"transparent","line":{"color":"rgba(51,51,51,1)","width":0.66417600664176,"linetype":"solid"},"yref":"paper","xref":"paper","x0":0,"x1":1,"y0":0,"y1":1}],"showlegend":false,"legend":{"bgcolor":"rgba(255,255,255,1)","bordercolor":"transparent","borderwidth":1.88976377952756,"font":{"color":"rgba(0,0,0,1)","family":"","size":11.689497716895}},"hovermode":"closest","width":600,"height":300,"barmode":"relative"},"config":{"doubleClick":"reset","modeBarButtonsToAdd":[{"name":"Collaborate","icon":{"width":1000,"ascent":500,"descent":-50,"path":"M487 375c7-10 9-23 5-36l-79-259c-3-12-11-23-22-31-11-8-22-12-35-12l-263 0c-15 0-29 5-43 15-13 10-23 23-28 37-5 13-5 25-1 37 0 0 0 3 1 7 1 5 1 8 1 11 0 2 0 4-1 6 0 3-1 5-1 6 1 2 2 4 3 6 1 2 2 4 4 6 2 3 4 5 5 7 5 7 9 16 13 26 4 10 7 19 9 26 0 2 0 5 0 9-1 4-1 6 0 8 0 2 2 5 4 8 3 3 5 5 5 7 4 6 8 15 12 26 4 11 7 19 7 26 1 1 0 4 0 9-1 4-1 7 0 8 1 2 3 5 6 8 4 4 6 6 6 7 4 5 8 13 13 24 4 11 7 20 7 28 1 1 0 4 0 7-1 3-1 6-1 7 0 2 1 4 3 6 1 1 3 4 5 6 2 3 3 5 5 6 1 2 3 5 4 9 2 3 3 7 5 10 1 3 2 6 4 10 2 4 4 7 6 9 2 3 4 5 7 7 3 2 7 3 11 3 3 0 8 0 13-1l0-1c7 2 12 2 14 2l218 0c14 0 25-5 32-16 8-10 10-23 6-37l-79-259c-7-22-13-37-20-43-7-7-19-10-37-10l-248 0c-5 0-9-2-11-5-2-3-2-7 0-12 4-13 18-20 41-20l264 0c5 0 10 2 16 5 5 3 8 6 10 11l85 282c2 5 2 10 2 17 7-3 13-7 17-13z m-304 0c-1-3-1-5 0-7 1-1 3-2 6-2l174 0c2 0 4 1 7 2 2 2 4 4 5 7l6 18c0 3 0 5-1 7-1 1-3 2-6 2l-173 0c-3 0-5-1-8-2-2-2-4-4-4-7z m-24-73c-1-3-1-5 0-7 2-2 3-2 6-2l174 0c2 0 5 0 7 2 3 2 4 4 5 7l6 18c1 2 0 5-1 6-1 2-3 3-5 3l-174 0c-3 0-5-1-7-3-3-1-4-4-5-6z"},"click":"function(gd) { \n        // is this being viewed in RStudio?\n        if (location.search == '?viewer_pane=1') {\n          alert('To learn about plotly for collaboration, visit:\\n https://cpsievert.github.io/plotly_book/plot-ly-for-collaboration.html');\n        } else {\n          window.open('https://cpsievert.github.io/plotly_book/plot-ly-for-collaboration.html', '_blank');\n        }\n      }"}],"cloud":false},"source":"A","attrs":{"25482d994efe":{"x":{},"type":"scatter"},"25487b5b6458":{"x":{}},"25484b12bc0":{"x":{}},"2548cba1c2e":{"yintercept":{}},"254877b77c3c":{"yintercept":{}},"2548353a3ef0":{"xintercept":{}},"25484bc43b0":{"xintercept":{}},"254830137af9":{"xintercept":{}},"254872593d85":{"y":{},"x":{}},"254837405211":{"y":{},"x":{}},"25487df03ddf":{"y":{},"x":{}},"254843dd1e9f":{"y":{},"x":{}}},"cur_data":"25482d994efe","visdat":{"25482d994efe":["function (y) ","x"],"25487b5b6458":["function (y) ","x"],"25484b12bc0":["function (y) ","x"],"2548cba1c2e":["function (y) ","x"],"254877b77c3c":["function (y) ","x"],"2548353a3ef0":["function (y) ","x"],"25484bc43b0":["function (y) ","x"],"254830137af9":["function (y) ","x"],"254872593d85":["function (y) ","x"],"254837405211":["function (y) ","x"],"25487df03ddf":["function (y) ","x"],"254843dd1e9f":["function (y) ","x"]},"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1}},"base_url":"https://plot.ly"},"evals":["config.modeBarButtonsToAdd.0.click"],"jsHooks":[]}</script><!--/html_preserve-->
   
-## Version 3: 
-<!--html_preserve--><div id="htmlwidget-d9ccdf9fe668b305f53f" style="width:600px;height:300px;" class="plotly html-widget"></div>
-<script type="application/json" data-for="htmlwidget-d9ccdf9fe668b305f53f">{"x":{"data":[{"orientation":"v","width":0.2,"base":0,"x":[2.731],"y":[32001],"text":"ssb$SSB:  32001<br />SSB:  32001<br />F: 2.731","type":"bar","marker":{"autocolorscale":false,"color":"rgba(229,229,229,1)","line":{"width":1.88976377952756,"color":"transparent"}},"showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"orientation":"v","width":0.2,"base":0,"x":[2.293],"y":[44975],"text":"ssb$SSB:  44975<br />SSB:  44975<br />F: 2.293","type":"bar","marker":{"autocolorscale":false,"color":"rgba(225,222,230,1)","line":{"width":1.88976377952756,"color":"transparent"}},"showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"orientation":"v","width":0.2,"base":0,"x":[0.87],"y":[160047],"text":"ssb$SSB: 160047<br />SSB: 160047<br />F: 0.870","type":"bar","marker":{"autocolorscale":false,"color":"rgba(188,158,241,1)","line":{"width":1.88976377952756,"color":"transparent"}},"showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"orientation":"v","width":0.2,"base":0,"x":[0.62],"y":[206120],"text":"ssb$SSB: 206120<br />SSB: 206120<br />F: 0.620","type":"bar","marker":{"autocolorscale":false,"color":"rgba(170,133,244,1)","line":{"width":1.88976377952756,"color":"transparent"}},"showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"orientation":"v","width":0.2,"base":0,"x":[0.28],"y":[295193],"text":"ssb$SSB: 295193<br />SSB: 295193<br />F: 0.280","type":"bar","marker":{"autocolorscale":false,"color":"rgba(127,84,250,1)","line":{"width":1.88976377952756,"color":"transparent"}},"showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"orientation":"v","width":0.2,"base":0,"x":[0.259],"y":[301860],"text":"ssb$SSB: 301860<br />SSB: 301860<br />F: 0.259","type":"bar","marker":{"autocolorscale":false,"color":"rgba(123,80,250,1)","line":{"width":1.88976377952756,"color":"transparent"}},"showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"orientation":"v","width":0.2,"base":0,"x":[0.25],"y":[304987],"text":"ssb$SSB: 304987<br />SSB: 304987<br />F: 0.250","type":"bar","marker":{"autocolorscale":false,"color":"rgba(121,78,250,1)","line":{"width":1.88976377952756,"color":"transparent"}},"showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"orientation":"v","width":0.2,"base":0,"x":[0],"y":[401929],"text":"ssb$SSB: 401929<br />SSB: 401929<br />F: 0.000","type":"bar","marker":{"autocolorscale":false,"color":"rgba(0,0,255,1)","line":{"width":1.88976377952756,"color":"transparent"}},"showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[0.28,0,0.62,0.87,2.293,2.731,0.259,0.25],"y":[115335,0,211827,261716,383469,395825,108119,104736],"text":["catch$Catch: 115335<br />Catch: 115335<br />F: 0.280","catch$Catch:      0<br />Catch:      0<br />F: 0.000","catch$Catch: 211827<br />Catch: 211827<br />F: 0.620","catch$Catch: 261716<br />Catch: 261716<br />F: 0.870","catch$Catch: 383469<br />Catch: 383469<br />F: 2.293","catch$Catch: 395825<br />Catch: 395825<br />F: 2.731","catch$Catch: 108119<br />Catch: 108119<br />F: 0.259","catch$Catch: 104736<br />Catch: 104736<br />F: 0.250"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,0,0,1)","opacity":1,"size":[13.9803801205735,3.77952755905512,17.6039363756172,19.1458891164698,22.3798743318461,22.6771653543307,13.656115172781,13.5003699635209],"symbol":"circle","line":{"width":1.88976377952756,"color":"rgba(0,0,0,1)"}},"hoveron":"points","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[0,0.25,0.259,0.28,0.62,0.87,2.293,2.731],"y":[0,104736,108119,115335,211827,261716,383469,395825],"text":["catch$Catch:      0<br />F: 0.000","catch$Catch: 104736<br />F: 0.250","catch$Catch: 108119<br />F: 0.259","catch$Catch: 115335<br />F: 0.280","catch$Catch: 211827<br />F: 0.620","catch$Catch: 261716<br />F: 0.870","catch$Catch: 383469<br />F: 2.293","catch$Catch: 395825<br />F: 2.731"],"type":"scatter","mode":"lines","line":{"width":1.88976377952756,"color":"rgba(0,0,0,1)","dash":"solid"},"hoveron":"points","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[0],"y":[0],"name":"99_712eaa5a6083721153823fef049bc9f1","type":"scatter","mode":"markers","opacity":0,"hoverinfo":"none","showlegend":false,"marker":{"color":[0,1],"colorscale":[[0,"#E5E5E5"],[0.0526315789473684,"#DFDAE7"],[0.105263157894737,"#DACFE9"],[0.157894736842105,"#D4C5EB"],[0.210526315789474,"#CDBAED"],[0.263157894736842,"#C7AFEE"],[0.315789473684211,"#C0A4F0"],[0.368421052631579,"#B99AF2"],[0.421052631578947,"#B28FF3"],[0.473684210526316,"#AA85F4"],[0.526315789473684,"#A17AF6"],[0.578947368421053,"#996FF7"],[0.631578947368421,"#8F64F8"],[0.68421052631579,"#855AF9"],[0.736842105263158,"#7A4EFA"],[0.789473684210526,"#6D43FB"],[0.842105263157895,"#5F37FC"],[0.894736842105263,"#4E2AFD"],[0.947368421052632,"#361AFE"],[1,"#0000FF"]],"colorbar":{"bgcolor":"rgba(255,255,255,1)","bordercolor":"transparent","borderwidth":1.88976377952756,"thickness":23.04,"title":"SSB","titlefont":{"color":"rgba(0,0,0,1)","family":"","size":14.6118721461187},"tickmode":"array","ticktext":["1e+05","2e+05","3e+05","4e+05"],"tickvals":[0.183816850846651,0.454139724486927,0.724462598127203,0.994785471767479],"tickfont":{"color":"rgba(0,0,255,1)","family":"","size":21.2536322125363},"ticklen":2,"len":0.5}},"xaxis":"x","yaxis":"y","frame":null}],"layout":{"margin":{"t":30.6118721461187,"r":7.30593607305936,"b":46.1602324616023,"l":54.7945205479452},"paper_bgcolor":"rgba(255,255,255,1)","font":{"color":"rgba(0,0,0,1)","family":"","size":14.6118721461187},"xaxis":{"domain":[0,1],"type":"linear","autorange":false,"range":[-0.24655,2.97755],"tickmode":"array","ticktext":["0.0","0.5","1.0","1.5","2.0","2.5"],"tickvals":[0,0.5,1,1.5,2,2.5],"categoryorder":"array","categoryarray":["0.0","0.5","1.0","1.5","2.0","2.5"],"nticks":null,"ticks":"outside","tickcolor":"rgba(51,51,51,1)","ticklen":3.65296803652968,"tickwidth":0.66417600664176,"showticklabels":true,"tickfont":{"color":"rgba(0,0,0,1)","family":"","size":13.2835201328352},"tickangle":-45,"showline":true,"linecolor":"rgba(190,190,190,1)","linewidth":0.66417600664176,"showgrid":false,"gridcolor":null,"gridwidth":0,"zeroline":false,"anchor":"y","title":"Fishing mortality","titlefont":{"color":"rgba(0,0,0,1)","family":"","size":14.6118721461187},"hoverformat":".2f"},"yaxis":{"domain":[0,1],"type":"linear","autorange":false,"range":[-20096.45,422025.45],"tickmode":"array","ticktext":["0e+00","1e+05","2e+05","3e+05","4e+05"],"tickvals":[0,100000,200000,300000,400000],"categoryorder":"array","categoryarray":["0e+00","1e+05","2e+05","3e+05","4e+05"],"nticks":null,"ticks":"outside","tickcolor":"rgba(51,51,51,1)","ticklen":3.65296803652968,"tickwidth":0.66417600664176,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.689497716895},"tickangle":-0,"showline":true,"linecolor":"rgba(190,190,190,1)","linewidth":0.66417600664176,"showgrid":false,"gridcolor":null,"gridwidth":0,"zeroline":false,"anchor":"x","title":"tonnes","titlefont":{"color":"rgba(0,0,0,1)","family":"","size":14.6118721461187},"hoverformat":".2f"},"shapes":[{"type":"rect","fillcolor":null,"line":{"color":null,"width":0,"linetype":[]},"yref":"paper","xref":"paper","x0":0,"x1":1,"y0":0,"y1":1}],"showlegend":false,"legend":{"bgcolor":"rgba(255,255,255,1)","bordercolor":"transparent","borderwidth":1.88976377952756,"font":{"color":"rgba(0,0,255,1)","family":"","size":21.2536322125363}},"hovermode":"closest","width":600,"height":300,"barmode":"relative"},"config":{"doubleClick":"reset","modeBarButtonsToAdd":[{"name":"Collaborate","icon":{"width":1000,"ascent":500,"descent":-50,"path":"M487 375c7-10 9-23 5-36l-79-259c-3-12-11-23-22-31-11-8-22-12-35-12l-263 0c-15 0-29 5-43 15-13 10-23 23-28 37-5 13-5 25-1 37 0 0 0 3 1 7 1 5 1 8 1 11 0 2 0 4-1 6 0 3-1 5-1 6 1 2 2 4 3 6 1 2 2 4 4 6 2 3 4 5 5 7 5 7 9 16 13 26 4 10 7 19 9 26 0 2 0 5 0 9-1 4-1 6 0 8 0 2 2 5 4 8 3 3 5 5 5 7 4 6 8 15 12 26 4 11 7 19 7 26 1 1 0 4 0 9-1 4-1 7 0 8 1 2 3 5 6 8 4 4 6 6 6 7 4 5 8 13 13 24 4 11 7 20 7 28 1 1 0 4 0 7-1 3-1 6-1 7 0 2 1 4 3 6 1 1 3 4 5 6 2 3 3 5 5 6 1 2 3 5 4 9 2 3 3 7 5 10 1 3 2 6 4 10 2 4 4 7 6 9 2 3 4 5 7 7 3 2 7 3 11 3 3 0 8 0 13-1l0-1c7 2 12 2 14 2l218 0c14 0 25-5 32-16 8-10 10-23 6-37l-79-259c-7-22-13-37-20-43-7-7-19-10-37-10l-248 0c-5 0-9-2-11-5-2-3-2-7 0-12 4-13 18-20 41-20l264 0c5 0 10 2 16 5 5 3 8 6 10 11l85 282c2 5 2 10 2 17 7-3 13-7 17-13z m-304 0c-1-3-1-5 0-7 1-1 3-2 6-2l174 0c2 0 4 1 7 2 2 2 4 4 5 7l6 18c0 3 0 5-1 7-1 1-3 2-6 2l-173 0c-3 0-5-1-8-2-2-2-4-4-4-7z m-24-73c-1-3-1-5 0-7 2-2 3-2 6-2l174 0c2 0 5 0 7 2 3 2 4 4 5 7l6 18c1 2 0 5-1 6-1 2-3 3-5 3l-174 0c-3 0-5-1-7-3-3-1-4-4-5-6z"},"click":"function(gd) { \n        // is this being viewed in RStudio?\n        if (location.search == '?viewer_pane=1') {\n          alert('To learn about plotly for collaboration, visit:\\n https://cpsievert.github.io/plotly_book/plot-ly-for-collaboration.html');\n        } else {\n          window.open('https://cpsievert.github.io/plotly_book/plot-ly-for-collaboration.html', '_blank');\n        }\n      }"}],"cloud":false},"source":"A","attrs":{"2f381eee6ce5":{"y":{},"fill":{},"x":{},"type":"bar"},"2f385e42fc":{"y":{},"size":{},"x":{}},"2f382004384e":{"y":{},"x":{}}},"cur_data":"2f381eee6ce5","visdat":{"2f381eee6ce5":["function (y) ","x"],"2f385e42fc":["function (y) ","x"],"2f382004384e":["function (y) ","x"]},"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1}},"base_url":"https://plot.ly"},"evals":["config.modeBarButtonsToAdd.0.click"],"jsHooks":[]}</script><!--/html_preserve-->
 <br>
 
 [Go to Top](#top)
@@ -1296,7 +1294,7 @@ EU Recovery Plan^^|0.250|104736|304987
 
 # Basis of the advice  
 <br>
-**Table 4** Hake in subareas 4, 6, and 7, and in divisions 3.a, 8.a–b, and 8.d, Northern stock. The basis of the advice.
+**Table 4** The basis of the advice for hake in subareas 4, 6, and 7, and in divisions 3.a, 8.a–b, and 8.d, Northern stock.
 <table class="table" style="margin-left: auto; margin-right: auto;">
 <tbody>
   <tr>
@@ -1317,9 +1315,15 @@ EU Recovery Plan^^|0.250|104736|304987
 The uncertainty in the assessment is relatively high, with large changes in biomass estimates in consecutive years. The model confidence intervals are an underestimate of uncertainty because they are narrower than interannual changes in estimates in consecutive years.
 There is a lack of tuning data for the earlier years of the assessment, for some areas outside of subareas 7 and 8, and for the larger individuals in the population. Given the expansion of the stock into northern areas (ICES, 2017b), there is a potential that not all catches are reported for this stock. Biological sampling from these areas is also limited.
 The data compilation of this stock is very complicated because it is exploited by several countries and the assessment model configuration is complex. In turn, the assessment model is very sensitive to the data and the settings used. Hence, it is extremely important for the quality of the assessment to have the complete data for all the countries on time and in the right format.
-**missing graphs**
+<br>
+
+<img src="images/hkequalplot.png" width="871" />
+
+**Figure 2**  Historical assessment results for hake in subareas 4, 6, and 7, and in divisions 3.a, 8.a–b, and 8.d, Northern stock.
+<br>
 
 ***
+
 # Issues relevant for the advice
 Discarding of juvenile hake can be substantial in some areas and fleets. Discarding of large individuals has increased in recent years because of quota restrictions in certain fleets.
 
@@ -1329,7 +1333,7 @@ Some fleets fishing this stock have been under the EU landing obligation since 2
 
 # Reference Points  
 <br>
-**Table 5** Herring in Subarea 4 and divisions 3.a and 7.d, autumn spawners. Reference points, values, and their technical basis.
+**Table 5** Reference points, values, and their technical basis for hake in subareas 4, 6, and 7, and in divisions 3.a, 8.a–b, and 8.d, Northern stock.
 <table class="table" style="margin-left: auto; margin-right: auto;">
  <thead>
   <tr>
@@ -1342,42 +1346,42 @@ Some fleets fishing this stock have been under the EU landing obligation since 2
  </thead>
 <tbody>
   <tr>
-   <td style="text-align:left;"> MSY approach </td>
+   <td style="text-align:left;vertical-align: middle !important;" rowspan="2"> MSY approach </td>
    <td style="text-align:left;"> MSY Btrigger </td>
    <td style="text-align:left;"> 45000 </td>
    <td style="text-align:left;"> Bpa </td>
    <td style="text-align:left;"> ICES (2016a) </td>
   </tr>
   <tr>
-   <td style="text-align:left;"> NA </td>
+   
    <td style="text-align:left;"> FMSY </td>
    <td style="text-align:left;"> 0.28 </td>
    <td style="text-align:left;"> Stochastic simulations on a segmented regression stock–recruitment relationship. </td>
    <td style="text-align:left;"> ICES (2016a) </td>
   </tr>
   <tr>
-   <td style="text-align:left;"> Precautionary approach </td>
+   <td style="text-align:left;vertical-align: middle !important;" rowspan="4"> Precautionary approach </td>
    <td style="text-align:left;"> Blim </td>
    <td style="text-align:left;"> 32000 </td>
    <td style="text-align:left;"> A low biomass which was followed by a quick recovery. </td>
    <td style="text-align:left;"> ICES (2016b) </td>
   </tr>
   <tr>
-   <td style="text-align:left;"> NA </td>
+   
    <td style="text-align:left;"> Bpa </td>
    <td style="text-align:left;"> 45000 </td>
    <td style="text-align:left;"> 1.4 × Blim </td>
    <td style="text-align:left;"> ICES (2016b) </td>
   </tr>
   <tr>
-   <td style="text-align:left;"> NA </td>
+   
    <td style="text-align:left;"> Flim </td>
    <td style="text-align:left;"> 0.87 </td>
    <td style="text-align:left;"> Fishing mortality resulting in a 5% probability of SSB falling below Blim. </td>
    <td style="text-align:left;"> ICES(2016b) </td>
   </tr>
   <tr>
-   <td style="text-align:left;"> NA </td>
+   
    <td style="text-align:left;"> Fpa </td>
    <td style="text-align:left;"> 0.62 </td>
    <td style="text-align:left;"> Flim/1.4 </td>
@@ -1395,14 +1399,19 @@ Some fleets fishing this stock have been under the EU landing obligation since 2
 <br>
 
 
-[Download CSV](data:text/csv;base64,IiIsIkZyYW1ld29yayIsIlJlZmVyZW5jZSBwb2ludCIsIlZhbHVlIiwiVGVjaG5pY2FsIGJhc2lzIiwiU291cmNlIgoiMSIsIk1TWSBhcHByb2FjaCIsIk1TWaBCdHJpZ2dlciIsIjQ1MDAwoCAiLCJCcGEiLCJJQ0VTICgyMDE2YSkiCiIyIixOQSwiRk1TWSIsIjAuMjgiLCJTdG9jaGFzdGljIHNpbXVsYXRpb25zIG9uIGEgc2VnbWVudGVkIHJlZ3Jlc3Npb24gc3RvY2uWcmVjcnVpdG1lbnQgcmVsYXRpb25zaGlwLiIsIklDRVMgKDIwMTZhKSIKIjMiLCJQcmVjYXV0aW9uYXJ5IGFwcHJvYWNoIiwiQmxpbSIsIjMyMDAwoCAiLCJBIGxvdyBiaW9tYXNzIHdoaWNoIHdhcyBmb2xsb3dlZCBieSBhIHF1aWNrIHJlY292ZXJ5LiIsIklDRVMgKDIwMTZiKSIKIjQiLE5BLCJCcGEiLCI0NTAwMKAgIiwiMS40INcgQmxpbSIsIklDRVMgKDIwMTZiKSIKIjUiLE5BLCJGbGltIiwiMC44NyIsIkZpc2hpbmcgbW9ydGFsaXR5IHJlc3VsdGluZyBpbiBhIDUlIHByb2JhYmlsaXR5IG9mIFNTQiBmYWxsaW5nIGJlbG93IEJsaW0uIiwiSUNFUygyMDE2YikiCiI2IixOQSwiRnBhIiwiMC42MiIsIkZsaW0vMS40IiwiSUNFUygyMDE2YikiCiI3IiwiTWFuYWdlbWVudCBwbGFuIiwiU1NCTUdUIiwiTm8gIGRlZmluZWQiLCIiLCIi)
+[Download CSV](data:text/csv;base64,LEZyYW1ld29yayxSZWZlcmVuY2UgcG9pbnQsVmFsdWUsVGVjaG5pY2FsIGJhc2lzLFNvdXJjZQoxLE1TWSBhcHByb2FjaCxNU1mgQnRyaWdnZXIsNDUwMDCgICxCcGEsSUNFUyAoMjAxNmEpCjIsTVNZIGFwcHJvYWNoLEZNU1ksMC4yOCxTdG9jaGFzdGljIHNpbXVsYXRpb25zIG9uIGEgc2VnbWVudGVkIHJlZ3Jlc3Npb24gc3RvY2uWcmVjcnVpdG1lbnQgcmVsYXRpb25zaGlwLixJQ0VTICgyMDE2YSkKMyxQcmVjYXV0aW9uYXJ5IGFwcHJvYWNoLEJsaW0sMzIwMDCgICxBIGxvdyBiaW9tYXNzIHdoaWNoIHdhcyBmb2xsb3dlZCBieSBhIHF1aWNrIHJlY292ZXJ5LixJQ0VTICgyMDE2YikKNCxQcmVjYXV0aW9uYXJ5IGFwcHJvYWNoLEJwYSw0NTAwMKAgLDEuNCDXIEJsaW0sSUNFUyAoMjAxNmIpCjUsUHJlY2F1dGlvbmFyeSBhcHByb2FjaCxGbGltLDAuODcsRmlzaGluZyBtb3J0YWxpdHkgcmVzdWx0aW5nIGluIGEgNSUgcHJvYmFiaWxpdHkgb2YgU1NCIGZhbGxpbmcgYmVsb3cgQmxpbS4sSUNFUygyMDE2YikKNixQcmVjYXV0aW9uYXJ5IGFwcHJvYWNoLEZwYSwwLjYyLEZsaW0vMS40LElDRVMoMjAxNmIpCjcsTWFuYWdlbWVudCBwbGFuLFNTQk1HVCxObyAgZGVmaW5lZCws)
 
 ***
 # Basis of the assessment  
 <br>
-**Table 6** Herring in Subarea 4 and divisions 3.a and 7.d, autumn spawners. Basis of the assessment and advice
+
+**Table 6**  Basis of the assessment and advice for hake in subareas 4, 6, and 7, and in divisions 3.a, 8.a–b, and 8.d, Northern stock.
 <table class="table" style="margin-left: auto; margin-right: auto;">
 <tbody>
+  <tr>
+   <td style="text-align:left;width: 15em; font-weight: bold;color: black;background-color: lightgrey;"> ICES stock data category </td>
+   <td style="text-align:left;"> 1 (ICES, 2016c). </td>
+  </tr>
   <tr>
    <td style="text-align:left;width: 15em; font-weight: bold;color: black;background-color: lightgrey;"> Assessment type </td>
    <td style="text-align:left;"> Length-based model (SS3; ICES, 2017a) that uses landings and some discards in the model. Additional discards are then included to calculate a catch forecast. </td>
@@ -1433,23 +1442,380 @@ Some fleets fishing this stock have been under the EU landing obligation since 2
 
 [Download CSV](data:text/csv;base64,IiIsIklDRVMgc3RvY2sgZGF0YSBjYXRlZ29yeSIsIjEgKElDRVMsIDIwMTZjKS4iCiIxIiwiQXNzZXNzbWVudCB0eXBlIiwiTGVuZ3RoLWJhc2VkIG1vZGVsIChTUzM7IElDRVMsIDIwMTdhKSB0aGF0IHVzZXMgbGFuZGluZ3MgYW5kIHNvbWUgZGlzY2FyZHMgaW4gdGhlIG1vZGVsLiBBZGRpdGlvbmFsIGRpc2NhcmRzIGFyZSB0aGVuIGluY2x1ZGVkIHRvIGNhbGN1bGF0ZSBhIGNhdGNoIGZvcmVjYXN0LiIKIjIiLCJJbnB1dCBkYXRhIiwiQ29tbWVyY2lhbCBsYW5kaW5nczsgZm91ciBzdXJ2ZXkgaW5kaWNlcyAoRVZIT0UtV0lCVFMtUTQsIFNwUEdGUy1XSUJUUy1RMywgSUdGUy1XSUJUUy1RNCwgYW5kIFJFU1NHQVNDKTsgbWF0dXJpdHkgZGF0YTogY29uc3RhbnQgbWF0dXJpdHkgKE1hcnRpbiwgMTk5MSk7IG5hdHVyYWwgbW9ydGFsaXR5OiBjb25zdGFudCB2YWx1ZSAoMC40KS4iCiIzIiwiRGlzY2FyZHMgYW5kIGJ5Y2F0Y2giLCJEYXRhIHNlcmllcyBmcm9tIG1vc3QgZmxlZXRzIGFyZSBhdmFpbGFibGU7IDc1JSBvZiB0aGUgb2JzZXJ2ZWQgZGlzY2FyZHMgYXJlIGluY2x1ZGVkIGluIHRoZSBhc3Nlc3NtZW50IChJQ0VTLCAyMDE3YSkuIFRoZSBkaXNjYXJkcyBub3QgdXNlZCBpbiB0aGUgYXNzZXNzbWVudCBhcmUgdXNlZCB0byB0b3AtdXAgdGhlIGNhdGNoIGFkdmljZS4iCiI0IiwiSW5kaWNhdG9ycyIsIk5vbmUuIgoiNSIsIk90aGVyIGluZm9ybWF0aW9uIiwiTGFzdCBiZW5jaG1hcmtlZCBpbiAyMDE0IFdLU09VVEggKElDRVMsIDIwMTQpLiIKIjYiLCJXb3JraW5nIGdyb3VwIiwiV29ya2luZyBHcm91cCBmb3IgdGhlIEJheSBvZiBCaXNjYXkgYW5kIHRoZSBJYmVyaWFuIFdhdGVycyBFY29yZWdpb24gKFdHQklFKSI=)
 
+*** 
+# Information from stakeholders  
 
-***
-# Information from stakeholders
 There is no information available
 
 ***
-# Historical trends
+# History of the advice, catch, and management    
 
+**Table 7**  ICES advice and catch of hake in subareas 4, 6, and 7, and in divisions 3.a, 8.a–b, and 8.d, Northern stock. All weights are
+in tonnes 
+
+** This table should be hidden**
+
+<br>
+<table class="table" style="margin-left: auto; margin-right: auto;">
+ <thead>
+  <tr>
+   <th style="text-align:right;font-weight: bold;color: black;background-color: lightgrey;"> Year </th>
+   <th style="text-align:left;font-weight: bold;color: black;background-color: lightgrey;"> ICES advice </th>
+   <th style="text-align:left;font-weight: bold;color: black;background-color: lightgrey;"> Pred. Catch </th>
+   <th style="text-align:left;font-weight: bold;color: black;background-color: lightgrey;"> Pred. landings </th>
+   <th style="text-align:right;font-weight: bold;color: black;background-color: lightgrey;"> TAC </th>
+   <th style="text-align:right;font-weight: bold;color: black;background-color: lightgrey;"> ICES landings </th>
+   <th style="text-align:left;font-weight: bold;color: black;background-color: lightgrey;"> Discards </th>
+   <th style="text-align:right;font-weight: bold;color: black;background-color: lightgrey;"> ICES catch </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:right;"> 1987 </td>
+   <td style="text-align:left;width: 20em; "> Precautionary TAC; juvenile protection </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:right;"> 63500 </td>
+   <td style="text-align:right;"> 63369 </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:right;"> NA </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 1988 </td>
+   <td style="text-align:left;width: 20em; "> Precautionary TAC; juvenile protection </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> 54000 </td>
+   <td style="text-align:right;"> 66200 </td>
+   <td style="text-align:right;"> 64823 </td>
+   <td style="text-align:left;"> ** </td>
+   <td style="text-align:right;"> NA </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 1989 </td>
+   <td style="text-align:left;width: 20em; "> Precautionary TAC; juvenile protection </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> 54000 </td>
+   <td style="text-align:right;"> 59700 </td>
+   <td style="text-align:right;"> 66473 </td>
+   <td style="text-align:left;"> ** </td>
+   <td style="text-align:right;"> NA </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 1990 </td>
+   <td style="text-align:left;width: 20em; "> Precautionary TAC; juvenile protection </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> 59000 </td>
+   <td style="text-align:right;"> 65100 </td>
+   <td style="text-align:right;"> 59954 </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:right;"> NA </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 1991 </td>
+   <td style="text-align:left;width: 20em; "> Precautionary TAC; juvenile protection </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> 59000 </td>
+   <td style="text-align:right;"> 67000 </td>
+   <td style="text-align:right;"> 58129 </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:right;"> NA </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 1992 </td>
+   <td style="text-align:left;width: 20em; "> If required, precautionary TAC </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> 61500 </td>
+   <td style="text-align:right;"> 69000 </td>
+   <td style="text-align:right;"> 56617 </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:right;"> NA </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 1993 </td>
+   <td style="text-align:left;width: 20em; "> Enforce juvenile protection legislation </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> - </td>
+   <td style="text-align:right;"> 71500 </td>
+   <td style="text-align:right;"> 52144 </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:right;"> NA </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 1994 </td>
+   <td style="text-align:left;width: 20em; "> F significantly reduced </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> - </td>
+   <td style="text-align:right;"> 60000 </td>
+   <td style="text-align:right;"> 51259 </td>
+   <td style="text-align:left;"> ** </td>
+   <td style="text-align:right;"> NA </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 1995 </td>
+   <td style="text-align:left;width: 20em; "> 30% reduction in F </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> 31000 </td>
+   <td style="text-align:right;"> 55100 </td>
+   <td style="text-align:right;"> 57621 </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:right;"> NA </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 1996 </td>
+   <td style="text-align:left;width: 20em; "> 30% reduction in F </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> 39000 </td>
+   <td style="text-align:right;"> 51100 </td>
+   <td style="text-align:right;"> 47210 </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:right;"> NA </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 1997 </td>
+   <td style="text-align:left;width: 20em; "> 20% reduction in F </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> 54000 </td>
+   <td style="text-align:right;"> 60100 </td>
+   <td style="text-align:right;"> 42465 </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:right;"> NA </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 1998 </td>
+   <td style="text-align:left;width: 20em; "> 20% reduction in F </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> 45000 </td>
+   <td style="text-align:right;"> 59100 </td>
+   <td style="text-align:right;"> 35060 </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:right;"> NA </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 1999 </td>
+   <td style="text-align:left;width: 20em; "> Reduce F below Fpa </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> - </td>
+   <td style="text-align:right;"> 55100 </td>
+   <td style="text-align:right;"> 39814 </td>
+   <td style="text-align:left;"> ** </td>
+   <td style="text-align:right;"> NA </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2000 </td>
+   <td style="text-align:left;width: 20em; "> 50% reduction in F </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> - </td>
+   <td style="text-align:right;"> 42100 </td>
+   <td style="text-align:right;"> 42026 </td>
+   <td style="text-align:left;"> ** </td>
+   <td style="text-align:right;"> NA </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2001 </td>
+   <td style="text-align:left;width: 20em; "> Lowest possible catch, recovery plan </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> - </td>
+   <td style="text-align:right;"> 22600 </td>
+   <td style="text-align:right;"> 36675 </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:right;"> NA </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2002 </td>
+   <td style="text-align:left;width: 20em; "> Lowest possible catch / recovery plan </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> - </td>
+   <td style="text-align:right;"> 27000 </td>
+   <td style="text-align:right;"> 40105 </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:right;"> NA </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2003 </td>
+   <td style="text-align:left;width: 20em; "> Lowest possible catch / recovery plan </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> - </td>
+   <td style="text-align:right;"> 30000 </td>
+   <td style="text-align:right;"> 43162 </td>
+   <td style="text-align:left;"> 1393 </td>
+   <td style="text-align:right;"> 44555 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2004 </td>
+   <td style="text-align:left;width: 20em; "> 70% reduction in F or recovery plan </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> - </td>
+   <td style="text-align:right;"> 39100 </td>
+   <td style="text-align:right;"> 46416 </td>
+   <td style="text-align:left;"> 2614 </td>
+   <td style="text-align:right;"> 49029 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2005 </td>
+   <td style="text-align:left;width: 20em; "> F = 0.19 </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> 33000 </td>
+   <td style="text-align:right;"> 42600 </td>
+   <td style="text-align:right;"> 46550 </td>
+   <td style="text-align:left;"> 4583 </td>
+   <td style="text-align:right;"> 51133 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2006 </td>
+   <td style="text-align:left;width: 20em; "> F = 0.25 </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> 44000 </td>
+   <td style="text-align:right;"> 43900 </td>
+   <td style="text-align:right;"> 41469 </td>
+   <td style="text-align:left;"> 1222 </td>
+   <td style="text-align:right;"> 42691 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2007 </td>
+   <td style="text-align:left;width: 20em; "> Recovery plan limits </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> 50500 </td>
+   <td style="text-align:right;"> 52700 </td>
+   <td style="text-align:right;"> 45093 </td>
+   <td style="text-align:left;"> 2165 </td>
+   <td style="text-align:right;"> 47258 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2008 </td>
+   <td style="text-align:left;width: 20em; "> Recovery plan limits </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> 54000 </td>
+   <td style="text-align:right;"> 54000 </td>
+   <td style="text-align:right;"> 47822 </td>
+   <td style="text-align:left;"> 3368 </td>
+   <td style="text-align:right;"> 51190 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2009 </td>
+   <td style="text-align:left;width: 20em; "> F = 0.25 = Fpa </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> 51500 </td>
+   <td style="text-align:right;"> 51500 </td>
+   <td style="text-align:right;"> 58781 </td>
+   <td style="text-align:left;"> 11033 </td>
+   <td style="text-align:right;"> 69814 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2010 </td>
+   <td style="text-align:left;width: 20em; "> F = 0.25 = Fpa </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> 55200 </td>
+   <td style="text-align:right;"> 55105 </td>
+   <td style="text-align:right;"> 72760 </td>
+   <td style="text-align:left;"> 12118 </td>
+   <td style="text-align:right;"> 84878 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2011 </td>
+   <td style="text-align:left;width: 20em; "> See scenarios </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> 50600 </td>
+   <td style="text-align:right;"> 55105 </td>
+   <td style="text-align:right;"> 87540 </td>
+   <td style="text-align:left;"> 13903 </td>
+   <td style="text-align:right;"> 101443 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2012 </td>
+   <td style="text-align:left;width: 20em; "> MSY transition </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> 51900 </td>
+   <td style="text-align:right;"> 55105 </td>
+   <td style="text-align:right;"> 85677 </td>
+   <td style="text-align:left;"> 14870 </td>
+   <td style="text-align:right;"> 100547 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2013 </td>
+   <td style="text-align:left;width: 20em; "> MSY transition </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> 45400 </td>
+   <td style="text-align:right;"> 69440 </td>
+   <td style="text-align:right;"> 77708 </td>
+   <td style="text-align:left;"> 15400 </td>
+   <td style="text-align:right;"> 93108 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2014 </td>
+   <td style="text-align:left;width: 20em; "> MSY approach </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> 81846 </td>
+   <td style="text-align:right;"> 81846 </td>
+   <td style="text-align:right;"> 89928 </td>
+   <td style="text-align:left;"> 9800 </td>
+   <td style="text-align:right;"> 99728 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2015 </td>
+   <td style="text-align:left;width: 20em; "> MSY approach </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> 78457 </td>
+   <td style="text-align:right;"> 90849 </td>
+   <td style="text-align:right;"> 95023 </td>
+   <td style="text-align:left;"> 10900 </td>
+   <td style="text-align:right;"> 105923 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2016 </td>
+   <td style="text-align:left;width: 20em; "> MSY approach </td>
+   <td style="text-align:left;"> ? 109592 </td>
+   <td style="text-align:left;"> ? 96651 </td>
+   <td style="text-align:right;"> 108764 </td>
+   <td style="text-align:right;"> 107530 </td>
+   <td style="text-align:left;"> 11114 </td>
+   <td style="text-align:right;"> 118644 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2017 </td>
+   <td style="text-align:left;width: 20em; "> MSY approach </td>
+   <td style="text-align:left;"> ? 123777 </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:right;"> 119765 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:right;"> NA </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2018 </td>
+   <td style="text-align:left;width: 20em; "> MSY approach </td>
+   <td style="text-align:left;"> ? 115335 </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:right;"> NA </td>
+  </tr>
+</tbody>
+</table>
+* Sum of area TACs, corresponding to northern stock plus Division 2.a (EC zone only).
+** Partial discard estimates are available and used in the assessment. For remaining years for which no values are presented, some estimates are available but not considered valid and thus not used in the assessment.
+
+
+
+[Download CSV](data:text/csv;base64,WWVhcixJQ0VTIGFkdmljZSxQcmVkaWN0ZWQgY2F0Y2ggY29ycmVzcG9uZGluZyB0byBhZHZpY2UsUHJlZGljdGVkIGxhbmRpbmdzIGNvcnJlc3BvbmRpbmcgdG8gYWR2aWNlLEFncmVlZCBUQUMqLElDRVMgbGFuZGluZ3MsRGlzY2FyZHMsSUNFUyBjYXRjaAoxOTg3LFByZWNhdXRpb25hcnkgVEFDOyBqdXZlbmlsZSBwcm90ZWN0aW9uLCwsNjM1MDAsNjMzNjksLAoxOTg4LFByZWNhdXRpb25hcnkgVEFDOyBqdXZlbmlsZSBwcm90ZWN0aW9uLCw1NDAwMCw2NjIwMCw2NDgyMywqKiwKMTk4OSxQcmVjYXV0aW9uYXJ5IFRBQzsganV2ZW5pbGUgcHJvdGVjdGlvbiwsNTQwMDAsNTk3MDAsNjY0NzMsKiosCjE5OTAsUHJlY2F1dGlvbmFyeSBUQUM7IGp1dmVuaWxlIHByb3RlY3Rpb24sLDU5MDAwLDY1MTAwLDU5OTU0LCwKMTk5MSxQcmVjYXV0aW9uYXJ5IFRBQzsganV2ZW5pbGUgcHJvdGVjdGlvbiwsNTkwMDAsNjcwMDAsNTgxMjksLAoxOTkyLCJJZiByZXF1aXJlZCwgcHJlY2F1dGlvbmFyeSBUQUMiLCw2MTUwMCw2OTAwMCw1NjYxNywsCjE5OTMsRW5mb3JjZSBqdXZlbmlsZSBwcm90ZWN0aW9uIGxlZ2lzbGF0aW9uLCwtLDcxNTAwLDUyMTQ0LCwKMTk5NCxGIHNpZ25pZmljYW50bHkgcmVkdWNlZCwsLSw2MDAwMCw1MTI1OSwqKiwKMTk5NSwzMCUgcmVkdWN0aW9uIGluIEYsLDMxMDAwLDU1MTAwLDU3NjIxLCwKMTk5NiwzMCUgcmVkdWN0aW9uIGluIEYsLDM5MDAwLDUxMTAwLDQ3MjEwLCwKMTk5NywyMCUgcmVkdWN0aW9uIGluIEYsLDU0MDAwLDYwMTAwLDQyNDY1LCwKMTk5OCwyMCUgcmVkdWN0aW9uIGluIEYsLDQ1MDAwLDU5MTAwLDM1MDYwLCwKMTk5OSxSZWR1Y2UgRiBiZWxvdyBGcGEsLC0sNTUxMDAsMzk4MTQsKiosCjIwMDAsNTAlIHJlZHVjdGlvbiBpbiBGLCwtLDQyMTAwLDQyMDI2LCoqLAoyMDAxLCJMb3dlc3QgcG9zc2libGUgY2F0Y2gsIHJlY292ZXJ5IHBsYW4iLCwtLDIyNjAwLDM2Njc1LCwKMjAwMixMb3dlc3QgcG9zc2libGUgY2F0Y2ggLyByZWNvdmVyeSBwbGFuLCwtLDI3MDAwLDQwMTA1LCwKMjAwMyxMb3dlc3QgcG9zc2libGUgY2F0Y2ggLyByZWNvdmVyeSBwbGFuLCwtLDMwMDAwLDQzMTYyLDEzOTMsNDQ1NTUKMjAwNCw3MCUgcmVkdWN0aW9uIGluIEYgb3IgcmVjb3ZlcnkgcGxhbiwsLSwzOTEwMCw0NjQxNiwyNjE0LDQ5MDI5CjIwMDUsRiA9IDAuMTksLDMzMDAwLDQyNjAwLDQ2NTUwLDQ1ODMsNTExMzMKMjAwNixGID0gMC4yNSwsNDQwMDAsNDM5MDAsNDE0NjksMTIyMiw0MjY5MQoyMDA3LFJlY292ZXJ5IHBsYW4gbGltaXRzLCw1MDUwMCw1MjcwMCw0NTA5MywyMTY1LDQ3MjU4CjIwMDgsUmVjb3ZlcnkgcGxhbiBsaW1pdHMsLDU0MDAwLDU0MDAwLDQ3ODIyLDMzNjgsNTExOTAKMjAwOSxGID0gMC4yNSA9IEZwYSwsNTE1MDAsNTE1MDAsNTg3ODEsMTEwMzMsNjk4MTQKMjAxMCxGID0gMC4yNSA9IEZwYSwsNTUyMDAsNTUxMDUsNzI3NjAsMTIxMTgsODQ4NzgKMjAxMSxTZWUgc2NlbmFyaW9zLCw1MDYwMCw1NTEwNSw4NzU0MCwxMzkwMywxMDE0NDMKMjAxMixNU1kgdHJhbnNpdGlvbiwsNTE5MDAsNTUxMDUsODU2NzcsMTQ4NzAsMTAwNTQ3CjIwMTMsTVNZIHRyYW5zaXRpb24sLDQ1NDAwLDY5NDQwLDc3NzA4LDE1NDAwLDkzMTA4CjIwMTQsTVNZIGFwcHJvYWNoLCw4MTg0Niw4MTg0Niw4OTkyOCw5ODAwLDk5NzI4CjIwMTUsTVNZIGFwcHJvYWNoLCw3ODQ1Nyw5MDg0OSw5NTAyMywxMDkwMCwxMDU5MjMKMjAxNixNU1kgYXBwcm9hY2gsPyAxMDk1OTIsPyA5NjY1MSwxMDg3NjQsMTA3NTMwLDExMTE0LDExODY0NAoyMDE3LE1TWSBhcHByb2FjaCw/IDEyMzc3NywsMTE5NzY1LCwsCjIwMTgsTVNZIGFwcHJvYWNoLD8gMTE1MzM1LCwsLCw=) 
+<br>
+<br> 
+
+# Dynamic Stock Status Plots
+
+Gapminder is a data visualization tool developed by Hans Rosling that allows one to view 5 dimensional data (see Rosling’s TED talk for details).  It has proved to be an ideal tool for viewing the biological status of the resource, and we provide this tool for each region.
+(This description will improve)
+
+<br>
 <!-- MotionChart generated in R 3.5.0 by googleVis 0.6.2 package -->
-<!-- Tue Sep 25 09:57:52 2018 -->
+<!-- Thu Sep 27 09:36:10 2018 -->
 
 
 <!-- jsHeader -->
 <script type="text/javascript">
  
 // jsData 
-function gvisDataMotionChartID2f38691c53e5 () {
+function gvisDataMotionChartID254848d274ad () {
 var data = new google.visualization.DataTable();
 var datajson =
 [
@@ -3375,15 +3741,15 @@ return(data);
 }
  
 // jsDrawChart
-function drawChartMotionChartID2f38691c53e5() {
-var data = gvisDataMotionChartID2f38691c53e5();
+function drawChartMotionChartID254848d274ad() {
+var data = gvisDataMotionChartID254848d274ad();
 var options = {};
 options["width"] = 600;
 options["height"] = 500;
 options["state"] = "";
 
     var chart = new google.visualization.MotionChart(
-    document.getElementById('MotionChartID2f38691c53e5')
+    document.getElementById('MotionChartID254848d274ad')
     );
     chart.draw(data,options);
     
@@ -3407,9 +3773,9 @@ if (newPackage)
   pkgs.push(chartid);
   
 // Add the drawChart function to the global list of callbacks
-callbacks.push(drawChartMotionChartID2f38691c53e5);
+callbacks.push(drawChartMotionChartID254848d274ad);
 })();
-function displayChartMotionChartID2f38691c53e5() {
+function displayChartMotionChartID254848d274ad() {
   var pkgs = window.__gvisPackages = window.__gvisPackages || [];
   var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
   window.clearTimeout(window.__gvisLoad);
@@ -3433,375 +3799,52 @@ callbacks.shift()();
 </script>
  
 <!-- jsChart -->  
-<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartMotionChartID2f38691c53e5"></script>
+<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartMotionChartID254848d274ad"></script>
  
 <!-- divChart -->
   
-<div id="MotionChartID2f38691c53e5" 
+<div id="MotionChartID254848d274ad" 
   style="width: 600; height: 500;">
 </div>
-
+<br>
 
 ***
 
+# History of the catch and landings  
 
-# History of the advice, catch, and management
-
-**Table 7** Hake in subareas 4, 6, and 7, and in divisions 3.a, 8.a–b, and 8.d, Northern stock. ICES advice and catch. All weights are
-in tonnes
-
-<br> 
-<button class="btn btn-primary" data-toggle="collapse" data-target="#BlockName"> Show/Download Table </button>   
-<div id="BlockName" class="collapse">  
-<br> 
-<table class="table" style="margin-left: auto; margin-right: auto;">
- <thead>
-  <tr>
-   <th style="text-align:right;font-weight: bold;color: black;background-color: lightgrey;"> Year </th>
-   <th style="text-align:left;font-weight: bold;color: black;background-color: lightgrey;"> ICES.advice </th>
-   <th style="text-align:left;font-weight: bold;color: black;background-color: lightgrey;"> Predicted.catch.corresponding.to.advice </th>
-   <th style="text-align:left;font-weight: bold;color: black;background-color: lightgrey;"> Predicted.landings.corresponding.to.advice </th>
-   <th style="text-align:right;font-weight: bold;color: black;background-color: lightgrey;"> Agreed.TAC. </th>
-   <th style="text-align:right;font-weight: bold;color: black;background-color: lightgrey;"> ICES.landings </th>
-   <th style="text-align:left;font-weight: bold;color: black;background-color: lightgrey;"> Discards </th>
-   <th style="text-align:right;font-weight: bold;color: black;background-color: lightgrey;"> ICES.catch </th>
-  </tr>
- </thead>
-<tbody>
-  <tr>
-   <td style="text-align:right;"> 1987 </td>
-   <td style="text-align:left;"> Precautionary TAC; juvenile protection </td>
-   <td style="text-align:left;">  </td>
-   <td style="text-align:left;">  </td>
-   <td style="text-align:right;"> 63500 </td>
-   <td style="text-align:right;"> 63369 </td>
-   <td style="text-align:left;">  </td>
-   <td style="text-align:right;"> NA </td>
-  </tr>
-  <tr>
-   <td style="text-align:right;"> 1988 </td>
-   <td style="text-align:left;"> Precautionary TAC; juvenile protection </td>
-   <td style="text-align:left;">  </td>
-   <td style="text-align:left;"> 54000 </td>
-   <td style="text-align:right;"> 66200 </td>
-   <td style="text-align:right;"> 64823 </td>
-   <td style="text-align:left;"> ** </td>
-   <td style="text-align:right;"> NA </td>
-  </tr>
-  <tr>
-   <td style="text-align:right;"> 1989 </td>
-   <td style="text-align:left;"> Precautionary TAC; juvenile protection </td>
-   <td style="text-align:left;">  </td>
-   <td style="text-align:left;"> 54000 </td>
-   <td style="text-align:right;"> 59700 </td>
-   <td style="text-align:right;"> 66473 </td>
-   <td style="text-align:left;"> ** </td>
-   <td style="text-align:right;"> NA </td>
-  </tr>
-  <tr>
-   <td style="text-align:right;"> 1990 </td>
-   <td style="text-align:left;"> Precautionary TAC; juvenile protection </td>
-   <td style="text-align:left;">  </td>
-   <td style="text-align:left;"> 59000 </td>
-   <td style="text-align:right;"> 65100 </td>
-   <td style="text-align:right;"> 59954 </td>
-   <td style="text-align:left;">  </td>
-   <td style="text-align:right;"> NA </td>
-  </tr>
-  <tr>
-   <td style="text-align:right;"> 1991 </td>
-   <td style="text-align:left;"> Precautionary TAC; juvenile protection </td>
-   <td style="text-align:left;">  </td>
-   <td style="text-align:left;"> 59000 </td>
-   <td style="text-align:right;"> 67000 </td>
-   <td style="text-align:right;"> 58129 </td>
-   <td style="text-align:left;">  </td>
-   <td style="text-align:right;"> NA </td>
-  </tr>
-  <tr>
-   <td style="text-align:right;"> 1992 </td>
-   <td style="text-align:left;"> If required, precautionary TAC </td>
-   <td style="text-align:left;">  </td>
-   <td style="text-align:left;"> 61500 </td>
-   <td style="text-align:right;"> 69000 </td>
-   <td style="text-align:right;"> 56617 </td>
-   <td style="text-align:left;">  </td>
-   <td style="text-align:right;"> NA </td>
-  </tr>
-  <tr>
-   <td style="text-align:right;"> 1993 </td>
-   <td style="text-align:left;"> Enforce juvenile protection legislation </td>
-   <td style="text-align:left;">  </td>
-   <td style="text-align:left;"> - </td>
-   <td style="text-align:right;"> 71500 </td>
-   <td style="text-align:right;"> 52144 </td>
-   <td style="text-align:left;">  </td>
-   <td style="text-align:right;"> NA </td>
-  </tr>
-  <tr>
-   <td style="text-align:right;"> 1994 </td>
-   <td style="text-align:left;"> F significantly reduced </td>
-   <td style="text-align:left;">  </td>
-   <td style="text-align:left;"> - </td>
-   <td style="text-align:right;"> 60000 </td>
-   <td style="text-align:right;"> 51259 </td>
-   <td style="text-align:left;"> ** </td>
-   <td style="text-align:right;"> NA </td>
-  </tr>
-  <tr>
-   <td style="text-align:right;"> 1995 </td>
-   <td style="text-align:left;"> 30% reduction in F </td>
-   <td style="text-align:left;">  </td>
-   <td style="text-align:left;"> 31000 </td>
-   <td style="text-align:right;"> 55100 </td>
-   <td style="text-align:right;"> 57621 </td>
-   <td style="text-align:left;">  </td>
-   <td style="text-align:right;"> NA </td>
-  </tr>
-  <tr>
-   <td style="text-align:right;"> 1996 </td>
-   <td style="text-align:left;"> 30% reduction in F </td>
-   <td style="text-align:left;">  </td>
-   <td style="text-align:left;"> 39000 </td>
-   <td style="text-align:right;"> 51100 </td>
-   <td style="text-align:right;"> 47210 </td>
-   <td style="text-align:left;">  </td>
-   <td style="text-align:right;"> NA </td>
-  </tr>
-  <tr>
-   <td style="text-align:right;"> 1997 </td>
-   <td style="text-align:left;"> 20% reduction in F </td>
-   <td style="text-align:left;">  </td>
-   <td style="text-align:left;"> 54000 </td>
-   <td style="text-align:right;"> 60100 </td>
-   <td style="text-align:right;"> 42465 </td>
-   <td style="text-align:left;">  </td>
-   <td style="text-align:right;"> NA </td>
-  </tr>
-  <tr>
-   <td style="text-align:right;"> 1998 </td>
-   <td style="text-align:left;"> 20% reduction in F </td>
-   <td style="text-align:left;">  </td>
-   <td style="text-align:left;"> 45000 </td>
-   <td style="text-align:right;"> 59100 </td>
-   <td style="text-align:right;"> 35060 </td>
-   <td style="text-align:left;">  </td>
-   <td style="text-align:right;"> NA </td>
-  </tr>
-  <tr>
-   <td style="text-align:right;"> 1999 </td>
-   <td style="text-align:left;"> Reduce F below Fpa </td>
-   <td style="text-align:left;">  </td>
-   <td style="text-align:left;"> - </td>
-   <td style="text-align:right;"> 55100 </td>
-   <td style="text-align:right;"> 39814 </td>
-   <td style="text-align:left;"> ** </td>
-   <td style="text-align:right;"> NA </td>
-  </tr>
-  <tr>
-   <td style="text-align:right;"> 2000 </td>
-   <td style="text-align:left;"> 50% reduction in F </td>
-   <td style="text-align:left;">  </td>
-   <td style="text-align:left;"> - </td>
-   <td style="text-align:right;"> 42100 </td>
-   <td style="text-align:right;"> 42026 </td>
-   <td style="text-align:left;"> ** </td>
-   <td style="text-align:right;"> NA </td>
-  </tr>
-  <tr>
-   <td style="text-align:right;"> 2001 </td>
-   <td style="text-align:left;"> Lowest possible catch, recovery plan </td>
-   <td style="text-align:left;">  </td>
-   <td style="text-align:left;"> - </td>
-   <td style="text-align:right;"> 22600 </td>
-   <td style="text-align:right;"> 36675 </td>
-   <td style="text-align:left;">  </td>
-   <td style="text-align:right;"> NA </td>
-  </tr>
-  <tr>
-   <td style="text-align:right;"> 2002 </td>
-   <td style="text-align:left;"> Lowest possible catch / recovery plan </td>
-   <td style="text-align:left;">  </td>
-   <td style="text-align:left;"> - </td>
-   <td style="text-align:right;"> 27000 </td>
-   <td style="text-align:right;"> 40105 </td>
-   <td style="text-align:left;">  </td>
-   <td style="text-align:right;"> NA </td>
-  </tr>
-  <tr>
-   <td style="text-align:right;"> 2003 </td>
-   <td style="text-align:left;"> Lowest possible catch / recovery plan </td>
-   <td style="text-align:left;">  </td>
-   <td style="text-align:left;"> - </td>
-   <td style="text-align:right;"> 30000 </td>
-   <td style="text-align:right;"> 43162 </td>
-   <td style="text-align:left;"> 1393 </td>
-   <td style="text-align:right;"> 44555 </td>
-  </tr>
-  <tr>
-   <td style="text-align:right;"> 2004 </td>
-   <td style="text-align:left;"> 70% reduction in F or recovery plan </td>
-   <td style="text-align:left;">  </td>
-   <td style="text-align:left;"> - </td>
-   <td style="text-align:right;"> 39100 </td>
-   <td style="text-align:right;"> 46416 </td>
-   <td style="text-align:left;"> 2614 </td>
-   <td style="text-align:right;"> 49029 </td>
-  </tr>
-  <tr>
-   <td style="text-align:right;"> 2005 </td>
-   <td style="text-align:left;"> F = 0.19 </td>
-   <td style="text-align:left;">  </td>
-   <td style="text-align:left;"> 33000 </td>
-   <td style="text-align:right;"> 42600 </td>
-   <td style="text-align:right;"> 46550 </td>
-   <td style="text-align:left;"> 4583 </td>
-   <td style="text-align:right;"> 51133 </td>
-  </tr>
-  <tr>
-   <td style="text-align:right;"> 2006 </td>
-   <td style="text-align:left;"> F = 0.25 </td>
-   <td style="text-align:left;">  </td>
-   <td style="text-align:left;"> 44000 </td>
-   <td style="text-align:right;"> 43900 </td>
-   <td style="text-align:right;"> 41469 </td>
-   <td style="text-align:left;"> 1222 </td>
-   <td style="text-align:right;"> 42691 </td>
-  </tr>
-  <tr>
-   <td style="text-align:right;"> 2007 </td>
-   <td style="text-align:left;"> Recovery plan limits </td>
-   <td style="text-align:left;">  </td>
-   <td style="text-align:left;"> 50500 </td>
-   <td style="text-align:right;"> 52700 </td>
-   <td style="text-align:right;"> 45093 </td>
-   <td style="text-align:left;"> 2165 </td>
-   <td style="text-align:right;"> 47258 </td>
-  </tr>
-  <tr>
-   <td style="text-align:right;"> 2008 </td>
-   <td style="text-align:left;"> Recovery plan limits </td>
-   <td style="text-align:left;">  </td>
-   <td style="text-align:left;"> 54000 </td>
-   <td style="text-align:right;"> 54000 </td>
-   <td style="text-align:right;"> 47822 </td>
-   <td style="text-align:left;"> 3368 </td>
-   <td style="text-align:right;"> 51190 </td>
-  </tr>
-  <tr>
-   <td style="text-align:right;"> 2009 </td>
-   <td style="text-align:left;"> F = 0.25 = Fpa </td>
-   <td style="text-align:left;">  </td>
-   <td style="text-align:left;"> 51500 </td>
-   <td style="text-align:right;"> 51500 </td>
-   <td style="text-align:right;"> 58781 </td>
-   <td style="text-align:left;"> 11033 </td>
-   <td style="text-align:right;"> 69814 </td>
-  </tr>
-  <tr>
-   <td style="text-align:right;"> 2010 </td>
-   <td style="text-align:left;"> F = 0.25 = Fpa </td>
-   <td style="text-align:left;">  </td>
-   <td style="text-align:left;"> 55200 </td>
-   <td style="text-align:right;"> 55105 </td>
-   <td style="text-align:right;"> 72760 </td>
-   <td style="text-align:left;"> 12118 </td>
-   <td style="text-align:right;"> 84878 </td>
-  </tr>
-  <tr>
-   <td style="text-align:right;"> 2011 </td>
-   <td style="text-align:left;"> See scenarios </td>
-   <td style="text-align:left;">  </td>
-   <td style="text-align:left;"> 50600 </td>
-   <td style="text-align:right;"> 55105 </td>
-   <td style="text-align:right;"> 87540 </td>
-   <td style="text-align:left;"> 13903 </td>
-   <td style="text-align:right;"> 101443 </td>
-  </tr>
-  <tr>
-   <td style="text-align:right;"> 2012 </td>
-   <td style="text-align:left;"> MSY transition </td>
-   <td style="text-align:left;">  </td>
-   <td style="text-align:left;"> 51900 </td>
-   <td style="text-align:right;"> 55105 </td>
-   <td style="text-align:right;"> 85677 </td>
-   <td style="text-align:left;"> 14870 </td>
-   <td style="text-align:right;"> 100547 </td>
-  </tr>
-  <tr>
-   <td style="text-align:right;"> 2013 </td>
-   <td style="text-align:left;"> MSY transition </td>
-   <td style="text-align:left;">  </td>
-   <td style="text-align:left;"> 45400 </td>
-   <td style="text-align:right;"> 69440 </td>
-   <td style="text-align:right;"> 77708 </td>
-   <td style="text-align:left;"> 15400 </td>
-   <td style="text-align:right;"> 93108 </td>
-  </tr>
-  <tr>
-   <td style="text-align:right;"> 2014 </td>
-   <td style="text-align:left;"> MSY approach </td>
-   <td style="text-align:left;">  </td>
-   <td style="text-align:left;"> 81846 </td>
-   <td style="text-align:right;"> 81846 </td>
-   <td style="text-align:right;"> 89928 </td>
-   <td style="text-align:left;"> 9800 </td>
-   <td style="text-align:right;"> 99728 </td>
-  </tr>
-  <tr>
-   <td style="text-align:right;"> 2015 </td>
-   <td style="text-align:left;"> MSY approach </td>
-   <td style="text-align:left;">  </td>
-   <td style="text-align:left;"> 78457 </td>
-   <td style="text-align:right;"> 90849 </td>
-   <td style="text-align:right;"> 95023 </td>
-   <td style="text-align:left;"> 10900 </td>
-   <td style="text-align:right;"> 105923 </td>
-  </tr>
-  <tr>
-   <td style="text-align:right;"> 2016 </td>
-   <td style="text-align:left;"> MSY approach </td>
-   <td style="text-align:left;"> ? 109592 </td>
-   <td style="text-align:left;"> ? 96651 </td>
-   <td style="text-align:right;"> 108764 </td>
-   <td style="text-align:right;"> 107530 </td>
-   <td style="text-align:left;"> 11114 </td>
-   <td style="text-align:right;"> 118644 </td>
-  </tr>
-  <tr>
-   <td style="text-align:right;"> 2017 </td>
-   <td style="text-align:left;"> MSY approach </td>
-   <td style="text-align:left;"> ? 123777 </td>
-   <td style="text-align:left;">  </td>
-   <td style="text-align:right;"> 119765 </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:left;">  </td>
-   <td style="text-align:right;"> NA </td>
-  </tr>
-  <tr>
-   <td style="text-align:right;"> 2018 </td>
-   <td style="text-align:left;"> MSY approach </td>
-   <td style="text-align:left;"> ? 115335 </td>
-   <td style="text-align:left;">  </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:left;">  </td>
-   <td style="text-align:right;"> NA </td>
-  </tr>
-</tbody>
-</table>
+**Table 8** Catch distribution by fleet in 2016 as estimated by ICES for hake in subareas 4, 6, and 7, and in divisions 3.a, 8.a–b, and 8.d, Northern stock.
 
 
-
-[Download CSV](data:text/csv;base64,WWVhcixJQ0VTIGFkdmljZSxQcmVkaWN0ZWQgY2F0Y2ggY29ycmVzcG9uZGluZyB0byBhZHZpY2UsUHJlZGljdGVkIGxhbmRpbmdzIGNvcnJlc3BvbmRpbmcgdG8gYWR2aWNlLEFncmVlZCBUQUMqLElDRVMgbGFuZGluZ3MsRGlzY2FyZHMsSUNFUyBjYXRjaAoxOTg3LFByZWNhdXRpb25hcnkgVEFDOyBqdXZlbmlsZSBwcm90ZWN0aW9uLCwsNjM1MDAsNjMzNjksLAoxOTg4LFByZWNhdXRpb25hcnkgVEFDOyBqdXZlbmlsZSBwcm90ZWN0aW9uLCw1NDAwMCw2NjIwMCw2NDgyMywqKiwKMTk4OSxQcmVjYXV0aW9uYXJ5IFRBQzsganV2ZW5pbGUgcHJvdGVjdGlvbiwsNTQwMDAsNTk3MDAsNjY0NzMsKiosCjE5OTAsUHJlY2F1dGlvbmFyeSBUQUM7IGp1dmVuaWxlIHByb3RlY3Rpb24sLDU5MDAwLDY1MTAwLDU5OTU0LCwKMTk5MSxQcmVjYXV0aW9uYXJ5IFRBQzsganV2ZW5pbGUgcHJvdGVjdGlvbiwsNTkwMDAsNjcwMDAsNTgxMjksLAoxOTkyLCJJZiByZXF1aXJlZCwgcHJlY2F1dGlvbmFyeSBUQUMiLCw2MTUwMCw2OTAwMCw1NjYxNywsCjE5OTMsRW5mb3JjZSBqdXZlbmlsZSBwcm90ZWN0aW9uIGxlZ2lzbGF0aW9uLCwtLDcxNTAwLDUyMTQ0LCwKMTk5NCxGIHNpZ25pZmljYW50bHkgcmVkdWNlZCwsLSw2MDAwMCw1MTI1OSwqKiwKMTk5NSwzMCUgcmVkdWN0aW9uIGluIEYsLDMxMDAwLDU1MTAwLDU3NjIxLCwKMTk5NiwzMCUgcmVkdWN0aW9uIGluIEYsLDM5MDAwLDUxMTAwLDQ3MjEwLCwKMTk5NywyMCUgcmVkdWN0aW9uIGluIEYsLDU0MDAwLDYwMTAwLDQyNDY1LCwKMTk5OCwyMCUgcmVkdWN0aW9uIGluIEYsLDQ1MDAwLDU5MTAwLDM1MDYwLCwKMTk5OSxSZWR1Y2UgRiBiZWxvdyBGcGEsLC0sNTUxMDAsMzk4MTQsKiosCjIwMDAsNTAlIHJlZHVjdGlvbiBpbiBGLCwtLDQyMTAwLDQyMDI2LCoqLAoyMDAxLCJMb3dlc3QgcG9zc2libGUgY2F0Y2gsIHJlY292ZXJ5IHBsYW4iLCwtLDIyNjAwLDM2Njc1LCwKMjAwMixMb3dlc3QgcG9zc2libGUgY2F0Y2ggLyByZWNvdmVyeSBwbGFuLCwtLDI3MDAwLDQwMTA1LCwKMjAwMyxMb3dlc3QgcG9zc2libGUgY2F0Y2ggLyByZWNvdmVyeSBwbGFuLCwtLDMwMDAwLDQzMTYyLDEzOTMsNDQ1NTUKMjAwNCw3MCUgcmVkdWN0aW9uIGluIEYgb3IgcmVjb3ZlcnkgcGxhbiwsLSwzOTEwMCw0NjQxNiwyNjE0LDQ5MDI5CjIwMDUsRiA9IDAuMTksLDMzMDAwLDQyNjAwLDQ2NTUwLDQ1ODMsNTExMzMKMjAwNixGID0gMC4yNSwsNDQwMDAsNDM5MDAsNDE0NjksMTIyMiw0MjY5MQoyMDA3LFJlY292ZXJ5IHBsYW4gbGltaXRzLCw1MDUwMCw1MjcwMCw0NTA5MywyMTY1LDQ3MjU4CjIwMDgsUmVjb3ZlcnkgcGxhbiBsaW1pdHMsLDU0MDAwLDU0MDAwLDQ3ODIyLDMzNjgsNTExOTAKMjAwOSxGID0gMC4yNSA9IEZwYSwsNTE1MDAsNTE1MDAsNTg3ODEsMTEwMzMsNjk4MTQKMjAxMCxGID0gMC4yNSA9IEZwYSwsNTUyMDAsNTUxMDUsNzI3NjAsMTIxMTgsODQ4NzgKMjAxMSxTZWUgc2NlbmFyaW9zLCw1MDYwMCw1NTEwNSw4NzU0MCwxMzkwMywxMDE0NDMKMjAxMixNU1kgdHJhbnNpdGlvbiwsNTE5MDAsNTUxMDUsODU2NzcsMTQ4NzAsMTAwNTQ3CjIwMTMsTVNZIHRyYW5zaXRpb24sLDQ1NDAwLDY5NDQwLDc3NzA4LDE1NDAwLDkzMTA4CjIwMTQsTVNZIGFwcHJvYWNoLCw4MTg0Niw4MTg0Niw4OTkyOCw5ODAwLDk5NzI4CjIwMTUsTVNZIGFwcHJvYWNoLCw3ODQ1Nyw5MDg0OSw5NTAyMywxMDkwMCwxMDU5MjMKMjAxNixNU1kgYXBwcm9hY2gsPyAxMDk1OTIsPyA5NjY1MSwxMDg3NjQsMTA3NTMwLDExMTE0LDExODY0NAoyMDE3LE1TWSBhcHByb2FjaCw/IDEyMzc3NywsMTE5NzY1LCwsCjIwMTgsTVNZIGFwcHJvYWNoLD8gMTE1MzM1LCwsLCw=) 
-<div>
+** Missing small table**
 
 <br>
+
 ***
 
-# History of the catch and landings
-**Table 8** Hake in subareas 4, 6, and 7, and in divisions 3.a, 8.a–b, and 8.d, Northern stock. Catch distribution by fleet in 2016 as estimated by ICES.
-<br>
+**Table 9** History of commercial catch and landings of hake in subareas 4, 6, and 7, and in divisions 3.a, 8.a–b, and 8.d, Northern stock. Both the official and ICES estimated values are presented by area for each country participating in the fishery. All weights are in tonnes.
+
+**Missing big table**
+
 ***
+
+# Sources and references  
+
+
+* EU. 2004. COUNCIL REGULATION (EC) No. 811/2004 of 21.4.2004 establishing measures for the recovery of the Northern hake stock. Official Journal of the European Union, L 150/1.
+http://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=OJ:L:2004:150:0001:0011:EN:PDF.
+
+* ICES. 2014. Report of the Benchmark Workshop on Southern Megrim and Hake (WKSOUTH), 3–7 February 2014, Copenhagen, Denmark. ICES CM 2014/ACOM:40. 236 pp.
+
+* ICES. 2016a. EU request to ICES to provide FMSY ranges for selected stocks in ICES subareas 5 to 10. In Report of the ICES Advisory Committee, 2016. ICES Advice 2016, Book 5, Section 5.4.1.
+
+* ICES. 2016b. Report of the Workshop to consider FMSY ranges for stocks in ICES categories 1 and 2 in Western Waters (WKMSYREF4), 13–16 October 2015, Brest, France. ICES CM 2015/ACOM:58. 183 pp.
+
+* ICES. 2016c. Advice basis. In Report of the ICES Advisory Committee, 2016. ICES Advice 2016, Book 1, Section 1.2.
+
+* ICES. 2017a. Report of the Working Group for the Bay of Biscay and the Iberian waters Ecoregion (WGBIE), 4–9 May 2017, Cadiz, Spain. ICES CM 2017/ACOM:12. In preparation.
+
+* ICES. 2017b. Report of the Working Group on Mixed-Fisheries Advice (WGMIXFISH-ADVICE), 22–26 May 2017, ICES Headquarters, Copenhagen, Denmark.ICES CM 2017/ACOM:18. In preparation.
+
+* Martin, I. 1991. A preliminary analysis of some biological aspects of hake (Merluccius merluccius L. 1758) in the Bay of Biscay. ICES CM 1991/G:54. 31 pp.
 
 

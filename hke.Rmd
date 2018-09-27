@@ -19,7 +19,8 @@ output:
         margin-right: 20px;
     }
 #TOC {
-  background:url("images/iceslogo.png") ;
+  background:url("http://ices.dk/_layouts/15/1033/images/icesimg/iceslogo.png") ;
+  background: <a href="#top">Back to top</a>
   background-size: contain;
   padding-top: 100px !important;
   background-repeat: no-repeat;
@@ -54,12 +55,12 @@ h2 { /* Header 2 */
 </style>
 
 ---
-<a id="top"></a>
 
-# ICES advice 2018
+# ICES advice 2017                              
 
 ## "Hake (*Merluccius merluccius*) in subareas 4, 6, and 7, and in divisions 3.a, 8.a–b, and 8.d, Northern stock (Greater North Sea, Celtic Seas, and the northern Bay of Biscay)"
 
+Published 30 June 2017
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(
@@ -166,12 +167,12 @@ SSB <- data %>% select(Year, low_SSB, SSB,high_SSB, Blim, Bpa, MSYBtrigger)
 </div>
 
 
-**Figure 1**  Hake in subareas 4, 6, and 7, and in divisions 3.a, 8.a–b, and 8.d, Northern stock. Summary of the stock assessment.Recruitment, F, and SSB plots show 95% confidence intervals (shaded area). Assumed recruitment values are unshaded.
+**Figure 1** . Summary of the stock assessment of hake in subareas 4, 6, and 7, and in divisions 3.a, 8.a–b, and 8.d, Northern stock.Recruitment, F, and SSB plots show 95% confidence intervals (shaded area). Assumed recruitment values are unshaded.
 <br>
 
 # Summary of the assessment
 
-Hake in subareas 4, 6, and 7, and in divisions 3.a, 8.a–b, and 8.d, Northern stock. Assessment summary. Weights are in tonnes. Highs and lows are 95% confidence intervals
+ Assessment summary for hake in subareas 4, 6, and 7, and in divisions 3.a, 8.a–b, and 8.d, Northern stock. Weights are in tonnes. Highs and lows are 95% confidence intervals
 <br>
 <button class="btn btn-primary" data-toggle="collapse" data-target="#BlockName"> Show/Download Table </button>  
 <div id="BlockName" class="collapse"> 
@@ -215,7 +216,7 @@ library(magrittr)
 # Catch scenarios
 
 <br>
-**Table 2** Hake in subareas 4, 6, and 7, and in divisions 3.a, 8.a–b, and 8.d, Northern stock. The basis for the catch scenarios. All weights are in tonnes.
+**Table 2**  The basis for the catch scenarios of hake in subareas 4, 6, and 7, and in divisions 3.a, 8.a–b, and 8.d, Northern stock. All weights are in tonnes.
 <br>
 ```{r catchoptionsbasis, echo=FALSE}
 library(knitr)
@@ -245,7 +246,7 @@ library(magrittr)
 
 ***
 
-**Table 3** Hake in subareas 4, 6, and 7, and in divisions 3.a, 8.a–b, and 8.d, Northern stock. Annual catch options. All weights are in tonnes.
+**Table 3**  Annual catch scenarios for hake in subareas 4, 6, and 7, and in divisions 3.a, 8.a–b, and 8.d, Northern stock. All weights are in tonnes.
 <br>
 
 Basis| F |Catch 2018|SSB2019
@@ -356,7 +357,7 @@ library(plotly)
                   line = list(color = "red", opacity=0.2),
                   x0 = 0.87, x1 = 3, y0 = 0, y1 = 450000)),
            yaxis= list(title = 'tonnes', showgrid =FALSE),
-    xaxis=list(title = 'F', showgrid= FALSE, tickmode = "array",tickvals = c(0.28,0.62,0.87), ticktext = c("Fmsy","Fpa", "Flim")),
+    xaxis=list(title = 'F', showgrid= FALSE, tickmode = "array",tickvals = c(0.28,0.62,0.87), ticktext = c("Fmsy","Fpa", "Flim"), showarrow = TRUE, tickangle = 45),
     annotations=
         list(
             x= 3,
@@ -367,7 +368,17 @@ library(plotly)
             showarrow = TRUE,
             ax= 70,
             ay= 0
-        ) 
+        ),
+        list(
+            x= c(0.280, 0.620, 0.870),
+            y= -10,
+            xref= 'x',
+            yref='1',
+            text=c('Fmsy','Fpa', 'Flim'),
+            showarrow = TRUE,
+            ax= 30,
+            ay= -50
+        )
     )%>%
          add_trace(y = ~ SSB, name= 'SSB 2019', type = 'bar',opacity = 0.8, width= 0.2, color = ~ SSB,colors=c("darkblue","Yellow"), text = data$Basis, hoverinfo = "text + x+ y") %>%
           add_trace(y = ~ Catch, name = 'Catch 2018', mode = 'lines+markers',text = data$Basis, hoverinfo = "text + x+ y")
@@ -431,41 +442,6 @@ library(plotly)
 
 ```
   
-## Version 3: 
-```{r catchoptionsgraphv3, echo = FALSE}
-library(ggplot2)
-library(plotly)
- catchoptions <- read.csv("Data/hke/hkescenariosplot.csv")
- labels <- catchoptions$Basis
- labels <- as.character(labels)
- mypalette<-ggthemes::tableau_color_pal('tableau20')
- 
- data <- catchoptions[order(catchoptions$F),]
- catchoptions <- catchoptions[!duplicated(catchoptions[,c('F')]),]
-catch <- catchoptions %>% select(c(F,Catch))
-ssb <- catchoptions %>% select(c(F,SSB))
-labels <- catchoptions$F
-labels <- as.character(labels)
-
- p1 <- ggplot(catchoptions, aes(F))+
-    geom_col(data= ssb,aes(y = ssb$SSB, fill = SSB), width = 0.20)+
-     scale_fill_gradient(low="gray90", high="blue")+
-    geom_point(data= catch,aes(y= catch$Catch,size = Catch))+
-    geom_line(aes(y = catch$Catch))+
-    scale_x_continuous(breaks = round(seq(min(catchoptions$F), max(catchoptions$F), by = 0.5),3))+
-    xlab("Fishing mortality")+
-    ylab("tonnes")+
-         theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
-panel.background = element_blank(), axis.line = element_line(colour = "grey"))
- 
-  p2 <- p1 + theme(axis.text.x = element_text(face="bold", color="Black",
-                             size=10, angle=45))+
-    theme(legend.text = element_text(colour="blue", size = 16, face = "bold"))
-  
-
- ggplotly(p2, width = 600, height = 300)
-
-```
 <br>
 
 [Go to Top](#top)
@@ -474,7 +450,7 @@ panel.background = element_blank(), axis.line = element_line(colour = "grey"))
 
 # Basis of the advice  
 <br>
-**Table 4** Hake in subareas 4, 6, and 7, and in divisions 3.a, 8.a–b, and 8.d, Northern stock. The basis of the advice.
+**Table 4** The basis of the advice for hake in subareas 4, 6, and 7, and in divisions 3.a, 8.a–b, and 8.d, Northern stock.
 ```{r advicebasis, echo=FALSE}
 library(knitr)
 library(readr)
@@ -494,9 +470,17 @@ kable(dt, "html")%>%kable_styling(position = "center")%>%
 The uncertainty in the assessment is relatively high, with large changes in biomass estimates in consecutive years. The model confidence intervals are an underestimate of uncertainty because they are narrower than interannual changes in estimates in consecutive years.
 There is a lack of tuning data for the earlier years of the assessment, for some areas outside of subareas 7 and 8, and for the larger individuals in the population. Given the expansion of the stock into northern areas (ICES, 2017b), there is a potential that not all catches are reported for this stock. Biological sampling from these areas is also limited.
 The data compilation of this stock is very complicated because it is exploited by several countries and the assessment model configuration is complex. In turn, the assessment model is very sensitive to the data and the settings used. Hence, it is extremely important for the quality of the assessment to have the complete data for all the countries on time and in the right format.
-**missing graphs**
+<br>
+
+```{r qualplots}
+knitr::include_graphics("images/hkequalplot.png")
+```
+
+**Figure 2**  Historical assessment results for hake in subareas 4, 6, and 7, and in divisions 3.a, 8.a–b, and 8.d, Northern stock.
+<br>
 
 ***
+
 # Issues relevant for the advice
 Discarding of juvenile hake can be substantial in some areas and fleets. Discarding of large individuals has increased in recent years because of quota restrictions in certain fleets.
 
@@ -506,7 +490,7 @@ Some fleets fishing this stock have been under the EU landing obligation since 2
 
 # Reference Points  
 <br>
-**Table 5** Herring in Subarea 4 and divisions 3.a and 7.d, autumn spawners. Reference points, values, and their technical basis.
+**Table 5** Reference points, values, and their technical basis for hake in subareas 4, 6, and 7, and in divisions 3.a, 8.a–b, and 8.d, Northern stock.
 ```{r referencepoints, echo=FALSE}
 library(knitr)
 library(readr)
@@ -514,7 +498,8 @@ library(kableExtra)
 dt <- read.csv("Data/hke/hkereferencepoints.csv")
 dt <- dt [,-1] 
 kable(dt, "html")%>%kable_styling(position = "center")%>%
-  row_spec(0, bold = T, color = "black", background = "lightgrey")
+  row_spec(0, bold = T, color = "black", background = "lightgrey")%>%
+        collapse_rows(columns = 1)
 
 ```
 <br>
@@ -530,18 +515,17 @@ library(magrittr)
 ***
 # Basis of the assessment  
 <br>
-**Table 6** Herring in Subarea 4 and divisions 3.a and 7.d, autumn spawners. Basis of the assessment and advice
+
+**Table 6**  Basis of the assessment and advice for hake in subareas 4, 6, and 7, and in divisions 3.a, 8.a–b, and 8.d, Northern stock.
 ```{r advicebla, echo=FALSE}
 library(knitr)
 library(readr)
 library(kableExtra)
-dt <- read.csv("Data/hke/hkeassessmentbasis.csv")
+dt <- read.csv("Data/hke/hkeassessmentbasis.csv", header = FALSE)
 dt <- dt [,-1] 
 colnames(dt) <- NULL
 kable(dt, "html")%>%kable_styling(position = "center")%>%
   column_spec(1, width = "15em",bold = T, color = "black", background = "lightgrey")
-
-
 ```
 
 ```{r download7}
@@ -552,14 +536,51 @@ library(magrittr)
 ```
 [Download CSV](`r sprintf('data:text/csv;base64,%s', encoded)`)
 
+*** 
+# Information from stakeholders  
 
-***
-# Information from stakeholders
 There is no information available
 
 ***
-# Historical trends
+# History of the advice, catch, and management    
 
+**Table 7**  ICES advice and catch of hake in subareas 4, 6, and 7, and in divisions 3.a, 8.a–b, and 8.d, Northern stock. All weights are
+in tonnes 
+
+** This table should be hidden**
+
+<br>
+```{r history, echo=FALSE }
+library(icesSAG)
+library(kableExtra)
+dt <- read.csv("Data/hke/hkecatchhistory.csv")
+# dt <- dt [,-1] 
+colnames(dt) <- c("Year", "ICES advice", "Pred. Catch", "Pred. landings","TAC", "ICES landings", "Discards", "ICES catch")
+kable(dt, "html")%>% 
+  column_spec(2, width = "20em")%>%
+        kable_styling(position = "center")%>%
+        row_spec(0, bold = T, color = "black", background = "lightgrey")
+```
+* Sum of area TACs, corresponding to northern stock plus Division 2.a (EC zone only).
+** Partial discard estimates are available and used in the assessment. For remaining years for which no values are presented, some estimates are available but not considered valid and thus not used in the assessment.
+
+```{r downloadhistory}
+library(magrittr)
+ readLines("Data/hke/hkecatchhistory.csv") %>% 
+   paste0(collapse="\n") %>% 
+   openssl::base64_encode() -> encoded
+```
+
+[Download CSV](`r sprintf('data:text/csv;base64,%s', encoded)`) 
+<br>
+<br> 
+
+# Dynamic Stock Status Plots
+
+Gapminder is a data visualization tool developed by Hans Rosling that allows one to view 5 dimensional data (see Rosling’s TED talk for details).  It has proved to be an ideal tool for viewing the biological status of the resource, and we provide this tool for each region.
+(This description will improve)
+
+<br>
 ```{r, echo=FALSE, results= 'asis'}
 library(googleVis)
 library(tidyr)
@@ -579,48 +600,53 @@ bla <- hke %>% gather(Measures, value, -Year, -`F/Fmsy`, -`SSB/MSYBtrigger`)
 vis<- gvisMotionChart(bla, idvar= "Measures", timevar = "Year")
 plot(vis)
 ```
-
+<br>
 
 ***
 
+# History of the catch and landings  
 
-# History of the advice, catch, and management
-
-**Table 7** Hake in subareas 4, 6, and 7, and in divisions 3.a, 8.a–b, and 8.d, Northern stock. ICES advice and catch. All weights are
-in tonnes
-
-<br> 
-<button class="btn btn-primary" data-toggle="collapse" data-target="#BlockName"> Show/Download Table </button>   
-<div id="BlockName" class="collapse">  
-<br> 
-```{r history, echo=FALSE}
-library(knitr)
-library(readr)
+**Table 8** Catch distribution by fleet in 2016 as estimated by ICES for hake in subareas 4, 6, and 7, and in divisions 3.a, 8.a–b, and 8.d, Northern stock.
+```{r catchlandings, echo = FALSE}
 library(kableExtra)
-dt <- read.csv("Data/hke/hkecatchhistory.csv")
-# dt <- dt [,-1] 
-# colnames(dt) <- NULL
-kable(dt, "html")%>%kable_styling(position = "center")%>%
-  row_spec(0,bold = T, color = "black", background = "lightgrey")
-
+dt <- read.csv("Data/hke/hkelandhist.csv", header = FALSE)
+colnames(dt) <- NULL
+# kable(dt, "html")%>%kable_styling(position = "center")%>%
+#         add_header_above(c("Catch" = 1, "Landings" = 4, "Discards" = 1))%>%
+#   row_spec(0, bold = T, color = "black", background = "lightgrey")%>%
+#         collapse_rows(columns = 1)
 ```
 
-```{r downloadhistory}
-library(magrittr)
- readLines("Data/hke/hkecatchhistory.csv") %>% 
-   paste0(collapse="\n") %>% 
-   openssl::base64_encode() -> encoded
-```
-
-[Download CSV](`r sprintf('data:text/csv;base64,%s', encoded)`) 
-<div>
+** Missing small table**
 
 <br>
+
 ***
 
-# History of the catch and landings
-**Table 8** Hake in subareas 4, 6, and 7, and in divisions 3.a, 8.a–b, and 8.d, Northern stock. Catch distribution by fleet in 2016 as estimated by ICES.
-<br>
+**Table 9** History of commercial catch and landings of hake in subareas 4, 6, and 7, and in divisions 3.a, 8.a–b, and 8.d, Northern stock. Both the official and ICES estimated values are presented by area for each country participating in the fishery. All weights are in tonnes.
+
+**Missing big table**
+
 ***
+
+# Sources and references  
+
+
+* EU. 2004. COUNCIL REGULATION (EC) No. 811/2004 of 21.4.2004 establishing measures for the recovery of the Northern hake stock. Official Journal of the European Union, L 150/1.
+http://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=OJ:L:2004:150:0001:0011:EN:PDF.
+
+* ICES. 2014. Report of the Benchmark Workshop on Southern Megrim and Hake (WKSOUTH), 3–7 February 2014, Copenhagen, Denmark. ICES CM 2014/ACOM:40. 236 pp.
+
+* ICES. 2016a. EU request to ICES to provide FMSY ranges for selected stocks in ICES subareas 5 to 10. In Report of the ICES Advisory Committee, 2016. ICES Advice 2016, Book 5, Section 5.4.1.
+
+* ICES. 2016b. Report of the Workshop to consider FMSY ranges for stocks in ICES categories 1 and 2 in Western Waters (WKMSYREF4), 13–16 October 2015, Brest, France. ICES CM 2015/ACOM:58. 183 pp.
+
+* ICES. 2016c. Advice basis. In Report of the ICES Advisory Committee, 2016. ICES Advice 2016, Book 1, Section 1.2.
+
+* ICES. 2017a. Report of the Working Group for the Bay of Biscay and the Iberian waters Ecoregion (WGBIE), 4–9 May 2017, Cadiz, Spain. ICES CM 2017/ACOM:12. In preparation.
+
+* ICES. 2017b. Report of the Working Group on Mixed-Fisheries Advice (WGMIXFISH-ADVICE), 22–26 May 2017, ICES Headquarters, Copenhagen, Denmark.ICES CM 2017/ACOM:18. In preparation.
+
+* Martin, I. 1991. A preliminary analysis of some biological aspects of hake (Merluccius merluccius L. 1758) in the Bay of Biscay. ICES CM 1991/G:54. 31 pp.
 
 

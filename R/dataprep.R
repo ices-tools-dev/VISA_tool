@@ -3,43 +3,53 @@
 
 
 library(fisheryO)
-ecoregion = "Bay of Biscay and the Iberian Coast Ecoregion"
+ecoregion = "Greater North Sea Ecoregion"
 area_definition(ecoregion)
-file_name= "map"
+file_name= "hke_map"
 output_path <- "~/"
 
-xmin <- min(sf::st_bbox(eco_areas)[1], sf::st_bbox(ices_areas)[1])
-xmax <- max(sf::st_bbox(eco_areas)[3], sf::st_bbox(ices_areas)[3])
-ymin <- min(sf::st_bbox(eco_areas)[2], sf::st_bbox(ices_areas)[2])
-ymax <- max(sf::st_bbox(eco_areas)[4], sf::st_bbox(ices_areas)[4])
-
+xmin <- min(sf::st_bbox(stock_areas)[1])
+xmin <- xmin/100000
+xmax <- max( sf::st_bbox(stock_areas)[3])
+xmax <- xmax/100000
+ymin <- min( sf::st_bbox(stock_areas)[2])
+ymin <- ymin/100000
+ymax <- max(sf::st_bbox(stock_areas)[4])
+ymax <- ymax/100000
 xlims <- c(xmin, xmax)
 ylims <- c(ymin, ymax)
 
-stock_areas <- ices_areas %>% filter(Area_27 %in% c("8.c", "9.a"))
-centroids <- centroids %>% filter(Area_27 %in% c("8.c", "9.a"))
+stock_areas <- ices_shape %>% filter(Area_27 %in% c("3.a.20", "3.a.21", "8.a",
+                                                    "8.b","8.d")| SubArea %in% c("4", "6", "7"))
+centroids <- ices_area_centroids %>% filter(Area_27 %in% c("3.a.20", "3.a.21", "8.a",
+                                                           "8.b","8.d")| SubArea %in% c("4", "6", "7"))
+
+centroids <- data.frame(as.character(centroids$Area_27),
+                        # ices_area_centroids$ECOREGION,
+                        matrix(unlist(ices_area_centroids$geometry),
+                               ncol = 2,
+                               byrow = TRUE),
+                        stringsAsFactors = FALSE)
+
+colnames(centroids) <- c("Area_27", "X", "Y")
+
 p1 <- ggplot() +
-  geom_sf(data = eco_areas, color = "grey60", fill = "transparent") +
+  # geom_sf(data = eco_shape, color = "grey60", fill = "transparent") +
   # geom_sf(data = visahke, color = "grey80", fill = "gold") +
   geom_sf(data = europe_shape, fill = "grey80", color = "grey90") +
   # geom_sf(data = ices_areas, color = "grey60", fill = "transparent") +
   geom_sf(data = stock_areas, color = "grey60", fill = "gold") +
   # geom_sf(data = ices_areas, color = "grey60", fill = "transparent") +
-  geom_text(data = centroids, aes(x = X, y = Y, label = Area_27), size = 2.5) +
+  # geom_text(data = centroids, aes(x = X, y = Y, label = Area_27), size = 2.5) +
   #geom_text(data = visahke, aes(x = X, y = Y, label = Area_27), size = 2.5) +
   theme_bw(base_size = 8) +
   theme(plot.caption = element_text(size = 6),
         plot.subtitle = element_text(size = 7)) +
-  coord_sf(crs = crs, xlim = xlims, ylim = ylims) 
+  coord_sf(xlim = xlims, ylim = ylims) 
 
 map <-p1
 
-ggsave(filename = paste0(output_path, file_name, ".png"),
-       plot = p1,
-       width = 178,
-       height = 152,
-       units = "mm",
-       dpi = 300)
+ggsave("hkemap.png", path = "~/", width = 178, height = 152, units = "mm", dpi = 300)
 
 #for SAG plots
 
@@ -118,6 +128,11 @@ get_filelist <- function(year = 2017) {
       folderNames = c("BalticSea", "BarentsSea", "BayOfBiscay", 
                       "CelticSea", "Faroes", "Iceland",
                       "NorthSea", "Salmon", "Widely")
+    }
+    if(year == 2018){
+            folderNames = c("BalticSea", "BarentsSea", "BayOfBiscay", 
+                            "CelticSea", "Faroes", "Iceland",
+                            "NorthSea", "Salmon", "Widely")
     }
     
     ### Hopefully, future folderNames are consistent, if not, map by hand, as above.
