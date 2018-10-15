@@ -13,11 +13,6 @@ output:
     code_folding: hide
 ---
 <style>
-    body .main-container {
-        width: 2000px;
-        margin-left: 20px;
-        margin-right: 20px;
-    }
 #TOC {
   background:url("images/iceslogo.png") ;
   background-size: contain;
@@ -31,25 +26,6 @@ output:
   height: 80%;
   overflow:auto;
 }
-</style>
-
-<style type="text/css"> body, td { font-size: 16px; } width: 800px code.r{ font-size: 12px; } pre { font-size: 12px }
-
-h1 { /* Header 1 */
-  font-size: 24px;
-  color: Grey;
-}
-h2 { /* Header 2 */
-    font-size: 18px;
-  color: Black;
-}
- .col2 {
-    columns: 2 220px;         /* number of columns and width in pixels*/
-    -webkit-columns: 2 220px; /* chrome, safari */
-    -moz-columns: 2 220px;    /* firefox */
-  }
-</style>
-
 ---
 <a id="top"></a>
 
@@ -69,28 +45,32 @@ knitr::opts_chunk$set(
 
 ***
 ```{r  out.width = "50%"}
-knitr::include_graphics("images/blueling.png")
+knitr::include_graphics("images/bli.png")
 knitr::include_graphics("images/blimap.png")
 ```
 
 
 [Go to latest advice](http://ices.dk/sites/pub/Publication%20Reports/Advice/2018/2018/bli-5b67.pdf)  
-[Go to Standard Graphs page](https://standardgraphs.ices.dk/manage/ViewGraphsAndTables.aspx?key=9467)  
+[Go to Standard Graphs page](http://standardgraphs.ices.dk/ViewCharts.aspx?key=9467)  
 [Go to Transparent Assessment Framework page](https://github.com/ices-taf/2016_cod-347d)
 
 ***
 
 # ICES advice on fishing opportunities
-ICES advises that when the MSY approach is applied, catches should be no more than 11 778 tonnes in 2019 and no more than 11 150 tonnes in 2020.
+ICES advises that when the MSY approach is applied, catches should be no more than 11 778 tonnes in 2019 and no more than ** 11 150 ** tonnes in 2020.
  <br> 
 
 ***
 
 # Stock development over time
-The spawning-stock biomass (SSB) has increased since 2004 and has been above MSY Btrigger since 2010. Fishing mortality has
-decreased since 2002 and has been lower than FMSY since 2004. Recruitment is estimated to be stable.
+The spawning-stock biomass (SSB) has increased since 2004 and has been above MSY Btrigger since 2010. Fishing mortality has decreased since 2002 and has been lower than FMSY since 2004. Recruitment is estimated to be stable.
 
-<div class="col2">
+<div class= "col2"
+.col2 {
+    columns: 2 220px;         /* number of columns and width in pixels*/
+    -webkit-columns: 2 220px; /* chrome, safari */
+    -moz-columns: 2 220px;    /* firefox */
+  }>
 ```{r sag1, echo=FALSE, fig.height=3.5, fig.width=3.5}
 
  library(htmlwidgets)
@@ -99,8 +79,11 @@ decreased since 2002 and has been lower than FMSY since 2004. Recruitment is est
  library(dygraphs)
  library(htmltools)
  library(widgetframe)
- data <- read.csv("Data/bli/blidata.csv")
+ # data <- read.csv("Data/bli/blidata.csv")
+library(icesSAG)
 
+SAGsummary <- getSAG("bli.27.5b67", 2018, data = "summary", combine = TRUE, purpose = "Advice")
+data <- SAGsummary
  dyBarChart <- function(dygraph) {
   dyPlotter(dygraph = dygraph,
             name = "BarChart",
@@ -164,17 +147,17 @@ SSB <- data %>% select(Year, low_SSB, SSB,high_SSB, Blim, Bpa, MSYBtrigger)
 </div>
 
 
-**Figure 1**  Hake in subareas 4, 6, and 7, and in divisions 3.a, 8.a–b, and 8.d, Northern stock. Summary of the stock assessment.Recruitment, F, and SSB plots show 95% confidence intervals (shaded area). Assumed recruitment values are unshaded.
+**Figure 1**   Summary of stock assessment (weights in thousand tonnes and recruitment in millions). Assumed recruitment values are unshaded.Blue ling in subareas 6–7 and Division 5.b.
 <br>
 
 ## Summary of the assessment
 
-Hake in subareas 4, 6, and 7, and in divisions 3.a, 8.a–b, and 8.d, Northern stock. Assessment summary. Weights are in tonnes. Highs and lows are 95% confidence intervals
+Blue ling in subareas 6–7 and Division 5.b. Assessment summary. Weights are in tonnes. Highs and lows are 95% confidence intervals
 
 ```{r summarysag, echo=FALSE}
 library(icesSAG)
 
-SAGsummary <- getSAG("hke.27.3a46-8abd", 2017, data = "summary", combine = TRUE, purpose = "Advice")
+SAGsummary 
 write.csv(SAGsummary, file = "SAGsummary.csv")
 
 ```
@@ -203,7 +186,7 @@ library(magrittr)
 # Catch scenarios
 
 <br>
-**Table 2 Hake in subareas 4, 6, and 7, and in divisions 3.a, 8.a–b, and 8.d, Northern stock. The basis for the catch scenarios. All weights are in tonnes.**
+** Table 2 Assumptions made for the interim year and in the forecast. Blue ling in subareas 6–7 and Division 5.b.**
 <br>
 ```{r catchoptionsbasis, echo=FALSE}
 library(knitr)
@@ -224,7 +207,7 @@ kable(dt, "html")%>%
 
 ***
 
-**Table 3 Hake in subareas 4, 6, and 7, and in divisions 3.a, 8.a–b, and 8.d, Northern stock. Annual catch options. All weights are in tonnes.**
+**Table 3a Annual catch options. All weights are in tonnes.Blue ling in subareas 6–7 and Division 5.b.**
 
 <button class="btn btn-primary" data-toggle="collapse" data-target="#BlockName"> Show/Download Table </button>  
 <div id="BlockName" class="collapse"> 

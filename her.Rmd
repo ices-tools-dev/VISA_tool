@@ -13,11 +13,7 @@ output:
     code_folding: hide
 ---
 <style>
-    body .main-container {
-        width: 2000px;
-        margin-left: 20px;
-        margin-right: 20px;
-    }
+    
 #TOC {
   background:url("images/iceslogo.png") ;
   background-size: contain;
@@ -31,25 +27,6 @@ output:
   height: 80%;
   overflow:auto;
 }
-</style>
-
-<style type="text/css"> body, td { font-size: 16px; } width: 800px code.r{ font-size: 12px; } pre { font-size: 12px }
-
-h1 { /* Header 1 */
-  font-size: 24px;
-  color: Grey;
-}
-h2 { /* Header 2 */
-    font-size: 18px;
-  color: Black;
-}
- .col2 {
-    columns: 2 220px;         /* number of columns and width in pixels*/
-    -webkit-columns: 2 220px; /* chrome, safari */
-    -moz-columns: 2 220px;    /* firefox */
-  }
-</style>
-
 ---
 <a id="top"></a>
 
@@ -75,27 +52,26 @@ knitr::include_graphics("images/map.png")
 
 
 [Go to latest advice](http://www.ices.dk/sites/pub/Publication%20Reports/Advice/2018/2018/her.27.25-2932.pdf)  
-[Go to Standard Graphs page](https://standardgraphs.ices.dk/manage/ViewGraphsAndTables.aspx?key=9428)  
+[Go to Standard Graphs page](http://standardgraphs.ices.dk/ViewCharts.aspx?key=9428)  
 [Go to Transparent Assessment Framework page](https://github.com/ices-taf/2016_cod-347d)
 
 ***
 
 # ICES advice on fishing opportunities
-ICES advises that when the EU multiannual plan (MAP) is applied, catches in 2019 that correspond to the F ranges in the
-plan are between **115 591** tonnes and **192 787** tonnes. According to the MAP, catches higher than those corresponding
-to FMSY (155 333 tonnes) can only be taken under conditions specified in the MAP, whilst the entire range is considered
-precautionary when applying the ICES advice rule. This advice applies to all catches from the stock, including those taken
-in Subdivision 28.1.
+ICES advises that when the EU multiannual plan (MAP) is applied, catches in 2019 that correspond to the F ranges in the plan are between **115 591** tonnes and **192 787** tonnes. According to the MAP, catches higher than those corresponding to FMSY (155 333 tonnes) can only be taken under conditions specified in the MAP, whilst the entire range is considered precautionary when applying the ICES advice rule. This advice applies to all catches from the stock, including those taken in Subdivision 28.1.
  <br> 
 
 ***
 
 # Stock development over time
-Spawning-stock biomass (SSB) decreased until 2001 and then increased, and it has been above MSY Btrigger since 2007.
-Fishing mortality (F) increased until 2000 and then decreased, remaining below FMSY between 2004 to 2014. F has been
-above FMSY since 2015. Recruitment in 2015 is estimated to be the highest of the whole time-series.
+Spawning-stock biomass (SSB) decreased until 2001 and then increased, and it has been above MSY Btrigger since 2007. Fishing mortality (F) increased until 2000 and then decreased, remaining below FMSY between 2004 to 2014. F has been above FMSY since 2015. Recruitment in 2015 is estimated to be the highest of the whole time-series.
 
-<div class="col2">
+<div class= "col2"
+.col2 {
+    columns: 2 220px;         /* number of columns and width in pixels*/
+    -webkit-columns: 2 220px; /* chrome, safari */
+    -moz-columns: 2 220px;    /* firefox */
+  }>
 ```{r sag1, echo=FALSE, fig.height=3.5, fig.width=3.5}
 
  library(htmlwidgets)
@@ -104,8 +80,10 @@ above FMSY since 2015. Recruitment in 2015 is estimated to be the highest of the
  library(dygraphs)
  library(htmltools)
  library(widgetframe)
- data <- read.csv("Data/her/herdata.csv")
-
+library(icesSAG)
+SAGsummary <- getSAG("her.27.25-2932", 2018, data = "summary", combine = TRUE, purpose = "Advice")
+ # data <- read.csv("Data/her/herdata.csv")
+data <- SAGsummary
  dyBarChart <- function(dygraph) {
   dyPlotter(dygraph = dygraph,
             name = "BarChart",
@@ -180,7 +158,6 @@ Recruitment in thousands.
 
 ```{r summarysag, echo=FALSE}
 library(icesSAG)
-
 SAGsummary <- getSAG("her.27.25-2932", 2018, data = "summary", combine = TRUE, purpose = "Advice")
 write.csv(SAGsummary, file = "SAGsummary.csv")
 
@@ -201,8 +178,7 @@ library(magrittr)
 
 <br>
 
-ICES assesses that fishing pressure on the stock is above FMSY and below Fpa and Flim; spawning stock size is above MSY
-Btrigger, Bpa, and Blim.
+ICES assesses that fishing pressure on the stock is above FMSY and below Fpa and Flim; spawning stock size is above MSY Btrigger, Bpa, and Blim.
 <br>
 **State of the stock and fishery relative to reference points**
 <br>
@@ -215,7 +191,7 @@ Btrigger, Bpa, and Blim.
 
 <br>
 
-**Herring in subdivisions 25–29 and 32, excluding the Gulf of Riga. Assumptions made for the interim year and in the forecast. Weights are in tonnes. Recruitment is in thousands.**
+** Assumptions made for the interim year and in the forecast for herring in subdivisions 25–29 and 32, excluding the Gulf of Riga.Weights are in tonnes. Recruitment is in thousands.**
 
 
 <br>
@@ -233,12 +209,12 @@ kable(dt, "html")%>%
   kable_styling(position = "center", full_width = F, font_size = 7)
 
 ```
-
+* TAC constraint in 2018: EU share 229 355 tonnes + Russian quota 29 500 tonnes + central Baltic herring stock caught in Gulf of Riga 4 340 tonnes (mean 2012–2016) − Gulf of Riga herring stock caught in central Baltic Sea 260 tonnes (mean 2012 – 2016) = 262 935 tonnes .
 <br>
 
 ***
 
-**Table 3 Herring in subdivisions 25–29 and 32, excluding the Gulf of Riga. Annual catch scenarios. All weights are in tonnes.**
+**Table 3  Annual catch scenarios for herring in subdivisions 25–29 and 32, excluding the Gulf of Riga. All weights are in tonnes.**
 
 <button class="btn btn-primary" data-toggle="collapse" data-target="#BlockName"> Show/Download Table </button>  
 <div id="BlockName" class="collapse"> 
@@ -275,6 +251,7 @@ library(magrittr)
 [Download CSV](`r sprintf('data:text/csv;base64,%s', encoded)`)
 </div>
 <br>
+The decreased catch advice is due to a change in the perception of the stock size. The stock size was downscaled and fishing mortality was upscaled due to the low survey indices in the last two years. There is also a downward revision of the 2014 year class.
 <br>
 ```{r catchscenariostable, echo=FALSE, fig.width=3}
 library(knitr)
@@ -767,7 +744,7 @@ library(plotly)
 # Basis of the advice  
 ***
 <br>
-**Table 4** Hake in subareas 4, 6, and 7, and in divisions 3.a, 8.a–b, and 8.d, Northern stock. The basis of the advice.
+**Table 4** The basis of the advice for hake in subareas 4, 6, and 7, and in divisions 3.a, 8.a–b, and 8.d, Northern stock.
 ```{r advicebasis, echo=FALSE}
 library(knitr)
 library(readr)
@@ -785,19 +762,52 @@ kable(dt, "html")%>%kable_styling(position = "center")%>%
 # Quality of the assessment  
 ***
 <br>
-The uncertainty in the assessment is relatively high, with large changes in biomass estimates in consecutive years. The model confidence intervals are an underestimate of uncertainty because they are narrower than interannual changes in estimates in consecutive years.
-There is a lack of tuning data for the earlier years of the assessment, for some areas outside of subareas 7 and 8, and for the larger individuals in the population. Given the expansion of the stock into northern areas (ICES, 2017b), there is a potential that not all catches are reported for this stock. Biological sampling from these areas is also limited.
-The data compilation of this stock is very complicated because it is exploited by several countries and the assessment model configuration is complex. In turn, the assessment model is very sensitive to the data and the settings used. Hence, it is extremely important for the quality of the assessment to have the complete data for all the countries on time and in the right format.
+A high variability between years in the survey index, in particular in the last years due to the large year class of 2014, is the likely cause of the downward revision of SSB and upward revision of fishing mortality for the recent years. However, applying stochastic models (in this case SAM) to the data shows that these revisions are within the uncertainty bounds of these SAM estimates. 
+
+Preliminary investigations indicate that the stocks of western Baltic spring-spawning herring (Division 3.a and subdivisions 22–24) and central Baltic herring (subdivisions 25–29 and 32, excluding Gulf of Riga herring) are mixing in subdivisions 24–26 (Gröhsler et al., 2013). The level of this mixing is presently unknown and its potential impact on the assessment should be investigated. 
+
+Species misreporting of herring has occurred in the past (Hentati-Sundberg et al., 2014) and there are again indications that it is a problem in some nations.
+
+```{r qualplots}
+knitr::include_graphics("images/herqualplot.png")
+```
+
+**Figure 2**  Historical assessment results for herring in subdivisions 25–29 and 32, excluding the Gulf of Riga.
+<br>
+
+***
+# Issues relevant for the advice
+The FMSY ranges in the EU Baltic Sea multiannual plan (MAP; EU, 2016) are consistent with the ranges provided by ICES (2015); these were evaluated to result in no more than 5% reduction in long-term yield compared with MSY. The ICES advice according to the MAP is based on the provisions of the plan and is considered precautionary. The ICES advice rule is used, i.e. F is adjusted by the factor SSB/MSY Btrigger when SSB is below MSY Btrigger. For this stock, the SSB in 2019 is above MSY Btrigger. In such a situation, catch scenarios applicable under the MAP correspond to fishing mortalities between Flower and Fupper. However, according to the MAP, catches corresponding to F higher than FMSY (i.e. Column B of Annex I in the MAP) can only be taken under conditions specified in the MAP. 
+
+Under the EU landing obligation, which entered into force in 2015, up to 9% interspecies quota transfers are allowed for stocks that are considered to be within safe biological limits (EU, 2013 – Article 15). Quota transfers were not considered in this catch advice. To achieve FMSY exploitation, any transfer under this regulation should be accounted for in setting the TAC.
+
+It should be noted that the large 2014 year class will be the main contributor to the yield in 2018 and 2019 and SSB in 2019 and 2020, and no substantial new incoming year classes are predicted. It is uncommon to see such large contribution of one year class to the SSB as seen in the short term prediction for 2019 and 2020. Three last year classes are below or at the average and if such a situation continues, a marked decline in biomass development can be expected.
+<br>
+```{r issueplots}
+knitr::include_graphics("images/herissueplot.png")
+```
+
+**Figure 3**  Contribution to yield and SSB of successive year classes (ages 1–8+) as estimated in the short-term forecast for 2018–2020 under the TAC constraint in 2018. Herring in subdivisions 25–29 and 32, excluding the Gulf of Riga.
+<br>
+
+A mixture of central Baltic herring (subdivisions 25–27, 28.2, 29, and 32) and the Gulf of Riga herring (Subdivision 28.1) is caught in the central Baltic Sea. In the assessment and the advice the central Baltic herring stock is considered to be caught both in and outside the central Baltic Sea. The TAC (sum of the EU and the Russian autonomous quotas) is set for herring caught in the central Baltic management area, which includes also a small amount of Gulf of Riga herring caught in the central Baltic Sea but excludes central Baltic herring caught outside the central Baltic Sea.
+
+The TAC value proposed for the central Baltic area is based on the advised catch for the central Baltic herring stock, plus the assumed catch of the Gulf of Riga herring taken in the central Baltic, minus the assumed catch of herring from the central Baltic stock taken in the Gulf of Riga. The values of the two latter are given by the average over the last five years.
+
+•	Central Baltic herring assumed to be taken in the Gulf of Riga in 2019 (Subdivision 28.1) is 4363 tonnes (average 2013–2017);
+•	Gulf of Riga herring assumed to be taken in Subdivision 28.2 in 2019 is 251 tonnes (average 2013–2017).
+
+As an example, following the ICES MSY approach (here identical to the MAP FMSY), catches from the central Baltic herring stock in 2019 should be no more than 155 335 tonnes. The corresponding TAC in the central Baltic management area for 2019 would be calculated as 155 335 tonnes + 251 tonnes – 4363 tonnes  = 151 221  tonnes .
 
 # Reference Points  
 ***
 <br>
-Herring in Subarea 4 and divisions 3.a and 7.d, autumn spawners. Reference points, values, and their technical basis.
+** Table 5** Reference points, values, and their technical basis. Herring in Subarea 4 and divisions 3.a and 7.d, autumn spawners. 
 ```{r referencepoints, echo=FALSE}
 library(knitr)
 library(readr)
 library(kableExtra)
-dt <- read.csv("Data/hke/hkereferencepoints.csv")
+dt <- read.csv("Data/hke/herreferencepoints.csv")
 dt <- dt [,-1] 
 kable(dt, "html")%>%kable_styling(position = "center")%>%
   row_spec(0, bold = T, color = "black", background = "lightgrey")
@@ -806,21 +816,22 @@ kable(dt, "html")%>%kable_styling(position = "center")%>%
 <br>
 ```{r download2}
 library(magrittr)
- readLines("Data/hke/hkereferencepoints.csv") %>% 
+ readLines("Data/hke/herreferencepoints.csv") %>% 
    paste0(collapse="\n") %>% 
    openssl::base64_encode() -> encoded
 ```
 [Download CSV](`r sprintf('data:text/csv;base64,%s', encoded)`)
 
-# Basis of the assessment  
 ***
+# Basis of the assessment  
+
 <br>
-Herring in Subarea 4 and divisions 3.a and 7.d, autumn spawners. Basis of the assessment and advice
+** Table 6** Basis of the assessment and advice for herring in Subarea 4 and divisions 3.a and 7.d, autumn spawners. 
 ```{r advicebla, echo=FALSE}
 library(knitr)
 library(readr)
 library(kableExtra)
-dt <- read.csv("Data/hke/hkeassessmentbasis.csv")
+dt <- read.csv("Data/hke/herassessmentbasis.csv")
 dt <- dt [,-1] 
 kable(dt, "html")%>%kable_styling(position = "center")%>%
   row_spec(0, bold = T, color = "black", background = "lightgrey")
@@ -829,31 +840,46 @@ kable(dt, "html")%>%kable_styling(position = "center")%>%
 
 ```{r download3}
 library(magrittr)
- readLines("Data/hke/hkeassessmentbasis.csv") %>% 
+ readLines("Data/hke/herassessmentbasis.csv") %>% 
    paste0(collapse="\n") %>% 
    openssl::base64_encode() -> encoded
 ```
 [Download CSV](`r sprintf('data:text/csv;base64,%s', encoded)`)
 [Go to Top](#top)
 
-# Historical trends
+***
+# Information from stakeholders  
 
-```{r, echo=FALSE}
-library(googleVis)
-library(tidyr)
-kobe <- read_csv("data/hke/kobe_data_2.csv")
-hke <- kobe %>% filter(StockCode == "hke.27.3a46-8abd", EcoRegion == "Greater North Sea Ecoregion")
-hke$StockCode <- NULL
-hke$FisheriesGuild <- NULL
-hke$EcoRegion <- NULL
+There is no additional information available.
+<br>
 
-bla <- hke %>% gather(Measures, value, -Year, -`F/Fmsy`, -`SSB/MSYBtrigger`)
-# library(reshape2)
-# hkelong <- melt(hke, id.vars = c("Year", "F", "SSB", "FMSY", "MSYBtrigger","catches", "landings", "discards"))
+***
+# History of the advice, catch, and management    
 
-vis<- gvisMotionChart(bla, idvar= "Measures", timevar = "Year")
-plot(vis)
-```
+**Table 7**  ICES advice and catch for herring in Subarea 4 and divisions 3.a and 7.d, autumn spawners. All weights are in tonnes. 
 
-http://127.0.0.1:30673/custom/googleVis/MotionChartID7603b1f6d16.html
+***
+
+# History of the catch and landings  
+
+**Table 8** Catch distribution by fleet in 2017 as estimated by ICES for herring in Subarea 4 and divisions 3.a and 7.d, autumn spawners. All weights are in tonnes.
+<br>
+
+***
+
+**Table 9** History of commercial catch and landings of herring in Subarea 4 and divisions 3.a and 7.d, autumn spawners. Both the official and ICES estimated values are presented by area for each country participating in the fishery. All weights are in tonnes.
+
+***
+
+# Sources and references  
+
+* EU. 2013. Regulation (EU) No 1380/2013 of the European Parliament and of the Council of 11 December 2013 on the Common Fisheries Policy, amending Council Regulations (EC) No 1954/2003 and (EC) No 1224/2009 and repealing Council Regulations (EC) No 2371/2002 and (EC) No 639/2004 and Council Decision 2004/585/EC. http://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex:32013R1380.
+* EU. 2016. Regulation (EU) 2016/1139 of the European Parliament and of the Council of 6 July 2016 establishing a multiannual plan for the stocks of cod, herring and sprat in the Baltic Sea and the fisheries exploiting those stocks, amending Council Regulation (EC) No 2187/2005 and repealing Council Regulation (EC) No 1098/2007. http://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32016R1139&from=EN
+* Gröhsler, T., Oeberst, R., Schaber, M., Larson, N., and Kornilovs, G. 2013. Discrimination of western Baltic spring-spawning and central Baltic herring (Clupea harengus L.) based on growth vs. natural tag information. ICES Journal of Marine Science, 70(6): 1108–1117. DOI: https://doi.org/10.1093/icesjms/fst064.
+* Hentati-Sundberg, J., Hjelm, J., and Österblom, H. 2014. Does fisheries management incentivize non-compliance? Estimated misreporting in the Swedish Baltic Sea pelagic fishery based on commercial fishing effort. ICES Journal of Marine Science, 71(7): 1846–1853. DOI: https://doi.org/10.1093/icesjms/fsu036.
+* ICES. 2013. Report of the Benchmark Workshop on Baltic Multispecies Assessments (WKBALT 2013), 4–8 February 2013, Copenhagen, Denmark. ICES CM 2013/ACOM:43. 399 pp.
+* ICES. 2014. Second Interim Report of the Working Group on Maritime Systems (WGMARS), 2–5 December 2014, Copenhagen, Denmark. ICES CM 2014/SSGSUE:08. 35 pp.
+* ICES 2015. EU request to ICES to provide FMSY ranges for selected North Sea and Baltic Sea stocks. In Report of the ICES Advisory Committee, 20125. ICES Advice 20125, Book 6, Section 6.2.3.1. http://www.ices.dk/sites/pub/Publication%20Reports/Advice/2015/Special_Requests/EU_FMSY_ranges_for_selected_NS_and_BS_stocks.pdf.
+* ICES. 2016. Advice basis. In Report of the ICES Advisory Committee, 2016. ICES Advice 2016, Book 1, Section 1.2.
+* ICES. 2018. Report of the Baltic Fisheries Assessment Working Group (WGBFAS), 6–13 April 2018, ICES Headquarters, Copenhagen, Denmark. ICES CM 2018/ACOM:11.
 
