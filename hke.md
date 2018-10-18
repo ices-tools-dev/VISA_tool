@@ -7,20 +7,11 @@ output:
     toc: yes
     toc_depth: 1
     toc_float: yes
-  pdf_document:
-    toc: yes
-    toc_depth: '2'
-    code_folding: hide
+    css: style.css
 ---
 <style>
-    body .main-container {
-        width: 2000px;
-        margin-left: 20px;
-        margin-right: 20px;
-    }
 #TOC {
-  background:url("http://ices.dk/_layouts/15/1033/images/icesimg/iceslogo.png") ;
-  background: <a href="#top">Back to top</a>
+  background:url("images/iceslogo.png") ;
   background-size: contain;
   padding-top: 100px !important;
   background-repeat: no-repeat;
@@ -34,78 +25,62 @@ output:
 }
 </style>
 
-<style type="text/css"> 
-body{
-  font-size: 16pt;
-}body, td { font-size: 16px; } width: 800px code.r{ font-size: 12px; } pre { font-size: 12px }
+# ICES advice 2018                              
 
-h1 { /* Header 1 */
-  font-size: 24px;
-  color: Grey;
-}
-h2 { /* Header 2 */
-    font-size: 18px;
-  color: Black;
-}
- .col2 {
-    columns: 2 220px;         /* number of columns and width in pixels*/
-    -webkit-columns: 2 220px; /* chrome, safari */
-    -moz-columns: 2 220px;    /* firefox */
-  }
-</style>
+## Hake (*Merluccius merluccius*) in subareas 4, 6, and 7, and in divisions 3.a, 8.a–b, and 8.d, Northern stock (Greater North Sea, Celtic Seas, and the northern Bay of Biscay)
 
----
-
-# ICES advice 2017                              
-
-## "Hake (*Merluccius merluccius*) in subareas 4, 6, and 7, and in divisions 3.a, 8.a–b, and 8.d, Northern stock (Greater North Sea, Celtic Seas, and the northern Bay of Biscay)"
-
-Published 30 June 2017
+Published 29 June 2018
 
 
 
 ***
-<img src="images/hake.png" width="50%" /><img src="images/hkemap.png" width="50%" />
+<img src="images/hke.png" width="50%" /><img src="images/hkemap.png" width="50%" />
 
 
-[Go to latest advice](http://ices.dk/sites/pub/Publication%20Reports/Advice/2017/2017/hke.27.3a46-8abd.pdf)  
-[Go to Standard Graphs page](https://standardgraphs.ices.dk/manage/ViewGraphsAndTables.aspx?key=8988)  
+[Go to latest advice](http://ices.dk/sites/pub/Publication%20Reports/Advice/2018/2018/hke.27.3a46-8abd.pdf)  
+[Go to Stock Information Database](http://sd.ices.dk/ViewStock.aspx?key=1661)  
+[Go to Standard Graphs page](http://standardgraphs.ices.dk/ViewCharts.aspx?key=9763)  
 [Go to Transparent Assessment Framework page](https://github.com/ices-taf/2016_cod-347d)
 
 ***
 
 # ICES advice on fishing opportunities
-ICES advises that when the MSY approach is applied, catches in 2018 should be no more than **115 335** tonnes.
+ICES advises that when the MSY approach is applied, catches in 2019 should be no more than **142 240** tonnes. 
  <br> 
 
 ***
 
 # Stock development over time
-The spawning-stock biomass (SSB) has increased significantly since 2006 and is well above historical estimates. Fishing mortality (F) has decreased significantly after 2005, and has been below FMSY since 2012. The recruitment (R) estimate for 2016 is above average
+The spawning-stock biomass (SSB) has increased substantially since 2006 and is well above historical estimates. Fishing mortality (F) has decreased markedly after 2005 and has been below FMSY since 2012. The two most recent recruitment (R) estimates are above the average of the time-series.
 
-<div class="col2">
-<!--html_preserve--><div id="htmlwidget-208f0b048003bf1fa5bf" style="width:336px;height:336px;" class="dygraphs html-widget"></div>
-<script type="application/json" data-for="htmlwidget-208f0b048003bf1fa5bf">{"x":{"attrs":{"axes":{"x":{"pixelsPerLabel":60,"drawAxis":true},"y":{"drawAxis":true}},"colors":["#66C2A5","#FC8D62","#8DA0CB"],"title":"Catches","labels":["Year","catches"],"legend":"auto","retainDateWindow":false,"showRangeSelector":true,"rangeSelectorHeight":40,"rangeSelectorPlotFillColor":" #A7B1C4","rangeSelectorPlotStrokeColor":"#808FAB","interactionModel":"Dygraph.Interaction.defaultModel","stackedGraph":false,"fillGraph":false,"fillAlpha":0.15,"stepPlot":false,"drawPoints":false,"pointSize":1,"drawGapEdgePoints":false,"connectSeparatedPoints":false,"strokeWidth":1,"strokeBorderColor":"white","colorValue":0.5,"colorSaturation":1,"includeZero":false,"drawAxesAtZero":false,"logscale":false,"axisTickSize":3,"axisLineColor":"black","axisLineWidth":0.3,"axisLabelColor":"black","axisLabelFontSize":14,"axisLabelWidth":60,"drawGrid":false,"gridLineWidth":0.3,"rightGap":5,"digitsAfterDecimal":2,"labelsKMB":false,"labelsKMG2":false,"labelsUTC":false,"maxNumberWidth":4,"animatedZooms":false,"mobileDisableYTouch":true},"annotations":[],"shadings":[],"events":[],"format":"numeric","data":[[1978,1979,1980,1981,1982,1983,1984,1985,1986,1987,1988,1989,1990,1991,1992,1993,1994,1995,1996,1997,1998,1999,2000,2001,2002,2003,2004,2005,2006,2007,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017],[50.551,51.096,57.265,53.918,54.994,57.507,63.286,56.099,57.092,63.369,64.823,66.473,59.954,58.129,56.617,52.144,51.259,57.621,47.21,42.465,35.06,39.814,42.026,36.675,40.105,44.555,49.029,51.133,42.691,47.258,51.19,69.814,84.878,101.403,100.47,93.108,99.7,105.9,118.634,null]],"fixedtz":false,"tzone":"","plotter":"BarChart"},"evals":["attrs.interactionModel"],"jsHooks":[]}</script><!--/html_preserve--><!--html_preserve--><div id="htmlwidget-5e09bcb2a4461aa608ba" style="width:336px;height:336px;" class="dygraphs html-widget"></div>
-<script type="application/json" data-for="htmlwidget-5e09bcb2a4461aa608ba">{"x":{"attrs":{"axes":{"x":{"pixelsPerLabel":60},"y":[]},"title":"Recruitment(age 0)","labels":["Year","low_recruitment","recruitment","high_recruitment"],"legend":"auto","retainDateWindow":false,"showRangeSelector":true,"rangeSelectorHeight":40,"rangeSelectorPlotFillColor":" #A7B1C4","rangeSelectorPlotStrokeColor":"#808FAB","interactionModel":"Dygraph.Interaction.defaultModel"},"annotations":[],"shadings":[],"events":[],"format":"numeric","data":[[1978,1979,1980,1981,1982,1983,1984,1985,1986,1987,1988,1989,1990,1991,1992,1993,1994,1995,1996,1997,1998,1999,2000,2001,2002,2003,2004,2005,2006,2007,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017],[254980,234714,265874,528359,358954,121149,254653,615192,367147,439098,483117,464222,495101,289331,302205,567230,306851,151842,378109,254427,423626,205605,184613,321169,248360,145792,310705,202988,276403,427272,696685,226664,237649,242474,443645,282088,187744,260703,418429,303346],[304112,283534,316489,599540,418396,152160,295900,686703,412289,487329,530902,506464,538463,317821,330559,602754,329784,165603,401880,275848,452656,223378,199135,341926,265328,157143,329055,217285,292674,452723,734328,247176,257528,265486,487330,318837,217489,309968,529458,335071],[362711,342511,376737,680311,487682,191109,343830,766526,462981,540858,583411,552550,585622,349116,361573,640500,354433,180611,427143,299072,483675,242690,214799,364027,283455,169378,348489,232589,309904,479690,774005,269542,279068,290682,535317,360376,251947,368540,669948,370115]],"plotter":"BarChart"},"evals":["attrs.interactionModel"],"jsHooks":[]}</script><!--/html_preserve-->
+<div class= "col2"
+.col2 {
+    columns: 2 220px;         /* number of columns and width in pixels*/
+    -webkit-columns: 2 220px; /* chrome, safari */
+    -moz-columns: 2 220px;    /* firefox */
+  }>
+<!--html_preserve--><div id="htmlwidget-c7580a6f290064402cf7" style="width:336px;height:336px;" class="dygraphs html-widget"></div>
+<script type="application/json" data-for="htmlwidget-c7580a6f290064402cf7">{"x":{"attrs":{"axes":{"x":{"pixelsPerLabel":60,"drawAxis":true},"y":{"drawAxis":true}},"colors":["#66C2A5","#FC8D62","#8DA0CB"],"title":"Catches","labels":["Year","catches"],"legend":"auto","retainDateWindow":false,"showRangeSelector":true,"rangeSelectorHeight":40,"rangeSelectorPlotFillColor":" #A7B1C4","rangeSelectorPlotStrokeColor":"#808FAB","interactionModel":"Dygraph.Interaction.defaultModel","stackedGraph":false,"fillGraph":false,"fillAlpha":0.15,"stepPlot":false,"drawPoints":false,"pointSize":1,"drawGapEdgePoints":false,"connectSeparatedPoints":false,"strokeWidth":1,"strokeBorderColor":"white","colorValue":0.5,"colorSaturation":1,"includeZero":false,"drawAxesAtZero":false,"logscale":false,"axisTickSize":3,"axisLineColor":"black","axisLineWidth":0.3,"axisLabelColor":"black","axisLabelFontSize":14,"axisLabelWidth":60,"drawGrid":false,"gridLineWidth":0.3,"rightGap":5,"digitsAfterDecimal":2,"labelsKMB":false,"labelsKMG2":false,"labelsUTC":false,"maxNumberWidth":4,"animatedZooms":false,"mobileDisableYTouch":true},"annotations":[],"shadings":[],"events":[],"format":"numeric","data":[[1978,1979,1980,1981,1982,1983,1984,1985,1986,1987,1988,1989,1990,1991,1992,1993,1994,1995,1996,1997,1998,1999,2000,2001,2002,2003,2004,2005,2006,2007,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018],[50.551,51.096,57.265,53.918,54.994,57.507,63.286,56.099,57.092,63.369,64.825,66.546,59.954,58.129,56.617,52.144,51.615,57.621,47.21,42.465,35.06,40.163,42.109,36.675,40.107,45.272,48.969,51.226,43.283,47.219,50.987,68.689,82.214,101.315,97.902,89.39,96.987,101.066,119.045,110.287,null]],"fixedtz":false,"tzone":"","plotter":"BarChart"},"evals":["attrs.interactionModel"],"jsHooks":[]}</script><!--/html_preserve--><!--html_preserve--><div id="htmlwidget-34e460742fa5d9aff152" style="width:336px;height:336px;" class="dygraphs html-widget"></div>
+<script type="application/json" data-for="htmlwidget-34e460742fa5d9aff152">{"x":{"attrs":{"axes":{"x":{"pixelsPerLabel":60},"y":[]},"title":"Recruitment(age 0)","labels":["Year","low_recruitment","recruitment","high_recruitment"],"legend":"auto","retainDateWindow":false,"showRangeSelector":true,"rangeSelectorHeight":40,"rangeSelectorPlotFillColor":" #A7B1C4","rangeSelectorPlotStrokeColor":"#808FAB","interactionModel":"Dygraph.Interaction.defaultModel"},"annotations":[],"shadings":[],"events":[],"format":"numeric","data":[[1978,1979,1980,1981,1982,1983,1984,1985,1986,1987,1988,1989,1990,1991,1992,1993,1994,1995,1996,1997,1998,1999,2000,2001,2002,2003,2004,2005,2006,2007,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018],[249690,227015,254726,510616,336114,111112,239959,553843,321068,390763,447792,436425,444019,244750,267604,486832,268567,135299,341149,234770,394389,190718,174300,325507,256661,148957,321284,206861,285156,444453,725683,233630,249786,260563,497468,338502,191396,211062,498706,377011,null],[298362,274926,303736,579898,392556,139840,279464,619933,359882,434200,494257,478272,484780,270044,294630,517317,288462,147553,362975,255130,422379,207423,188288,346704,274312,160600,340348,221565,302086,471269,765300,254872,270378,284226,540727,375538,217417,245139,593993,493394,303550],[356522,332948,362173,658580,458476,175996,325473,693907,403388,482468,545543,524131,529283,297953,324385,549711,309831,160916,386197,277253,452354,225592,203398,369281,293177,173153,360546,237314,320024,499703,807080,278046,292668,310040,587750,416627,246976,284718,707487,645701,null]],"plotter":"BarChart"},"evals":["attrs.interactionModel"],"jsHooks":[]}</script><!--/html_preserve-->
 </div>
 <div class="col2">
-<!--html_preserve--><div id="htmlwidget-b1e8ca0feb9f001577bd" style="width:336px;height:336px;" class="dygraphs html-widget"></div>
-<script type="application/json" data-for="htmlwidget-b1e8ca0feb9f001577bd">{"x":{"attrs":{"axes":{"x":{"pixelsPerLabel":60,"drawAxis":true},"y":{"drawAxis":true}},"series":{"F":{"axis":"y"}},"colors":["#66C2A5","#FC8D62","#8DA0CB"],"title":"F","labels":["Year","FLim","Fpa","FMSY","F"],"legend":"auto","retainDateWindow":false,"customBars":true,"showRangeSelector":true,"rangeSelectorHeight":40,"rangeSelectorPlotFillColor":" #A7B1C4","rangeSelectorPlotStrokeColor":"#808FAB","interactionModel":"Dygraph.Interaction.defaultModel","stackedGraph":false,"fillGraph":false,"fillAlpha":0.15,"stepPlot":false,"drawPoints":false,"pointSize":1,"drawGapEdgePoints":false,"connectSeparatedPoints":false,"strokeWidth":1,"strokeBorderColor":"white","colorValue":0.5,"colorSaturation":1,"includeZero":false,"drawAxesAtZero":false,"logscale":false,"axisTickSize":3,"axisLineColor":"black","axisLineWidth":0.3,"axisLabelColor":"black","axisLabelFontSize":14,"axisLabelWidth":60,"drawGrid":false,"gridLineWidth":0.3,"rightGap":5,"digitsAfterDecimal":2,"labelsKMB":false,"labelsKMG2":false,"labelsUTC":false,"maxNumberWidth":4,"animatedZooms":false,"mobileDisableYTouch":true},"annotations":[],"shadings":[],"events":[{"pos":[0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87],"labelLoc":"left","color":"red","strokePattern":[7,3],"axis":"y"}],"format":"numeric","data":[[1978,1979,1980,1981,1982,1983,1984,1985,1986,1987,1988,1989,1990,1991,1992,1993,1994,1995,1996,1997,1998,1999,2000,2001,2002,2003,2004,2005,2006,2007,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017],[[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87]],[[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62]],[[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28]],[[0.475,0.52,0.565],[0.499,0.55,0.601],[0.587,0.65,0.713],[0.588,0.67,0.752],[0.631,0.69,0.749],[0.589,0.63,0.671],[0.614,0.67,0.726],[0.696,0.8,0.904],[0.843,0.91,0.977],[0.943,1,1.057],[0.953,1.02,1.087],[1.022,1.09,1.158],[0.92,1,1.08],[0.891,0.94,0.989],[0.956,1.01,1.064],[1.009,1.08,1.151],[1.054,1.1,1.146],[1.086,1.13,1.174],[0.957,1.01,1.063],[1.017,1.07,1.123],[0.945,1.01,1.075],[0.943,0.99,1.037],[0.876,0.92,0.964],[0.73,0.78,0.83],[0.786,0.83,0.874],[0.782,0.82,0.858],[0.779,0.83,0.881],[0.923,0.97,1.017],[0.823,0.87,0.917],[0.712,0.76,0.808],[0.584,0.63,0.676],[0.475,0.51,0.545],[0.365,0.39,0.415],[0.288,0.31,0.332],[0.238,0.26,0.282],[0.233,0.26,0.287],[0.228,0.26,0.292],[0.212,0.25,0.288],[0.216,0.27,0.324],[null,null,null]]],"fixedtz":false,"tzone":""},"evals":["attrs.interactionModel"],"jsHooks":[]}</script><!--/html_preserve--><!--html_preserve--><div id="htmlwidget-3b8beff3f0c4e249eae9" style="width:336px;height:336px;" class="dygraphs html-widget"></div>
-<script type="application/json" data-for="htmlwidget-3b8beff3f0c4e249eae9">{"x":{"attrs":{"axes":{"x":{"pixelsPerLabel":60,"drawAxis":true},"y":{"drawAxis":true}},"series":{"SSB":{"axis":"y"}},"colors":["#66C2A5","#FC8D62","#8DA0CB"],"title":"SSB","labels":["Year","Blim","Bpa","MSYBtrigger","SSB"],"legend":"auto","retainDateWindow":false,"customBars":true,"showRangeSelector":true,"rangeSelectorHeight":40,"rangeSelectorPlotFillColor":" #A7B1C4","rangeSelectorPlotStrokeColor":"#808FAB","interactionModel":"Dygraph.Interaction.defaultModel","stackedGraph":false,"fillGraph":false,"fillAlpha":0.15,"stepPlot":false,"drawPoints":false,"pointSize":1,"drawGapEdgePoints":false,"connectSeparatedPoints":false,"strokeWidth":1,"strokeBorderColor":"white","colorValue":0.5,"colorSaturation":1,"includeZero":false,"drawAxesAtZero":false,"logscale":false,"axisTickSize":3,"axisLineColor":"black","axisLineWidth":0.3,"axisLabelColor":"black","axisLabelFontSize":14,"axisLabelWidth":60,"drawGrid":false,"gridLineWidth":0.3,"rightGap":5,"digitsAfterDecimal":2,"labelsKMB":false,"labelsKMG2":false,"labelsUTC":false,"maxNumberWidth":4,"animatedZooms":false,"mobileDisableYTouch":true},"annotations":[],"shadings":[],"events":[{"pos":[0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87],"labelLoc":"left","color":"red","strokePattern":[7,3],"axis":"y"}],"format":"numeric","data":[[1978,1979,1980,1981,1982,1983,1984,1985,1986,1987,1988,1989,1990,1991,1992,1993,1994,1995,1996,1997,1998,1999,2000,2001,2002,2003,2004,2005,2006,2007,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017],[[32000,32000,32000],[32000,32000,32000],[32000,32000,32000],[32000,32000,32000],[32000,32000,32000],[32000,32000,32000],[32000,32000,32000],[32000,32000,32000],[32000,32000,32000],[32000,32000,32000],[32000,32000,32000],[32000,32000,32000],[32000,32000,32000],[32000,32000,32000],[32000,32000,32000],[32000,32000,32000],[32000,32000,32000],[32000,32000,32000],[32000,32000,32000],[32000,32000,32000],[32000,32000,32000],[32000,32000,32000],[32000,32000,32000],[32000,32000,32000],[32000,32000,32000],[32000,32000,32000],[32000,32000,32000],[32000,32000,32000],[32000,32000,32000],[32000,32000,32000],[32000,32000,32000],[32000,32000,32000],[32000,32000,32000],[32000,32000,32000],[32000,32000,32000],[32000,32000,32000],[32000,32000,32000],[32000,32000,32000],[32000,32000,32000],[32000,32000,32000]],[[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000]],[[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000]],[[63811,76696,89581],[87349,97911,108473],[90440,100483,110526],[77086,86475,95863],[61574,70398,79222],[61116,69158,77200],[76028,83620,91213],[73628,80312,86995],[54953,61012,67071],[42178,47228,52278],[45273,49688,54103],[43936,47762,51587],[41185,44295,47404],[41551,44539,47527],[42211,45268,48325],[40525,43205,45886],[31109,33366,35622],[30106,32134,34162],[35229,37306,39383],[29729,31651,33574],[24381,25997,27613],[27404,29147,30891],[30098,31971,33845],[35428,37514,39600],[35477,37769,40061],[35162,37543,39925],[39631,42139,44647],[37587,40113,42638],[30176,32475,34774],[35583,38281,40979],[41253,44733,48212],[61685,67034,72383],[113783,123089,132395],[185528,201049,216570],[206375,227026,247677],[203272,228246,253220],[210157,241117,272077],[230885,272795,314705],[234898,290234,345570],[197000,265666,334331]]],"fixedtz":false,"tzone":""},"evals":["attrs.interactionModel"],"jsHooks":[]}</script><!--/html_preserve-->
+<!--html_preserve--><div id="htmlwidget-a2650042c6a1761e4870" style="width:336px;height:336px;" class="dygraphs html-widget"></div>
+<script type="application/json" data-for="htmlwidget-a2650042c6a1761e4870">{"x":{"attrs":{"axes":{"x":{"pixelsPerLabel":60,"drawAxis":true},"y":{"drawAxis":true}},"series":{"F":{"axis":"y"}},"colors":["#66C2A5","#FC8D62","#8DA0CB"],"title":"F (15-18cm length)","labels":["Year","FLim","Fpa","FMSY","F"],"legend":"auto","retainDateWindow":false,"customBars":true,"showRangeSelector":true,"rangeSelectorHeight":40,"rangeSelectorPlotFillColor":" #A7B1C4","rangeSelectorPlotStrokeColor":"#808FAB","interactionModel":"Dygraph.Interaction.defaultModel","stackedGraph":false,"fillGraph":false,"fillAlpha":0.15,"stepPlot":false,"drawPoints":false,"pointSize":1,"drawGapEdgePoints":false,"connectSeparatedPoints":false,"strokeWidth":1,"strokeBorderColor":"white","colorValue":0.5,"colorSaturation":1,"includeZero":false,"drawAxesAtZero":false,"logscale":false,"axisTickSize":3,"axisLineColor":"black","axisLineWidth":0.3,"axisLabelColor":"black","axisLabelFontSize":14,"axisLabelWidth":60,"drawGrid":false,"gridLineWidth":0.3,"rightGap":5,"digitsAfterDecimal":2,"labelsKMB":false,"labelsKMG2":false,"labelsUTC":false,"maxNumberWidth":4,"animatedZooms":false,"mobileDisableYTouch":true},"annotations":[],"shadings":[],"events":[{"pos":[0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87],"labelLoc":"left","color":"red","strokePattern":[7,3],"axis":"y"}],"format":"numeric","data":[[1978,1979,1980,1981,1982,1983,1984,1985,1986,1987,1988,1989,1990,1991,1992,1993,1994,1995,1996,1997,1998,1999,2000,2001,2002,2003,2004,2005,2006,2007,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018],[[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87],[0.87,0.87,0.87]],[[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62],[0.62,0.62,0.62]],[[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28],[0.28,0.28,0.28]],[[null,0.5,null],[null,0.54,null],[null,0.64,null],[null,0.64,null],[null,0.67,null],[null,0.62,null],[null,0.66,null],[null,0.82,null],[null,0.91,null],[null,0.98,null],[null,1,null],[null,1.07,null],[null,1.02,null],[null,0.96,null],[null,1,null],[null,1.05,null],[null,1.06,null],[null,1.12,null],[null,0.97,null],[null,1.06,null],[null,0.98,null],[null,0.97,null],[null,0.91,null],[null,0.75,null],[null,0.81,null],[null,0.82,null],[null,0.83,null],[null,0.95,null],[null,0.84,null],[null,0.74,null],[null,0.6,null],[null,0.48,null],[null,0.36,null],[null,0.29,null],[null,0.24,null],[null,0.24,null],[null,0.23,null],[null,0.22,null],[null,0.23,null],[null,0.25,null],[null,null,null]]],"fixedtz":false,"tzone":""},"evals":["attrs.interactionModel"],"jsHooks":[]}</script><!--/html_preserve--><!--html_preserve--><div id="htmlwidget-48546dee00f0d574e073" style="width:336px;height:336px;" class="dygraphs html-widget"></div>
+<script type="application/json" data-for="htmlwidget-48546dee00f0d574e073">{"x":{"attrs":{"axes":{"x":{"pixelsPerLabel":60,"drawAxis":true},"y":{"drawAxis":true}},"series":{"SSB":{"axis":"y"}},"colors":["#66C2A5","#FC8D62","#8DA0CB"],"title":"SSB","labels":["Year","Blim","Bpa","MSYBtrigger","SSB"],"legend":"auto","retainDateWindow":false,"customBars":true,"showRangeSelector":true,"rangeSelectorHeight":40,"rangeSelectorPlotFillColor":" #A7B1C4","rangeSelectorPlotStrokeColor":"#808FAB","interactionModel":"Dygraph.Interaction.defaultModel","stackedGraph":false,"fillGraph":false,"fillAlpha":0.15,"stepPlot":false,"drawPoints":false,"pointSize":1,"drawGapEdgePoints":false,"connectSeparatedPoints":false,"strokeWidth":1,"strokeBorderColor":"white","colorValue":0.5,"colorSaturation":1,"includeZero":false,"drawAxesAtZero":false,"logscale":false,"axisTickSize":3,"axisLineColor":"black","axisLineWidth":0.3,"axisLabelColor":"black","axisLabelFontSize":14,"axisLabelWidth":60,"drawGrid":false,"gridLineWidth":0.3,"rightGap":5,"digitsAfterDecimal":2,"labelsKMB":false,"labelsKMG2":false,"labelsUTC":false,"maxNumberWidth":4,"animatedZooms":false,"mobileDisableYTouch":true},"annotations":[],"shadings":[],"events":[{"pos":[0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87],"labelLoc":"left","color":"red","strokePattern":[7,3],"axis":"y"}],"format":"numeric","data":[[1978,1979,1980,1981,1982,1983,1984,1985,1986,1987,1988,1989,1990,1991,1992,1993,1994,1995,1996,1997,1998,1999,2000,2001,2002,2003,2004,2005,2006,2007,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018],[[32000,32000,32000],[32000,32000,32000],[32000,32000,32000],[32000,32000,32000],[32000,32000,32000],[32000,32000,32000],[32000,32000,32000],[32000,32000,32000],[32000,32000,32000],[32000,32000,32000],[32000,32000,32000],[32000,32000,32000],[32000,32000,32000],[32000,32000,32000],[32000,32000,32000],[32000,32000,32000],[32000,32000,32000],[32000,32000,32000],[32000,32000,32000],[32000,32000,32000],[32000,32000,32000],[32000,32000,32000],[32000,32000,32000],[32000,32000,32000],[32000,32000,32000],[32000,32000,32000],[32000,32000,32000],[32000,32000,32000],[32000,32000,32000],[32000,32000,32000],[32000,32000,32000],[32000,32000,32000],[32000,32000,32000],[32000,32000,32000],[32000,32000,32000],[32000,32000,32000],[32000,32000,32000],[32000,32000,32000],[32000,32000,32000],[32000,32000,32000],[32000,32000,32000]],[[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000]],[[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000],[45000,45000,45000]],[[66148,80488,94829],[89676,101357,113038],[92898,103838,114778],[79078,89265,99451],[63173,72684,82196],[61740,70355,78970],[75005,83045,91084],[71897,78908,85918],[52674,58963,65252],[38269,43524,48780],[41491,45994,50497],[41182,45086,48989],[39181,42352,45522],[38350,41351,44352],[36893,39836,42780],[36177,38743,41310],[28287,30489,32691],[27582,29596,31610],[32726,34790,36855],[28133,30089,32045],[22700,24356,26012],[25921,27703,29485],[28659,30600,32541],[34175,36341,38508],[34885,37273,39660],[35185,37656,40127],[40191,42778,45364],[38591,41195,43799],[31204,33614,36023],[36929,39797,42666],[43214,46978,50743],[65204,71072,76940],[121027,131320,141613],[198965,216114,233263],[224485,247175,269865],[225353,252407,279461],[238518,271088,303658],[272694,314983,357272],[292792,346653,400514],[261577,325230,388883],[229915,306516,383117]]],"fixedtz":false,"tzone":""},"evals":["attrs.interactionModel"],"jsHooks":[]}</script><!--/html_preserve-->
 </div>
 
 
-**Figure 1** . Summary of the stock assessment of hake in subareas 4, 6, and 7, and in divisions 3.a, 8.a–b, and 8.d, Northern stock.Recruitment, F, and SSB plots show 95% confidence intervals (shaded area). Assumed recruitment values are unshaded.
+**Figure 1** .Summary of the stock assessment of hake in subareas 4, 6, and 7, and in divisions 3.a, 8.a–b, and 8.d, Northern stock. Complete discard estimates are available only since 2003. Recruitment and SSB plots show 95% confidence intervals (shaded area). Assumed recruitment values are unshaded.
 <br>
 
 # Summary of the assessment
 
  Assessment summary for hake in subareas 4, 6, and 7, and in divisions 3.a, 8.a–b, and 8.d, Northern stock. Weights are in tonnes. Highs and lows are 95% confidence intervals
 <br>
-<button class="btn btn-primary" data-toggle="collapse" data-target="#BlockName"> Show/Download Table </button>  
-<div id="BlockName" class="collapse"> 
+<button class="btn btn-primary" data-toggle="collapse" data-target="#BlockName1"> Show/Download Table </button>  
+<div id="BlockName1" class="collapse"> 
 <br>
-<div style="border: 1px solid #ddd; padding: 5px; overflow-y: scroll; height:200px; overflow-x: scroll; width:700px; "><table class="table table-striped" style="font-size: 10px; margin-left: auto; margin-right: auto;">
+<table class="table" style="margin-left: auto; margin-right: auto;">
  <thead>
   <tr>
    <th style="text-align:right;font-weight: bold;color: black;background-color: lightgrey;text-align: center;"> Year </th>
@@ -131,1032 +106,1058 @@ The spawning-stock biomass (SSB) has increased significantly since 2006 and is w
    <th style="text-align:left;font-weight: bold;color: black;background-color: lightgrey;text-align: center;"> stockSizeDescription </th>
    <th style="text-align:left;font-weight: bold;color: black;background-color: lightgrey;text-align: center;"> stockSizeUnits </th>
    <th style="text-align:left;font-weight: bold;color: black;background-color: lightgrey;text-align: center;"> fishingPressureDescription </th>
-   <th style="text-align:left;font-weight: bold;color: black;background-color: lightgrey;text-align: center;"> fishingPressureUnits </th>
+   <th style="text-align:right;font-weight: bold;color: black;background-color: lightgrey;text-align: center;"> fishingPressureUnits </th>
   </tr>
  </thead>
 <tbody>
   <tr>
    <td style="text-align:right;"> 1978 </td>
-   <td style="text-align:right;"> 304112 </td>
-   <td style="text-align:right;"> 362711 </td>
-   <td style="text-align:right;"> 254980 </td>
-   <td style="text-align:right;"> 63811 </td>
-   <td style="text-align:right;"> 76696 </td>
-   <td style="text-align:right;"> 89581 </td>
+   <td style="text-align:right;"> 298362 </td>
+   <td style="text-align:right;"> 356522 </td>
+   <td style="text-align:right;"> 249690 </td>
+   <td style="text-align:right;"> 66148 </td>
+   <td style="text-align:right;"> 80488 </td>
+   <td style="text-align:right;"> 94829 </td>
    <td style="text-align:right;"> 50551 </td>
    <td style="text-align:right;"> 50551 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 0.475 </td>
-   <td style="text-align:right;"> 0.52 </td>
-   <td style="text-align:right;"> 0.565 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> 0.50 </td>
+   <td style="text-align:right;"> NA </td>
    <td style="text-align:left;"> Stock published </td>
    <td style="text-align:left;"> Advice </td>
    <td style="text-align:right;"> NA </td>
    <td style="text-align:left;"> hke.27.3a46-8abd </td>
    <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 2017 </td>
+   <td style="text-align:right;"> 2018 </td>
    <td style="text-align:left;"> tonnes </td>
    <td style="text-align:left;"> SSB </td>
    <td style="text-align:left;"> tonnes </td>
    <td style="text-align:left;"> F </td>
-   <td style="text-align:left;"> per year </td>
+   <td style="text-align:right;"> NA </td>
   </tr>
   <tr>
    <td style="text-align:right;"> 1979 </td>
-   <td style="text-align:right;"> 283534 </td>
-   <td style="text-align:right;"> 342511 </td>
-   <td style="text-align:right;"> 234714 </td>
-   <td style="text-align:right;"> 87349 </td>
-   <td style="text-align:right;"> 97911 </td>
-   <td style="text-align:right;"> 108473 </td>
+   <td style="text-align:right;"> 274926 </td>
+   <td style="text-align:right;"> 332948 </td>
+   <td style="text-align:right;"> 227015 </td>
+   <td style="text-align:right;"> 89676 </td>
+   <td style="text-align:right;"> 101357 </td>
+   <td style="text-align:right;"> 113038 </td>
    <td style="text-align:right;"> 51096 </td>
    <td style="text-align:right;"> 51096 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 0.499 </td>
-   <td style="text-align:right;"> 0.55 </td>
-   <td style="text-align:right;"> 0.601 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> 0.54 </td>
+   <td style="text-align:right;"> NA </td>
    <td style="text-align:left;"> Stock published </td>
    <td style="text-align:left;"> Advice </td>
    <td style="text-align:right;"> NA </td>
    <td style="text-align:left;"> hke.27.3a46-8abd </td>
    <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 2017 </td>
+   <td style="text-align:right;"> 2018 </td>
    <td style="text-align:left;"> tonnes </td>
    <td style="text-align:left;"> SSB </td>
    <td style="text-align:left;"> tonnes </td>
    <td style="text-align:left;"> F </td>
-   <td style="text-align:left;"> per year </td>
+   <td style="text-align:right;"> NA </td>
   </tr>
   <tr>
    <td style="text-align:right;"> 1980 </td>
-   <td style="text-align:right;"> 316489 </td>
-   <td style="text-align:right;"> 376737 </td>
-   <td style="text-align:right;"> 265874 </td>
-   <td style="text-align:right;"> 90440 </td>
-   <td style="text-align:right;"> 100483 </td>
-   <td style="text-align:right;"> 110526 </td>
+   <td style="text-align:right;"> 303736 </td>
+   <td style="text-align:right;"> 362173 </td>
+   <td style="text-align:right;"> 254726 </td>
+   <td style="text-align:right;"> 92898 </td>
+   <td style="text-align:right;"> 103838 </td>
+   <td style="text-align:right;"> 114778 </td>
    <td style="text-align:right;"> 57265 </td>
    <td style="text-align:right;"> 57265 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 0.587 </td>
-   <td style="text-align:right;"> 0.65 </td>
-   <td style="text-align:right;"> 0.713 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> 0.64 </td>
+   <td style="text-align:right;"> NA </td>
    <td style="text-align:left;"> Stock published </td>
    <td style="text-align:left;"> Advice </td>
    <td style="text-align:right;"> NA </td>
    <td style="text-align:left;"> hke.27.3a46-8abd </td>
    <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 2017 </td>
+   <td style="text-align:right;"> 2018 </td>
    <td style="text-align:left;"> tonnes </td>
    <td style="text-align:left;"> SSB </td>
    <td style="text-align:left;"> tonnes </td>
    <td style="text-align:left;"> F </td>
-   <td style="text-align:left;"> per year </td>
+   <td style="text-align:right;"> NA </td>
   </tr>
   <tr>
    <td style="text-align:right;"> 1981 </td>
-   <td style="text-align:right;"> 599540 </td>
-   <td style="text-align:right;"> 680311 </td>
-   <td style="text-align:right;"> 528359 </td>
-   <td style="text-align:right;"> 77086 </td>
-   <td style="text-align:right;"> 86475 </td>
-   <td style="text-align:right;"> 95863 </td>
+   <td style="text-align:right;"> 579898 </td>
+   <td style="text-align:right;"> 658580 </td>
+   <td style="text-align:right;"> 510616 </td>
+   <td style="text-align:right;"> 79078 </td>
+   <td style="text-align:right;"> 89265 </td>
+   <td style="text-align:right;"> 99451 </td>
    <td style="text-align:right;"> 53918 </td>
    <td style="text-align:right;"> 53918 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 0.588 </td>
-   <td style="text-align:right;"> 0.67 </td>
-   <td style="text-align:right;"> 0.752 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> 0.64 </td>
+   <td style="text-align:right;"> NA </td>
    <td style="text-align:left;"> Stock published </td>
    <td style="text-align:left;"> Advice </td>
    <td style="text-align:right;"> NA </td>
    <td style="text-align:left;"> hke.27.3a46-8abd </td>
    <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 2017 </td>
+   <td style="text-align:right;"> 2018 </td>
    <td style="text-align:left;"> tonnes </td>
    <td style="text-align:left;"> SSB </td>
    <td style="text-align:left;"> tonnes </td>
    <td style="text-align:left;"> F </td>
-   <td style="text-align:left;"> per year </td>
+   <td style="text-align:right;"> NA </td>
   </tr>
   <tr>
    <td style="text-align:right;"> 1982 </td>
-   <td style="text-align:right;"> 418396 </td>
-   <td style="text-align:right;"> 487682 </td>
-   <td style="text-align:right;"> 358954 </td>
-   <td style="text-align:right;"> 61574 </td>
-   <td style="text-align:right;"> 70398 </td>
-   <td style="text-align:right;"> 79222 </td>
+   <td style="text-align:right;"> 392556 </td>
+   <td style="text-align:right;"> 458476 </td>
+   <td style="text-align:right;"> 336114 </td>
+   <td style="text-align:right;"> 63173 </td>
+   <td style="text-align:right;"> 72684 </td>
+   <td style="text-align:right;"> 82196 </td>
    <td style="text-align:right;"> 54994 </td>
    <td style="text-align:right;"> 54994 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 0.631 </td>
-   <td style="text-align:right;"> 0.69 </td>
-   <td style="text-align:right;"> 0.749 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> 0.67 </td>
+   <td style="text-align:right;"> NA </td>
    <td style="text-align:left;"> Stock published </td>
    <td style="text-align:left;"> Advice </td>
    <td style="text-align:right;"> NA </td>
    <td style="text-align:left;"> hke.27.3a46-8abd </td>
    <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 2017 </td>
+   <td style="text-align:right;"> 2018 </td>
    <td style="text-align:left;"> tonnes </td>
    <td style="text-align:left;"> SSB </td>
    <td style="text-align:left;"> tonnes </td>
    <td style="text-align:left;"> F </td>
-   <td style="text-align:left;"> per year </td>
+   <td style="text-align:right;"> NA </td>
   </tr>
   <tr>
    <td style="text-align:right;"> 1983 </td>
-   <td style="text-align:right;"> 152160 </td>
-   <td style="text-align:right;"> 191109 </td>
-   <td style="text-align:right;"> 121149 </td>
-   <td style="text-align:right;"> 61116 </td>
-   <td style="text-align:right;"> 69158 </td>
-   <td style="text-align:right;"> 77200 </td>
+   <td style="text-align:right;"> 139840 </td>
+   <td style="text-align:right;"> 175996 </td>
+   <td style="text-align:right;"> 111112 </td>
+   <td style="text-align:right;"> 61740 </td>
+   <td style="text-align:right;"> 70355 </td>
+   <td style="text-align:right;"> 78970 </td>
    <td style="text-align:right;"> 57507 </td>
    <td style="text-align:right;"> 57507 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 0.589 </td>
-   <td style="text-align:right;"> 0.63 </td>
-   <td style="text-align:right;"> 0.671 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> 0.62 </td>
+   <td style="text-align:right;"> NA </td>
    <td style="text-align:left;"> Stock published </td>
    <td style="text-align:left;"> Advice </td>
    <td style="text-align:right;"> NA </td>
    <td style="text-align:left;"> hke.27.3a46-8abd </td>
    <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 2017 </td>
+   <td style="text-align:right;"> 2018 </td>
    <td style="text-align:left;"> tonnes </td>
    <td style="text-align:left;"> SSB </td>
    <td style="text-align:left;"> tonnes </td>
    <td style="text-align:left;"> F </td>
-   <td style="text-align:left;"> per year </td>
+   <td style="text-align:right;"> NA </td>
   </tr>
   <tr>
    <td style="text-align:right;"> 1984 </td>
-   <td style="text-align:right;"> 295900 </td>
-   <td style="text-align:right;"> 343830 </td>
-   <td style="text-align:right;"> 254653 </td>
-   <td style="text-align:right;"> 76028 </td>
-   <td style="text-align:right;"> 83620 </td>
-   <td style="text-align:right;"> 91213 </td>
+   <td style="text-align:right;"> 279464 </td>
+   <td style="text-align:right;"> 325473 </td>
+   <td style="text-align:right;"> 239959 </td>
+   <td style="text-align:right;"> 75005 </td>
+   <td style="text-align:right;"> 83045 </td>
+   <td style="text-align:right;"> 91084 </td>
    <td style="text-align:right;"> 63286 </td>
    <td style="text-align:right;"> 63286 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 0.614 </td>
-   <td style="text-align:right;"> 0.67 </td>
-   <td style="text-align:right;"> 0.726 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> 0.66 </td>
+   <td style="text-align:right;"> NA </td>
    <td style="text-align:left;"> Stock published </td>
    <td style="text-align:left;"> Advice </td>
    <td style="text-align:right;"> NA </td>
    <td style="text-align:left;"> hke.27.3a46-8abd </td>
    <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 2017 </td>
+   <td style="text-align:right;"> 2018 </td>
    <td style="text-align:left;"> tonnes </td>
    <td style="text-align:left;"> SSB </td>
    <td style="text-align:left;"> tonnes </td>
    <td style="text-align:left;"> F </td>
-   <td style="text-align:left;"> per year </td>
+   <td style="text-align:right;"> NA </td>
   </tr>
   <tr>
    <td style="text-align:right;"> 1985 </td>
-   <td style="text-align:right;"> 686703 </td>
-   <td style="text-align:right;"> 766526 </td>
-   <td style="text-align:right;"> 615192 </td>
-   <td style="text-align:right;"> 73628 </td>
-   <td style="text-align:right;"> 80312 </td>
-   <td style="text-align:right;"> 86995 </td>
+   <td style="text-align:right;"> 619933 </td>
+   <td style="text-align:right;"> 693907 </td>
+   <td style="text-align:right;"> 553843 </td>
+   <td style="text-align:right;"> 71897 </td>
+   <td style="text-align:right;"> 78908 </td>
+   <td style="text-align:right;"> 85918 </td>
    <td style="text-align:right;"> 56099 </td>
    <td style="text-align:right;"> 56099 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 0.696 </td>
-   <td style="text-align:right;"> 0.80 </td>
-   <td style="text-align:right;"> 0.904 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> 0.82 </td>
+   <td style="text-align:right;"> NA </td>
    <td style="text-align:left;"> Stock published </td>
    <td style="text-align:left;"> Advice </td>
    <td style="text-align:right;"> NA </td>
    <td style="text-align:left;"> hke.27.3a46-8abd </td>
    <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 2017 </td>
+   <td style="text-align:right;"> 2018 </td>
    <td style="text-align:left;"> tonnes </td>
    <td style="text-align:left;"> SSB </td>
    <td style="text-align:left;"> tonnes </td>
    <td style="text-align:left;"> F </td>
-   <td style="text-align:left;"> per year </td>
+   <td style="text-align:right;"> NA </td>
   </tr>
   <tr>
    <td style="text-align:right;"> 1986 </td>
-   <td style="text-align:right;"> 412289 </td>
-   <td style="text-align:right;"> 462981 </td>
-   <td style="text-align:right;"> 367147 </td>
-   <td style="text-align:right;"> 54953 </td>
-   <td style="text-align:right;"> 61012 </td>
-   <td style="text-align:right;"> 67071 </td>
+   <td style="text-align:right;"> 359882 </td>
+   <td style="text-align:right;"> 403388 </td>
+   <td style="text-align:right;"> 321068 </td>
+   <td style="text-align:right;"> 52674 </td>
+   <td style="text-align:right;"> 58963 </td>
+   <td style="text-align:right;"> 65252 </td>
    <td style="text-align:right;"> 57092 </td>
    <td style="text-align:right;"> 57092 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 0.843 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
    <td style="text-align:right;"> 0.91 </td>
-   <td style="text-align:right;"> 0.977 </td>
+   <td style="text-align:right;"> NA </td>
    <td style="text-align:left;"> Stock published </td>
    <td style="text-align:left;"> Advice </td>
    <td style="text-align:right;"> NA </td>
    <td style="text-align:left;"> hke.27.3a46-8abd </td>
    <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 2017 </td>
+   <td style="text-align:right;"> 2018 </td>
    <td style="text-align:left;"> tonnes </td>
    <td style="text-align:left;"> SSB </td>
    <td style="text-align:left;"> tonnes </td>
    <td style="text-align:left;"> F </td>
-   <td style="text-align:left;"> per year </td>
+   <td style="text-align:right;"> NA </td>
   </tr>
   <tr>
    <td style="text-align:right;"> 1987 </td>
-   <td style="text-align:right;"> 487329 </td>
-   <td style="text-align:right;"> 540858 </td>
-   <td style="text-align:right;"> 439098 </td>
-   <td style="text-align:right;"> 42178 </td>
-   <td style="text-align:right;"> 47228 </td>
-   <td style="text-align:right;"> 52278 </td>
+   <td style="text-align:right;"> 434200 </td>
+   <td style="text-align:right;"> 482468 </td>
+   <td style="text-align:right;"> 390763 </td>
+   <td style="text-align:right;"> 38269 </td>
+   <td style="text-align:right;"> 43524 </td>
+   <td style="text-align:right;"> 48780 </td>
    <td style="text-align:right;"> 63369 </td>
    <td style="text-align:right;"> 63369 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 0.943 </td>
-   <td style="text-align:right;"> 1.00 </td>
-   <td style="text-align:right;"> 1.057 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> 0.98 </td>
+   <td style="text-align:right;"> NA </td>
    <td style="text-align:left;"> Stock published </td>
    <td style="text-align:left;"> Advice </td>
    <td style="text-align:right;"> NA </td>
    <td style="text-align:left;"> hke.27.3a46-8abd </td>
    <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 2017 </td>
+   <td style="text-align:right;"> 2018 </td>
    <td style="text-align:left;"> tonnes </td>
    <td style="text-align:left;"> SSB </td>
    <td style="text-align:left;"> tonnes </td>
    <td style="text-align:left;"> F </td>
-   <td style="text-align:left;"> per year </td>
+   <td style="text-align:right;"> NA </td>
   </tr>
   <tr>
    <td style="text-align:right;"> 1988 </td>
-   <td style="text-align:right;"> 530902 </td>
-   <td style="text-align:right;"> 583411 </td>
-   <td style="text-align:right;"> 483117 </td>
-   <td style="text-align:right;"> 45273 </td>
-   <td style="text-align:right;"> 49688 </td>
-   <td style="text-align:right;"> 54103 </td>
+   <td style="text-align:right;"> 494257 </td>
+   <td style="text-align:right;"> 545543 </td>
+   <td style="text-align:right;"> 447792 </td>
+   <td style="text-align:right;"> 41491 </td>
+   <td style="text-align:right;"> 45994 </td>
+   <td style="text-align:right;"> 50497 </td>
+   <td style="text-align:right;"> 64825 </td>
    <td style="text-align:right;"> 64823 </td>
-   <td style="text-align:right;"> 64823 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 0.953 </td>
-   <td style="text-align:right;"> 1.02 </td>
-   <td style="text-align:right;"> 1.087 </td>
+   <td style="text-align:right;"> 2 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> 1.00 </td>
+   <td style="text-align:right;"> NA </td>
    <td style="text-align:left;"> Stock published </td>
    <td style="text-align:left;"> Advice </td>
    <td style="text-align:right;"> NA </td>
    <td style="text-align:left;"> hke.27.3a46-8abd </td>
    <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 2017 </td>
+   <td style="text-align:right;"> 2018 </td>
    <td style="text-align:left;"> tonnes </td>
    <td style="text-align:left;"> SSB </td>
    <td style="text-align:left;"> tonnes </td>
    <td style="text-align:left;"> F </td>
-   <td style="text-align:left;"> per year </td>
+   <td style="text-align:right;"> NA </td>
   </tr>
   <tr>
    <td style="text-align:right;"> 1989 </td>
-   <td style="text-align:right;"> 506464 </td>
-   <td style="text-align:right;"> 552550 </td>
-   <td style="text-align:right;"> 464222 </td>
-   <td style="text-align:right;"> 43936 </td>
-   <td style="text-align:right;"> 47762 </td>
-   <td style="text-align:right;"> 51587 </td>
+   <td style="text-align:right;"> 478272 </td>
+   <td style="text-align:right;"> 524131 </td>
+   <td style="text-align:right;"> 436425 </td>
+   <td style="text-align:right;"> 41182 </td>
+   <td style="text-align:right;"> 45086 </td>
+   <td style="text-align:right;"> 48989 </td>
+   <td style="text-align:right;"> 66546 </td>
    <td style="text-align:right;"> 66473 </td>
-   <td style="text-align:right;"> 66473 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 1.022 </td>
-   <td style="text-align:right;"> 1.09 </td>
-   <td style="text-align:right;"> 1.158 </td>
+   <td style="text-align:right;"> 73 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> 1.07 </td>
+   <td style="text-align:right;"> NA </td>
    <td style="text-align:left;"> Stock published </td>
    <td style="text-align:left;"> Advice </td>
    <td style="text-align:right;"> NA </td>
    <td style="text-align:left;"> hke.27.3a46-8abd </td>
    <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 2017 </td>
+   <td style="text-align:right;"> 2018 </td>
    <td style="text-align:left;"> tonnes </td>
    <td style="text-align:left;"> SSB </td>
    <td style="text-align:left;"> tonnes </td>
    <td style="text-align:left;"> F </td>
-   <td style="text-align:left;"> per year </td>
+   <td style="text-align:right;"> NA </td>
   </tr>
   <tr>
    <td style="text-align:right;"> 1990 </td>
-   <td style="text-align:right;"> 538463 </td>
-   <td style="text-align:right;"> 585622 </td>
-   <td style="text-align:right;"> 495101 </td>
-   <td style="text-align:right;"> 41185 </td>
-   <td style="text-align:right;"> 44295 </td>
-   <td style="text-align:right;"> 47404 </td>
+   <td style="text-align:right;"> 484780 </td>
+   <td style="text-align:right;"> 529283 </td>
+   <td style="text-align:right;"> 444019 </td>
+   <td style="text-align:right;"> 39181 </td>
+   <td style="text-align:right;"> 42352 </td>
+   <td style="text-align:right;"> 45522 </td>
    <td style="text-align:right;"> 59954 </td>
    <td style="text-align:right;"> 59954 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 0.920 </td>
-   <td style="text-align:right;"> 1.00 </td>
-   <td style="text-align:right;"> 1.080 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> 1.02 </td>
+   <td style="text-align:right;"> NA </td>
    <td style="text-align:left;"> Stock published </td>
    <td style="text-align:left;"> Advice </td>
    <td style="text-align:right;"> NA </td>
    <td style="text-align:left;"> hke.27.3a46-8abd </td>
    <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 2017 </td>
+   <td style="text-align:right;"> 2018 </td>
    <td style="text-align:left;"> tonnes </td>
    <td style="text-align:left;"> SSB </td>
    <td style="text-align:left;"> tonnes </td>
    <td style="text-align:left;"> F </td>
-   <td style="text-align:left;"> per year </td>
+   <td style="text-align:right;"> NA </td>
   </tr>
   <tr>
    <td style="text-align:right;"> 1991 </td>
-   <td style="text-align:right;"> 317821 </td>
-   <td style="text-align:right;"> 349116 </td>
-   <td style="text-align:right;"> 289331 </td>
-   <td style="text-align:right;"> 41551 </td>
-   <td style="text-align:right;"> 44539 </td>
-   <td style="text-align:right;"> 47527 </td>
+   <td style="text-align:right;"> 270044 </td>
+   <td style="text-align:right;"> 297953 </td>
+   <td style="text-align:right;"> 244750 </td>
+   <td style="text-align:right;"> 38350 </td>
+   <td style="text-align:right;"> 41351 </td>
+   <td style="text-align:right;"> 44352 </td>
    <td style="text-align:right;"> 58129 </td>
    <td style="text-align:right;"> 58129 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 0.891 </td>
-   <td style="text-align:right;"> 0.94 </td>
-   <td style="text-align:right;"> 0.989 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> 0.96 </td>
+   <td style="text-align:right;"> NA </td>
    <td style="text-align:left;"> Stock published </td>
    <td style="text-align:left;"> Advice </td>
    <td style="text-align:right;"> NA </td>
    <td style="text-align:left;"> hke.27.3a46-8abd </td>
    <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 2017 </td>
+   <td style="text-align:right;"> 2018 </td>
    <td style="text-align:left;"> tonnes </td>
    <td style="text-align:left;"> SSB </td>
    <td style="text-align:left;"> tonnes </td>
    <td style="text-align:left;"> F </td>
-   <td style="text-align:left;"> per year </td>
+   <td style="text-align:right;"> NA </td>
   </tr>
   <tr>
    <td style="text-align:right;"> 1992 </td>
-   <td style="text-align:right;"> 330559 </td>
-   <td style="text-align:right;"> 361573 </td>
-   <td style="text-align:right;"> 302205 </td>
-   <td style="text-align:right;"> 42211 </td>
-   <td style="text-align:right;"> 45268 </td>
-   <td style="text-align:right;"> 48325 </td>
+   <td style="text-align:right;"> 294630 </td>
+   <td style="text-align:right;"> 324385 </td>
+   <td style="text-align:right;"> 267604 </td>
+   <td style="text-align:right;"> 36893 </td>
+   <td style="text-align:right;"> 39836 </td>
+   <td style="text-align:right;"> 42780 </td>
    <td style="text-align:right;"> 56617 </td>
    <td style="text-align:right;"> 56617 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 0.956 </td>
-   <td style="text-align:right;"> 1.01 </td>
-   <td style="text-align:right;"> 1.064 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> 1.00 </td>
+   <td style="text-align:right;"> NA </td>
    <td style="text-align:left;"> Stock published </td>
    <td style="text-align:left;"> Advice </td>
    <td style="text-align:right;"> NA </td>
    <td style="text-align:left;"> hke.27.3a46-8abd </td>
    <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 2017 </td>
+   <td style="text-align:right;"> 2018 </td>
    <td style="text-align:left;"> tonnes </td>
    <td style="text-align:left;"> SSB </td>
    <td style="text-align:left;"> tonnes </td>
    <td style="text-align:left;"> F </td>
-   <td style="text-align:left;"> per year </td>
+   <td style="text-align:right;"> NA </td>
   </tr>
   <tr>
    <td style="text-align:right;"> 1993 </td>
-   <td style="text-align:right;"> 602754 </td>
-   <td style="text-align:right;"> 640500 </td>
-   <td style="text-align:right;"> 567230 </td>
-   <td style="text-align:right;"> 40525 </td>
-   <td style="text-align:right;"> 43205 </td>
-   <td style="text-align:right;"> 45886 </td>
+   <td style="text-align:right;"> 517317 </td>
+   <td style="text-align:right;"> 549711 </td>
+   <td style="text-align:right;"> 486832 </td>
+   <td style="text-align:right;"> 36177 </td>
+   <td style="text-align:right;"> 38743 </td>
+   <td style="text-align:right;"> 41310 </td>
    <td style="text-align:right;"> 52144 </td>
    <td style="text-align:right;"> 52144 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 1.009 </td>
-   <td style="text-align:right;"> 1.08 </td>
-   <td style="text-align:right;"> 1.151 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> 1.05 </td>
+   <td style="text-align:right;"> NA </td>
    <td style="text-align:left;"> Stock published </td>
    <td style="text-align:left;"> Advice </td>
    <td style="text-align:right;"> NA </td>
    <td style="text-align:left;"> hke.27.3a46-8abd </td>
    <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 2017 </td>
+   <td style="text-align:right;"> 2018 </td>
    <td style="text-align:left;"> tonnes </td>
    <td style="text-align:left;"> SSB </td>
    <td style="text-align:left;"> tonnes </td>
    <td style="text-align:left;"> F </td>
-   <td style="text-align:left;"> per year </td>
+   <td style="text-align:right;"> NA </td>
   </tr>
   <tr>
    <td style="text-align:right;"> 1994 </td>
-   <td style="text-align:right;"> 329784 </td>
-   <td style="text-align:right;"> 354433 </td>
-   <td style="text-align:right;"> 306851 </td>
-   <td style="text-align:right;"> 31109 </td>
-   <td style="text-align:right;"> 33366 </td>
-   <td style="text-align:right;"> 35622 </td>
+   <td style="text-align:right;"> 288462 </td>
+   <td style="text-align:right;"> 309831 </td>
+   <td style="text-align:right;"> 268567 </td>
+   <td style="text-align:right;"> 28287 </td>
+   <td style="text-align:right;"> 30489 </td>
+   <td style="text-align:right;"> 32691 </td>
+   <td style="text-align:right;"> 51615 </td>
    <td style="text-align:right;"> 51259 </td>
-   <td style="text-align:right;"> 51259 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 1.054 </td>
-   <td style="text-align:right;"> 1.10 </td>
-   <td style="text-align:right;"> 1.146 </td>
+   <td style="text-align:right;"> 356 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> 1.06 </td>
+   <td style="text-align:right;"> NA </td>
    <td style="text-align:left;"> Stock published </td>
    <td style="text-align:left;"> Advice </td>
    <td style="text-align:right;"> NA </td>
    <td style="text-align:left;"> hke.27.3a46-8abd </td>
    <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 2017 </td>
+   <td style="text-align:right;"> 2018 </td>
    <td style="text-align:left;"> tonnes </td>
    <td style="text-align:left;"> SSB </td>
    <td style="text-align:left;"> tonnes </td>
    <td style="text-align:left;"> F </td>
-   <td style="text-align:left;"> per year </td>
+   <td style="text-align:right;"> NA </td>
   </tr>
   <tr>
    <td style="text-align:right;"> 1995 </td>
-   <td style="text-align:right;"> 165603 </td>
-   <td style="text-align:right;"> 180611 </td>
-   <td style="text-align:right;"> 151842 </td>
-   <td style="text-align:right;"> 30106 </td>
-   <td style="text-align:right;"> 32134 </td>
-   <td style="text-align:right;"> 34162 </td>
+   <td style="text-align:right;"> 147553 </td>
+   <td style="text-align:right;"> 160916 </td>
+   <td style="text-align:right;"> 135299 </td>
+   <td style="text-align:right;"> 27582 </td>
+   <td style="text-align:right;"> 29596 </td>
+   <td style="text-align:right;"> 31610 </td>
    <td style="text-align:right;"> 57621 </td>
    <td style="text-align:right;"> 57621 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 1.086 </td>
-   <td style="text-align:right;"> 1.13 </td>
-   <td style="text-align:right;"> 1.174 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> 1.12 </td>
+   <td style="text-align:right;"> NA </td>
    <td style="text-align:left;"> Stock published </td>
    <td style="text-align:left;"> Advice </td>
    <td style="text-align:right;"> NA </td>
    <td style="text-align:left;"> hke.27.3a46-8abd </td>
    <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 2017 </td>
+   <td style="text-align:right;"> 2018 </td>
    <td style="text-align:left;"> tonnes </td>
    <td style="text-align:left;"> SSB </td>
    <td style="text-align:left;"> tonnes </td>
    <td style="text-align:left;"> F </td>
-   <td style="text-align:left;"> per year </td>
+   <td style="text-align:right;"> NA </td>
   </tr>
   <tr>
    <td style="text-align:right;"> 1996 </td>
-   <td style="text-align:right;"> 401880 </td>
-   <td style="text-align:right;"> 427143 </td>
-   <td style="text-align:right;"> 378109 </td>
-   <td style="text-align:right;"> 35229 </td>
-   <td style="text-align:right;"> 37306 </td>
-   <td style="text-align:right;"> 39383 </td>
+   <td style="text-align:right;"> 362975 </td>
+   <td style="text-align:right;"> 386197 </td>
+   <td style="text-align:right;"> 341149 </td>
+   <td style="text-align:right;"> 32726 </td>
+   <td style="text-align:right;"> 34790 </td>
+   <td style="text-align:right;"> 36855 </td>
    <td style="text-align:right;"> 47210 </td>
    <td style="text-align:right;"> 47210 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 0.957 </td>
-   <td style="text-align:right;"> 1.01 </td>
-   <td style="text-align:right;"> 1.063 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> 0.97 </td>
+   <td style="text-align:right;"> NA </td>
    <td style="text-align:left;"> Stock published </td>
    <td style="text-align:left;"> Advice </td>
    <td style="text-align:right;"> NA </td>
    <td style="text-align:left;"> hke.27.3a46-8abd </td>
    <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 2017 </td>
+   <td style="text-align:right;"> 2018 </td>
    <td style="text-align:left;"> tonnes </td>
    <td style="text-align:left;"> SSB </td>
    <td style="text-align:left;"> tonnes </td>
    <td style="text-align:left;"> F </td>
-   <td style="text-align:left;"> per year </td>
+   <td style="text-align:right;"> NA </td>
   </tr>
   <tr>
    <td style="text-align:right;"> 1997 </td>
-   <td style="text-align:right;"> 275848 </td>
-   <td style="text-align:right;"> 299072 </td>
-   <td style="text-align:right;"> 254427 </td>
-   <td style="text-align:right;"> 29729 </td>
-   <td style="text-align:right;"> 31651 </td>
-   <td style="text-align:right;"> 33574 </td>
+   <td style="text-align:right;"> 255130 </td>
+   <td style="text-align:right;"> 277253 </td>
+   <td style="text-align:right;"> 234770 </td>
+   <td style="text-align:right;"> 28133 </td>
+   <td style="text-align:right;"> 30089 </td>
+   <td style="text-align:right;"> 32045 </td>
    <td style="text-align:right;"> 42465 </td>
    <td style="text-align:right;"> 42465 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 1.017 </td>
-   <td style="text-align:right;"> 1.07 </td>
-   <td style="text-align:right;"> 1.123 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> 1.06 </td>
+   <td style="text-align:right;"> NA </td>
    <td style="text-align:left;"> Stock published </td>
    <td style="text-align:left;"> Advice </td>
    <td style="text-align:right;"> NA </td>
    <td style="text-align:left;"> hke.27.3a46-8abd </td>
    <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 2017 </td>
+   <td style="text-align:right;"> 2018 </td>
    <td style="text-align:left;"> tonnes </td>
    <td style="text-align:left;"> SSB </td>
    <td style="text-align:left;"> tonnes </td>
    <td style="text-align:left;"> F </td>
-   <td style="text-align:left;"> per year </td>
+   <td style="text-align:right;"> NA </td>
   </tr>
   <tr>
    <td style="text-align:right;"> 1998 </td>
-   <td style="text-align:right;"> 452656 </td>
-   <td style="text-align:right;"> 483675 </td>
-   <td style="text-align:right;"> 423626 </td>
-   <td style="text-align:right;"> 24381 </td>
-   <td style="text-align:right;"> 25997 </td>
-   <td style="text-align:right;"> 27613 </td>
+   <td style="text-align:right;"> 422379 </td>
+   <td style="text-align:right;"> 452354 </td>
+   <td style="text-align:right;"> 394389 </td>
+   <td style="text-align:right;"> 22700 </td>
+   <td style="text-align:right;"> 24356 </td>
+   <td style="text-align:right;"> 26012 </td>
    <td style="text-align:right;"> 35060 </td>
    <td style="text-align:right;"> 35060 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 0.945 </td>
-   <td style="text-align:right;"> 1.01 </td>
-   <td style="text-align:right;"> 1.075 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> 0.98 </td>
+   <td style="text-align:right;"> NA </td>
    <td style="text-align:left;"> Stock published </td>
    <td style="text-align:left;"> Advice </td>
    <td style="text-align:right;"> NA </td>
    <td style="text-align:left;"> hke.27.3a46-8abd </td>
    <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 2017 </td>
+   <td style="text-align:right;"> 2018 </td>
    <td style="text-align:left;"> tonnes </td>
    <td style="text-align:left;"> SSB </td>
    <td style="text-align:left;"> tonnes </td>
    <td style="text-align:left;"> F </td>
-   <td style="text-align:left;"> per year </td>
+   <td style="text-align:right;"> NA </td>
   </tr>
   <tr>
    <td style="text-align:right;"> 1999 </td>
-   <td style="text-align:right;"> 223378 </td>
-   <td style="text-align:right;"> 242690 </td>
-   <td style="text-align:right;"> 205605 </td>
-   <td style="text-align:right;"> 27404 </td>
-   <td style="text-align:right;"> 29147 </td>
-   <td style="text-align:right;"> 30891 </td>
+   <td style="text-align:right;"> 207423 </td>
+   <td style="text-align:right;"> 225592 </td>
+   <td style="text-align:right;"> 190718 </td>
+   <td style="text-align:right;"> 25921 </td>
+   <td style="text-align:right;"> 27703 </td>
+   <td style="text-align:right;"> 29485 </td>
+   <td style="text-align:right;"> 40163 </td>
    <td style="text-align:right;"> 39814 </td>
-   <td style="text-align:right;"> 39814 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 0.943 </td>
-   <td style="text-align:right;"> 0.99 </td>
-   <td style="text-align:right;"> 1.037 </td>
+   <td style="text-align:right;"> 349 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> 0.97 </td>
+   <td style="text-align:right;"> NA </td>
    <td style="text-align:left;"> Stock published </td>
    <td style="text-align:left;"> Advice </td>
    <td style="text-align:right;"> NA </td>
    <td style="text-align:left;"> hke.27.3a46-8abd </td>
    <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 2017 </td>
+   <td style="text-align:right;"> 2018 </td>
    <td style="text-align:left;"> tonnes </td>
    <td style="text-align:left;"> SSB </td>
    <td style="text-align:left;"> tonnes </td>
    <td style="text-align:left;"> F </td>
-   <td style="text-align:left;"> per year </td>
+   <td style="text-align:right;"> NA </td>
   </tr>
   <tr>
    <td style="text-align:right;"> 2000 </td>
-   <td style="text-align:right;"> 199135 </td>
-   <td style="text-align:right;"> 214799 </td>
-   <td style="text-align:right;"> 184613 </td>
-   <td style="text-align:right;"> 30098 </td>
-   <td style="text-align:right;"> 31971 </td>
-   <td style="text-align:right;"> 33845 </td>
+   <td style="text-align:right;"> 188288 </td>
+   <td style="text-align:right;"> 203398 </td>
+   <td style="text-align:right;"> 174300 </td>
+   <td style="text-align:right;"> 28659 </td>
+   <td style="text-align:right;"> 30600 </td>
+   <td style="text-align:right;"> 32541 </td>
+   <td style="text-align:right;"> 42109 </td>
    <td style="text-align:right;"> 42026 </td>
-   <td style="text-align:right;"> 42026 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 0.876 </td>
-   <td style="text-align:right;"> 0.92 </td>
-   <td style="text-align:right;"> 0.964 </td>
+   <td style="text-align:right;"> 83 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> 0.91 </td>
+   <td style="text-align:right;"> NA </td>
    <td style="text-align:left;"> Stock published </td>
    <td style="text-align:left;"> Advice </td>
    <td style="text-align:right;"> NA </td>
    <td style="text-align:left;"> hke.27.3a46-8abd </td>
    <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 2017 </td>
+   <td style="text-align:right;"> 2018 </td>
    <td style="text-align:left;"> tonnes </td>
    <td style="text-align:left;"> SSB </td>
    <td style="text-align:left;"> tonnes </td>
    <td style="text-align:left;"> F </td>
-   <td style="text-align:left;"> per year </td>
+   <td style="text-align:right;"> NA </td>
   </tr>
   <tr>
    <td style="text-align:right;"> 2001 </td>
-   <td style="text-align:right;"> 341926 </td>
-   <td style="text-align:right;"> 364027 </td>
-   <td style="text-align:right;"> 321169 </td>
-   <td style="text-align:right;"> 35428 </td>
-   <td style="text-align:right;"> 37514 </td>
-   <td style="text-align:right;"> 39600 </td>
+   <td style="text-align:right;"> 346704 </td>
+   <td style="text-align:right;"> 369281 </td>
+   <td style="text-align:right;"> 325507 </td>
+   <td style="text-align:right;"> 34175 </td>
+   <td style="text-align:right;"> 36341 </td>
+   <td style="text-align:right;"> 38508 </td>
    <td style="text-align:right;"> 36675 </td>
    <td style="text-align:right;"> 36675 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 0.730 </td>
-   <td style="text-align:right;"> 0.78 </td>
-   <td style="text-align:right;"> 0.830 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> 0.75 </td>
+   <td style="text-align:right;"> NA </td>
    <td style="text-align:left;"> Stock published </td>
    <td style="text-align:left;"> Advice </td>
    <td style="text-align:right;"> NA </td>
    <td style="text-align:left;"> hke.27.3a46-8abd </td>
    <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 2017 </td>
+   <td style="text-align:right;"> 2018 </td>
    <td style="text-align:left;"> tonnes </td>
    <td style="text-align:left;"> SSB </td>
    <td style="text-align:left;"> tonnes </td>
    <td style="text-align:left;"> F </td>
-   <td style="text-align:left;"> per year </td>
+   <td style="text-align:right;"> NA </td>
   </tr>
   <tr>
    <td style="text-align:right;"> 2002 </td>
-   <td style="text-align:right;"> 265328 </td>
-   <td style="text-align:right;"> 283455 </td>
-   <td style="text-align:right;"> 248360 </td>
-   <td style="text-align:right;"> 35477 </td>
-   <td style="text-align:right;"> 37769 </td>
-   <td style="text-align:right;"> 40061 </td>
-   <td style="text-align:right;"> 40105 </td>
-   <td style="text-align:right;"> 40105 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 0.786 </td>
-   <td style="text-align:right;"> 0.83 </td>
-   <td style="text-align:right;"> 0.874 </td>
+   <td style="text-align:right;"> 274312 </td>
+   <td style="text-align:right;"> 293177 </td>
+   <td style="text-align:right;"> 256661 </td>
+   <td style="text-align:right;"> 34885 </td>
+   <td style="text-align:right;"> 37273 </td>
+   <td style="text-align:right;"> 39660 </td>
+   <td style="text-align:right;"> 40107 </td>
+   <td style="text-align:right;"> 40107 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> 0.81 </td>
+   <td style="text-align:right;"> NA </td>
    <td style="text-align:left;"> Stock published </td>
    <td style="text-align:left;"> Advice </td>
    <td style="text-align:right;"> NA </td>
    <td style="text-align:left;"> hke.27.3a46-8abd </td>
    <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 2017 </td>
+   <td style="text-align:right;"> 2018 </td>
    <td style="text-align:left;"> tonnes </td>
    <td style="text-align:left;"> SSB </td>
    <td style="text-align:left;"> tonnes </td>
    <td style="text-align:left;"> F </td>
-   <td style="text-align:left;"> per year </td>
+   <td style="text-align:right;"> NA </td>
   </tr>
   <tr>
    <td style="text-align:right;"> 2003 </td>
-   <td style="text-align:right;"> 157143 </td>
-   <td style="text-align:right;"> 169378 </td>
-   <td style="text-align:right;"> 145792 </td>
-   <td style="text-align:right;"> 35162 </td>
-   <td style="text-align:right;"> 37543 </td>
-   <td style="text-align:right;"> 39925 </td>
-   <td style="text-align:right;"> 44555 </td>
+   <td style="text-align:right;"> 160600 </td>
+   <td style="text-align:right;"> 173153 </td>
+   <td style="text-align:right;"> 148957 </td>
+   <td style="text-align:right;"> 35185 </td>
+   <td style="text-align:right;"> 37656 </td>
+   <td style="text-align:right;"> 40127 </td>
+   <td style="text-align:right;"> 45272 </td>
    <td style="text-align:right;"> 43162 </td>
-   <td style="text-align:right;"> 1393 </td>
-   <td style="text-align:right;"> 0.782 </td>
+   <td style="text-align:right;"> 2110 </td>
+   <td style="text-align:right;"> NA </td>
    <td style="text-align:right;"> 0.82 </td>
-   <td style="text-align:right;"> 0.858 </td>
+   <td style="text-align:right;"> NA </td>
    <td style="text-align:left;"> Stock published </td>
    <td style="text-align:left;"> Advice </td>
    <td style="text-align:right;"> NA </td>
    <td style="text-align:left;"> hke.27.3a46-8abd </td>
    <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 2017 </td>
+   <td style="text-align:right;"> 2018 </td>
    <td style="text-align:left;"> tonnes </td>
    <td style="text-align:left;"> SSB </td>
    <td style="text-align:left;"> tonnes </td>
    <td style="text-align:left;"> F </td>
-   <td style="text-align:left;"> per year </td>
+   <td style="text-align:right;"> NA </td>
   </tr>
   <tr>
    <td style="text-align:right;"> 2004 </td>
-   <td style="text-align:right;"> 329055 </td>
-   <td style="text-align:right;"> 348489 </td>
-   <td style="text-align:right;"> 310705 </td>
-   <td style="text-align:right;"> 39631 </td>
-   <td style="text-align:right;"> 42139 </td>
-   <td style="text-align:right;"> 44647 </td>
-   <td style="text-align:right;"> 49029 </td>
-   <td style="text-align:right;"> 46416 </td>
-   <td style="text-align:right;"> 2614 </td>
-   <td style="text-align:right;"> 0.779 </td>
+   <td style="text-align:right;"> 340348 </td>
+   <td style="text-align:right;"> 360546 </td>
+   <td style="text-align:right;"> 321284 </td>
+   <td style="text-align:right;"> 40191 </td>
+   <td style="text-align:right;"> 42778 </td>
+   <td style="text-align:right;"> 45364 </td>
+   <td style="text-align:right;"> 48969 </td>
+   <td style="text-align:right;"> 46417 </td>
+   <td style="text-align:right;"> 2552 </td>
+   <td style="text-align:right;"> NA </td>
    <td style="text-align:right;"> 0.83 </td>
-   <td style="text-align:right;"> 0.881 </td>
+   <td style="text-align:right;"> NA </td>
    <td style="text-align:left;"> Stock published </td>
    <td style="text-align:left;"> Advice </td>
    <td style="text-align:right;"> NA </td>
    <td style="text-align:left;"> hke.27.3a46-8abd </td>
    <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 2017 </td>
+   <td style="text-align:right;"> 2018 </td>
    <td style="text-align:left;"> tonnes </td>
    <td style="text-align:left;"> SSB </td>
    <td style="text-align:left;"> tonnes </td>
    <td style="text-align:left;"> F </td>
-   <td style="text-align:left;"> per year </td>
+   <td style="text-align:right;"> NA </td>
   </tr>
   <tr>
    <td style="text-align:right;"> 2005 </td>
-   <td style="text-align:right;"> 217285 </td>
-   <td style="text-align:right;"> 232589 </td>
-   <td style="text-align:right;"> 202988 </td>
-   <td style="text-align:right;"> 37587 </td>
-   <td style="text-align:right;"> 40113 </td>
-   <td style="text-align:right;"> 42638 </td>
-   <td style="text-align:right;"> 51133 </td>
+   <td style="text-align:right;"> 221565 </td>
+   <td style="text-align:right;"> 237314 </td>
+   <td style="text-align:right;"> 206861 </td>
+   <td style="text-align:right;"> 38591 </td>
+   <td style="text-align:right;"> 41195 </td>
+   <td style="text-align:right;"> 43799 </td>
+   <td style="text-align:right;"> 51226 </td>
    <td style="text-align:right;"> 46550 </td>
-   <td style="text-align:right;"> 4583 </td>
-   <td style="text-align:right;"> 0.923 </td>
-   <td style="text-align:right;"> 0.97 </td>
-   <td style="text-align:right;"> 1.017 </td>
+   <td style="text-align:right;"> 4676 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> 0.95 </td>
+   <td style="text-align:right;"> NA </td>
    <td style="text-align:left;"> Stock published </td>
    <td style="text-align:left;"> Advice </td>
    <td style="text-align:right;"> NA </td>
    <td style="text-align:left;"> hke.27.3a46-8abd </td>
    <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 2017 </td>
+   <td style="text-align:right;"> 2018 </td>
    <td style="text-align:left;"> tonnes </td>
    <td style="text-align:left;"> SSB </td>
    <td style="text-align:left;"> tonnes </td>
    <td style="text-align:left;"> F </td>
-   <td style="text-align:left;"> per year </td>
+   <td style="text-align:right;"> NA </td>
   </tr>
   <tr>
    <td style="text-align:right;"> 2006 </td>
-   <td style="text-align:right;"> 292674 </td>
-   <td style="text-align:right;"> 309904 </td>
-   <td style="text-align:right;"> 276403 </td>
-   <td style="text-align:right;"> 30176 </td>
-   <td style="text-align:right;"> 32475 </td>
-   <td style="text-align:right;"> 34774 </td>
-   <td style="text-align:right;"> 42691 </td>
-   <td style="text-align:right;"> 41469 </td>
-   <td style="text-align:right;"> 1222 </td>
-   <td style="text-align:right;"> 0.823 </td>
-   <td style="text-align:right;"> 0.87 </td>
-   <td style="text-align:right;"> 0.917 </td>
+   <td style="text-align:right;"> 302086 </td>
+   <td style="text-align:right;"> 320024 </td>
+   <td style="text-align:right;"> 285156 </td>
+   <td style="text-align:right;"> 31204 </td>
+   <td style="text-align:right;"> 33614 </td>
+   <td style="text-align:right;"> 36023 </td>
+   <td style="text-align:right;"> 43283 </td>
+   <td style="text-align:right;"> 41467 </td>
+   <td style="text-align:right;"> 1816 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> 0.84 </td>
+   <td style="text-align:right;"> NA </td>
    <td style="text-align:left;"> Stock published </td>
    <td style="text-align:left;"> Advice </td>
    <td style="text-align:right;"> NA </td>
    <td style="text-align:left;"> hke.27.3a46-8abd </td>
    <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 2017 </td>
+   <td style="text-align:right;"> 2018 </td>
    <td style="text-align:left;"> tonnes </td>
    <td style="text-align:left;"> SSB </td>
    <td style="text-align:left;"> tonnes </td>
    <td style="text-align:left;"> F </td>
-   <td style="text-align:left;"> per year </td>
+   <td style="text-align:right;"> NA </td>
   </tr>
   <tr>
    <td style="text-align:right;"> 2007 </td>
-   <td style="text-align:right;"> 452723 </td>
-   <td style="text-align:right;"> 479690 </td>
-   <td style="text-align:right;"> 427272 </td>
-   <td style="text-align:right;"> 35583 </td>
-   <td style="text-align:right;"> 38281 </td>
-   <td style="text-align:right;"> 40979 </td>
-   <td style="text-align:right;"> 47258 </td>
-   <td style="text-align:right;"> 45093 </td>
-   <td style="text-align:right;"> 2165 </td>
-   <td style="text-align:right;"> 0.712 </td>
-   <td style="text-align:right;"> 0.76 </td>
-   <td style="text-align:right;"> 0.808 </td>
+   <td style="text-align:right;"> 471269 </td>
+   <td style="text-align:right;"> 499703 </td>
+   <td style="text-align:right;"> 444453 </td>
+   <td style="text-align:right;"> 36929 </td>
+   <td style="text-align:right;"> 39797 </td>
+   <td style="text-align:right;"> 42666 </td>
+   <td style="text-align:right;"> 47219 </td>
+   <td style="text-align:right;"> 45028 </td>
+   <td style="text-align:right;"> 2191 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> 0.74 </td>
+   <td style="text-align:right;"> NA </td>
    <td style="text-align:left;"> Stock published </td>
    <td style="text-align:left;"> Advice </td>
    <td style="text-align:right;"> NA </td>
    <td style="text-align:left;"> hke.27.3a46-8abd </td>
    <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 2017 </td>
+   <td style="text-align:right;"> 2018 </td>
    <td style="text-align:left;"> tonnes </td>
    <td style="text-align:left;"> SSB </td>
    <td style="text-align:left;"> tonnes </td>
    <td style="text-align:left;"> F </td>
-   <td style="text-align:left;"> per year </td>
+   <td style="text-align:right;"> NA </td>
   </tr>
   <tr>
    <td style="text-align:right;"> 2008 </td>
-   <td style="text-align:right;"> 734328 </td>
-   <td style="text-align:right;"> 774005 </td>
-   <td style="text-align:right;"> 696685 </td>
-   <td style="text-align:right;"> 41253 </td>
-   <td style="text-align:right;"> 44733 </td>
-   <td style="text-align:right;"> 48212 </td>
-   <td style="text-align:right;"> 51190 </td>
-   <td style="text-align:right;"> 47822 </td>
-   <td style="text-align:right;"> 3368 </td>
-   <td style="text-align:right;"> 0.584 </td>
-   <td style="text-align:right;"> 0.63 </td>
-   <td style="text-align:right;"> 0.676 </td>
+   <td style="text-align:right;"> 765300 </td>
+   <td style="text-align:right;"> 807080 </td>
+   <td style="text-align:right;"> 725683 </td>
+   <td style="text-align:right;"> 43214 </td>
+   <td style="text-align:right;"> 46978 </td>
+   <td style="text-align:right;"> 50743 </td>
+   <td style="text-align:right;"> 50987 </td>
+   <td style="text-align:right;"> 47739 </td>
+   <td style="text-align:right;"> 3248 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> 0.60 </td>
+   <td style="text-align:right;"> NA </td>
    <td style="text-align:left;"> Stock published </td>
    <td style="text-align:left;"> Advice </td>
    <td style="text-align:right;"> NA </td>
    <td style="text-align:left;"> hke.27.3a46-8abd </td>
    <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 2017 </td>
+   <td style="text-align:right;"> 2018 </td>
    <td style="text-align:left;"> tonnes </td>
    <td style="text-align:left;"> SSB </td>
    <td style="text-align:left;"> tonnes </td>
    <td style="text-align:left;"> F </td>
-   <td style="text-align:left;"> per year </td>
+   <td style="text-align:right;"> NA </td>
   </tr>
   <tr>
    <td style="text-align:right;"> 2009 </td>
-   <td style="text-align:right;"> 247176 </td>
-   <td style="text-align:right;"> 269542 </td>
-   <td style="text-align:right;"> 226664 </td>
-   <td style="text-align:right;"> 61685 </td>
-   <td style="text-align:right;"> 67034 </td>
-   <td style="text-align:right;"> 72383 </td>
-   <td style="text-align:right;"> 69814 </td>
-   <td style="text-align:right;"> 58781 </td>
-   <td style="text-align:right;"> 11033 </td>
-   <td style="text-align:right;"> 0.475 </td>
-   <td style="text-align:right;"> 0.51 </td>
-   <td style="text-align:right;"> 0.545 </td>
+   <td style="text-align:right;"> 254872 </td>
+   <td style="text-align:right;"> 278046 </td>
+   <td style="text-align:right;"> 233630 </td>
+   <td style="text-align:right;"> 65204 </td>
+   <td style="text-align:right;"> 71072 </td>
+   <td style="text-align:right;"> 76940 </td>
+   <td style="text-align:right;"> 68689 </td>
+   <td style="text-align:right;"> 58818 </td>
+   <td style="text-align:right;"> 9871 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> 0.48 </td>
+   <td style="text-align:right;"> NA </td>
    <td style="text-align:left;"> Stock published </td>
    <td style="text-align:left;"> Advice </td>
    <td style="text-align:right;"> NA </td>
    <td style="text-align:left;"> hke.27.3a46-8abd </td>
    <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 2017 </td>
+   <td style="text-align:right;"> 2018 </td>
    <td style="text-align:left;"> tonnes </td>
    <td style="text-align:left;"> SSB </td>
    <td style="text-align:left;"> tonnes </td>
    <td style="text-align:left;"> F </td>
-   <td style="text-align:left;"> per year </td>
+   <td style="text-align:right;"> NA </td>
   </tr>
   <tr>
    <td style="text-align:right;"> 2010 </td>
-   <td style="text-align:right;"> 257528 </td>
-   <td style="text-align:right;"> 279068 </td>
-   <td style="text-align:right;"> 237649 </td>
-   <td style="text-align:right;"> 113783 </td>
-   <td style="text-align:right;"> 123089 </td>
-   <td style="text-align:right;"> 132395 </td>
-   <td style="text-align:right;"> 84878 </td>
-   <td style="text-align:right;"> 72760 </td>
-   <td style="text-align:right;"> 12118 </td>
-   <td style="text-align:right;"> 0.365 </td>
-   <td style="text-align:right;"> 0.39 </td>
-   <td style="text-align:right;"> 0.415 </td>
+   <td style="text-align:right;"> 270378 </td>
+   <td style="text-align:right;"> 292668 </td>
+   <td style="text-align:right;"> 249786 </td>
+   <td style="text-align:right;"> 121027 </td>
+   <td style="text-align:right;"> 131320 </td>
+   <td style="text-align:right;"> 141613 </td>
+   <td style="text-align:right;"> 82214 </td>
+   <td style="text-align:right;"> 72799 </td>
+   <td style="text-align:right;"> 9415 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> 0.36 </td>
+   <td style="text-align:right;"> NA </td>
    <td style="text-align:left;"> Stock published </td>
    <td style="text-align:left;"> Advice </td>
    <td style="text-align:right;"> NA </td>
    <td style="text-align:left;"> hke.27.3a46-8abd </td>
    <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 2017 </td>
+   <td style="text-align:right;"> 2018 </td>
    <td style="text-align:left;"> tonnes </td>
    <td style="text-align:left;"> SSB </td>
    <td style="text-align:left;"> tonnes </td>
    <td style="text-align:left;"> F </td>
-   <td style="text-align:left;"> per year </td>
+   <td style="text-align:right;"> NA </td>
   </tr>
   <tr>
    <td style="text-align:right;"> 2011 </td>
-   <td style="text-align:right;"> 265486 </td>
-   <td style="text-align:right;"> 290682 </td>
-   <td style="text-align:right;"> 242474 </td>
-   <td style="text-align:right;"> 185528 </td>
-   <td style="text-align:right;"> 201049 </td>
-   <td style="text-align:right;"> 216570 </td>
-   <td style="text-align:right;"> 101403 </td>
-   <td style="text-align:right;"> 87500 </td>
-   <td style="text-align:right;"> 13903 </td>
-   <td style="text-align:right;"> 0.288 </td>
-   <td style="text-align:right;"> 0.31 </td>
-   <td style="text-align:right;"> 0.332 </td>
+   <td style="text-align:right;"> 284226 </td>
+   <td style="text-align:right;"> 310040 </td>
+   <td style="text-align:right;"> 260563 </td>
+   <td style="text-align:right;"> 198965 </td>
+   <td style="text-align:right;"> 216114 </td>
+   <td style="text-align:right;"> 233263 </td>
+   <td style="text-align:right;"> 101315 </td>
+   <td style="text-align:right;"> 87540 </td>
+   <td style="text-align:right;"> 13775 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> 0.29 </td>
+   <td style="text-align:right;"> NA </td>
    <td style="text-align:left;"> Stock published </td>
    <td style="text-align:left;"> Advice </td>
    <td style="text-align:right;"> NA </td>
    <td style="text-align:left;"> hke.27.3a46-8abd </td>
    <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 2017 </td>
+   <td style="text-align:right;"> 2018 </td>
    <td style="text-align:left;"> tonnes </td>
    <td style="text-align:left;"> SSB </td>
    <td style="text-align:left;"> tonnes </td>
    <td style="text-align:left;"> F </td>
-   <td style="text-align:left;"> per year </td>
+   <td style="text-align:right;"> NA </td>
   </tr>
   <tr>
    <td style="text-align:right;"> 2012 </td>
-   <td style="text-align:right;"> 487330 </td>
-   <td style="text-align:right;"> 535317 </td>
-   <td style="text-align:right;"> 443645 </td>
-   <td style="text-align:right;"> 206375 </td>
-   <td style="text-align:right;"> 227026 </td>
-   <td style="text-align:right;"> 247677 </td>
-   <td style="text-align:right;"> 100470 </td>
-   <td style="text-align:right;"> 85600 </td>
-   <td style="text-align:right;"> 14870 </td>
-   <td style="text-align:right;"> 0.238 </td>
-   <td style="text-align:right;"> 0.26 </td>
-   <td style="text-align:right;"> 0.282 </td>
+   <td style="text-align:right;"> 540727 </td>
+   <td style="text-align:right;"> 587750 </td>
+   <td style="text-align:right;"> 497468 </td>
+   <td style="text-align:right;"> 224485 </td>
+   <td style="text-align:right;"> 247175 </td>
+   <td style="text-align:right;"> 269865 </td>
+   <td style="text-align:right;"> 97902 </td>
+   <td style="text-align:right;"> 85677 </td>
+   <td style="text-align:right;"> 12225 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> 0.24 </td>
+   <td style="text-align:right;"> NA </td>
    <td style="text-align:left;"> Stock published </td>
    <td style="text-align:left;"> Advice </td>
    <td style="text-align:right;"> NA </td>
    <td style="text-align:left;"> hke.27.3a46-8abd </td>
    <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 2017 </td>
+   <td style="text-align:right;"> 2018 </td>
    <td style="text-align:left;"> tonnes </td>
    <td style="text-align:left;"> SSB </td>
    <td style="text-align:left;"> tonnes </td>
    <td style="text-align:left;"> F </td>
-   <td style="text-align:left;"> per year </td>
+   <td style="text-align:right;"> NA </td>
   </tr>
   <tr>
    <td style="text-align:right;"> 2013 </td>
-   <td style="text-align:right;"> 318837 </td>
-   <td style="text-align:right;"> 360376 </td>
-   <td style="text-align:right;"> 282088 </td>
-   <td style="text-align:right;"> 203272 </td>
-   <td style="text-align:right;"> 228246 </td>
-   <td style="text-align:right;"> 253220 </td>
-   <td style="text-align:right;"> 93108 </td>
-   <td style="text-align:right;"> 77708 </td>
-   <td style="text-align:right;"> 15400 </td>
-   <td style="text-align:right;"> 0.233 </td>
-   <td style="text-align:right;"> 0.26 </td>
-   <td style="text-align:right;"> 0.287 </td>
+   <td style="text-align:right;"> 375538 </td>
+   <td style="text-align:right;"> 416627 </td>
+   <td style="text-align:right;"> 338502 </td>
+   <td style="text-align:right;"> 225353 </td>
+   <td style="text-align:right;"> 252407 </td>
+   <td style="text-align:right;"> 279461 </td>
+   <td style="text-align:right;"> 89390 </td>
+   <td style="text-align:right;"> 77753 </td>
+   <td style="text-align:right;"> 11637 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> 0.24 </td>
+   <td style="text-align:right;"> NA </td>
    <td style="text-align:left;"> Stock published </td>
    <td style="text-align:left;"> Advice </td>
    <td style="text-align:right;"> NA </td>
    <td style="text-align:left;"> hke.27.3a46-8abd </td>
    <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 2017 </td>
+   <td style="text-align:right;"> 2018 </td>
    <td style="text-align:left;"> tonnes </td>
    <td style="text-align:left;"> SSB </td>
    <td style="text-align:left;"> tonnes </td>
    <td style="text-align:left;"> F </td>
-   <td style="text-align:left;"> per year </td>
+   <td style="text-align:right;"> NA </td>
   </tr>
   <tr>
    <td style="text-align:right;"> 2014 </td>
-   <td style="text-align:right;"> 217489 </td>
-   <td style="text-align:right;"> 251947 </td>
-   <td style="text-align:right;"> 187744 </td>
-   <td style="text-align:right;"> 210157 </td>
-   <td style="text-align:right;"> 241117 </td>
-   <td style="text-align:right;"> 272077 </td>
-   <td style="text-align:right;"> 99700 </td>
-   <td style="text-align:right;"> 89900 </td>
-   <td style="text-align:right;"> 9800 </td>
-   <td style="text-align:right;"> 0.228 </td>
-   <td style="text-align:right;"> 0.26 </td>
-   <td style="text-align:right;"> 0.292 </td>
+   <td style="text-align:right;"> 217417 </td>
+   <td style="text-align:right;"> 246976 </td>
+   <td style="text-align:right;"> 191396 </td>
+   <td style="text-align:right;"> 238518 </td>
+   <td style="text-align:right;"> 271088 </td>
+   <td style="text-align:right;"> 303658 </td>
+   <td style="text-align:right;"> 96987 </td>
+   <td style="text-align:right;"> 89940 </td>
+   <td style="text-align:right;"> 7047 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> 0.23 </td>
+   <td style="text-align:right;"> NA </td>
    <td style="text-align:left;"> Stock published </td>
    <td style="text-align:left;"> Advice </td>
    <td style="text-align:right;"> NA </td>
    <td style="text-align:left;"> hke.27.3a46-8abd </td>
    <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 2017 </td>
+   <td style="text-align:right;"> 2018 </td>
    <td style="text-align:left;"> tonnes </td>
    <td style="text-align:left;"> SSB </td>
    <td style="text-align:left;"> tonnes </td>
    <td style="text-align:left;"> F </td>
-   <td style="text-align:left;"> per year </td>
+   <td style="text-align:right;"> NA </td>
   </tr>
   <tr>
    <td style="text-align:right;"> 2015 </td>
-   <td style="text-align:right;"> 309968 </td>
-   <td style="text-align:right;"> 368540 </td>
-   <td style="text-align:right;"> 260703 </td>
-   <td style="text-align:right;"> 230885 </td>
-   <td style="text-align:right;"> 272795 </td>
-   <td style="text-align:right;"> 314705 </td>
-   <td style="text-align:right;"> 105900 </td>
-   <td style="text-align:right;"> 95000 </td>
-   <td style="text-align:right;"> 10900 </td>
-   <td style="text-align:right;"> 0.212 </td>
-   <td style="text-align:right;"> 0.25 </td>
-   <td style="text-align:right;"> 0.288 </td>
+   <td style="text-align:right;"> 245139 </td>
+   <td style="text-align:right;"> 284718 </td>
+   <td style="text-align:right;"> 211062 </td>
+   <td style="text-align:right;"> 272694 </td>
+   <td style="text-align:right;"> 314983 </td>
+   <td style="text-align:right;"> 357272 </td>
+   <td style="text-align:right;"> 101066 </td>
+   <td style="text-align:right;"> 93670 </td>
+   <td style="text-align:right;"> 7396 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> 0.22 </td>
+   <td style="text-align:right;"> NA </td>
    <td style="text-align:left;"> Stock published </td>
    <td style="text-align:left;"> Advice </td>
    <td style="text-align:right;"> NA </td>
    <td style="text-align:left;"> hke.27.3a46-8abd </td>
    <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 2017 </td>
+   <td style="text-align:right;"> 2018 </td>
    <td style="text-align:left;"> tonnes </td>
    <td style="text-align:left;"> SSB </td>
    <td style="text-align:left;"> tonnes </td>
    <td style="text-align:left;"> F </td>
-   <td style="text-align:left;"> per year </td>
+   <td style="text-align:right;"> NA </td>
   </tr>
   <tr>
    <td style="text-align:right;"> 2016 </td>
-   <td style="text-align:right;"> 529458 </td>
-   <td style="text-align:right;"> 669948 </td>
-   <td style="text-align:right;"> 418429 </td>
-   <td style="text-align:right;"> 234898 </td>
-   <td style="text-align:right;"> 290234 </td>
-   <td style="text-align:right;"> 345570 </td>
-   <td style="text-align:right;"> 118634 </td>
-   <td style="text-align:right;"> 107534 </td>
-   <td style="text-align:right;"> 11100 </td>
-   <td style="text-align:right;"> 0.216 </td>
-   <td style="text-align:right;"> 0.27 </td>
-   <td style="text-align:right;"> 0.324 </td>
+   <td style="text-align:right;"> 593993 </td>
+   <td style="text-align:right;"> 707487 </td>
+   <td style="text-align:right;"> 498706 </td>
+   <td style="text-align:right;"> 292792 </td>
+   <td style="text-align:right;"> 346653 </td>
+   <td style="text-align:right;"> 400514 </td>
+   <td style="text-align:right;"> 119045 </td>
+   <td style="text-align:right;"> 109106 </td>
+   <td style="text-align:right;"> 9939 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> 0.23 </td>
+   <td style="text-align:right;"> NA </td>
    <td style="text-align:left;"> Stock published </td>
    <td style="text-align:left;"> Advice </td>
    <td style="text-align:right;"> NA </td>
    <td style="text-align:left;"> hke.27.3a46-8abd </td>
    <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 2017 </td>
+   <td style="text-align:right;"> 2018 </td>
    <td style="text-align:left;"> tonnes </td>
    <td style="text-align:left;"> SSB </td>
    <td style="text-align:left;"> tonnes </td>
    <td style="text-align:left;"> F </td>
-   <td style="text-align:left;"> per year </td>
+   <td style="text-align:right;"> NA </td>
   </tr>
   <tr>
    <td style="text-align:right;"> 2017 </td>
-   <td style="text-align:right;"> 335071 </td>
-   <td style="text-align:right;"> 370115 </td>
-   <td style="text-align:right;"> 303346 </td>
-   <td style="text-align:right;"> 197000 </td>
-   <td style="text-align:right;"> 265666 </td>
-   <td style="text-align:right;"> 334331 </td>
+   <td style="text-align:right;"> 493394 </td>
+   <td style="text-align:right;"> 645701 </td>
+   <td style="text-align:right;"> 377011 </td>
+   <td style="text-align:right;"> 261577 </td>
+   <td style="text-align:right;"> 325230 </td>
+   <td style="text-align:right;"> 388883 </td>
+   <td style="text-align:right;"> 110287 </td>
+   <td style="text-align:right;"> 104671 </td>
+   <td style="text-align:right;"> 5616 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> 0.25 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> Stock published </td>
+   <td style="text-align:left;"> Advice </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> hke.27.3a46-8abd </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 2018 </td>
+   <td style="text-align:left;"> tonnes </td>
+   <td style="text-align:left;"> SSB </td>
+   <td style="text-align:left;"> tonnes </td>
+   <td style="text-align:left;"> F </td>
+   <td style="text-align:right;"> NA </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2018 </td>
+   <td style="text-align:right;"> 303550 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> 229915 </td>
+   <td style="text-align:right;"> 306516 </td>
+   <td style="text-align:right;"> 383117 </td>
    <td style="text-align:right;"> NA </td>
    <td style="text-align:right;"> NA </td>
    <td style="text-align:right;"> NA </td>
@@ -1168,21 +1169,20 @@ The spawning-stock biomass (SSB) has increased significantly since 2006 and is w
    <td style="text-align:right;"> NA </td>
    <td style="text-align:left;"> hke.27.3a46-8abd </td>
    <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 2017 </td>
+   <td style="text-align:right;"> 2018 </td>
    <td style="text-align:left;"> tonnes </td>
    <td style="text-align:left;"> SSB </td>
    <td style="text-align:left;"> tonnes </td>
    <td style="text-align:left;"> F </td>
-   <td style="text-align:left;"> per year </td>
+   <td style="text-align:right;"> NA </td>
   </tr>
 </tbody>
-</table></div>
+</table>
 
 
 
-[Download CSV](data:text/csv;base64,IiIsIlllYXIiLCJyZWNydWl0bWVudCIsImhpZ2hfcmVjcnVpdG1lbnQiLCJsb3dfcmVjcnVpdG1lbnQiLCJsb3dfU1NCIiwiU1NCIiwiaGlnaF9TU0IiLCJjYXRjaGVzIiwibGFuZGluZ3MiLCJkaXNjYXJkcyIsImxvd19GIiwiRiIsImhpZ2hfRiIsIlN0b2NrUHVibGlzaE5vdGUiLCJQdXJwb3NlIiwiRmFnZSIsImZpc2hzdG9jayIsInJlY3J1aXRtZW50X2FnZSIsIkFzc2Vzc21lbnRZZWFyIiwidW5pdHMiLCJzdG9ja1NpemVEZXNjcmlwdGlvbiIsInN0b2NrU2l6ZVVuaXRzIiwiZmlzaGluZ1ByZXNzdXJlRGVzY3JpcHRpb24iLCJmaXNoaW5nUHJlc3N1cmVVbml0cyIKIjEiLDE5NzgsMzA0MTEyLDM2MjcxMSwyNTQ5ODAsNjM4MTEsNzY2OTYsODk1ODEsNTA1NTEsNTA1NTEsMCwwLjQ3NSwwLjUyLDAuNTY1LCJTdG9jayBwdWJsaXNoZWQiLCJBZHZpY2UiLE5BLCJoa2UuMjcuM2E0Ni04YWJkIiwwLDIwMTcsInRvbm5lcyIsIlNTQiIsInRvbm5lcyIsIkYiLCJwZXIgeWVhciIKIjIiLDE5NzksMjgzNTM0LDM0MjUxMSwyMzQ3MTQsODczNDksOTc5MTEsMTA4NDczLDUxMDk2LDUxMDk2LDAsMC40OTksMC41NSwwLjYwMSwiU3RvY2sgcHVibGlzaGVkIiwiQWR2aWNlIixOQSwiaGtlLjI3LjNhNDYtOGFiZCIsMCwyMDE3LCJ0b25uZXMiLCJTU0IiLCJ0b25uZXMiLCJGIiwicGVyIHllYXIiCiIzIiwxOTgwLDMxNjQ4OSwzNzY3MzcsMjY1ODc0LDkwNDQwLDEwMDQ4MywxMTA1MjYsNTcyNjUsNTcyNjUsMCwwLjU4NywwLjY1LDAuNzEzLCJTdG9jayBwdWJsaXNoZWQiLCJBZHZpY2UiLE5BLCJoa2UuMjcuM2E0Ni04YWJkIiwwLDIwMTcsInRvbm5lcyIsIlNTQiIsInRvbm5lcyIsIkYiLCJwZXIgeWVhciIKIjQiLDE5ODEsNTk5NTQwLDY4MDMxMSw1MjgzNTksNzcwODYsODY0NzUsOTU4NjMsNTM5MTgsNTM5MTgsMCwwLjU4OCwwLjY3LDAuNzUyLCJTdG9jayBwdWJsaXNoZWQiLCJBZHZpY2UiLE5BLCJoa2UuMjcuM2E0Ni04YWJkIiwwLDIwMTcsInRvbm5lcyIsIlNTQiIsInRvbm5lcyIsIkYiLCJwZXIgeWVhciIKIjUiLDE5ODIsNDE4Mzk2LDQ4NzY4MiwzNTg5NTQsNjE1NzQsNzAzOTgsNzkyMjIsNTQ5OTQsNTQ5OTQsMCwwLjYzMSwwLjY5LDAuNzQ5LCJTdG9jayBwdWJsaXNoZWQiLCJBZHZpY2UiLE5BLCJoa2UuMjcuM2E0Ni04YWJkIiwwLDIwMTcsInRvbm5lcyIsIlNTQiIsInRvbm5lcyIsIkYiLCJwZXIgeWVhciIKIjYiLDE5ODMsMTUyMTYwLDE5MTEwOSwxMjExNDksNjExMTYsNjkxNTgsNzcyMDAsNTc1MDcsNTc1MDcsMCwwLjU4OSwwLjYzLDAuNjcxLCJTdG9jayBwdWJsaXNoZWQiLCJBZHZpY2UiLE5BLCJoa2UuMjcuM2E0Ni04YWJkIiwwLDIwMTcsInRvbm5lcyIsIlNTQiIsInRvbm5lcyIsIkYiLCJwZXIgeWVhciIKIjciLDE5ODQsMjk1OTAwLDM0MzgzMCwyNTQ2NTMsNzYwMjgsODM2MjAsOTEyMTMsNjMyODYsNjMyODYsMCwwLjYxNCwwLjY3LDAuNzI2LCJTdG9jayBwdWJsaXNoZWQiLCJBZHZpY2UiLE5BLCJoa2UuMjcuM2E0Ni04YWJkIiwwLDIwMTcsInRvbm5lcyIsIlNTQiIsInRvbm5lcyIsIkYiLCJwZXIgeWVhciIKIjgiLDE5ODUsNjg2NzAzLDc2NjUyNiw2MTUxOTIsNzM2MjgsODAzMTIsODY5OTUsNTYwOTksNTYwOTksMCwwLjY5NiwwLjgsMC45MDQsIlN0b2NrIHB1Ymxpc2hlZCIsIkFkdmljZSIsTkEsImhrZS4yNy4zYTQ2LThhYmQiLDAsMjAxNywidG9ubmVzIiwiU1NCIiwidG9ubmVzIiwiRiIsInBlciB5ZWFyIgoiOSIsMTk4Niw0MTIyODksNDYyOTgxLDM2NzE0Nyw1NDk1Myw2MTAxMiw2NzA3MSw1NzA5Miw1NzA5MiwwLDAuODQzLDAuOTEsMC45NzcsIlN0b2NrIHB1Ymxpc2hlZCIsIkFkdmljZSIsTkEsImhrZS4yNy4zYTQ2LThhYmQiLDAsMjAxNywidG9ubmVzIiwiU1NCIiwidG9ubmVzIiwiRiIsInBlciB5ZWFyIgoiMTAiLDE5ODcsNDg3MzI5LDU0MDg1OCw0MzkwOTgsNDIxNzgsNDcyMjgsNTIyNzgsNjMzNjksNjMzNjksMCwwLjk0MywxLDEuMDU3LCJTdG9jayBwdWJsaXNoZWQiLCJBZHZpY2UiLE5BLCJoa2UuMjcuM2E0Ni04YWJkIiwwLDIwMTcsInRvbm5lcyIsIlNTQiIsInRvbm5lcyIsIkYiLCJwZXIgeWVhciIKIjExIiwxOTg4LDUzMDkwMiw1ODM0MTEsNDgzMTE3LDQ1MjczLDQ5Njg4LDU0MTAzLDY0ODIzLDY0ODIzLDAsMC45NTMsMS4wMiwxLjA4NywiU3RvY2sgcHVibGlzaGVkIiwiQWR2aWNlIixOQSwiaGtlLjI3LjNhNDYtOGFiZCIsMCwyMDE3LCJ0b25uZXMiLCJTU0IiLCJ0b25uZXMiLCJGIiwicGVyIHllYXIiCiIxMiIsMTk4OSw1MDY0NjQsNTUyNTUwLDQ2NDIyMiw0MzkzNiw0Nzc2Miw1MTU4Nyw2NjQ3Myw2NjQ3MywwLDEuMDIyLDEuMDksMS4xNTgsIlN0b2NrIHB1Ymxpc2hlZCIsIkFkdmljZSIsTkEsImhrZS4yNy4zYTQ2LThhYmQiLDAsMjAxNywidG9ubmVzIiwiU1NCIiwidG9ubmVzIiwiRiIsInBlciB5ZWFyIgoiMTMiLDE5OTAsNTM4NDYzLDU4NTYyMiw0OTUxMDEsNDExODUsNDQyOTUsNDc0MDQsNTk5NTQsNTk5NTQsMCwwLjkyLDEsMS4wOCwiU3RvY2sgcHVibGlzaGVkIiwiQWR2aWNlIixOQSwiaGtlLjI3LjNhNDYtOGFiZCIsMCwyMDE3LCJ0b25uZXMiLCJTU0IiLCJ0b25uZXMiLCJGIiwicGVyIHllYXIiCiIxNCIsMTk5MSwzMTc4MjEsMzQ5MTE2LDI4OTMzMSw0MTU1MSw0NDUzOSw0NzUyNyw1ODEyOSw1ODEyOSwwLDAuODkxLDAuOTQsMC45ODksIlN0b2NrIHB1Ymxpc2hlZCIsIkFkdmljZSIsTkEsImhrZS4yNy4zYTQ2LThhYmQiLDAsMjAxNywidG9ubmVzIiwiU1NCIiwidG9ubmVzIiwiRiIsInBlciB5ZWFyIgoiMTUiLDE5OTIsMzMwNTU5LDM2MTU3MywzMDIyMDUsNDIyMTEsNDUyNjgsNDgzMjUsNTY2MTcsNTY2MTcsMCwwLjk1NiwxLjAxLDEuMDY0LCJTdG9jayBwdWJsaXNoZWQiLCJBZHZpY2UiLE5BLCJoa2UuMjcuM2E0Ni04YWJkIiwwLDIwMTcsInRvbm5lcyIsIlNTQiIsInRvbm5lcyIsIkYiLCJwZXIgeWVhciIKIjE2IiwxOTkzLDYwMjc1NCw2NDA1MDAsNTY3MjMwLDQwNTI1LDQzMjA1LDQ1ODg2LDUyMTQ0LDUyMTQ0LDAsMS4wMDksMS4wOCwxLjE1MSwiU3RvY2sgcHVibGlzaGVkIiwiQWR2aWNlIixOQSwiaGtlLjI3LjNhNDYtOGFiZCIsMCwyMDE3LCJ0b25uZXMiLCJTU0IiLCJ0b25uZXMiLCJGIiwicGVyIHllYXIiCiIxNyIsMTk5NCwzMjk3ODQsMzU0NDMzLDMwNjg1MSwzMTEwOSwzMzM2NiwzNTYyMiw1MTI1OSw1MTI1OSwwLDEuMDU0LDEuMSwxLjE0NiwiU3RvY2sgcHVibGlzaGVkIiwiQWR2aWNlIixOQSwiaGtlLjI3LjNhNDYtOGFiZCIsMCwyMDE3LCJ0b25uZXMiLCJTU0IiLCJ0b25uZXMiLCJGIiwicGVyIHllYXIiCiIxOCIsMTk5NSwxNjU2MDMsMTgwNjExLDE1MTg0MiwzMDEwNiwzMjEzNCwzNDE2Miw1NzYyMSw1NzYyMSwwLDEuMDg2LDEuMTMsMS4xNzQsIlN0b2NrIHB1Ymxpc2hlZCIsIkFkdmljZSIsTkEsImhrZS4yNy4zYTQ2LThhYmQiLDAsMjAxNywidG9ubmVzIiwiU1NCIiwidG9ubmVzIiwiRiIsInBlciB5ZWFyIgoiMTkiLDE5OTYsNDAxODgwLDQyNzE0MywzNzgxMDksMzUyMjksMzczMDYsMzkzODMsNDcyMTAsNDcyMTAsMCwwLjk1NywxLjAxLDEuMDYzLCJTdG9jayBwdWJsaXNoZWQiLCJBZHZpY2UiLE5BLCJoa2UuMjcuM2E0Ni04YWJkIiwwLDIwMTcsInRvbm5lcyIsIlNTQiIsInRvbm5lcyIsIkYiLCJwZXIgeWVhciIKIjIwIiwxOTk3LDI3NTg0OCwyOTkwNzIsMjU0NDI3LDI5NzI5LDMxNjUxLDMzNTc0LDQyNDY1LDQyNDY1LDAsMS4wMTcsMS4wNywxLjEyMywiU3RvY2sgcHVibGlzaGVkIiwiQWR2aWNlIixOQSwiaGtlLjI3LjNhNDYtOGFiZCIsMCwyMDE3LCJ0b25uZXMiLCJTU0IiLCJ0b25uZXMiLCJGIiwicGVyIHllYXIiCiIyMSIsMTk5OCw0NTI2NTYsNDgzNjc1LDQyMzYyNiwyNDM4MSwyNTk5NywyNzYxMywzNTA2MCwzNTA2MCwwLDAuOTQ1LDEuMDEsMS4wNzUsIlN0b2NrIHB1Ymxpc2hlZCIsIkFkdmljZSIsTkEsImhrZS4yNy4zYTQ2LThhYmQiLDAsMjAxNywidG9ubmVzIiwiU1NCIiwidG9ubmVzIiwiRiIsInBlciB5ZWFyIgoiMjIiLDE5OTksMjIzMzc4LDI0MjY5MCwyMDU2MDUsMjc0MDQsMjkxNDcsMzA4OTEsMzk4MTQsMzk4MTQsMCwwLjk0MywwLjk5LDEuMDM3LCJTdG9jayBwdWJsaXNoZWQiLCJBZHZpY2UiLE5BLCJoa2UuMjcuM2E0Ni04YWJkIiwwLDIwMTcsInRvbm5lcyIsIlNTQiIsInRvbm5lcyIsIkYiLCJwZXIgeWVhciIKIjIzIiwyMDAwLDE5OTEzNSwyMTQ3OTksMTg0NjEzLDMwMDk4LDMxOTcxLDMzODQ1LDQyMDI2LDQyMDI2LDAsMC44NzYsMC45MiwwLjk2NCwiU3RvY2sgcHVibGlzaGVkIiwiQWR2aWNlIixOQSwiaGtlLjI3LjNhNDYtOGFiZCIsMCwyMDE3LCJ0b25uZXMiLCJTU0IiLCJ0b25uZXMiLCJGIiwicGVyIHllYXIiCiIyNCIsMjAwMSwzNDE5MjYsMzY0MDI3LDMyMTE2OSwzNTQyOCwzNzUxNCwzOTYwMCwzNjY3NSwzNjY3NSwwLDAuNzMsMC43OCwwLjgzLCJTdG9jayBwdWJsaXNoZWQiLCJBZHZpY2UiLE5BLCJoa2UuMjcuM2E0Ni04YWJkIiwwLDIwMTcsInRvbm5lcyIsIlNTQiIsInRvbm5lcyIsIkYiLCJwZXIgeWVhciIKIjI1IiwyMDAyLDI2NTMyOCwyODM0NTUsMjQ4MzYwLDM1NDc3LDM3NzY5LDQwMDYxLDQwMTA1LDQwMTA1LDAsMC43ODYsMC44MywwLjg3NCwiU3RvY2sgcHVibGlzaGVkIiwiQWR2aWNlIixOQSwiaGtlLjI3LjNhNDYtOGFiZCIsMCwyMDE3LCJ0b25uZXMiLCJTU0IiLCJ0b25uZXMiLCJGIiwicGVyIHllYXIiCiIyNiIsMjAwMywxNTcxNDMsMTY5Mzc4LDE0NTc5MiwzNTE2MiwzNzU0MywzOTkyNSw0NDU1NSw0MzE2MiwxMzkzLDAuNzgyLDAuODIsMC44NTgsIlN0b2NrIHB1Ymxpc2hlZCIsIkFkdmljZSIsTkEsImhrZS4yNy4zYTQ2LThhYmQiLDAsMjAxNywidG9ubmVzIiwiU1NCIiwidG9ubmVzIiwiRiIsInBlciB5ZWFyIgoiMjciLDIwMDQsMzI5MDU1LDM0ODQ4OSwzMTA3MDUsMzk2MzEsNDIxMzksNDQ2NDcsNDkwMjksNDY0MTYsMjYxNCwwLjc3OSwwLjgzLDAuODgxLCJTdG9jayBwdWJsaXNoZWQiLCJBZHZpY2UiLE5BLCJoa2UuMjcuM2E0Ni04YWJkIiwwLDIwMTcsInRvbm5lcyIsIlNTQiIsInRvbm5lcyIsIkYiLCJwZXIgeWVhciIKIjI4IiwyMDA1LDIxNzI4NSwyMzI1ODksMjAyOTg4LDM3NTg3LDQwMTEzLDQyNjM4LDUxMTMzLDQ2NTUwLDQ1ODMsMC45MjMsMC45NywxLjAxNywiU3RvY2sgcHVibGlzaGVkIiwiQWR2aWNlIixOQSwiaGtlLjI3LjNhNDYtOGFiZCIsMCwyMDE3LCJ0b25uZXMiLCJTU0IiLCJ0b25uZXMiLCJGIiwicGVyIHllYXIiCiIyOSIsMjAwNiwyOTI2NzQsMzA5OTA0LDI3NjQwMywzMDE3NiwzMjQ3NSwzNDc3NCw0MjY5MSw0MTQ2OSwxMjIyLDAuODIzLDAuODcsMC45MTcsIlN0b2NrIHB1Ymxpc2hlZCIsIkFkdmljZSIsTkEsImhrZS4yNy4zYTQ2LThhYmQiLDAsMjAxNywidG9ubmVzIiwiU1NCIiwidG9ubmVzIiwiRiIsInBlciB5ZWFyIgoiMzAiLDIwMDcsNDUyNzIzLDQ3OTY5MCw0MjcyNzIsMzU1ODMsMzgyODEsNDA5NzksNDcyNTgsNDUwOTMsMjE2NSwwLjcxMiwwLjc2LDAuODA4LCJTdG9jayBwdWJsaXNoZWQiLCJBZHZpY2UiLE5BLCJoa2UuMjcuM2E0Ni04YWJkIiwwLDIwMTcsInRvbm5lcyIsIlNTQiIsInRvbm5lcyIsIkYiLCJwZXIgeWVhciIKIjMxIiwyMDA4LDczNDMyOCw3NzQwMDUsNjk2Njg1LDQxMjUzLDQ0NzMzLDQ4MjEyLDUxMTkwLDQ3ODIyLDMzNjgsMC41ODQsMC42MywwLjY3NiwiU3RvY2sgcHVibGlzaGVkIiwiQWR2aWNlIixOQSwiaGtlLjI3LjNhNDYtOGFiZCIsMCwyMDE3LCJ0b25uZXMiLCJTU0IiLCJ0b25uZXMiLCJGIiwicGVyIHllYXIiCiIzMiIsMjAwOSwyNDcxNzYsMjY5NTQyLDIyNjY2NCw2MTY4NSw2NzAzNCw3MjM4Myw2OTgxNCw1ODc4MSwxMTAzMywwLjQ3NSwwLjUxLDAuNTQ1LCJTdG9jayBwdWJsaXNoZWQiLCJBZHZpY2UiLE5BLCJoa2UuMjcuM2E0Ni04YWJkIiwwLDIwMTcsInRvbm5lcyIsIlNTQiIsInRvbm5lcyIsIkYiLCJwZXIgeWVhciIKIjMzIiwyMDEwLDI1NzUyOCwyNzkwNjgsMjM3NjQ5LDExMzc4MywxMjMwODksMTMyMzk1LDg0ODc4LDcyNzYwLDEyMTE4LDAuMzY1LDAuMzksMC40MTUsIlN0b2NrIHB1Ymxpc2hlZCIsIkFkdmljZSIsTkEsImhrZS4yNy4zYTQ2LThhYmQiLDAsMjAxNywidG9ubmVzIiwiU1NCIiwidG9ubmVzIiwiRiIsInBlciB5ZWFyIgoiMzQiLDIwMTEsMjY1NDg2LDI5MDY4MiwyNDI0NzQsMTg1NTI4LDIwMTA0OSwyMTY1NzAsMTAxNDAzLDg3NTAwLDEzOTAzLDAuMjg4LDAuMzEsMC4zMzIsIlN0b2NrIHB1Ymxpc2hlZCIsIkFkdmljZSIsTkEsImhrZS4yNy4zYTQ2LThhYmQiLDAsMjAxNywidG9ubmVzIiwiU1NCIiwidG9ubmVzIiwiRiIsInBlciB5ZWFyIgoiMzUiLDIwMTIsNDg3MzMwLDUzNTMxNyw0NDM2NDUsMjA2Mzc1LDIyNzAyNiwyNDc2NzcsMTAwNDcwLDg1NjAwLDE0ODcwLDAuMjM4LDAuMjYsMC4yODIsIlN0b2NrIHB1Ymxpc2hlZCIsIkFkdmljZSIsTkEsImhrZS4yNy4zYTQ2LThhYmQiLDAsMjAxNywidG9ubmVzIiwiU1NCIiwidG9ubmVzIiwiRiIsInBlciB5ZWFyIgoiMzYiLDIwMTMsMzE4ODM3LDM2MDM3NiwyODIwODgsMjAzMjcyLDIyODI0NiwyNTMyMjAsOTMxMDgsNzc3MDgsMTU0MDAsMC4yMzMsMC4yNiwwLjI4NywiU3RvY2sgcHVibGlzaGVkIiwiQWR2aWNlIixOQSwiaGtlLjI3LjNhNDYtOGFiZCIsMCwyMDE3LCJ0b25uZXMiLCJTU0IiLCJ0b25uZXMiLCJGIiwicGVyIHllYXIiCiIzNyIsMjAxNCwyMTc0ODksMjUxOTQ3LDE4Nzc0NCwyMTAxNTcsMjQxMTE3LDI3MjA3Nyw5OTcwMCw4OTkwMCw5ODAwLDAuMjI4LDAuMjYsMC4yOTIsIlN0b2NrIHB1Ymxpc2hlZCIsIkFkdmljZSIsTkEsImhrZS4yNy4zYTQ2LThhYmQiLDAsMjAxNywidG9ubmVzIiwiU1NCIiwidG9ubmVzIiwiRiIsInBlciB5ZWFyIgoiMzgiLDIwMTUsMzA5OTY4LDM2ODU0MCwyNjA3MDMsMjMwODg1LDI3Mjc5NSwzMTQ3MDUsMTA1OTAwLDk1MDAwLDEwOTAwLDAuMjEyLDAuMjUsMC4yODgsIlN0b2NrIHB1Ymxpc2hlZCIsIkFkdmljZSIsTkEsImhrZS4yNy4zYTQ2LThhYmQiLDAsMjAxNywidG9ubmVzIiwiU1NCIiwidG9ubmVzIiwiRiIsInBlciB5ZWFyIgoiMzkiLDIwMTYsNTI5NDU4LDY2OTk0OCw0MTg0MjksMjM0ODk4LDI5MDIzNCwzNDU1NzAsMTE4NjM0LDEwNzUzNCwxMTEwMCwwLjIxNiwwLjI3LDAuMzI0LCJTdG9jayBwdWJsaXNoZWQiLCJBZHZpY2UiLE5BLCJoa2UuMjcuM2E0Ni04YWJkIiwwLDIwMTcsInRvbm5lcyIsIlNTQiIsInRvbm5lcyIsIkYiLCJwZXIgeWVhciIKIjQwIiwyMDE3LDMzNTA3MSwzNzAxMTUsMzAzMzQ2LDE5NzAwMCwyNjU2NjYsMzM0MzMxLE5BLE5BLE5BLE5BLE5BLE5BLCJTdG9jayBwdWJsaXNoZWQiLCJBZHZpY2UiLE5BLCJoa2UuMjcuM2E0Ni04YWJkIiwwLDIwMTcsInRvbm5lcyIsIlNTQiIsInRvbm5lcyIsIkYiLCJwZXIgeWVhciI=)
+[Download CSV](data:text/csv;base64,IiIsIlllYXIiLCJyZWNydWl0bWVudCIsImhpZ2hfcmVjcnVpdG1lbnQiLCJsb3dfcmVjcnVpdG1lbnQiLCJsb3dfU1NCIiwiU1NCIiwiaGlnaF9TU0IiLCJjYXRjaGVzIiwibGFuZGluZ3MiLCJkaXNjYXJkcyIsImxvd19GIiwiRiIsImhpZ2hfRiIsIlN0b2NrUHVibGlzaE5vdGUiLCJQdXJwb3NlIiwiRmFnZSIsImZpc2hzdG9jayIsInJlY3J1aXRtZW50X2FnZSIsIkFzc2Vzc21lbnRZZWFyIiwidW5pdHMiLCJzdG9ja1NpemVEZXNjcmlwdGlvbiIsInN0b2NrU2l6ZVVuaXRzIiwiZmlzaGluZ1ByZXNzdXJlRGVzY3JpcHRpb24iLCJmaXNoaW5nUHJlc3N1cmVVbml0cyIKIjEiLDE5NzgsMjk4MzYyLDM1NjUyMiwyNDk2OTAsNjYxNDgsODA0ODgsOTQ4MjksNTA1NTEsNTA1NTEsTkEsTkEsMC41LE5BLCJTdG9jayBwdWJsaXNoZWQiLCJBZHZpY2UiLE5BLCJoa2UuMjcuM2E0Ni04YWJkIiwwLDIwMTgsInRvbm5lcyIsIlNTQiIsInRvbm5lcyIsIkYiLE5BCiIyIiwxOTc5LDI3NDkyNiwzMzI5NDgsMjI3MDE1LDg5Njc2LDEwMTM1NywxMTMwMzgsNTEwOTYsNTEwOTYsTkEsTkEsMC41NCxOQSwiU3RvY2sgcHVibGlzaGVkIiwiQWR2aWNlIixOQSwiaGtlLjI3LjNhNDYtOGFiZCIsMCwyMDE4LCJ0b25uZXMiLCJTU0IiLCJ0b25uZXMiLCJGIixOQQoiMyIsMTk4MCwzMDM3MzYsMzYyMTczLDI1NDcyNiw5Mjg5OCwxMDM4MzgsMTE0Nzc4LDU3MjY1LDU3MjY1LE5BLE5BLDAuNjQsTkEsIlN0b2NrIHB1Ymxpc2hlZCIsIkFkdmljZSIsTkEsImhrZS4yNy4zYTQ2LThhYmQiLDAsMjAxOCwidG9ubmVzIiwiU1NCIiwidG9ubmVzIiwiRiIsTkEKIjQiLDE5ODEsNTc5ODk4LDY1ODU4MCw1MTA2MTYsNzkwNzgsODkyNjUsOTk0NTEsNTM5MTgsNTM5MTgsTkEsTkEsMC42NCxOQSwiU3RvY2sgcHVibGlzaGVkIiwiQWR2aWNlIixOQSwiaGtlLjI3LjNhNDYtOGFiZCIsMCwyMDE4LCJ0b25uZXMiLCJTU0IiLCJ0b25uZXMiLCJGIixOQQoiNSIsMTk4MiwzOTI1NTYsNDU4NDc2LDMzNjExNCw2MzE3Myw3MjY4NCw4MjE5Niw1NDk5NCw1NDk5NCxOQSxOQSwwLjY3LE5BLCJTdG9jayBwdWJsaXNoZWQiLCJBZHZpY2UiLE5BLCJoa2UuMjcuM2E0Ni04YWJkIiwwLDIwMTgsInRvbm5lcyIsIlNTQiIsInRvbm5lcyIsIkYiLE5BCiI2IiwxOTgzLDEzOTg0MCwxNzU5OTYsMTExMTEyLDYxNzQwLDcwMzU1LDc4OTcwLDU3NTA3LDU3NTA3LE5BLE5BLDAuNjIsTkEsIlN0b2NrIHB1Ymxpc2hlZCIsIkFkdmljZSIsTkEsImhrZS4yNy4zYTQ2LThhYmQiLDAsMjAxOCwidG9ubmVzIiwiU1NCIiwidG9ubmVzIiwiRiIsTkEKIjciLDE5ODQsMjc5NDY0LDMyNTQ3MywyMzk5NTksNzUwMDUsODMwNDUsOTEwODQsNjMyODYsNjMyODYsTkEsTkEsMC42NixOQSwiU3RvY2sgcHVibGlzaGVkIiwiQWR2aWNlIixOQSwiaGtlLjI3LjNhNDYtOGFiZCIsMCwyMDE4LCJ0b25uZXMiLCJTU0IiLCJ0b25uZXMiLCJGIixOQQoiOCIsMTk4NSw2MTk5MzMsNjkzOTA3LDU1Mzg0Myw3MTg5Nyw3ODkwOCw4NTkxOCw1NjA5OSw1NjA5OSxOQSxOQSwwLjgyLE5BLCJTdG9jayBwdWJsaXNoZWQiLCJBZHZpY2UiLE5BLCJoa2UuMjcuM2E0Ni04YWJkIiwwLDIwMTgsInRvbm5lcyIsIlNTQiIsInRvbm5lcyIsIkYiLE5BCiI5IiwxOTg2LDM1OTg4Miw0MDMzODgsMzIxMDY4LDUyNjc0LDU4OTYzLDY1MjUyLDU3MDkyLDU3MDkyLE5BLE5BLDAuOTEsTkEsIlN0b2NrIHB1Ymxpc2hlZCIsIkFkdmljZSIsTkEsImhrZS4yNy4zYTQ2LThhYmQiLDAsMjAxOCwidG9ubmVzIiwiU1NCIiwidG9ubmVzIiwiRiIsTkEKIjEwIiwxOTg3LDQzNDIwMCw0ODI0NjgsMzkwNzYzLDM4MjY5LDQzNTI0LDQ4NzgwLDYzMzY5LDYzMzY5LE5BLE5BLDAuOTgsTkEsIlN0b2NrIHB1Ymxpc2hlZCIsIkFkdmljZSIsTkEsImhrZS4yNy4zYTQ2LThhYmQiLDAsMjAxOCwidG9ubmVzIiwiU1NCIiwidG9ubmVzIiwiRiIsTkEKIjExIiwxOTg4LDQ5NDI1Nyw1NDU1NDMsNDQ3NzkyLDQxNDkxLDQ1OTk0LDUwNDk3LDY0ODI1LDY0ODIzLDIsTkEsMSxOQSwiU3RvY2sgcHVibGlzaGVkIiwiQWR2aWNlIixOQSwiaGtlLjI3LjNhNDYtOGFiZCIsMCwyMDE4LCJ0b25uZXMiLCJTU0IiLCJ0b25uZXMiLCJGIixOQQoiMTIiLDE5ODksNDc4MjcyLDUyNDEzMSw0MzY0MjUsNDExODIsNDUwODYsNDg5ODksNjY1NDYsNjY0NzMsNzMsTkEsMS4wNyxOQSwiU3RvY2sgcHVibGlzaGVkIiwiQWR2aWNlIixOQSwiaGtlLjI3LjNhNDYtOGFiZCIsMCwyMDE4LCJ0b25uZXMiLCJTU0IiLCJ0b25uZXMiLCJGIixOQQoiMTMiLDE5OTAsNDg0NzgwLDUyOTI4Myw0NDQwMTksMzkxODEsNDIzNTIsNDU1MjIsNTk5NTQsNTk5NTQsTkEsTkEsMS4wMixOQSwiU3RvY2sgcHVibGlzaGVkIiwiQWR2aWNlIixOQSwiaGtlLjI3LjNhNDYtOGFiZCIsMCwyMDE4LCJ0b25uZXMiLCJTU0IiLCJ0b25uZXMiLCJGIixOQQoiMTQiLDE5OTEsMjcwMDQ0LDI5Nzk1MywyNDQ3NTAsMzgzNTAsNDEzNTEsNDQzNTIsNTgxMjksNTgxMjksTkEsTkEsMC45NixOQSwiU3RvY2sgcHVibGlzaGVkIiwiQWR2aWNlIixOQSwiaGtlLjI3LjNhNDYtOGFiZCIsMCwyMDE4LCJ0b25uZXMiLCJTU0IiLCJ0b25uZXMiLCJGIixOQQoiMTUiLDE5OTIsMjk0NjMwLDMyNDM4NSwyNjc2MDQsMzY4OTMsMzk4MzYsNDI3ODAsNTY2MTcsNTY2MTcsTkEsTkEsMSxOQSwiU3RvY2sgcHVibGlzaGVkIiwiQWR2aWNlIixOQSwiaGtlLjI3LjNhNDYtOGFiZCIsMCwyMDE4LCJ0b25uZXMiLCJTU0IiLCJ0b25uZXMiLCJGIixOQQoiMTYiLDE5OTMsNTE3MzE3LDU0OTcxMSw0ODY4MzIsMzYxNzcsMzg3NDMsNDEzMTAsNTIxNDQsNTIxNDQsTkEsTkEsMS4wNSxOQSwiU3RvY2sgcHVibGlzaGVkIiwiQWR2aWNlIixOQSwiaGtlLjI3LjNhNDYtOGFiZCIsMCwyMDE4LCJ0b25uZXMiLCJTU0IiLCJ0b25uZXMiLCJGIixOQQoiMTciLDE5OTQsMjg4NDYyLDMwOTgzMSwyNjg1NjcsMjgyODcsMzA0ODksMzI2OTEsNTE2MTUsNTEyNTksMzU2LE5BLDEuMDYsTkEsIlN0b2NrIHB1Ymxpc2hlZCIsIkFkdmljZSIsTkEsImhrZS4yNy4zYTQ2LThhYmQiLDAsMjAxOCwidG9ubmVzIiwiU1NCIiwidG9ubmVzIiwiRiIsTkEKIjE4IiwxOTk1LDE0NzU1MywxNjA5MTYsMTM1Mjk5LDI3NTgyLDI5NTk2LDMxNjEwLDU3NjIxLDU3NjIxLE5BLE5BLDEuMTIsTkEsIlN0b2NrIHB1Ymxpc2hlZCIsIkFkdmljZSIsTkEsImhrZS4yNy4zYTQ2LThhYmQiLDAsMjAxOCwidG9ubmVzIiwiU1NCIiwidG9ubmVzIiwiRiIsTkEKIjE5IiwxOTk2LDM2Mjk3NSwzODYxOTcsMzQxMTQ5LDMyNzI2LDM0NzkwLDM2ODU1LDQ3MjEwLDQ3MjEwLE5BLE5BLDAuOTcsTkEsIlN0b2NrIHB1Ymxpc2hlZCIsIkFkdmljZSIsTkEsImhrZS4yNy4zYTQ2LThhYmQiLDAsMjAxOCwidG9ubmVzIiwiU1NCIiwidG9ubmVzIiwiRiIsTkEKIjIwIiwxOTk3LDI1NTEzMCwyNzcyNTMsMjM0NzcwLDI4MTMzLDMwMDg5LDMyMDQ1LDQyNDY1LDQyNDY1LE5BLE5BLDEuMDYsTkEsIlN0b2NrIHB1Ymxpc2hlZCIsIkFkdmljZSIsTkEsImhrZS4yNy4zYTQ2LThhYmQiLDAsMjAxOCwidG9ubmVzIiwiU1NCIiwidG9ubmVzIiwiRiIsTkEKIjIxIiwxOTk4LDQyMjM3OSw0NTIzNTQsMzk0Mzg5LDIyNzAwLDI0MzU2LDI2MDEyLDM1MDYwLDM1MDYwLE5BLE5BLDAuOTgsTkEsIlN0b2NrIHB1Ymxpc2hlZCIsIkFkdmljZSIsTkEsImhrZS4yNy4zYTQ2LThhYmQiLDAsMjAxOCwidG9ubmVzIiwiU1NCIiwidG9ubmVzIiwiRiIsTkEKIjIyIiwxOTk5LDIwNzQyMywyMjU1OTIsMTkwNzE4LDI1OTIxLDI3NzAzLDI5NDg1LDQwMTYzLDM5ODE0LDM0OSxOQSwwLjk3LE5BLCJTdG9jayBwdWJsaXNoZWQiLCJBZHZpY2UiLE5BLCJoa2UuMjcuM2E0Ni04YWJkIiwwLDIwMTgsInRvbm5lcyIsIlNTQiIsInRvbm5lcyIsIkYiLE5BCiIyMyIsMjAwMCwxODgyODgsMjAzMzk4LDE3NDMwMCwyODY1OSwzMDYwMCwzMjU0MSw0MjEwOSw0MjAyNiw4MyxOQSwwLjkxLE5BLCJTdG9jayBwdWJsaXNoZWQiLCJBZHZpY2UiLE5BLCJoa2UuMjcuM2E0Ni04YWJkIiwwLDIwMTgsInRvbm5lcyIsIlNTQiIsInRvbm5lcyIsIkYiLE5BCiIyNCIsMjAwMSwzNDY3MDQsMzY5MjgxLDMyNTUwNywzNDE3NSwzNjM0MSwzODUwOCwzNjY3NSwzNjY3NSxOQSxOQSwwLjc1LE5BLCJTdG9jayBwdWJsaXNoZWQiLCJBZHZpY2UiLE5BLCJoa2UuMjcuM2E0Ni04YWJkIiwwLDIwMTgsInRvbm5lcyIsIlNTQiIsInRvbm5lcyIsIkYiLE5BCiIyNSIsMjAwMiwyNzQzMTIsMjkzMTc3LDI1NjY2MSwzNDg4NSwzNzI3MywzOTY2MCw0MDEwNyw0MDEwNyxOQSxOQSwwLjgxLE5BLCJTdG9jayBwdWJsaXNoZWQiLCJBZHZpY2UiLE5BLCJoa2UuMjcuM2E0Ni04YWJkIiwwLDIwMTgsInRvbm5lcyIsIlNTQiIsInRvbm5lcyIsIkYiLE5BCiIyNiIsMjAwMywxNjA2MDAsMTczMTUzLDE0ODk1NywzNTE4NSwzNzY1Niw0MDEyNyw0NTI3Miw0MzE2MiwyMTEwLE5BLDAuODIsTkEsIlN0b2NrIHB1Ymxpc2hlZCIsIkFkdmljZSIsTkEsImhrZS4yNy4zYTQ2LThhYmQiLDAsMjAxOCwidG9ubmVzIiwiU1NCIiwidG9ubmVzIiwiRiIsTkEKIjI3IiwyMDA0LDM0MDM0OCwzNjA1NDYsMzIxMjg0LDQwMTkxLDQyNzc4LDQ1MzY0LDQ4OTY5LDQ2NDE3LDI1NTIsTkEsMC44MyxOQSwiU3RvY2sgcHVibGlzaGVkIiwiQWR2aWNlIixOQSwiaGtlLjI3LjNhNDYtOGFiZCIsMCwyMDE4LCJ0b25uZXMiLCJTU0IiLCJ0b25uZXMiLCJGIixOQQoiMjgiLDIwMDUsMjIxNTY1LDIzNzMxNCwyMDY4NjEsMzg1OTEsNDExOTUsNDM3OTksNTEyMjYsNDY1NTAsNDY3NixOQSwwLjk1LE5BLCJTdG9jayBwdWJsaXNoZWQiLCJBZHZpY2UiLE5BLCJoa2UuMjcuM2E0Ni04YWJkIiwwLDIwMTgsInRvbm5lcyIsIlNTQiIsInRvbm5lcyIsIkYiLE5BCiIyOSIsMjAwNiwzMDIwODYsMzIwMDI0LDI4NTE1NiwzMTIwNCwzMzYxNCwzNjAyMyw0MzI4Myw0MTQ2NywxODE2LE5BLDAuODQsTkEsIlN0b2NrIHB1Ymxpc2hlZCIsIkFkdmljZSIsTkEsImhrZS4yNy4zYTQ2LThhYmQiLDAsMjAxOCwidG9ubmVzIiwiU1NCIiwidG9ubmVzIiwiRiIsTkEKIjMwIiwyMDA3LDQ3MTI2OSw0OTk3MDMsNDQ0NDUzLDM2OTI5LDM5Nzk3LDQyNjY2LDQ3MjE5LDQ1MDI4LDIxOTEsTkEsMC43NCxOQSwiU3RvY2sgcHVibGlzaGVkIiwiQWR2aWNlIixOQSwiaGtlLjI3LjNhNDYtOGFiZCIsMCwyMDE4LCJ0b25uZXMiLCJTU0IiLCJ0b25uZXMiLCJGIixOQQoiMzEiLDIwMDgsNzY1MzAwLDgwNzA4MCw3MjU2ODMsNDMyMTQsNDY5NzgsNTA3NDMsNTA5ODcsNDc3MzksMzI0OCxOQSwwLjYsTkEsIlN0b2NrIHB1Ymxpc2hlZCIsIkFkdmljZSIsTkEsImhrZS4yNy4zYTQ2LThhYmQiLDAsMjAxOCwidG9ubmVzIiwiU1NCIiwidG9ubmVzIiwiRiIsTkEKIjMyIiwyMDA5LDI1NDg3MiwyNzgwNDYsMjMzNjMwLDY1MjA0LDcxMDcyLDc2OTQwLDY4Njg5LDU4ODE4LDk4NzEsTkEsMC40OCxOQSwiU3RvY2sgcHVibGlzaGVkIiwiQWR2aWNlIixOQSwiaGtlLjI3LjNhNDYtOGFiZCIsMCwyMDE4LCJ0b25uZXMiLCJTU0IiLCJ0b25uZXMiLCJGIixOQQoiMzMiLDIwMTAsMjcwMzc4LDI5MjY2OCwyNDk3ODYsMTIxMDI3LDEzMTMyMCwxNDE2MTMsODIyMTQsNzI3OTksOTQxNSxOQSwwLjM2LE5BLCJTdG9jayBwdWJsaXNoZWQiLCJBZHZpY2UiLE5BLCJoa2UuMjcuM2E0Ni04YWJkIiwwLDIwMTgsInRvbm5lcyIsIlNTQiIsInRvbm5lcyIsIkYiLE5BCiIzNCIsMjAxMSwyODQyMjYsMzEwMDQwLDI2MDU2MywxOTg5NjUsMjE2MTE0LDIzMzI2MywxMDEzMTUsODc1NDAsMTM3NzUsTkEsMC4yOSxOQSwiU3RvY2sgcHVibGlzaGVkIiwiQWR2aWNlIixOQSwiaGtlLjI3LjNhNDYtOGFiZCIsMCwyMDE4LCJ0b25uZXMiLCJTU0IiLCJ0b25uZXMiLCJGIixOQQoiMzUiLDIwMTIsNTQwNzI3LDU4Nzc1MCw0OTc0NjgsMjI0NDg1LDI0NzE3NSwyNjk4NjUsOTc5MDIsODU2NzcsMTIyMjUsTkEsMC4yNCxOQSwiU3RvY2sgcHVibGlzaGVkIiwiQWR2aWNlIixOQSwiaGtlLjI3LjNhNDYtOGFiZCIsMCwyMDE4LCJ0b25uZXMiLCJTU0IiLCJ0b25uZXMiLCJGIixOQQoiMzYiLDIwMTMsMzc1NTM4LDQxNjYyNywzMzg1MDIsMjI1MzUzLDI1MjQwNywyNzk0NjEsODkzOTAsNzc3NTMsMTE2MzcsTkEsMC4yNCxOQSwiU3RvY2sgcHVibGlzaGVkIiwiQWR2aWNlIixOQSwiaGtlLjI3LjNhNDYtOGFiZCIsMCwyMDE4LCJ0b25uZXMiLCJTU0IiLCJ0b25uZXMiLCJGIixOQQoiMzciLDIwMTQsMjE3NDE3LDI0Njk3NiwxOTEzOTYsMjM4NTE4LDI3MTA4OCwzMDM2NTgsOTY5ODcsODk5NDAsNzA0NyxOQSwwLjIzLE5BLCJTdG9jayBwdWJsaXNoZWQiLCJBZHZpY2UiLE5BLCJoa2UuMjcuM2E0Ni04YWJkIiwwLDIwMTgsInRvbm5lcyIsIlNTQiIsInRvbm5lcyIsIkYiLE5BCiIzOCIsMjAxNSwyNDUxMzksMjg0NzE4LDIxMTA2MiwyNzI2OTQsMzE0OTgzLDM1NzI3MiwxMDEwNjYsOTM2NzAsNzM5NixOQSwwLjIyLE5BLCJTdG9jayBwdWJsaXNoZWQiLCJBZHZpY2UiLE5BLCJoa2UuMjcuM2E0Ni04YWJkIiwwLDIwMTgsInRvbm5lcyIsIlNTQiIsInRvbm5lcyIsIkYiLE5BCiIzOSIsMjAxNiw1OTM5OTMsNzA3NDg3LDQ5ODcwNiwyOTI3OTIsMzQ2NjUzLDQwMDUxNCwxMTkwNDUsMTA5MTA2LDk5MzksTkEsMC4yMyxOQSwiU3RvY2sgcHVibGlzaGVkIiwiQWR2aWNlIixOQSwiaGtlLjI3LjNhNDYtOGFiZCIsMCwyMDE4LCJ0b25uZXMiLCJTU0IiLCJ0b25uZXMiLCJGIixOQQoiNDAiLDIwMTcsNDkzMzk0LDY0NTcwMSwzNzcwMTEsMjYxNTc3LDMyNTIzMCwzODg4ODMsMTEwMjg3LDEwNDY3MSw1NjE2LE5BLDAuMjUsTkEsIlN0b2NrIHB1Ymxpc2hlZCIsIkFkdmljZSIsTkEsImhrZS4yNy4zYTQ2LThhYmQiLDAsMjAxOCwidG9ubmVzIiwiU1NCIiwidG9ubmVzIiwiRiIsTkEKIjQxIiwyMDE4LDMwMzU1MCxOQSxOQSwyMjk5MTUsMzA2NTE2LDM4MzExNyxOQSxOQSxOQSxOQSxOQSxOQSwiU3RvY2sgcHVibGlzaGVkIiwiQWR2aWNlIixOQSwiaGtlLjI3LjNhNDYtOGFiZCIsMCwyMDE4LCJ0b25uZXMiLCJTU0IiLCJ0b25uZXMiLCJGIixOQQ==)
 </div>
-<br>
 <br>
 [Go to Top](#top)
 
@@ -1190,8 +1190,7 @@ The spawning-stock biomass (SSB) has increased significantly since 2006 and is w
 # Stock and explotation status
 
 <br>
-**State of the stock and fishery relative to reference points**
-<br>
+
 ![](images/MSY_1.png)
 
 
@@ -1200,93 +1199,209 @@ The spawning-stock biomass (SSB) has increased significantly since 2006 and is w
 # Catch scenarios
 
 <br>
-**Table 2**  The basis for the catch scenarios of hake in subareas 4, 6, and 7, and in divisions 3.a, 8.a–b, and 8.d, Northern stock. All weights are in tonnes.
+**Table 2**  Assumptions made for the interim year and in the forecast for hake in subareas 4, 6, and 7, and in divisions 3.a, 8.a–b, and 8.d, Northern stock. All weights are in tonnes.
 <br>
-<table class="table" style="font-size: 10px; margin-left: auto; margin-right: auto;">
+<table class="table" style="margin-left: auto; margin-right: auto;">
  <thead>
   <tr>
    <th style="text-align:left;font-weight: bold;color: black;background-color: lightgrey;text-align: center;"> Variable </th>
    <th style="text-align:right;font-weight: bold;color: black;background-color: lightgrey;text-align: center;"> Value </th>
    <th style="text-align:left;font-weight: bold;color: black;background-color: lightgrey;text-align: center;"> Source </th>
-   <th style="text-align:left;font-weight: bold;color: black;background-color: lightgrey;text-align: center;"> Notes </th>
   </tr>
  </thead>
 <tbody>
   <tr>
-   <td style="text-align:left;width: 20em; "> F (2017) </td>
-   <td style="text-align:right;"> 0.26 </td>
-   <td style="text-align:left;width: 15em; "> ICES (2017a) </td>
-   <td style="text-align:left;width: 45em; "> Mean F(2014–2016). </td>
+   <td style="text-align:left;"> F(2018) </td>
+   <td style="text-align:right;"> 0.23 </td>
+   <td style="text-align:left;"> Mean F2015–2017 </td>
   </tr>
   <tr>
-   <td style="text-align:left;width: 20em; "> SSB (2018) </td>
-   <td style="text-align:right;"> 267673.00 </td>
-   <td style="text-align:left;width: 15em; "> ICES (2017a) </td>
-   <td style="text-align:left;width: 45em; ">  </td>
+   <td style="text-align:left;"> R (2018 - 2019) </td>
+   <td style="text-align:right;"> 303550.00 </td>
+   <td style="text-align:left;"> GM 1990–2015 (in thousands) </td>
   </tr>
   <tr>
-   <td style="text-align:left;width: 20em; "> R (2017/2018) </td>
-   <td style="text-align:right;"> 335071.00 </td>
-   <td style="text-align:left;width: 15em; "> ICES (2017a) </td>
-   <td style="text-align:left;width: 45em; "> GM (1978–2014); in thousands. </td>
+   <td style="text-align:left;"> SSB (2019) </td>
+   <td style="text-align:right;"> 346616.00 </td>
+   <td style="text-align:left;">  </td>
   </tr>
   <tr>
-   <td style="text-align:left;width: 20em; "> Total catch (2017) </td>
-   <td style="text-align:right;"> 105223.00 </td>
-   <td style="text-align:left;width: 15em; "> ICES (2017a) </td>
-   <td style="text-align:left;width: 45em; "> Forecasted catch from the assessment model (based on F(2017) = Mean F(2014–2016) plus additional discards. </td>
+   <td style="text-align:left;"> Total catch (2018) </td>
+   <td style="text-align:right;"> 103238.00 </td>
+   <td style="text-align:left;"> Forecast catch from the assessment model (based on F2018 = mean F2015 – 2017) plus additional discards* </td>
   </tr>
   <tr>
-   <td style="text-align:left;width: 20em; "> Wanted catch (2017) </td>
-   <td style="text-align:right;"> 93588.00 </td>
-   <td style="text-align:left;width: 15em; "> ICES (2017a) </td>
-   <td style="text-align:left;width: 45em; "> Based on average discard rates observed during 2014–2016. </td>
+   <td style="text-align:left;"> Unwanted** catch (2018) </td>
+   <td style="text-align:right;"> 8426.00 </td>
+   <td style="text-align:left;"> Based on average discards rate during 2015–2017 </td>
   </tr>
   <tr>
-   <td style="text-align:left;width: 20em; "> Unwanted catch (2017) </td>
-   <td style="text-align:right;"> 11635.00 </td>
-   <td style="text-align:left;width: 15em; "> ICES (2017a) </td>
-   <td style="text-align:left;width: 45em; "> Based on average discard rates observed during 2014–2016. </td>
+   <td style="text-align:left;"> Wanted** catch (2018) </td>
+   <td style="text-align:right;"> 94812.00 </td>
+   <td style="text-align:left;"> Based on average landings rate during 2015–2017 </td>
   </tr>
 </tbody>
 </table>
 
 
 
-[Download CSV](data:text/csv;base64,IiIsIlZhcmlhYmxlIiwiVmFsdWUiLCJTb3VyY2UiLCJOb3RlcyIKIjEiLCJGICgyMDE3KSIsIjAuMjYiLCJJQ0VTICgyMDE3YSkiLCJNZWFuIEYoMjAxNJYyMDE2KS4iCiIyIiwiU1NCICgyMDE4KSIsIjI2NzY3MyIsIklDRVMgKDIwMTdhKSIsIiIKIjMiLCJSICgyMDE3LzIwMTgpIiwiMzM1MDcxIiwiSUNFUyAoMjAxN2EpIiwiR00gKDE5NziWMjAxNCk7IGluIHRob3VzYW5kcy4iCiI0IiwiVG90YWwgY2F0Y2ggKDIwMTcpIiwiMTA1MjIzIiwiSUNFUyAoMjAxN2EpIiwiRm9yZWNhc3RlZCBjYXRjaCBmcm9tIHRoZSBhc3Nlc3NtZW50IG1vZGVsIChiYXNlZCBvbiBGKDIwMTcpID0gTWVhbiBGKDIwMTSWMjAxNikgcGx1cyBhZGRpdGlvbmFsIGRpc2NhcmRzLiIKIjUiLCJXYW50ZWQgY2F0Y2ggKDIwMTcpIiwiOTM1ODgiLCJJQ0VTICgyMDE3YSkiLCJCYXNlZCBvbiBhdmVyYWdlIGRpc2NhcmQgcmF0ZXMgb2JzZXJ2ZWQgZHVyaW5nIDIwMTSWMjAxNi4iCiI2IiwiVW53YW50ZWQgY2F0Y2ggKDIwMTcpIiwiMTE2MzUiLCJJQ0VTICgyMDE3YSkiLCJCYXNlZCBvbiBhdmVyYWdlIGRpc2NhcmQgcmF0ZXMgb2JzZXJ2ZWQgZHVyaW5nIDIwMTSWMjAxNi4i)
-
+[Download CSV](data:text/csv;base64,LFZhcmlhYmxlLFZhbHVlLFNvdXJjZQoxLEYoMjAxOCksMC4yMyxNZWFuIEYyMDE1ljIwMTcKMixSICgyMDE4IC0gMjAxOSksMzAzNTUwLEdNIDE5OTCWMjAxNSAoaW4gdGhvdXNhbmRzKQozLFNTQiAoMjAxOSksMzQ2NjE2LAo0LFRvdGFsIGNhdGNoICgyMDE4KSwxMDMyMzgsRm9yZWNhc3QgY2F0Y2ggZnJvbSB0aGUgYXNzZXNzbWVudCBtb2RlbCAoYmFzZWQgb24gRjIwMTggPSBtZWFuIEYyMDE1IJYgMjAxNykgcGx1cyBhZGRpdGlvbmFsIGRpc2NhcmRzKgo1LFVud2FudGVkKiogY2F0Y2ggKDIwMTgpLDg0MjYsQmFzZWQgb24gYXZlcmFnZSBkaXNjYXJkcyByYXRlIGR1cmluZyAyMDE1ljIwMTcKNixXYW50ZWQqKiBjYXRjaCAoMjAxOCksOTQ4MTIsQmFzZWQgb24gYXZlcmFnZSBsYW5kaW5ncyByYXRlIGR1cmluZyAyMDE1ljIwMTc=)
 <br>
 
 ***
 
-**Table 3**  Annual catch scenarios for hake in subareas 4, 6, and 7, and in divisions 3.a, 8.a–b, and 8.d, Northern stock. All weights are in tonnes.
+**Table 3**  Annual catch scenarios for hake in subareas 4, 6, and 7, and in divisions 3.a, 8.a–b, and 8.d, Northern stock. All weights are in tonnes. Note: The % change in TAC is not computed because the stock area does not correspond to the area for the TAC.
+
 <br>
+<button class="btn btn-primary" data-toggle="collapse" data-target="#BlockName2"> Show/Download Table </button>  
+<div id="BlockName2" class="collapse"> 
+<table class="table" style="margin-left: auto; margin-right: auto;">
+ <thead>
+  <tr>
+   <th style="text-align:left;font-weight: bold;color: black;background-color: lightgrey;">   </th>
+   <th style="text-align:right;font-weight: bold;color: black;background-color: lightgrey;"> Total.catch..2019. </th>
+   <th style="text-align:right;font-weight: bold;color: black;background-color: lightgrey;"> Wanted.catch..2019. </th>
+   <th style="text-align:right;font-weight: bold;color: black;background-color: lightgrey;"> Unwanted.catch..2019. </th>
+   <th style="text-align:right;font-weight: bold;color: black;background-color: lightgrey;"> Ftotal..2019. </th>
+   <th style="text-align:right;font-weight: bold;color: black;background-color: lightgrey;"> Fwanted..2019. </th>
+   <th style="text-align:right;font-weight: bold;color: black;background-color: lightgrey;"> Funwanted..2019. </th>
+   <th style="text-align:right;font-weight: bold;color: black;background-color: lightgrey;"> SSB..2020. </th>
+   <th style="text-align:right;font-weight: bold;color: black;background-color: lightgrey;"> X..SSB.change </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr grouplength="1"><td colspan="9" style="border-bottom: 1px solid;"><strong>ICES advice basis</strong></td></tr>
+<tr>
+   <td style="text-align:left;width: 30em;  padding-left: 2em;" indentlevel="1"> MSY approach: FMSY </td>
+   <td style="text-align:right;width: 10em; "> 142240 </td>
+   <td style="text-align:right;width: 10em; "> 128236 </td>
+   <td style="text-align:right;width: 10em; "> 14004 </td>
+   <td style="text-align:right;width: 10em; "> 0.28 </td>
+   <td style="text-align:right;width: 10em; "> 0.230 </td>
+   <td style="text-align:right;width: 10em; "> 0.052 </td>
+   <td style="text-align:right;width: 10em; "> 365492 </td>
+   <td style="text-align:right;width: 10em; "> 5.5 </td>
+  </tr>
+  <tr grouplength="8"><td colspan="9" style="border-bottom: 1px solid;"><strong>Other scenarios</strong></td></tr>
+<tr>
+   <td style="text-align:left;width: 30em;  padding-left: 2em;" indentlevel="1"> FMSY lower </td>
+   <td style="text-align:right;width: 10em; "> 96792 </td>
+   <td style="text-align:right;width: 10em; "> 87371 </td>
+   <td style="text-align:right;width: 10em; "> 9422 </td>
+   <td style="text-align:right;width: 10em; "> 0.18 </td>
+   <td style="text-align:right;width: 10em; "> 0.147 </td>
+   <td style="text-align:right;width: 10em; "> 0.033 </td>
+   <td style="text-align:right;width: 10em; "> 408019 </td>
+   <td style="text-align:right;width: 10em; "> 17.7 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;width: 30em;  padding-left: 2em;" indentlevel="1"> FMSY upper </td>
+   <td style="text-align:right;width: 10em; "> 208200 </td>
+   <td style="text-align:right;width: 10em; "> 187317 </td>
+   <td style="text-align:right;width: 10em; "> 20883 </td>
+   <td style="text-align:right;width: 10em; "> 0.45 </td>
+   <td style="text-align:right;width: 10em; "> 0.370 </td>
+   <td style="text-align:right;width: 10em; "> 0.083 </td>
+   <td style="text-align:right;width: 10em; "> 303739 </td>
+   <td style="text-align:right;width: 10em; "> -12.4 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;width: 30em;  padding-left: 2em;" indentlevel="1"> F = 0 </td>
+   <td style="text-align:right;width: 10em; "> 0 </td>
+   <td style="text-align:right;width: 10em; "> 0 </td>
+   <td style="text-align:right;width: 10em; "> 0 </td>
+   <td style="text-align:right;width: 10em; "> 0.00 </td>
+   <td style="text-align:right;width: 10em; "> 0.000 </td>
+   <td style="text-align:right;width: 10em; "> 0.000 </td>
+   <td style="text-align:right;width: 10em; "> 498590 </td>
+   <td style="text-align:right;width: 10em; "> 44.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;width: 30em;  padding-left: 2em;" indentlevel="1"> Fpa </td>
+   <td style="text-align:right;width: 10em; "> 262175 </td>
+   <td style="text-align:right;width: 10em; "> 235410 </td>
+   <td style="text-align:right;width: 10em; "> 26765 </td>
+   <td style="text-align:right;width: 10em; "> 0.62 </td>
+   <td style="text-align:right;width: 10em; "> 0.510 </td>
+   <td style="text-align:right;width: 10em; "> 0.115 </td>
+   <td style="text-align:right;width: 10em; "> 253142 </td>
+   <td style="text-align:right;width: 10em; "> -27.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;width: 30em;  padding-left: 2em;" indentlevel="1"> Flim </td>
+   <td style="text-align:right;width: 10em; "> 324439 </td>
+   <td style="text-align:right;width: 10em; "> 290502 </td>
+   <td style="text-align:right;width: 10em; "> 33937 </td>
+   <td style="text-align:right;width: 10em; "> 0.87 </td>
+   <td style="text-align:right;width: 10em; "> 0.710 </td>
+   <td style="text-align:right;width: 10em; "> 0.161 </td>
+   <td style="text-align:right;width: 10em; "> 194612 </td>
+   <td style="text-align:right;width: 10em; "> -44.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;width: 30em;  padding-left: 2em;" indentlevel="1"> SSB (2020) = Blim </td>
+   <td style="text-align:right;width: 10em; "> 491220 </td>
+   <td style="text-align:right;width: 10em; "> 433027 </td>
+   <td style="text-align:right;width: 10em; "> 58193 </td>
+   <td style="text-align:right;width: 10em; "> 2.80 </td>
+   <td style="text-align:right;width: 10em; "> 2.300 </td>
+   <td style="text-align:right;width: 10em; "> 0.520 </td>
+   <td style="text-align:right;width: 10em; "> 32039 </td>
+   <td style="text-align:right;width: 10em; "> -91.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;width: 30em;  padding-left: 2em;" indentlevel="1"> SSB (2020) = Bpa </td>
+   <td style="text-align:right;width: 10em; "> 479239 </td>
+   <td style="text-align:right;width: 10em; "> 423457 </td>
+   <td style="text-align:right;width: 10em; "> 55782 </td>
+   <td style="text-align:right;width: 10em; "> 2.40 </td>
+   <td style="text-align:right;width: 10em; "> 1.950 </td>
+   <td style="text-align:right;width: 10em; "> 0.440 </td>
+   <td style="text-align:right;width: 10em; "> 44977 </td>
+   <td style="text-align:right;width: 10em; "> -87.0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;width: 30em;  padding-left: 2em;" indentlevel="1"> SSB (2020) = MSY Btrigger </td>
+   <td style="text-align:right;width: 10em; "> 479239 </td>
+   <td style="text-align:right;width: 10em; "> 423457 </td>
+   <td style="text-align:right;width: 10em; "> 55782 </td>
+   <td style="text-align:right;width: 10em; "> 2.40 </td>
+   <td style="text-align:right;width: 10em; "> 1.950 </td>
+   <td style="text-align:right;width: 10em; "> 0.440 </td>
+   <td style="text-align:right;width: 10em; "> 44977 </td>
+   <td style="text-align:right;width: 10em; "> -87.0 </td>
+  </tr>
+</tbody>
+</table>
 
-Basis| F |Catch 2018|SSB2019
------|---|----------|-------
-MSY approach: FMSY|0.280|115335|295193
-F = 0|0.000|0|401929
-Fpa|0.620|211827|206120
-Flim | 0.870 | 261716 |160047
-SSB (2019) = Blim| 2.293|383469|44975
-SSB (2019) = Bpa| 2.731|395825|32001
-SSB (2019) = MSY Btrigger|2.731|395825|32001
-F = F2017|0.259| 108119|301860
-EU Recovery Plan^^|0.250|104736|304987
 
 
+[Download CSV](data:text/csv;base64,QmFzaXMsVG90YWwgY2F0Y2ggKDIwMTkpLFdhbnRlZCBjYXRjaCAoMjAxOSksVW53YW50ZWQgY2F0Y2ggKDIwMTkpLEZ0b3RhbCAoMjAxOSksRndhbnRlZCAoMjAxOSksRnVud2FudGVkICgyMDE5KSxTU0IgKDIwMjApLCUgU1NCIGNoYW5nZSAKSUNFUyBhZHZpY2UgYmFzaXMsTkEsTkEsTkEsTkEsTkEsTkEsTkEsTkEKTVNZIGFwcHJvYWNoOiBGTVNZLDE0MjI0MCwxMjgyMzYsMTQwMDQsMC4yOCwwLjIzLDAuMDUyLDM2NTQ5Miw1LjUKT3RoZXIgc2NlbmFyaW9zLE5BLE5BLE5BLE5BLE5BLE5BLE5BLE5BCkZNU1kgbG93ZXIsOTY3OTIsODczNzEsOTQyMiwwLjE4LDAuMTQ3LDAuMDMzLDQwODAxOSwxNy43CkZNU1kgdXBwZXIsMjA4MjAwLDE4NzMxNywyMDg4MywwLjQ1LDAuMzcsMC4wODMsMzAzNzM5LC0xMi40CkYgPSAwLDAsMCwwLDAsMCwwLDQ5ODU5MCw0NApGcGEsMjYyMTc1LDIzNTQxMCwyNjc2NSwwLjYyLDAuNTEsMC4xMTUsMjUzMTQyLC0yNwpGbGltLDMyNDQzOSwyOTA1MDIsMzM5MzcsMC44NywwLjcxLDAuMTYxLDE5NDYxMiwtNDQKU1NCICgyMDIwKSA9IEJsaW0sNDkxMjIwLDQzMzAyNyw1ODE5MywyLjgsMi4zLDAuNTIsMzIwMzksLTkxClNTQiAoMjAyMCkgPSBCcGEsNDc5MjM5LDQyMzQ1Nyw1NTc4MiwyLjQsMS45NSwwLjQ0LDQ0OTc3LC04NwpTU0IgKDIwMjApID0gTVNZoEJ0cmlnZ2VyLDQ3OTIzOSw0MjM0NTcsNTU3ODIsMi40LDEuOTUsMC40NCw0NDk3NywtODc=)
 
-[Download CSV](data:text/csv;base64,QmFzaXMsVG90YWwgY2F0Y2ggKDIwMTgpLFdhbnRlZCBjYXRjaCAoMjAxOCksVW53YW50ZWQgY2F0Y2ggKDIwMTgpLEZ0b3RhbCAoMjAxOCksRndhbnRlZCAoMjAxOCksRnVud2FudGVkICgyMDE4KSxTU0IgKDIwMTkpLCUgU1NCIGNoYW5nZSAsJSBBZHZpY2UgY2hhbmdlIApJQ0VTIGFkdmljZSBiYXNpcyxOQSxOQSxOQSxOQSxOQSxOQSxOQSxOQSxOQQpNU1kgYXBwcm9hY2g6IEZNU1ksMTE1MzM1LDEwNDA2MCwxMTI3NSwwLjI4LDAuMjMzLDAuMDQ3LDI5NTE5MywxMCUsLTclCk90aGVyIG9wdGlvbnMsTkEsTkEsTkEsTkEsTkEsTkEsTkEsTkEsTkEKRiA9IDAsMCwwLDAsMCwwLDAsNDAxOTI5LDUwJSwtMTAwJQpGcGEsMjExODI3LDE5MDE3MiwyMTY1NSwwLjYyLDAuNTE1LDAuMTA1LDIwNjEyMCwtMjMlLDcxJQpGbGltLDI2MTcxNiwyMzQxNTAsMjc1NjYsMC44NywwLjcyMywwLjE0NywxNjAwNDcsLTQwJSwxMTElClNTQiAoMjAxOSkgPSBCbGltLDM4MzQ2OSwzMzc3MjIsNDU3NDYsMi4yOTMsMS45MDQsMC4zODksNDQ5NzUsLTgzJSwyMTAlClNTQiAoMjAxOSkgPSBCcGEsMzk1ODI1LDM0NzM5Miw0ODQzMywyLjczMSwyLjI2OCwwLjQ2MywzMjAwMSwtODglLDIyMCUKU1NCICgyMDE5KSA9IE1TWaBCdHJpZ2dlciwzOTU4MjUsMzQ3MzkyLDQ4NDMzLDIuNzMxLDIuMjY4LDAuNDYzLDMyMDAxLC04OCUsMjIwJQpGID0gRjIwMTcsMTA4MTE5LDk3NTgwLDEwNTQwLDAuMjU5LDAuMjE1LDAuMDQ0LDMwMTg2MCwxMyUsLTEzJQpFVSBSZWNvdmVyeSBQbGFuXl4sMTA0NzM2LDk0NTM5LDEwMTk2LDAuMjUsMC4yMDgsMC4wNDIsMzA0OTg3LDE0JSwtMTUl)
+\* “Wanted” and “unwanted” catch are used to describe fish that would be landed and discarded in the absence of the EU landing obligation.
 
-## Catch scenarios Plots. Version 1
-<!--html_preserve--><div id="htmlwidget-96c55a01a260b28bd15b" style="width:672px;height:480px;" class="plotly html-widget"></div>
-<script type="application/json" data-for="htmlwidget-96c55a01a260b28bd15b">{"x":{"visdat":{"254825234620":["function () ","plotlyVisDat"]},"cur_data":"254825234620","attrs":{"254825234620":{"x":{},"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"y":{},"name":"SSB 2019","type":"bar","opacity":0.8,"width":0.2,"color":{},"colors":["darkblue","Yellow"],"text":["F = 0","EU Recovery Plan^^","F = F2017","MSY approach: FMSY","Fpa","Flim","SSB (2019) = Blim","SSB (2019) = Bpa","SSB (2019) = MSY Btrigger"],"hoverinfo":"text + x+ y","inherit":true},"254825234620.1":{"x":{},"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"y":{},"name":"Catch 2018","mode":"lines+markers","text":["F = 0","EU Recovery Plan^^","F = F2017","MSY approach: FMSY","Fpa","Flim","SSB (2019) = Blim","SSB (2019) = Bpa","SSB (2019) = MSY Btrigger"],"hoverinfo":"text + x+ y","inherit":true}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"hovermode":"TRUE","showlegend":true,"shapes":[{"type":"line","fillcolor":"red","line":{"color":"red","width":2,"dash":"dot"},"opacity":0.5,"x0":0.87,"x1":0.87,"xref":"Flim","y0":0,"y1":450000,"yref":"y","name":"Flim"},{"type":"line","fillcolor":"green","line":{"color":"green","width":2,"dash":"dot"},"opacity":0.2,"x0":0.28,"x1":0.28,"xref":"Fmsy","y0":0,"y1":450000,"yref":"y","name":"Fmsy"},{"type":"line","fillcolor":"orange","line":{"color":"orange","width":2,"dash":"dot"},"opacity":1,"x0":0.62,"x1":0.62,"xref":"Fpa","y0":0,"y1":450000,"yref":"y","name":"Fpa"},{"type":"line","fillcolor":"blue","line":{"color":"blue","width":2,"dash":"dash"},"opacity":0.3,"x0":-0.3,"x1":3,"xref":"x","y0":32000,"y1":32000,"yref":"Blim","name":"Blim"},{"type":"line","fillcolor":"lightblue","line":{"color":"lightblue","width":2,"dash":"dash"},"opacity":0.3,"x0":-0.3,"x1":3,"xref":"x","y0":45000,"y1":45000,"yref":"Bpa = MSY Btrigger","text":"Bpa = MSY Btrigger","textposition":"bottom right"},{"type":"rect","fillcolor":"green","opacity":0.2,"line":{"color":"green","opacity":0.2},"x0":-0.3,"x1":0.62,"xref":"x","y0":0,"y1":450000,"yref":"y"},{"type":"rect","fillcolor":"orange","opacity":0.2,"line":{"color":"orange","opacity":0.2},"x0":0.62,"x1":0.87,"y0":0,"y1":450000},{"type":"rect","fillcolor":"red","opacity":0.2,"line":{"color":"red","opacity":0.2},"x0":0.87,"x1":3,"y0":0,"y1":450000}],"yaxis":{"domain":[0,1],"title":"tonnes","showgrid":false},"xaxis":{"domain":[0,1],"title":"F","showgrid":false,"tickmode":"array","tickvals":[0.28,0.62,0.87],"ticktext":["Fmsy","Fpa","Flim"],"showarrow":true,"tickangle":45},"annotations":[{"x":3,"y":32000,"xref":"1","yref":"y","text":"Blim","showarrow":true,"ax":70,"ay":0},{"x":3,"y":45000,"xref":"1","yref":"y","text":"Bpa = MSY Btrigger","showarrow":true,"ax":70,"ay":0}],"legend":{"yanchor":"top","y":0.5}},"source":"A","config":{"modeBarButtonsToAdd":[{"name":"Collaborate","icon":{"width":1000,"ascent":500,"descent":-50,"path":"M487 375c7-10 9-23 5-36l-79-259c-3-12-11-23-22-31-11-8-22-12-35-12l-263 0c-15 0-29 5-43 15-13 10-23 23-28 37-5 13-5 25-1 37 0 0 0 3 1 7 1 5 1 8 1 11 0 2 0 4-1 6 0 3-1 5-1 6 1 2 2 4 3 6 1 2 2 4 4 6 2 3 4 5 5 7 5 7 9 16 13 26 4 10 7 19 9 26 0 2 0 5 0 9-1 4-1 6 0 8 0 2 2 5 4 8 3 3 5 5 5 7 4 6 8 15 12 26 4 11 7 19 7 26 1 1 0 4 0 9-1 4-1 7 0 8 1 2 3 5 6 8 4 4 6 6 6 7 4 5 8 13 13 24 4 11 7 20 7 28 1 1 0 4 0 7-1 3-1 6-1 7 0 2 1 4 3 6 1 1 3 4 5 6 2 3 3 5 5 6 1 2 3 5 4 9 2 3 3 7 5 10 1 3 2 6 4 10 2 4 4 7 6 9 2 3 4 5 7 7 3 2 7 3 11 3 3 0 8 0 13-1l0-1c7 2 12 2 14 2l218 0c14 0 25-5 32-16 8-10 10-23 6-37l-79-259c-7-22-13-37-20-43-7-7-19-10-37-10l-248 0c-5 0-9-2-11-5-2-3-2-7 0-12 4-13 18-20 41-20l264 0c5 0 10 2 16 5 5 3 8 6 10 11l85 282c2 5 2 10 2 17 7-3 13-7 17-13z m-304 0c-1-3-1-5 0-7 1-1 3-2 6-2l174 0c2 0 4 1 7 2 2 2 4 4 5 7l6 18c0 3 0 5-1 7-1 1-3 2-6 2l-173 0c-3 0-5-1-8-2-2-2-4-4-4-7z m-24-73c-1-3-1-5 0-7 2-2 3-2 6-2l174 0c2 0 5 0 7 2 3 2 4 4 5 7l6 18c1 2 0 5-1 6-1 2-3 3-5 3l-174 0c-3 0-5-1-7-3-3-1-4-4-5-6z"},"click":"function(gd) { \n        // is this being viewed in RStudio?\n        if (location.search == '?viewer_pane=1') {\n          alert('To learn about plotly for collaboration, visit:\\n https://cpsievert.github.io/plotly_book/plot-ly-for-collaboration.html');\n        } else {\n          window.open('https://cpsievert.github.io/plotly_book/plot-ly-for-collaboration.html', '_blank');\n        }\n      }"}],"cloud":false},"data":[{"x":[0,0.25,0.259,0.28,0.62,0.87,2.293,2.731,2.731],"y":[401929,304987,301860,295193,206120,160047,44975,32001,32001],"name":"SSB 2019","type":"bar","opacity":0.8,"width":[0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2],"text":["F = 0","EU Recovery Plan^^","F = F2017","MSY approach: FMSY","Fpa","Flim","SSB (2019) = Blim","SSB (2019) = Bpa","SSB (2019) = MSY Btrigger"],"hoverinfo":["text + x+ y","text + x+ y","text + x+ y","text + x+ y","text + x+ y","text + x+ y","text + x+ y","text + x+ y","text + x+ y"],"marker":{"colorbar":{"title":"SSB","ticklen":2},"cmin":32001,"cmax":401929,"colorscale":[["0","rgba(0,0,139,1)"],["0","rgba(0,0,139,1)"],["0","rgba(0,0,139,1)"],["0","rgba(0,0,139,1)"],["0.0116905632086965","rgba(18,3,139,1)"],["0.0233811264173929","rgba(29,6,138,1)"],["0.0350716896260894","rgba(38,9,138,1)"],["0.138760335344535","rgba(81,37,133,1)"],["0.242448981062982","rgba(110,62,129,1)"],["0.346137626781428","rgba(134,87,123,1)"],["0.387652912638856","rgba(143,97,120,1)"],["0.429168198496284","rgba(152,107,118,1)"],["0.470683484353712","rgba(160,117,115,1)"],["0.550945048766246","rgba(176,137,108,1)"],["0.631206613178781","rgba(191,157,101,1)"],["0.711468177591315","rgba(205,178,91,1)"],["0.717475652919848","rgba(206,180,91,1)"],["0.72348312824838","rgba(207,181,90,1)"],["0.729490603576912","rgba(209,183,89,1)"],["0.732308268996489","rgba(209,184,89,1)"],["0.735125934416066","rgba(210,184,88,1)"],["0.737943599835644","rgba(210,185,88,1)"],["0.825295733223762","rgba(225,208,74,1)"],["0.912647866611881","rgba(240,231,53,1)"],["1","rgba(255,255,0,1)"]],"showscale":false,"color":[401929,304987,301860,295193,206120,160047,44975,32001,32001],"line":{"colorbar":{"title":"","ticklen":2},"cmin":32001,"cmax":401929,"colorscale":[["0","rgba(0,0,139,1)"],["0","rgba(0,0,139,1)"],["0","rgba(0,0,139,1)"],["0","rgba(0,0,139,1)"],["0.0116905632086965","rgba(18,3,139,1)"],["0.0233811264173929","rgba(29,6,138,1)"],["0.0350716896260894","rgba(38,9,138,1)"],["0.138760335344535","rgba(81,37,133,1)"],["0.242448981062982","rgba(110,62,129,1)"],["0.346137626781428","rgba(134,87,123,1)"],["0.387652912638856","rgba(143,97,120,1)"],["0.429168198496284","rgba(152,107,118,1)"],["0.470683484353712","rgba(160,117,115,1)"],["0.550945048766246","rgba(176,137,108,1)"],["0.631206613178781","rgba(191,157,101,1)"],["0.711468177591315","rgba(205,178,91,1)"],["0.717475652919848","rgba(206,180,91,1)"],["0.72348312824838","rgba(207,181,90,1)"],["0.729490603576912","rgba(209,183,89,1)"],["0.732308268996489","rgba(209,184,89,1)"],["0.735125934416066","rgba(210,184,88,1)"],["0.737943599835644","rgba(210,185,88,1)"],["0.825295733223762","rgba(225,208,74,1)"],["0.912647866611881","rgba(240,231,53,1)"],["1","rgba(255,255,0,1)"]],"showscale":false,"color":[401929,304987,301860,295193,206120,160047,44975,32001,32001]}},"xaxis":"x","yaxis":"y","frame":null},{"x":[0,0.25,0.259,0.28,0.62,0.87,2.293,2.731,2.731],"y":[0,104736,108119,115335,211827,261716,383469,395825,395825],"name":"Catch 2018","mode":"lines+markers","text":["F = 0","EU Recovery Plan^^","F = F2017","MSY approach: FMSY","Fpa","Flim","SSB (2019) = Blim","SSB (2019) = Bpa","SSB (2019) = MSY Btrigger"],"hoverinfo":["text + x+ y","text + x+ y","text + x+ y","text + x+ y","text + x+ y","text + x+ y","text + x+ y","text + x+ y","text + x+ y"],"type":"scatter","marker":{"color":"rgba(255,127,14,1)","line":{"color":"rgba(255,127,14,1)"}},"error_y":{"color":"rgba(255,127,14,1)"},"error_x":{"color":"rgba(255,127,14,1)"},"line":{"color":"rgba(255,127,14,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[0,2.731],"y":[0,401929],"type":"scatter","mode":"markers","opacity":0,"hoverinfo":"none","showlegend":false,"marker":{"colorbar":{"title":"SSB","ticklen":2,"len":0.5,"lenmode":"fraction","y":1,"yanchor":"top"},"cmin":32001,"cmax":401929,"colorscale":[["0","rgba(0,0,139,1)"],["0","rgba(0,0,139,1)"],["0","rgba(0,0,139,1)"],["0","rgba(0,0,139,1)"],["0.0116905632086965","rgba(18,3,139,1)"],["0.0233811264173929","rgba(29,6,138,1)"],["0.0350716896260894","rgba(38,9,138,1)"],["0.138760335344535","rgba(81,37,133,1)"],["0.242448981062982","rgba(110,62,129,1)"],["0.346137626781428","rgba(134,87,123,1)"],["0.387652912638856","rgba(143,97,120,1)"],["0.429168198496284","rgba(152,107,118,1)"],["0.470683484353712","rgba(160,117,115,1)"],["0.550945048766246","rgba(176,137,108,1)"],["0.631206613178781","rgba(191,157,101,1)"],["0.711468177591315","rgba(205,178,91,1)"],["0.717475652919848","rgba(206,180,91,1)"],["0.72348312824838","rgba(207,181,90,1)"],["0.729490603576912","rgba(209,183,89,1)"],["0.732308268996489","rgba(209,184,89,1)"],["0.735125934416066","rgba(210,184,88,1)"],["0.737943599835644","rgba(210,185,88,1)"],["0.825295733223762","rgba(225,208,74,1)"],["0.912647866611881","rgba(240,231,53,1)"],["1","rgba(255,255,0,1)"]],"showscale":true,"color":[32001,401929],"line":{"color":"rgba(44,160,44,1)"}},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1}},"base_url":"https://plot.ly"},"evals":["config.modeBarButtonsToAdd.0.click"],"jsHooks":[]}</script><!--/html_preserve-->
- 
-## Version 2:
-<!--html_preserve--><div id="htmlwidget-7432ad806d1d6eaa13aa" style="width:600px;height:300px;" class="plotly html-widget"></div>
-<script type="application/json" data-for="htmlwidget-7432ad806d1d6eaa13aa">{"x":{"data":[{"x":[null,null,0.62,0.62,null,null,null,null,0.62,0.62,null,null,null,null,0.62,0.62,null,null,null,null,0.62,0.62,null,null,null,null,0.62,0.62,null,null,null,null,0.62,0.62,null,null,null,null,0.62,0.62,null,null,null,null,0.62,0.62,null,null,null,null,0.62,0.62,null],"y":[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],"text":"","type":"scatter","mode":"lines","line":{"width":1.88976377952756,"color":"transparent","dash":"solid"},"fill":"toself","fillcolor":"rgba(144,238,144,0.5)","hoveron":"fills","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[0.62,0.62,0.87,0.87,0.62,null,0.62,0.62,0.87,0.87,0.62,null,0.62,0.62,0.87,0.87,0.62,null,0.62,0.62,0.87,0.87,0.62,null,0.62,0.62,0.87,0.87,0.62,null,0.62,0.62,0.87,0.87,0.62,null,0.62,0.62,0.87,0.87,0.62,null,0.62,0.62,0.87,0.87,0.62,null,0.62,0.62,0.87,0.87,0.62],"y":[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],"text":"","type":"scatter","mode":"lines","line":{"width":1.88976377952756,"color":"transparent","dash":"solid"},"fill":"toself","fillcolor":"rgba(255,127,80,1)","hoveron":"fills","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[0.87,0.87,null,null,0.87,null,0.87,0.87,null,null,0.87,null,0.87,0.87,null,null,0.87,null,0.87,0.87,null,null,0.87,null,0.87,0.87,null,null,0.87,null,0.87,0.87,null,null,0.87,null,0.87,0.87,null,null,0.87,null,0.87,0.87,null,null,0.87,null,0.87,0.87,null,null,0.87],"y":[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],"text":"","type":"scatter","mode":"lines","line":{"width":1.88976377952756,"color":"transparent","dash":"solid"},"fill":"toself","fillcolor":"rgba(255,64,64,1)","hoveron":"fills","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[-0.13655,2.86755],"y":[45000,45000],"text":"yintercept: 45000","type":"scatter","mode":"lines","line":{"width":1.88976377952756,"color":"rgba(154,205,50,1)","dash":"dash"},"hoveron":"points","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[-0.13655,2.86755],"y":[32000,32000],"text":"yintercept: 32000","type":"scatter","mode":"lines","line":{"width":1.88976377952756,"color":"rgba(139,139,0,1)","dash":"dash"},"hoveron":"points","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[0.28,0.28],"y":[-20096.45,422025.45],"text":"xintercept: 0.28","type":"scatter","mode":"lines","line":{"width":1.88976377952756,"color":"rgba(238,130,238,1)","dash":"dot"},"hoveron":"points","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[0.62,0.62],"y":[-20096.45,422025.45],"text":"xintercept: 0.62","type":"scatter","mode":"lines","line":{"width":1.88976377952756,"color":"rgba(208,32,144,1)","dash":"dot"},"hoveron":"points","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[0.87,0.87],"y":[-20096.45,422025.45],"text":"xintercept: 0.87","type":"scatter","mode":"lines","line":{"width":1.88976377952756,"color":"rgba(255,62,150,1)","dash":"dot"},"hoveron":"points","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[0.28,0,0.62,0.87,2.293,2.731,2.731,0.259,0.25],"y":[115335,0,211827,261716,383469,395825,395825,108119,104736],"text":["Catch: 115335<br />F: 0.280","Catch:      0<br />F: 0.000","Catch: 211827<br />F: 0.620","Catch: 261716<br />F: 0.870","Catch: 383469<br />F: 2.293","Catch: 395825<br />F: 2.731","Catch: 395825<br />F: 2.731","Catch: 108119<br />F: 0.259","Catch: 104736<br />F: 0.250"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,0,0,1)","opacity":1,"size":7.55905511811024,"symbol":"circle","line":{"width":1.88976377952756,"color":"rgba(0,0,0,1)"}},"hoveron":"points","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[0,0.25,0.259,0.28,0.62,0.87,2.293,2.731,2.731],"y":[0,104736,108119,115335,211827,261716,383469,395825,395825],"text":["Catch:      0<br />F: 0.000","Catch: 104736<br />F: 0.250","Catch: 108119<br />F: 0.259","Catch: 115335<br />F: 0.280","Catch: 211827<br />F: 0.620","Catch: 261716<br />F: 0.870","Catch: 383469<br />F: 2.293","Catch: 395825<br />F: 2.731","Catch: 395825<br />F: 2.731"],"type":"scatter","mode":"lines","line":{"width":1.88976377952756,"color":"rgba(255,69,0,1)","dash":"solid"},"hoveron":"points","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[0.28,0,0.62,0.87,2.293,2.731,2.731,0.259,0.25],"y":[295193,401929,206120,160047,44975,32001,32001,301860,304987],"text":["SSB: 295193<br />F: 0.280","SSB: 401929<br />F: 0.000","SSB: 206120<br />F: 0.620","SSB: 160047<br />F: 0.870","SSB:  44975<br />F: 2.293","SSB:  32001<br />F: 2.731","SSB:  32001<br />F: 2.731","SSB: 301860<br />F: 0.259","SSB: 304987<br />F: 0.250"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,0,0,1)","opacity":1,"size":7.55905511811024,"symbol":"circle","line":{"width":1.88976377952756,"color":"rgba(0,0,0,1)"}},"hoveron":"points","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[0,0.25,0.259,0.28,0.62,0.87,2.293,2.731,2.731],"y":[401929,304987,301860,295193,206120,160047,44975,32001,32001],"text":["SSB: 401929<br />F: 0.000","SSB: 304987<br />F: 0.250","SSB: 301860<br />F: 0.259","SSB: 295193<br />F: 0.280","SSB: 206120<br />F: 0.620","SSB: 160047<br />F: 0.870","SSB:  44975<br />F: 2.293","SSB:  32001<br />F: 2.731","SSB:  32001<br />F: 2.731"],"type":"scatter","mode":"lines","line":{"width":1.88976377952756,"color":"rgba(135,206,250,1)","dash":"solid"},"hoveron":"points","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null}],"layout":{"margin":{"t":30.6118721461187,"r":7.30593607305936,"b":44.5662100456621,"l":54.7945205479452},"plot_bgcolor":"rgba(255,255,255,1)","paper_bgcolor":"rgba(255,255,255,1)","font":{"color":"rgba(0,0,0,1)","family":"","size":14.6118721461187},"xaxis":{"domain":[0,1],"type":"linear","autorange":false,"range":[-0.13655,2.86755],"tickmode":"array","ticktext":["0","1","2"],"tickvals":[0,1,2],"categoryorder":"array","categoryarray":["0","1","2"],"nticks":null,"ticks":"outside","tickcolor":"rgba(51,51,51,1)","ticklen":3.65296803652968,"tickwidth":0.66417600664176,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.689497716895},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(235,235,235,1)","gridwidth":0.66417600664176,"zeroline":false,"anchor":"y","title":"Fish mortality","titlefont":{"color":"rgba(0,0,0,1)","family":"","size":14.6118721461187},"hoverformat":".2f"},"yaxis":{"domain":[0,1],"type":"linear","autorange":false,"range":[-20096.45,422025.45],"tickmode":"array","ticktext":["0e+00","1e+05","2e+05","3e+05","4e+05"],"tickvals":[0,100000,200000,300000,400000],"categoryorder":"array","categoryarray":["0e+00","1e+05","2e+05","3e+05","4e+05"],"nticks":null,"ticks":"outside","tickcolor":"rgba(51,51,51,1)","ticklen":3.65296803652968,"tickwidth":0.66417600664176,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.689497716895},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(235,235,235,1)","gridwidth":0.66417600664176,"zeroline":false,"anchor":"x","title":"tonnes","titlefont":{"color":"rgba(0,0,0,1)","family":"","size":14.6118721461187},"hoverformat":".2f"},"shapes":[{"type":"rect","fillcolor":"transparent","line":{"color":"rgba(51,51,51,1)","width":0.66417600664176,"linetype":"solid"},"yref":"paper","xref":"paper","x0":0,"x1":1,"y0":0,"y1":1}],"showlegend":false,"legend":{"bgcolor":"rgba(255,255,255,1)","bordercolor":"transparent","borderwidth":1.88976377952756,"font":{"color":"rgba(0,0,0,1)","family":"","size":11.689497716895}},"hovermode":"closest","width":600,"height":300,"barmode":"relative"},"config":{"doubleClick":"reset","modeBarButtonsToAdd":[{"name":"Collaborate","icon":{"width":1000,"ascent":500,"descent":-50,"path":"M487 375c7-10 9-23 5-36l-79-259c-3-12-11-23-22-31-11-8-22-12-35-12l-263 0c-15 0-29 5-43 15-13 10-23 23-28 37-5 13-5 25-1 37 0 0 0 3 1 7 1 5 1 8 1 11 0 2 0 4-1 6 0 3-1 5-1 6 1 2 2 4 3 6 1 2 2 4 4 6 2 3 4 5 5 7 5 7 9 16 13 26 4 10 7 19 9 26 0 2 0 5 0 9-1 4-1 6 0 8 0 2 2 5 4 8 3 3 5 5 5 7 4 6 8 15 12 26 4 11 7 19 7 26 1 1 0 4 0 9-1 4-1 7 0 8 1 2 3 5 6 8 4 4 6 6 6 7 4 5 8 13 13 24 4 11 7 20 7 28 1 1 0 4 0 7-1 3-1 6-1 7 0 2 1 4 3 6 1 1 3 4 5 6 2 3 3 5 5 6 1 2 3 5 4 9 2 3 3 7 5 10 1 3 2 6 4 10 2 4 4 7 6 9 2 3 4 5 7 7 3 2 7 3 11 3 3 0 8 0 13-1l0-1c7 2 12 2 14 2l218 0c14 0 25-5 32-16 8-10 10-23 6-37l-79-259c-7-22-13-37-20-43-7-7-19-10-37-10l-248 0c-5 0-9-2-11-5-2-3-2-7 0-12 4-13 18-20 41-20l264 0c5 0 10 2 16 5 5 3 8 6 10 11l85 282c2 5 2 10 2 17 7-3 13-7 17-13z m-304 0c-1-3-1-5 0-7 1-1 3-2 6-2l174 0c2 0 4 1 7 2 2 2 4 4 5 7l6 18c0 3 0 5-1 7-1 1-3 2-6 2l-173 0c-3 0-5-1-8-2-2-2-4-4-4-7z m-24-73c-1-3-1-5 0-7 2-2 3-2 6-2l174 0c2 0 5 0 7 2 3 2 4 4 5 7l6 18c1 2 0 5-1 6-1 2-3 3-5 3l-174 0c-3 0-5-1-7-3-3-1-4-4-5-6z"},"click":"function(gd) { \n        // is this being viewed in RStudio?\n        if (location.search == '?viewer_pane=1') {\n          alert('To learn about plotly for collaboration, visit:\\n https://cpsievert.github.io/plotly_book/plot-ly-for-collaboration.html');\n        } else {\n          window.open('https://cpsievert.github.io/plotly_book/plot-ly-for-collaboration.html', '_blank');\n        }\n      }"}],"cloud":false},"source":"A","attrs":{"25482d994efe":{"x":{},"type":"scatter"},"25487b5b6458":{"x":{}},"25484b12bc0":{"x":{}},"2548cba1c2e":{"yintercept":{}},"254877b77c3c":{"yintercept":{}},"2548353a3ef0":{"xintercept":{}},"25484bc43b0":{"xintercept":{}},"254830137af9":{"xintercept":{}},"254872593d85":{"y":{},"x":{}},"254837405211":{"y":{},"x":{}},"25487df03ddf":{"y":{},"x":{}},"254843dd1e9f":{"y":{},"x":{}}},"cur_data":"25482d994efe","visdat":{"25482d994efe":["function (y) ","x"],"25487b5b6458":["function (y) ","x"],"25484b12bc0":["function (y) ","x"],"2548cba1c2e":["function (y) ","x"],"254877b77c3c":["function (y) ","x"],"2548353a3ef0":["function (y) ","x"],"25484bc43b0":["function (y) ","x"],"254830137af9":["function (y) ","x"],"254872593d85":["function (y) ","x"],"254837405211":["function (y) ","x"],"25487df03ddf":["function (y) ","x"],"254843dd1e9f":["function (y) ","x"]},"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1}},"base_url":"https://plot.ly"},"evals":["config.modeBarButtonsToAdd.0.click"],"jsHooks":[]}</script><!--/html_preserve-->
-  
+\** SSB 2020 relative to SSB 2019.
+
+\*** Total catch 2019 relative to the catch advice for 2018 (115 335 tonnes).
+
+\^ Unwanted catch includes forecast unwanted catch (discards included in the assessment) and additional unwanted catch (the discards that were not included in the assessment, amounting to approximately 2.8% of the total catch).
+
+\^^ Catch option corresponds to F2018 = 0.25.
+
 <br>
+The catch for 2019 corresponding to the MSY framework is 23% higher than the advice given for 2018. The increase is mainly a consequence of the increase in SSB in 2019 as a result of strong incoming year classes.
+
+</div>
+
+## Catch scenarios plot
+
+The following plot resumes Fishing mortality scenarios (see Table 3) and the related estimates of Catch and next years' Spawning Stock Biomass. Vertical and horizontal dashed lines show the available reference points (see also Reference Points section). 
+In the hover text appearing in each point is indicated the value in tonnes (of Cath or of SSB) and the scenario represented. At the same time, in the horizontal axis will show up the corresponding F value.
+<br>
+<!--html_preserve--><div id="htmlwidget-161fdcc011d2bac75b66" style="width:960px;height:432px;" class="plotly html-widget"></div>
+<script type="application/json" data-for="htmlwidget-161fdcc011d2bac75b66">{"x":{"visdat":{"7d0188b7048":["function () ","plotlyVisDat"]},"cur_data":"7d0188b7048","attrs":{"7d0188b7048":{"x":{},"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"y":{},"name":"SSB 2019","mode":"lines+markers","text":["Other scenarios: F = 0","Other scenarios: FMSY lower","ICES advice basis: MSY approach: FMSY","Other scenarios: FMSY upper","Other scenarios: Fpa","Other scenarios: Flim","Other scenarios: SSB (2020) = Bpa","Other scenarios: SSB (2020) = MSY Btrigger","Other scenarios: SSB (2020) = Blim"],"hoverinfo":"text + x+ y","inherit":true},"7d0188b7048.1":{"x":{},"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"y":{},"name":"Catch 2018","mode":"lines+markers","text":["Other scenarios: F = 0","Other scenarios: FMSY lower","ICES advice basis: MSY approach: FMSY","Other scenarios: FMSY upper","Other scenarios: Fpa","Other scenarios: Flim","Other scenarios: SSB (2020) = Bpa","Other scenarios: SSB (2020) = MSY Btrigger","Other scenarios: SSB (2020) = Blim"],"hoverinfo":"text + x+ y","inherit":true}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"hovermode":"TRUE","showlegend":true,"shapes":[{"type":"line","fillcolor":"red","line":{"color":"red","width":3,"dash":"dash"},"opacity":0.5,"x0":0.87,"x1":0.87,"xref":"Flim","y0":0,"y1":500000,"yref":"y","name":"Flim"},{"type":"line","fillcolor":"green","line":{"color":"green","width":3,"dash":"dash"},"opacity":0.5,"x0":0.28,"x1":0.28,"xref":"Fmsy","y0":0,"y1":500000,"yref":"y","name":"Fmsy"},{"type":"line","fillcolor":"orange","line":{"color":"orange","width":3,"dash":"dash"},"opacity":0.5,"x0":0.62,"x1":0.62,"xref":"Fpa","y0":0,"y1":500000,"yref":"y","name":"Fpa"},{"type":"line","fillcolor":"red","line":{"color":"red","width":3,"dash":"dash"},"opacity":0.5,"x0":0,"x1":2.8,"xref":"x","y0":32000,"y1":32000,"yref":"Blim","name":"Blim"},{"type":"line","fillcolor":"green","line":{"color":"green","width":3,"dash":"dash"},"opacity":0.5,"x0":0,"x1":2.8,"xref":"x","y0":45000,"y1":45000,"yref":"Bpa = MSY Btrigger","text":"Bpa = MSY Btrigger","textposition":"bottom right"}],"yaxis":{"domain":[0,1],"title":"Tonnes","showgrid":false},"xaxis":{"domain":[0,1],"title":"Fishing mortality scenarios","showgrid":false,"tickmode":"array","tickvals":[0.28,0.62,0.87],"ticktext":["Fmsy","Fpa","Flim"]},"annotations":[{"x":3,"y":32000,"xref":"1","yref":"y","text":"Blim              ","showarrow":true,"ax":40,"ay":0},{"x":3,"y":45000,"xref":"1","yref":"y","text":"Bpa = MSY Btrigger","showarrow":true,"ax":40,"ay":0}]},"source":"A","config":{"modeBarButtonsToAdd":[{"name":"Collaborate","icon":{"width":1000,"ascent":500,"descent":-50,"path":"M487 375c7-10 9-23 5-36l-79-259c-3-12-11-23-22-31-11-8-22-12-35-12l-263 0c-15 0-29 5-43 15-13 10-23 23-28 37-5 13-5 25-1 37 0 0 0 3 1 7 1 5 1 8 1 11 0 2 0 4-1 6 0 3-1 5-1 6 1 2 2 4 3 6 1 2 2 4 4 6 2 3 4 5 5 7 5 7 9 16 13 26 4 10 7 19 9 26 0 2 0 5 0 9-1 4-1 6 0 8 0 2 2 5 4 8 3 3 5 5 5 7 4 6 8 15 12 26 4 11 7 19 7 26 1 1 0 4 0 9-1 4-1 7 0 8 1 2 3 5 6 8 4 4 6 6 6 7 4 5 8 13 13 24 4 11 7 20 7 28 1 1 0 4 0 7-1 3-1 6-1 7 0 2 1 4 3 6 1 1 3 4 5 6 2 3 3 5 5 6 1 2 3 5 4 9 2 3 3 7 5 10 1 3 2 6 4 10 2 4 4 7 6 9 2 3 4 5 7 7 3 2 7 3 11 3 3 0 8 0 13-1l0-1c7 2 12 2 14 2l218 0c14 0 25-5 32-16 8-10 10-23 6-37l-79-259c-7-22-13-37-20-43-7-7-19-10-37-10l-248 0c-5 0-9-2-11-5-2-3-2-7 0-12 4-13 18-20 41-20l264 0c5 0 10 2 16 5 5 3 8 6 10 11l85 282c2 5 2 10 2 17 7-3 13-7 17-13z m-304 0c-1-3-1-5 0-7 1-1 3-2 6-2l174 0c2 0 4 1 7 2 2 2 4 4 5 7l6 18c0 3 0 5-1 7-1 1-3 2-6 2l-173 0c-3 0-5-1-8-2-2-2-4-4-4-7z m-24-73c-1-3-1-5 0-7 2-2 3-2 6-2l174 0c2 0 5 0 7 2 3 2 4 4 5 7l6 18c1 2 0 5-1 6-1 2-3 3-5 3l-174 0c-3 0-5-1-7-3-3-1-4-4-5-6z"},"click":"function(gd) { \n        // is this being viewed in RStudio?\n        if (location.search == '?viewer_pane=1') {\n          alert('To learn about plotly for collaboration, visit:\\n https://cpsievert.github.io/plotly_book/plot-ly-for-collaboration.html');\n        } else {\n          window.open('https://cpsievert.github.io/plotly_book/plot-ly-for-collaboration.html', '_blank');\n        }\n      }"}],"cloud":false},"data":[{"x":[0,0.18,0.28,0.45,0.62,0.87,2.4,2.4,2.8],"y":[498590,408019,365492,303739,253142,194612,44977,44977,32039],"name":"SSB 2019","mode":"lines+markers","text":["Other scenarios: F = 0","Other scenarios: FMSY lower","ICES advice basis: MSY approach: FMSY","Other scenarios: FMSY upper","Other scenarios: Fpa","Other scenarios: Flim","Other scenarios: SSB (2020) = Bpa","Other scenarios: SSB (2020) = MSY Btrigger","Other scenarios: SSB (2020) = Blim"],"hoverinfo":["text + x+ y","text + x+ y","text + x+ y","text + x+ y","text + x+ y","text + x+ y","text + x+ y","text + x+ y","text + x+ y"],"type":"scatter","marker":{"color":"rgba(31,119,180,1)","line":{"color":"rgba(31,119,180,1)"}},"error_y":{"color":"rgba(31,119,180,1)"},"error_x":{"color":"rgba(31,119,180,1)"},"line":{"color":"rgba(31,119,180,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[0,0.18,0.28,0.45,0.62,0.87,2.4,2.4,2.8],"y":[0,96792,142240,208200,262175,324439,479239,479239,491220],"name":"Catch 2018","mode":"lines+markers","text":["Other scenarios: F = 0","Other scenarios: FMSY lower","ICES advice basis: MSY approach: FMSY","Other scenarios: FMSY upper","Other scenarios: Fpa","Other scenarios: Flim","Other scenarios: SSB (2020) = Bpa","Other scenarios: SSB (2020) = MSY Btrigger","Other scenarios: SSB (2020) = Blim"],"hoverinfo":["text + x+ y","text + x+ y","text + x+ y","text + x+ y","text + x+ y","text + x+ y","text + x+ y","text + x+ y","text + x+ y"],"type":"scatter","marker":{"color":"rgba(255,127,14,1)","line":{"color":"rgba(255,127,14,1)"}},"error_y":{"color":"rgba(255,127,14,1)"},"error_x":{"color":"rgba(255,127,14,1)"},"line":{"color":"rgba(255,127,14,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1}},"base_url":"https://plot.ly"},"evals":["config.modeBarButtonsToAdd.0.click"],"jsHooks":[]}</script><!--/html_preserve-->
+
+This plot is produced with plotly. Among available features, it can be downloaded as .png and it is possible to zoom in and out.
 
 [Go to Top](#top)
 
@@ -1303,7 +1418,7 @@ EU Recovery Plan^^|0.250|104736|304987
   </tr>
   <tr>
    <td style="text-align:left;font-weight: bold;color: black;background-color: lightgrey;"> Management plan </td>
-   <td style="text-align:left;"> The current recovery plan (EU, 2004) is based on precautionary reference points that are no longer appropriate. ICES has not evaluated this plan. </td>
+   <td style="text-align:left;"> The current recovery plan (EU, 2004) is based on precautionary reference points that are no longer appropriate. ICES has not evaluated this plan. The European Commission has proposed a multiannual management plan (MAP) for the Western Waters, which is not yet finalized (EU, 2018). </td>
   </tr>
 </tbody>
 </table>
@@ -1312,9 +1427,18 @@ EU Recovery Plan^^|0.250|104736|304987
 ***
 # Quality of the assessment  
 <br>
-The uncertainty in the assessment is relatively high, with large changes in biomass estimates in consecutive years. The model confidence intervals are an underestimate of uncertainty because they are narrower than interannual changes in estimates in consecutive years.
-There is a lack of tuning data for the earlier years of the assessment, for some areas outside of subareas 7 and 8, and for the larger individuals in the population. Given the expansion of the stock into northern areas (ICES, 2017b), there is a potential that not all catches are reported for this stock. Biological sampling from these areas is also limited.
-The data compilation of this stock is very complicated because it is exploited by several countries and the assessment model configuration is complex. In turn, the assessment model is very sensitive to the data and the settings used. Hence, it is extremely important for the quality of the assessment to have the complete data for all the countries on time and in the right format.
+The model confidence intervals underestimate uncertainty as they are narrower than interannual changes in estimates between consecutive assessments.
+
+The historical FR-EVHOE-WIBTS-Q4 survey was revised and produced some minor changes in the perception of the stock. The FR-EVHOE-WIBTS-Q4 index value for 2017 was not available. However, the IE-IGFS-WIBTS-Q4 survey and the discards also provide information on recruitment. Both indices are consistent in the historical period, hence the recruitment estimate from last year is considered reliable.
+
+Not all discards are included in the analytical assessment, but they are included in the final advice catch estimates. They represent approximately 2%–5% of the total stock catches. Discards have decreased substantially this year.
+
+Given the expansion of the stock into northern areas (ICES, 2017a), biological sampling and discard quantification may be limited.
+
+Owing to a lack of French market sampling of length in Q1 and Q2 of 2017 (biological and onboard sampling was unaffected), for some sampling strata length data were supplemented using data from previous years, which is considered to have limited impact (ICES, 2018).
+
+There has been a tendency for the assessment to underestimate SSB and overestimate F in past years. However, estimates of SSB in the current assessment are close to those estimated in 2017.
+
 <br>
 
 <img src="images/hkequalplot.png" width="871" />
@@ -1325,15 +1449,21 @@ The data compilation of this stock is very complicated because it is exploited b
 ***
 
 # Issues relevant for the advice
-Discarding of juvenile hake can be substantial in some areas and fleets. Discarding of large individuals has increased in recent years because of quota restrictions in certain fleets.
+
+Discarding of juvenile hake (undersized and above minimum size) can be substantial in some areas and fleets. In the most recent period, discarding of large individuals increased because of quota restrictions in certain fleets. In 2017, observed discards decreased.
 
 Some fleets fishing this stock have been under the EU landing obligation since 2016.
+
 
 ***
 
 # Reference Points  
 <br>
 **Table 5** Reference points, values, and their technical basis for hake in subareas 4, 6, and 7, and in divisions 3.a, 8.a–b, and 8.d, Northern stock.
+<br>
+<button class="btn btn-primary" data-toggle="collapse" data-target="#BlockName3"> Show/Download Table </button>  
+<div id="BlockName3" class="collapse"> 
+<br>
 <table class="table" style="margin-left: auto; margin-right: auto;">
  <thead>
   <tr>
@@ -1356,11 +1486,11 @@ Some fleets fishing this stock have been under the EU landing obligation since 2
    
    <td style="text-align:left;"> FMSY </td>
    <td style="text-align:left;"> 0.28 </td>
-   <td style="text-align:left;"> Stochastic simulations on a segmented regression stock–recruitment relationship. </td>
+   <td style="text-align:left;"> Stochastic simulations on a segmented regression stock–recruit </td>
    <td style="text-align:left;"> ICES (2016a) </td>
   </tr>
   <tr>
-   <td style="text-align:left;vertical-align: middle !important;" rowspan="4"> Precautionary approach </td>
+   <td style="text-align:left;vertical-align: middle !important;" rowspan="11"> Precautionary approach </td>
    <td style="text-align:left;"> Blim </td>
    <td style="text-align:left;"> 32000 </td>
    <td style="text-align:left;"> A low biomass which was followed by a quick recovery. </td>
@@ -1388,18 +1518,61 @@ Some fleets fishing this stock have been under the EU landing obligation since 2
    <td style="text-align:left;"> ICES(2016b) </td>
   </tr>
   <tr>
-   <td style="text-align:left;"> Management plan </td>
-   <td style="text-align:left;"> SSBMGT </td>
-   <td style="text-align:left;"> No  defined </td>
+   
+   <td style="text-align:left;"> FMGT </td>
+   <td style="text-align:left;"> No defined </td>
    <td style="text-align:left;">  </td>
+   <td style="text-align:left;">  </td>
+  </tr>
+  <tr>
+   
+   <td style="text-align:left;"> SSBMGT </td>
+   <td style="text-align:left;"> No defined </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;">  </td>
+  </tr>
+  <tr>
+   
+   <td style="text-align:left;"> MAP MSY Btrigger </td>
+   <td style="text-align:left;"> 45000 </td>
+   <td style="text-align:left;"> MSY Btrigger </td>
+   <td style="text-align:left;">  </td>
+  </tr>
+  <tr>
+   
+   <td style="text-align:left;"> MAP Blim </td>
+   <td style="text-align:left;"> 32000 </td>
+   <td style="text-align:left;"> Blim </td>
+   <td style="text-align:left;">  </td>
+  </tr>
+  <tr>
+   
+   <td style="text-align:left;"> MAP FMSY </td>
+   <td style="text-align:left;"> 0.28 </td>
+   <td style="text-align:left;"> FMSY </td>
+   <td style="text-align:left;">  </td>
+  </tr>
+  <tr>
+   
+   <td style="text-align:left;"> MAP range Flower </td>
+   <td style="text-align:left;"> 0.18 </td>
+   <td style="text-align:left;"> Consistent with ranges resulting in no more than 5% reduction in long-term yield compared with MSY (ICES, 2016a) </td>
+   <td style="text-align:left;">  </td>
+  </tr>
+  <tr>
+   
+   <td style="text-align:left;"> MAP range Fupper </td>
+   <td style="text-align:left;"> 0.45 </td>
+   <td style="text-align:left;"> Consistent with ranges resulting in no more than 5% reduction </td>
    <td style="text-align:left;">  </td>
   </tr>
 </tbody>
 </table>
+
+
 <br>
-
-
-[Download CSV](data:text/csv;base64,LEZyYW1ld29yayxSZWZlcmVuY2UgcG9pbnQsVmFsdWUsVGVjaG5pY2FsIGJhc2lzLFNvdXJjZQoxLE1TWSBhcHByb2FjaCxNU1mgQnRyaWdnZXIsNDUwMDCgICxCcGEsSUNFUyAoMjAxNmEpCjIsTVNZIGFwcHJvYWNoLEZNU1ksMC4yOCxTdG9jaGFzdGljIHNpbXVsYXRpb25zIG9uIGEgc2VnbWVudGVkIHJlZ3Jlc3Npb24gc3RvY2uWcmVjcnVpdG1lbnQgcmVsYXRpb25zaGlwLixJQ0VTICgyMDE2YSkKMyxQcmVjYXV0aW9uYXJ5IGFwcHJvYWNoLEJsaW0sMzIwMDCgICxBIGxvdyBiaW9tYXNzIHdoaWNoIHdhcyBmb2xsb3dlZCBieSBhIHF1aWNrIHJlY292ZXJ5LixJQ0VTICgyMDE2YikKNCxQcmVjYXV0aW9uYXJ5IGFwcHJvYWNoLEJwYSw0NTAwMKAgLDEuNCDXIEJsaW0sSUNFUyAoMjAxNmIpCjUsUHJlY2F1dGlvbmFyeSBhcHByb2FjaCxGbGltLDAuODcsRmlzaGluZyBtb3J0YWxpdHkgcmVzdWx0aW5nIGluIGEgNSUgcHJvYmFiaWxpdHkgb2YgU1NCIGZhbGxpbmcgYmVsb3cgQmxpbS4sSUNFUygyMDE2YikKNixQcmVjYXV0aW9uYXJ5IGFwcHJvYWNoLEZwYSwwLjYyLEZsaW0vMS40LElDRVMoMjAxNmIpCjcsTWFuYWdlbWVudCBwbGFuLFNTQk1HVCxObyAgZGVmaW5lZCws)
+[Download CSV](data:text/csv;base64,LEZyYW1ld29yayxSZWZlcmVuY2UgcG9pbnQsVmFsdWUsVGVjaG5pY2FsIGJhc2lzLFNvdXJjZQoxLE1TWSBhcHByb2FjaCxNU1mgQnRyaWdnZXIsNDUwMDCgICxCcGEsSUNFUyAoMjAxNmEpCjIsTVNZIGFwcHJvYWNoLEZNU1ksMC4yOCxTdG9jaGFzdGljIHNpbXVsYXRpb25zIG9uIGEgc2VnbWVudGVkIHJlZ3Jlc3Npb24gc3RvY2uWcmVjcnVpdCxJQ0VTICgyMDE2YSkKMyxQcmVjYXV0aW9uYXJ5IGFwcHJvYWNoLEJsaW0sMzIwMDCgICxBIGxvdyBiaW9tYXNzIHdoaWNoIHdhcyBmb2xsb3dlZCBieSBhIHF1aWNrIHJlY292ZXJ5LixJQ0VTICgyMDE2YikKNCxQcmVjYXV0aW9uYXJ5IGFwcHJvYWNoLEJwYSw0NTAwMKAgLDEuNCDXIEJsaW0sSUNFUyAoMjAxNmIpCjUsUHJlY2F1dGlvbmFyeSBhcHByb2FjaCxGbGltLDAuODcsRmlzaGluZyBtb3J0YWxpdHkgcmVzdWx0aW5nIGluIGEgNSUgcHJvYmFiaWxpdHkgb2YgU1NCIGZhbGxpbmcgYmVsb3cgQmxpbS4sSUNFUygyMDE2YikKNixQcmVjYXV0aW9uYXJ5IGFwcHJvYWNoLEZwYSwwLjYyLEZsaW0vMS40LElDRVMoMjAxNmIpCjcsUHJlY2F1dGlvbmFyeSBhcHByb2FjaCxGTUdULE5vIGRlZmluZWQsLAosUHJlY2F1dGlvbmFyeSBhcHByb2FjaCxTU0JNR1QsTm8gZGVmaW5lZCwsCixQcmVjYXV0aW9uYXJ5IGFwcHJvYWNoLE1BUCBNU1mgQnRyaWdnZXIsNDUwMDAsTVNZoEJ0cmlnZ2VyLAosUHJlY2F1dGlvbmFyeSBhcHByb2FjaCxNQVAgQmxpbSwzMjAwMCxCbGltLAosUHJlY2F1dGlvbmFyeSBhcHByb2FjaCxNQVAgRk1TWSwwLjI4LEZNU1ksCixQcmVjYXV0aW9uYXJ5IGFwcHJvYWNoLE1BUCByYW5nZSBGbG93ZXIsMC4xOCwiQ29uc2lzdGVudCB3aXRoIHJhbmdlcyByZXN1bHRpbmcgaW4gbm8gbW9yZSB0aGFuIDUlIHJlZHVjdGlvbiBpbiBsb25nLXRlcm0geWllbGQgY29tcGFyZWQgd2l0aCBNU1kgKElDRVMsIDIwMTZhKSIsCixQcmVjYXV0aW9uYXJ5IGFwcHJvYWNoLE1BUCByYW5nZSBGdXBwZXIsMC40NSxDb25zaXN0ZW50IHdpdGggcmFuZ2VzIHJlc3VsdGluZyBpbiBubyBtb3JlIHRoYW4gNSUgcmVkdWN0aW9uoCw=)
+</div>
 
 ***
 # Basis of the assessment  
@@ -1414,15 +1587,15 @@ Some fleets fishing this stock have been under the EU landing obligation since 2
   </tr>
   <tr>
    <td style="text-align:left;width: 15em; font-weight: bold;color: black;background-color: lightgrey;"> Assessment type </td>
-   <td style="text-align:left;"> Length-based model (SS3; ICES, 2017a) that uses landings and some discards in the model. Additional discards are then included to calculate a catch forecast. </td>
+   <td style="text-align:left;"> Length-based model (SS3; ICES, 2018) that uses landings and some discards. Additional discards are then included to calculate a catch forecast </td>
   </tr>
   <tr>
    <td style="text-align:left;width: 15em; font-weight: bold;color: black;background-color: lightgrey;"> Input data </td>
-   <td style="text-align:left;"> Commercial landings; four survey indices (EVHOE-WIBTS-Q4, SpPGFS-WIBTS-Q3, IGFS-WIBTS-Q4, and RESSGASC); maturity data: constant maturity (Martin, 1991); natural mortality: constant value (0.4). </td>
+   <td style="text-align:left;"> Commercial landings; four survey indices (FR-EVHOE-WIBTS-Q4, SP-PORC-WIBTS-Q3, IE-IGFS-WIBTS-Q4, and RESSGASC); maturity data: constant maturity (Martin, 1991); natural mortality: constant value of 0.4. </td>
   </tr>
   <tr>
    <td style="text-align:left;width: 15em; font-weight: bold;color: black;background-color: lightgrey;"> Discards and bycatch </td>
-   <td style="text-align:left;"> Data series from most fleets are available; 75% of the observed discards are included in the assessment (ICES, 2017a). The discards not used in the assessment are used to top-up the catch advice. </td>
+   <td style="text-align:left;"> Data series from most fleets are available; 75% of the observed discards are included in the assessment (ICES, 2017b, 2018). The discards not included in the assessment are used to top-up the catch advice. </td>
   </tr>
   <tr>
    <td style="text-align:left;width: 15em; font-weight: bold;color: black;background-color: lightgrey;"> Indicators </td>
@@ -1440,7 +1613,7 @@ Some fleets fishing this stock have been under the EU landing obligation since 2
 </table>
 
 
-[Download CSV](data:text/csv;base64,IiIsIklDRVMgc3RvY2sgZGF0YSBjYXRlZ29yeSIsIjEgKElDRVMsIDIwMTZjKS4iCiIxIiwiQXNzZXNzbWVudCB0eXBlIiwiTGVuZ3RoLWJhc2VkIG1vZGVsIChTUzM7IElDRVMsIDIwMTdhKSB0aGF0IHVzZXMgbGFuZGluZ3MgYW5kIHNvbWUgZGlzY2FyZHMgaW4gdGhlIG1vZGVsLiBBZGRpdGlvbmFsIGRpc2NhcmRzIGFyZSB0aGVuIGluY2x1ZGVkIHRvIGNhbGN1bGF0ZSBhIGNhdGNoIGZvcmVjYXN0LiIKIjIiLCJJbnB1dCBkYXRhIiwiQ29tbWVyY2lhbCBsYW5kaW5nczsgZm91ciBzdXJ2ZXkgaW5kaWNlcyAoRVZIT0UtV0lCVFMtUTQsIFNwUEdGUy1XSUJUUy1RMywgSUdGUy1XSUJUUy1RNCwgYW5kIFJFU1NHQVNDKTsgbWF0dXJpdHkgZGF0YTogY29uc3RhbnQgbWF0dXJpdHkgKE1hcnRpbiwgMTk5MSk7IG5hdHVyYWwgbW9ydGFsaXR5OiBjb25zdGFudCB2YWx1ZSAoMC40KS4iCiIzIiwiRGlzY2FyZHMgYW5kIGJ5Y2F0Y2giLCJEYXRhIHNlcmllcyBmcm9tIG1vc3QgZmxlZXRzIGFyZSBhdmFpbGFibGU7IDc1JSBvZiB0aGUgb2JzZXJ2ZWQgZGlzY2FyZHMgYXJlIGluY2x1ZGVkIGluIHRoZSBhc3Nlc3NtZW50IChJQ0VTLCAyMDE3YSkuIFRoZSBkaXNjYXJkcyBub3QgdXNlZCBpbiB0aGUgYXNzZXNzbWVudCBhcmUgdXNlZCB0byB0b3AtdXAgdGhlIGNhdGNoIGFkdmljZS4iCiI0IiwiSW5kaWNhdG9ycyIsIk5vbmUuIgoiNSIsIk90aGVyIGluZm9ybWF0aW9uIiwiTGFzdCBiZW5jaG1hcmtlZCBpbiAyMDE0IFdLU09VVEggKElDRVMsIDIwMTQpLiIKIjYiLCJXb3JraW5nIGdyb3VwIiwiV29ya2luZyBHcm91cCBmb3IgdGhlIEJheSBvZiBCaXNjYXkgYW5kIHRoZSBJYmVyaWFuIFdhdGVycyBFY29yZWdpb24gKFdHQklFKSI=)
+[Download CSV](data:text/csv;base64,LElDRVMgc3RvY2sgZGF0YSBjYXRlZ29yeSwiMSAoSUNFUywgMjAxNmMpLiIKMSxBc3Nlc3NtZW50IHR5cGUsIkxlbmd0aC1iYXNlZCBtb2RlbCAoU1MzOyBJQ0VTLCAyMDE4KSB0aGF0IHVzZXMgbGFuZGluZ3MgYW5kIHNvbWUgZGlzY2FyZHMuIEFkZGl0aW9uYWwgZGlzY2FyZHMgYXJlIHRoZW4gaW5jbHVkZWQgdG8gY2FsY3VsYXRlIGEgY2F0Y2ggZm9yZWNhc3QiCjIsSW5wdXQgZGF0YSwiQ29tbWVyY2lhbCBsYW5kaW5nczsgZm91ciBzdXJ2ZXkgaW5kaWNlcyAoRlItRVZIT0UtV0lCVFMtUTQsIFNQLVBPUkMtV0lCVFMtUTMsIElFLUlHRlMtV0lCVFMtUTQsIGFuZCBSRVNTR0FTQyk7IG1hdHVyaXR5IGRhdGE6IGNvbnN0YW50IG1hdHVyaXR5IChNYXJ0aW4sIDE5OTEpOyBuYXR1cmFsIG1vcnRhbGl0eTogY29uc3RhbnQgdmFsdWUgb2YgMC40LiIKMyxEaXNjYXJkcyBhbmQgYnljYXRjaCwiRGF0YSBzZXJpZXMgZnJvbSBtb3N0IGZsZWV0cyBhcmUgYXZhaWxhYmxlOyA3NSUgb2YgdGhlIG9ic2VydmVkIGRpc2NhcmRzIGFyZSBpbmNsdWRlZCBpbiB0aGUgYXNzZXNzbWVudCAoSUNFUywgMjAxN2IsIDIwMTgpLiBUaGUgZGlzY2FyZHMgbm90IGluY2x1ZGVkIGluIHRoZSBhc3Nlc3NtZW50IGFyZSB1c2VkIHRvIHRvcC11cCB0aGUgY2F0Y2ggYWR2aWNlLiIKNCxJbmRpY2F0b3JzLE5vbmUuCjUsT3RoZXIgaW5mb3JtYXRpb24sIkxhc3QgYmVuY2htYXJrZWQgaW4gMjAxNCBXS1NPVVRIIChJQ0VTLCAyMDE0KS4iCjYsV29ya2luZyBncm91cCxXb3JraW5nIEdyb3VwIGZvciB0aGUgQmF5IG9mIEJpc2NheSBhbmQgdGhlIEliZXJpYW4gV2F0ZXJzIEVjb3JlZ2lvbiAoV0dCSUUp)
 
 *** 
 # Information from stakeholders  
@@ -1450,23 +1623,22 @@ There is no information available
 ***
 # History of the advice, catch, and management    
 
-**Table 7**  ICES advice and catch of hake in subareas 4, 6, and 7, and in divisions 3.a, 8.a–b, and 8.d, Northern stock. All weights are
-in tonnes 
-
-** This table should be hidden**
-
+**Table 7**  ICES advice and catch for hake in subareas 4, 6, and 7, and in divisions 3.a, 8.a–b, and 8.d, Northern stock. All weights are in tonnes. 
+<br>
+<button class="btn btn-primary" data-toggle="collapse" data-target="#BlockName4"> Show/Download Table </button>  
+<div id="BlockName4" class="collapse"> 
 <br>
 <table class="table" style="margin-left: auto; margin-right: auto;">
  <thead>
   <tr>
    <th style="text-align:right;font-weight: bold;color: black;background-color: lightgrey;"> Year </th>
-   <th style="text-align:left;font-weight: bold;color: black;background-color: lightgrey;"> ICES advice </th>
-   <th style="text-align:left;font-weight: bold;color: black;background-color: lightgrey;"> Pred. Catch </th>
-   <th style="text-align:left;font-weight: bold;color: black;background-color: lightgrey;"> Pred. landings </th>
-   <th style="text-align:right;font-weight: bold;color: black;background-color: lightgrey;"> TAC </th>
-   <th style="text-align:right;font-weight: bold;color: black;background-color: lightgrey;"> ICES landings </th>
+   <th style="text-align:left;font-weight: bold;color: black;background-color: lightgrey;"> ICES.advice </th>
+   <th style="text-align:left;font-weight: bold;color: black;background-color: lightgrey;"> Predicted.catch.corresponding.to.advice </th>
+   <th style="text-align:left;font-weight: bold;color: black;background-color: lightgrey;"> Predicted.landings.corresponding.to.advice </th>
+   <th style="text-align:right;font-weight: bold;color: black;background-color: lightgrey;"> Agreed.TAC. </th>
+   <th style="text-align:right;font-weight: bold;color: black;background-color: lightgrey;"> ICES.landings </th>
    <th style="text-align:left;font-weight: bold;color: black;background-color: lightgrey;"> Discards </th>
-   <th style="text-align:right;font-weight: bold;color: black;background-color: lightgrey;"> ICES catch </th>
+   <th style="text-align:right;font-weight: bold;color: black;background-color: lightgrey;"> ICES.catch </th>
   </tr>
  </thead>
 <tbody>
@@ -1776,14 +1948,24 @@ in tonnes
    <td style="text-align:left;"> ? 123777 </td>
    <td style="text-align:left;">  </td>
    <td style="text-align:right;"> 119765 </td>
-   <td style="text-align:right;"> NA </td>
-   <td style="text-align:left;">  </td>
-   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> 104670 </td>
+   <td style="text-align:left;"> 7100 </td>
+   <td style="text-align:right;"> 111770 </td>
   </tr>
   <tr>
    <td style="text-align:right;"> 2018 </td>
    <td style="text-align:left;width: 20em; "> MSY approach </td>
    <td style="text-align:left;"> ? 115335 </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:right;"> 111785 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:right;"> NA </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2019 </td>
+   <td style="text-align:left;width: 20em; "> MSY approach </td>
+   <td style="text-align:left;"> ? 142240 </td>
    <td style="text-align:left;">  </td>
    <td style="text-align:right;"> NA </td>
    <td style="text-align:right;"> NA </td>
@@ -1792,2059 +1974,1076 @@ in tonnes
   </tr>
 </tbody>
 </table>
-* Sum of area TACs, corresponding to northern stock plus Division 2.a (EC zone only).
-** Partial discard estimates are available and used in the assessment. For remaining years for which no values are presented, some estimates are available but not considered valid and thus not used in the assessment.
+\* Sum of area TACs, corresponding to northern stock plus Division 2.a (EC zone only).
+
+\** Partial discard estimates are available and used in the assessment. For remaining years for which no values are presented, some estimates are available but not considered valid and thus not used in the assessment.
 
 
 
-[Download CSV](data:text/csv;base64,WWVhcixJQ0VTIGFkdmljZSxQcmVkaWN0ZWQgY2F0Y2ggY29ycmVzcG9uZGluZyB0byBhZHZpY2UsUHJlZGljdGVkIGxhbmRpbmdzIGNvcnJlc3BvbmRpbmcgdG8gYWR2aWNlLEFncmVlZCBUQUMqLElDRVMgbGFuZGluZ3MsRGlzY2FyZHMsSUNFUyBjYXRjaAoxOTg3LFByZWNhdXRpb25hcnkgVEFDOyBqdXZlbmlsZSBwcm90ZWN0aW9uLCwsNjM1MDAsNjMzNjksLAoxOTg4LFByZWNhdXRpb25hcnkgVEFDOyBqdXZlbmlsZSBwcm90ZWN0aW9uLCw1NDAwMCw2NjIwMCw2NDgyMywqKiwKMTk4OSxQcmVjYXV0aW9uYXJ5IFRBQzsganV2ZW5pbGUgcHJvdGVjdGlvbiwsNTQwMDAsNTk3MDAsNjY0NzMsKiosCjE5OTAsUHJlY2F1dGlvbmFyeSBUQUM7IGp1dmVuaWxlIHByb3RlY3Rpb24sLDU5MDAwLDY1MTAwLDU5OTU0LCwKMTk5MSxQcmVjYXV0aW9uYXJ5IFRBQzsganV2ZW5pbGUgcHJvdGVjdGlvbiwsNTkwMDAsNjcwMDAsNTgxMjksLAoxOTkyLCJJZiByZXF1aXJlZCwgcHJlY2F1dGlvbmFyeSBUQUMiLCw2MTUwMCw2OTAwMCw1NjYxNywsCjE5OTMsRW5mb3JjZSBqdXZlbmlsZSBwcm90ZWN0aW9uIGxlZ2lzbGF0aW9uLCwtLDcxNTAwLDUyMTQ0LCwKMTk5NCxGIHNpZ25pZmljYW50bHkgcmVkdWNlZCwsLSw2MDAwMCw1MTI1OSwqKiwKMTk5NSwzMCUgcmVkdWN0aW9uIGluIEYsLDMxMDAwLDU1MTAwLDU3NjIxLCwKMTk5NiwzMCUgcmVkdWN0aW9uIGluIEYsLDM5MDAwLDUxMTAwLDQ3MjEwLCwKMTk5NywyMCUgcmVkdWN0aW9uIGluIEYsLDU0MDAwLDYwMTAwLDQyNDY1LCwKMTk5OCwyMCUgcmVkdWN0aW9uIGluIEYsLDQ1MDAwLDU5MTAwLDM1MDYwLCwKMTk5OSxSZWR1Y2UgRiBiZWxvdyBGcGEsLC0sNTUxMDAsMzk4MTQsKiosCjIwMDAsNTAlIHJlZHVjdGlvbiBpbiBGLCwtLDQyMTAwLDQyMDI2LCoqLAoyMDAxLCJMb3dlc3QgcG9zc2libGUgY2F0Y2gsIHJlY292ZXJ5IHBsYW4iLCwtLDIyNjAwLDM2Njc1LCwKMjAwMixMb3dlc3QgcG9zc2libGUgY2F0Y2ggLyByZWNvdmVyeSBwbGFuLCwtLDI3MDAwLDQwMTA1LCwKMjAwMyxMb3dlc3QgcG9zc2libGUgY2F0Y2ggLyByZWNvdmVyeSBwbGFuLCwtLDMwMDAwLDQzMTYyLDEzOTMsNDQ1NTUKMjAwNCw3MCUgcmVkdWN0aW9uIGluIEYgb3IgcmVjb3ZlcnkgcGxhbiwsLSwzOTEwMCw0NjQxNiwyNjE0LDQ5MDI5CjIwMDUsRiA9IDAuMTksLDMzMDAwLDQyNjAwLDQ2NTUwLDQ1ODMsNTExMzMKMjAwNixGID0gMC4yNSwsNDQwMDAsNDM5MDAsNDE0NjksMTIyMiw0MjY5MQoyMDA3LFJlY292ZXJ5IHBsYW4gbGltaXRzLCw1MDUwMCw1MjcwMCw0NTA5MywyMTY1LDQ3MjU4CjIwMDgsUmVjb3ZlcnkgcGxhbiBsaW1pdHMsLDU0MDAwLDU0MDAwLDQ3ODIyLDMzNjgsNTExOTAKMjAwOSxGID0gMC4yNSA9IEZwYSwsNTE1MDAsNTE1MDAsNTg3ODEsMTEwMzMsNjk4MTQKMjAxMCxGID0gMC4yNSA9IEZwYSwsNTUyMDAsNTUxMDUsNzI3NjAsMTIxMTgsODQ4NzgKMjAxMSxTZWUgc2NlbmFyaW9zLCw1MDYwMCw1NTEwNSw4NzU0MCwxMzkwMywxMDE0NDMKMjAxMixNU1kgdHJhbnNpdGlvbiwsNTE5MDAsNTUxMDUsODU2NzcsMTQ4NzAsMTAwNTQ3CjIwMTMsTVNZIHRyYW5zaXRpb24sLDQ1NDAwLDY5NDQwLDc3NzA4LDE1NDAwLDkzMTA4CjIwMTQsTVNZIGFwcHJvYWNoLCw4MTg0Niw4MTg0Niw4OTkyOCw5ODAwLDk5NzI4CjIwMTUsTVNZIGFwcHJvYWNoLCw3ODQ1Nyw5MDg0OSw5NTAyMywxMDkwMCwxMDU5MjMKMjAxNixNU1kgYXBwcm9hY2gsPyAxMDk1OTIsPyA5NjY1MSwxMDg3NjQsMTA3NTMwLDExMTE0LDExODY0NAoyMDE3LE1TWSBhcHByb2FjaCw/IDEyMzc3NywsMTE5NzY1LCwsCjIwMTgsTVNZIGFwcHJvYWNoLD8gMTE1MzM1LCwsLCw=) 
+[Download CSV](data:text/csv;base64,WWVhcixJQ0VTIGFkdmljZSxQcmVkaWN0ZWQgY2F0Y2ggY29ycmVzcG9uZGluZyB0byBhZHZpY2UsUHJlZGljdGVkIGxhbmRpbmdzIGNvcnJlc3BvbmRpbmcgdG8gYWR2aWNlLEFncmVlZCBUQUMqLElDRVMgbGFuZGluZ3MsRGlzY2FyZHMsSUNFUyBjYXRjaAoxOTg3LFByZWNhdXRpb25hcnkgVEFDOyBqdXZlbmlsZSBwcm90ZWN0aW9uLCwsNjM1MDAsNjMzNjksLAoxOTg4LFByZWNhdXRpb25hcnkgVEFDOyBqdXZlbmlsZSBwcm90ZWN0aW9uLCw1NDAwMCw2NjIwMCw2NDgyMywqKiwKMTk4OSxQcmVjYXV0aW9uYXJ5IFRBQzsganV2ZW5pbGUgcHJvdGVjdGlvbiwsNTQwMDAsNTk3MDAsNjY0NzMsKiosCjE5OTAsUHJlY2F1dGlvbmFyeSBUQUM7IGp1dmVuaWxlIHByb3RlY3Rpb24sLDU5MDAwLDY1MTAwLDU5OTU0LCwKMTk5MSxQcmVjYXV0aW9uYXJ5IFRBQzsganV2ZW5pbGUgcHJvdGVjdGlvbiwsNTkwMDAsNjcwMDAsNTgxMjksLAoxOTkyLCJJZiByZXF1aXJlZCwgcHJlY2F1dGlvbmFyeSBUQUMiLCw2MTUwMCw2OTAwMCw1NjYxNywsCjE5OTMsRW5mb3JjZSBqdXZlbmlsZSBwcm90ZWN0aW9uIGxlZ2lzbGF0aW9uLCwtLDcxNTAwLDUyMTQ0LCwKMTk5NCxGIHNpZ25pZmljYW50bHkgcmVkdWNlZCwsLSw2MDAwMCw1MTI1OSwqKiwKMTk5NSwzMCUgcmVkdWN0aW9uIGluIEYsLDMxMDAwLDU1MTAwLDU3NjIxLCwKMTk5NiwzMCUgcmVkdWN0aW9uIGluIEYsLDM5MDAwLDUxMTAwLDQ3MjEwLCwKMTk5NywyMCUgcmVkdWN0aW9uIGluIEYsLDU0MDAwLDYwMTAwLDQyNDY1LCwKMTk5OCwyMCUgcmVkdWN0aW9uIGluIEYsLDQ1MDAwLDU5MTAwLDM1MDYwLCwKMTk5OSxSZWR1Y2UgRiBiZWxvdyBGcGEsLC0sNTUxMDAsMzk4MTQsKiosCjIwMDAsNTAlIHJlZHVjdGlvbiBpbiBGLCwtLDQyMTAwLDQyMDI2LCoqLAoyMDAxLCJMb3dlc3QgcG9zc2libGUgY2F0Y2gsIHJlY292ZXJ5IHBsYW4iLCwtLDIyNjAwLDM2Njc1LCwKMjAwMixMb3dlc3QgcG9zc2libGUgY2F0Y2ggLyByZWNvdmVyeSBwbGFuLCwtLDI3MDAwLDQwMTA1LCwKMjAwMyxMb3dlc3QgcG9zc2libGUgY2F0Y2ggLyByZWNvdmVyeSBwbGFuLCwtLDMwMDAwLDQzMTYyLDEzOTMsNDQ1NTUKMjAwNCw3MCUgcmVkdWN0aW9uIGluIEYgb3IgcmVjb3ZlcnkgcGxhbiwsLSwzOTEwMCw0NjQxNiwyNjE0LDQ5MDI5CjIwMDUsRiA9IDAuMTksLDMzMDAwLDQyNjAwLDQ2NTUwLDQ1ODMsNTExMzMKMjAwNixGID0gMC4yNSwsNDQwMDAsNDM5MDAsNDE0NjksMTIyMiw0MjY5MQoyMDA3LFJlY292ZXJ5IHBsYW4gbGltaXRzLCw1MDUwMCw1MjcwMCw0NTA5MywyMTY1LDQ3MjU4CjIwMDgsUmVjb3ZlcnkgcGxhbiBsaW1pdHMsLDU0MDAwLDU0MDAwLDQ3ODIyLDMzNjgsNTExOTAKMjAwOSxGID0gMC4yNSA9IEZwYSwsNTE1MDAsNTE1MDAsNTg3ODEsMTEwMzMsNjk4MTQKMjAxMCxGID0gMC4yNSA9IEZwYSwsNTUyMDAsNTUxMDUsNzI3NjAsMTIxMTgsODQ4NzgKMjAxMSxTZWUgc2NlbmFyaW9zLCw1MDYwMCw1NTEwNSw4NzU0MCwxMzkwMywxMDE0NDMKMjAxMixNU1kgdHJhbnNpdGlvbiwsNTE5MDAsNTUxMDUsODU2NzcsMTQ4NzAsMTAwNTQ3CjIwMTMsTVNZIHRyYW5zaXRpb24sLDQ1NDAwLDY5NDQwLDc3NzA4LDE1NDAwLDkzMTA4CjIwMTQsTVNZIGFwcHJvYWNoLCw4MTg0Niw4MTg0Niw4OTkyOCw5ODAwLDk5NzI4CjIwMTUsTVNZIGFwcHJvYWNoLCw3ODQ1Nyw5MDg0OSw5NTAyMywxMDkwMCwxMDU5MjMKMjAxNixNU1kgYXBwcm9hY2gsPyAxMDk1OTIsPyA5NjY1MSwxMDg3NjQsMTA3NTMwLDExMTE0LDExODY0NAoyMDE3LE1TWSBhcHByb2FjaCw/IDEyMzc3NywsMTE5NzY1LDEwNDY3MKAsNzEwMKAsMTExNzcwoAoyMDE4LE1TWSBhcHByb2FjaCw/IDExNTMzNSwsMTExNzg1LCwsCjIwMTksTVNZIGFwcHJvYWNoLD8gMTQyMjQwLCwsLCw=) 
 <br>
-<br> 
-
-# Dynamic Stock Status Plots
-
-Gapminder is a data visualization tool developed by Hans Rosling that allows one to view 5 dimensional data (see Rosling’s TED talk for details).  It has proved to be an ideal tool for viewing the biological status of the resource, and we provide this tool for each region.
-(This description will improve)
-
-<br>
-<!-- MotionChart generated in R 3.5.0 by googleVis 0.6.2 package -->
-<!-- Thu Sep 27 09:36:10 2018 -->
-
-
-<!-- jsHeader -->
-<script type="text/javascript">
- 
-// jsData 
-function gvisDataMotionChartID254848d274ad () {
-var data = new google.visualization.DataTable();
-var datajson =
-[
- [
-"F",
-1978,
-1.857142857,
-1.704355556,
-0.52
-],
-[
-"F",
-1979,
-1.964285714,
-2.1758,
-0.55
-],
-[
-"F",
-1980,
-2.321428571,
-2.232955556,
-0.65
-],
-[
-"F",
-1981,
-2.392857143,
-1.921666667,
-0.67
-],
-[
-"F",
-1982,
-2.464285714,
-1.5644,
-0.69
-],
-[
-"F",
-1983,
-2.25,
-1.536844444,
-0.63
-],
-[
-"F",
-1984,
-2.392857143,
-1.858222222,
-0.67
-],
-[
-"F",
-1985,
-2.857142857,
-1.784711111,
-0.8
-],
-[
-"F",
-1986,
-3.25,
-1.355822222,
-0.91
-],
-[
-"F",
-1987,
-3.571428571,
-1.049511111,
-1
-],
-[
-"F",
-1988,
-3.642857143,
-1.104177778,
-1.02
-],
-[
-"F",
-1989,
-3.892857143,
-1.061377778,
-1.09
-],
-[
-"F",
-1990,
-3.571428571,
-0.984333333,
-1
-],
-[
-"F",
-1991,
-3.357142857,
-0.989755556,
-0.94
-],
-[
-"F",
-1992,
-3.607142857,
-1.005955556,
-1.01
-],
-[
-"F",
-1993,
-3.857142857,
-0.960111111,
-1.08
-],
-[
-"F",
-1994,
-3.928571429,
-0.741466667,
-1.1
-],
-[
-"F",
-1995,
-4.035714286,
-0.714088889,
-1.13
-],
-[
-"F",
-1996,
-3.607142857,
-0.829022222,
-1.01
-],
-[
-"F",
-1997,
-3.821428571,
-0.703355556,
-1.07
-],
-[
-"F",
-1998,
-3.607142857,
-0.577711111,
-1.01
-],
-[
-"F",
-1999,
-3.535714286,
-0.647711111,
-0.99
-],
-[
-"F",
-2000,
-3.285714286,
-0.710466667,
-0.92
-],
-[
-"F",
-2001,
-2.785714286,
-0.833644444,
-0.78
-],
-[
-"F",
-2002,
-2.964285714,
-0.839311111,
-0.83
-],
-[
-"F",
-2003,
-2.928571429,
-0.834288889,
-0.82
-],
-[
-"F",
-2004,
-2.964285714,
-0.936422222,
-0.83
-],
-[
-"F",
-2005,
-3.464285714,
-0.8914,
-0.97
-],
-[
-"F",
-2006,
-3.107142857,
-0.721666667,
-0.87
-],
-[
-"F",
-2007,
-2.714285714,
-0.850688889,
-0.76
-],
-[
-"F",
-2008,
-2.25,
-0.994066667,
-0.63
-],
-[
-"F",
-2009,
-1.821428571,
-1.489644444,
-0.51
-],
-[
-"F",
-2010,
-1.392857143,
-2.735311111,
-0.39
-],
-[
-"F",
-2011,
-1.107142857,
-4.467755556,
-0.31
-],
-[
-"F",
-2012,
-0.928571429,
-5.045022222,
-0.26
-],
-[
-"F",
-2013,
-0.928571429,
-5.072133333,
-0.26
-],
-[
-"F",
-2014,
-0.928571429,
-5.358155556,
-0.26
-],
-[
-"F",
-2015,
-0.892857143,
-6.062111111,
-0.25
-],
-[
-"F",
-2016,
-0.964285714,
-6.449644444,
-0.27
-],
-[
-"FMSY",
-1978,
-1.857142857,
-1.704355556,
-0.28
-],
-[
-"FMSY",
-1979,
-1.964285714,
-2.1758,
-0.28
-],
-[
-"FMSY",
-1980,
-2.321428571,
-2.232955556,
-0.28
-],
-[
-"FMSY",
-1981,
-2.392857143,
-1.921666667,
-0.28
-],
-[
-"FMSY",
-1982,
-2.464285714,
-1.5644,
-0.28
-],
-[
-"FMSY",
-1983,
-2.25,
-1.536844444,
-0.28
-],
-[
-"FMSY",
-1984,
-2.392857143,
-1.858222222,
-0.28
-],
-[
-"FMSY",
-1985,
-2.857142857,
-1.784711111,
-0.28
-],
-[
-"FMSY",
-1986,
-3.25,
-1.355822222,
-0.28
-],
-[
-"FMSY",
-1987,
-3.571428571,
-1.049511111,
-0.28
-],
-[
-"FMSY",
-1988,
-3.642857143,
-1.104177778,
-0.28
-],
-[
-"FMSY",
-1989,
-3.892857143,
-1.061377778,
-0.28
-],
-[
-"FMSY",
-1990,
-3.571428571,
-0.984333333,
-0.28
-],
-[
-"FMSY",
-1991,
-3.357142857,
-0.989755556,
-0.28
-],
-[
-"FMSY",
-1992,
-3.607142857,
-1.005955556,
-0.28
-],
-[
-"FMSY",
-1993,
-3.857142857,
-0.960111111,
-0.28
-],
-[
-"FMSY",
-1994,
-3.928571429,
-0.741466667,
-0.28
-],
-[
-"FMSY",
-1995,
-4.035714286,
-0.714088889,
-0.28
-],
-[
-"FMSY",
-1996,
-3.607142857,
-0.829022222,
-0.28
-],
-[
-"FMSY",
-1997,
-3.821428571,
-0.703355556,
-0.28
-],
-[
-"FMSY",
-1998,
-3.607142857,
-0.577711111,
-0.28
-],
-[
-"FMSY",
-1999,
-3.535714286,
-0.647711111,
-0.28
-],
-[
-"FMSY",
-2000,
-3.285714286,
-0.710466667,
-0.28
-],
-[
-"FMSY",
-2001,
-2.785714286,
-0.833644444,
-0.28
-],
-[
-"FMSY",
-2002,
-2.964285714,
-0.839311111,
-0.28
-],
-[
-"FMSY",
-2003,
-2.928571429,
-0.834288889,
-0.28
-],
-[
-"FMSY",
-2004,
-2.964285714,
-0.936422222,
-0.28
-],
-[
-"FMSY",
-2005,
-3.464285714,
-0.8914,
-0.28
-],
-[
-"FMSY",
-2006,
-3.107142857,
-0.721666667,
-0.28
-],
-[
-"FMSY",
-2007,
-2.714285714,
-0.850688889,
-0.28
-],
-[
-"FMSY",
-2008,
-2.25,
-0.994066667,
-0.28
-],
-[
-"FMSY",
-2009,
-1.821428571,
-1.489644444,
-0.28
-],
-[
-"FMSY",
-2010,
-1.392857143,
-2.735311111,
-0.28
-],
-[
-"FMSY",
-2011,
-1.107142857,
-4.467755556,
-0.28
-],
-[
-"FMSY",
-2012,
-0.928571429,
-5.045022222,
-0.28
-],
-[
-"FMSY",
-2013,
-0.928571429,
-5.072133333,
-0.28
-],
-[
-"FMSY",
-2014,
-0.928571429,
-5.358155556,
-0.28
-],
-[
-"FMSY",
-2015,
-0.892857143,
-6.062111111,
-0.28
-],
-[
-"FMSY",
-2016,
-0.964285714,
-6.449644444,
-0.28
-],
-[
-"SSB",
-1978,
-1.857142857,
-1.704355556,
-76696
-],
-[
-"SSB",
-1979,
-1.964285714,
-2.1758,
-97911
-],
-[
-"SSB",
-1980,
-2.321428571,
-2.232955556,
-100483
-],
-[
-"SSB",
-1981,
-2.392857143,
-1.921666667,
-86475
-],
-[
-"SSB",
-1982,
-2.464285714,
-1.5644,
-70398
-],
-[
-"SSB",
-1983,
-2.25,
-1.536844444,
-69158
-],
-[
-"SSB",
-1984,
-2.392857143,
-1.858222222,
-83620
-],
-[
-"SSB",
-1985,
-2.857142857,
-1.784711111,
-80312
-],
-[
-"SSB",
-1986,
-3.25,
-1.355822222,
-61012
-],
-[
-"SSB",
-1987,
-3.571428571,
-1.049511111,
-47228
-],
-[
-"SSB",
-1988,
-3.642857143,
-1.104177778,
-49688
-],
-[
-"SSB",
-1989,
-3.892857143,
-1.061377778,
-47762
-],
-[
-"SSB",
-1990,
-3.571428571,
-0.984333333,
-44295
-],
-[
-"SSB",
-1991,
-3.357142857,
-0.989755556,
-44539
-],
-[
-"SSB",
-1992,
-3.607142857,
-1.005955556,
-45268
-],
-[
-"SSB",
-1993,
-3.857142857,
-0.960111111,
-43205
-],
-[
-"SSB",
-1994,
-3.928571429,
-0.741466667,
-33366
-],
-[
-"SSB",
-1995,
-4.035714286,
-0.714088889,
-32134
-],
-[
-"SSB",
-1996,
-3.607142857,
-0.829022222,
-37306
-],
-[
-"SSB",
-1997,
-3.821428571,
-0.703355556,
-31651
-],
-[
-"SSB",
-1998,
-3.607142857,
-0.577711111,
-25997
-],
-[
-"SSB",
-1999,
-3.535714286,
-0.647711111,
-29147
-],
-[
-"SSB",
-2000,
-3.285714286,
-0.710466667,
-31971
-],
-[
-"SSB",
-2001,
-2.785714286,
-0.833644444,
-37514
-],
-[
-"SSB",
-2002,
-2.964285714,
-0.839311111,
-37769
-],
-[
-"SSB",
-2003,
-2.928571429,
-0.834288889,
-37543
-],
-[
-"SSB",
-2004,
-2.964285714,
-0.936422222,
-42139
-],
-[
-"SSB",
-2005,
-3.464285714,
-0.8914,
-40113
-],
-[
-"SSB",
-2006,
-3.107142857,
-0.721666667,
-32475
-],
-[
-"SSB",
-2007,
-2.714285714,
-0.850688889,
-38281
-],
-[
-"SSB",
-2008,
-2.25,
-0.994066667,
-44733
-],
-[
-"SSB",
-2009,
-1.821428571,
-1.489644444,
-67034
-],
-[
-"SSB",
-2010,
-1.392857143,
-2.735311111,
-123089
-],
-[
-"SSB",
-2011,
-1.107142857,
-4.467755556,
-201049
-],
-[
-"SSB",
-2012,
-0.928571429,
-5.045022222,
-227026
-],
-[
-"SSB",
-2013,
-0.928571429,
-5.072133333,
-228246
-],
-[
-"SSB",
-2014,
-0.928571429,
-5.358155556,
-241117
-],
-[
-"SSB",
-2015,
-0.892857143,
-6.062111111,
-272795
-],
-[
-"SSB",
-2016,
-0.964285714,
-6.449644444,
-290234
-],
-[
-"MSYBtrigger",
-1978,
-1.857142857,
-1.704355556,
-45000
-],
-[
-"MSYBtrigger",
-1979,
-1.964285714,
-2.1758,
-45000
-],
-[
-"MSYBtrigger",
-1980,
-2.321428571,
-2.232955556,
-45000
-],
-[
-"MSYBtrigger",
-1981,
-2.392857143,
-1.921666667,
-45000
-],
-[
-"MSYBtrigger",
-1982,
-2.464285714,
-1.5644,
-45000
-],
-[
-"MSYBtrigger",
-1983,
-2.25,
-1.536844444,
-45000
-],
-[
-"MSYBtrigger",
-1984,
-2.392857143,
-1.858222222,
-45000
-],
-[
-"MSYBtrigger",
-1985,
-2.857142857,
-1.784711111,
-45000
-],
-[
-"MSYBtrigger",
-1986,
-3.25,
-1.355822222,
-45000
-],
-[
-"MSYBtrigger",
-1987,
-3.571428571,
-1.049511111,
-45000
-],
-[
-"MSYBtrigger",
-1988,
-3.642857143,
-1.104177778,
-45000
-],
-[
-"MSYBtrigger",
-1989,
-3.892857143,
-1.061377778,
-45000
-],
-[
-"MSYBtrigger",
-1990,
-3.571428571,
-0.984333333,
-45000
-],
-[
-"MSYBtrigger",
-1991,
-3.357142857,
-0.989755556,
-45000
-],
-[
-"MSYBtrigger",
-1992,
-3.607142857,
-1.005955556,
-45000
-],
-[
-"MSYBtrigger",
-1993,
-3.857142857,
-0.960111111,
-45000
-],
-[
-"MSYBtrigger",
-1994,
-3.928571429,
-0.741466667,
-45000
-],
-[
-"MSYBtrigger",
-1995,
-4.035714286,
-0.714088889,
-45000
-],
-[
-"MSYBtrigger",
-1996,
-3.607142857,
-0.829022222,
-45000
-],
-[
-"MSYBtrigger",
-1997,
-3.821428571,
-0.703355556,
-45000
-],
-[
-"MSYBtrigger",
-1998,
-3.607142857,
-0.577711111,
-45000
-],
-[
-"MSYBtrigger",
-1999,
-3.535714286,
-0.647711111,
-45000
-],
-[
-"MSYBtrigger",
-2000,
-3.285714286,
-0.710466667,
-45000
-],
-[
-"MSYBtrigger",
-2001,
-2.785714286,
-0.833644444,
-45000
-],
-[
-"MSYBtrigger",
-2002,
-2.964285714,
-0.839311111,
-45000
-],
-[
-"MSYBtrigger",
-2003,
-2.928571429,
-0.834288889,
-45000
-],
-[
-"MSYBtrigger",
-2004,
-2.964285714,
-0.936422222,
-45000
-],
-[
-"MSYBtrigger",
-2005,
-3.464285714,
-0.8914,
-45000
-],
-[
-"MSYBtrigger",
-2006,
-3.107142857,
-0.721666667,
-45000
-],
-[
-"MSYBtrigger",
-2007,
-2.714285714,
-0.850688889,
-45000
-],
-[
-"MSYBtrigger",
-2008,
-2.25,
-0.994066667,
-45000
-],
-[
-"MSYBtrigger",
-2009,
-1.821428571,
-1.489644444,
-45000
-],
-[
-"MSYBtrigger",
-2010,
-1.392857143,
-2.735311111,
-45000
-],
-[
-"MSYBtrigger",
-2011,
-1.107142857,
-4.467755556,
-45000
-],
-[
-"MSYBtrigger",
-2012,
-0.928571429,
-5.045022222,
-45000
-],
-[
-"MSYBtrigger",
-2013,
-0.928571429,
-5.072133333,
-45000
-],
-[
-"MSYBtrigger",
-2014,
-0.928571429,
-5.358155556,
-45000
-],
-[
-"MSYBtrigger",
-2015,
-0.892857143,
-6.062111111,
-45000
-],
-[
-"MSYBtrigger",
-2016,
-0.964285714,
-6.449644444,
-45000
-],
-[
-"catches",
-1978,
-1.857142857,
-1.704355556,
-50551
-],
-[
-"catches",
-1979,
-1.964285714,
-2.1758,
-51096
-],
-[
-"catches",
-1980,
-2.321428571,
-2.232955556,
-57265
-],
-[
-"catches",
-1981,
-2.392857143,
-1.921666667,
-53918
-],
-[
-"catches",
-1982,
-2.464285714,
-1.5644,
-54994
-],
-[
-"catches",
-1983,
-2.25,
-1.536844444,
-57507
-],
-[
-"catches",
-1984,
-2.392857143,
-1.858222222,
-63286
-],
-[
-"catches",
-1985,
-2.857142857,
-1.784711111,
-56099
-],
-[
-"catches",
-1986,
-3.25,
-1.355822222,
-57092
-],
-[
-"catches",
-1987,
-3.571428571,
-1.049511111,
-63369
-],
-[
-"catches",
-1988,
-3.642857143,
-1.104177778,
-64823
-],
-[
-"catches",
-1989,
-3.892857143,
-1.061377778,
-66473
-],
-[
-"catches",
-1990,
-3.571428571,
-0.984333333,
-59954
-],
-[
-"catches",
-1991,
-3.357142857,
-0.989755556,
-58129
-],
-[
-"catches",
-1992,
-3.607142857,
-1.005955556,
-56617
-],
-[
-"catches",
-1993,
-3.857142857,
-0.960111111,
-52144
-],
-[
-"catches",
-1994,
-3.928571429,
-0.741466667,
-51259
-],
-[
-"catches",
-1995,
-4.035714286,
-0.714088889,
-57621
-],
-[
-"catches",
-1996,
-3.607142857,
-0.829022222,
-47210
-],
-[
-"catches",
-1997,
-3.821428571,
-0.703355556,
-42465
-],
-[
-"catches",
-1998,
-3.607142857,
-0.577711111,
-35060
-],
-[
-"catches",
-1999,
-3.535714286,
-0.647711111,
-39814
-],
-[
-"catches",
-2000,
-3.285714286,
-0.710466667,
-42026
-],
-[
-"catches",
-2001,
-2.785714286,
-0.833644444,
-36675
-],
-[
-"catches",
-2002,
-2.964285714,
-0.839311111,
-40105
-],
-[
-"catches",
-2003,
-2.928571429,
-0.834288889,
-44555
-],
-[
-"catches",
-2004,
-2.964285714,
-0.936422222,
-49029
-],
-[
-"catches",
-2005,
-3.464285714,
-0.8914,
-51133
-],
-[
-"catches",
-2006,
-3.107142857,
-0.721666667,
-42691
-],
-[
-"catches",
-2007,
-2.714285714,
-0.850688889,
-47258
-],
-[
-"catches",
-2008,
-2.25,
-0.994066667,
-51190
-],
-[
-"catches",
-2009,
-1.821428571,
-1.489644444,
-69814
-],
-[
-"catches",
-2010,
-1.392857143,
-2.735311111,
-84878
-],
-[
-"catches",
-2011,
-1.107142857,
-4.467755556,
-101403
-],
-[
-"catches",
-2012,
-0.928571429,
-5.045022222,
-100470
-],
-[
-"catches",
-2013,
-0.928571429,
-5.072133333,
-93108
-],
-[
-"catches",
-2014,
-0.928571429,
-5.358155556,
-99700
-],
-[
-"catches",
-2015,
-0.892857143,
-6.062111111,
-105900
-],
-[
-"catches",
-2016,
-0.964285714,
-6.449644444,
-118634
-],
-[
-"landings",
-1978,
-1.857142857,
-1.704355556,
-50551
-],
-[
-"landings",
-1979,
-1.964285714,
-2.1758,
-51096
-],
-[
-"landings",
-1980,
-2.321428571,
-2.232955556,
-57265
-],
-[
-"landings",
-1981,
-2.392857143,
-1.921666667,
-53918
-],
-[
-"landings",
-1982,
-2.464285714,
-1.5644,
-54994
-],
-[
-"landings",
-1983,
-2.25,
-1.536844444,
-57507
-],
-[
-"landings",
-1984,
-2.392857143,
-1.858222222,
-63286
-],
-[
-"landings",
-1985,
-2.857142857,
-1.784711111,
-56099
-],
-[
-"landings",
-1986,
-3.25,
-1.355822222,
-57092
-],
-[
-"landings",
-1987,
-3.571428571,
-1.049511111,
-63369
-],
-[
-"landings",
-1988,
-3.642857143,
-1.104177778,
-64823
-],
-[
-"landings",
-1989,
-3.892857143,
-1.061377778,
-66473
-],
-[
-"landings",
-1990,
-3.571428571,
-0.984333333,
-59954
-],
-[
-"landings",
-1991,
-3.357142857,
-0.989755556,
-58129
-],
-[
-"landings",
-1992,
-3.607142857,
-1.005955556,
-56617
-],
-[
-"landings",
-1993,
-3.857142857,
-0.960111111,
-52144
-],
-[
-"landings",
-1994,
-3.928571429,
-0.741466667,
-51259
-],
-[
-"landings",
-1995,
-4.035714286,
-0.714088889,
-57621
-],
-[
-"landings",
-1996,
-3.607142857,
-0.829022222,
-47210
-],
-[
-"landings",
-1997,
-3.821428571,
-0.703355556,
-42465
-],
-[
-"landings",
-1998,
-3.607142857,
-0.577711111,
-35060
-],
-[
-"landings",
-1999,
-3.535714286,
-0.647711111,
-39814
-],
-[
-"landings",
-2000,
-3.285714286,
-0.710466667,
-42026
-],
-[
-"landings",
-2001,
-2.785714286,
-0.833644444,
-36675
-],
-[
-"landings",
-2002,
-2.964285714,
-0.839311111,
-40105
-],
-[
-"landings",
-2003,
-2.928571429,
-0.834288889,
-43162
-],
-[
-"landings",
-2004,
-2.964285714,
-0.936422222,
-46416
-],
-[
-"landings",
-2005,
-3.464285714,
-0.8914,
-46550
-],
-[
-"landings",
-2006,
-3.107142857,
-0.721666667,
-41469
-],
-[
-"landings",
-2007,
-2.714285714,
-0.850688889,
-45093
-],
-[
-"landings",
-2008,
-2.25,
-0.994066667,
-47822
-],
-[
-"landings",
-2009,
-1.821428571,
-1.489644444,
-58781
-],
-[
-"landings",
-2010,
-1.392857143,
-2.735311111,
-72760
-],
-[
-"landings",
-2011,
-1.107142857,
-4.467755556,
-87500
-],
-[
-"landings",
-2012,
-0.928571429,
-5.045022222,
-85600
-],
-[
-"landings",
-2013,
-0.928571429,
-5.072133333,
-77708
-],
-[
-"landings",
-2014,
-0.928571429,
-5.358155556,
-89900
-],
-[
-"landings",
-2015,
-0.892857143,
-6.062111111,
-95000
-],
-[
-"landings",
-2016,
-0.964285714,
-6.449644444,
-107534
-],
-[
-"discards",
-1978,
-1.857142857,
-1.704355556,
-0
-],
-[
-"discards",
-1979,
-1.964285714,
-2.1758,
-0
-],
-[
-"discards",
-1980,
-2.321428571,
-2.232955556,
-0
-],
-[
-"discards",
-1981,
-2.392857143,
-1.921666667,
-0
-],
-[
-"discards",
-1982,
-2.464285714,
-1.5644,
-0
-],
-[
-"discards",
-1983,
-2.25,
-1.536844444,
-0
-],
-[
-"discards",
-1984,
-2.392857143,
-1.858222222,
-0
-],
-[
-"discards",
-1985,
-2.857142857,
-1.784711111,
-0
-],
-[
-"discards",
-1986,
-3.25,
-1.355822222,
-0
-],
-[
-"discards",
-1987,
-3.571428571,
-1.049511111,
-0
-],
-[
-"discards",
-1988,
-3.642857143,
-1.104177778,
-0
-],
-[
-"discards",
-1989,
-3.892857143,
-1.061377778,
-0
-],
-[
-"discards",
-1990,
-3.571428571,
-0.984333333,
-0
-],
-[
-"discards",
-1991,
-3.357142857,
-0.989755556,
-0
-],
-[
-"discards",
-1992,
-3.607142857,
-1.005955556,
-0
-],
-[
-"discards",
-1993,
-3.857142857,
-0.960111111,
-0
-],
-[
-"discards",
-1994,
-3.928571429,
-0.741466667,
-0
-],
-[
-"discards",
-1995,
-4.035714286,
-0.714088889,
-0
-],
-[
-"discards",
-1996,
-3.607142857,
-0.829022222,
-0
-],
-[
-"discards",
-1997,
-3.821428571,
-0.703355556,
-0
-],
-[
-"discards",
-1998,
-3.607142857,
-0.577711111,
-0
-],
-[
-"discards",
-1999,
-3.535714286,
-0.647711111,
-0
-],
-[
-"discards",
-2000,
-3.285714286,
-0.710466667,
-0
-],
-[
-"discards",
-2001,
-2.785714286,
-0.833644444,
-0
-],
-[
-"discards",
-2002,
-2.964285714,
-0.839311111,
-0
-],
-[
-"discards",
-2003,
-2.928571429,
-0.834288889,
-1393
-],
-[
-"discards",
-2004,
-2.964285714,
-0.936422222,
-2614
-],
-[
-"discards",
-2005,
-3.464285714,
-0.8914,
-4583
-],
-[
-"discards",
-2006,
-3.107142857,
-0.721666667,
-1222
-],
-[
-"discards",
-2007,
-2.714285714,
-0.850688889,
-2165
-],
-[
-"discards",
-2008,
-2.25,
-0.994066667,
-3368
-],
-[
-"discards",
-2009,
-1.821428571,
-1.489644444,
-11033
-],
-[
-"discards",
-2010,
-1.392857143,
-2.735311111,
-12118
-],
-[
-"discards",
-2011,
-1.107142857,
-4.467755556,
-13903
-],
-[
-"discards",
-2012,
-0.928571429,
-5.045022222,
-14870
-],
-[
-"discards",
-2013,
-0.928571429,
-5.072133333,
-15400
-],
-[
-"discards",
-2014,
-0.928571429,
-5.358155556,
-9800
-],
-[
-"discards",
-2015,
-0.892857143,
-6.062111111,
-10900
-],
-[
-"discards",
-2016,
-0.964285714,
-6.449644444,
-11100
-] 
-];
-data.addColumn('string','Measures');
-data.addColumn('number','Year');
-data.addColumn('number','F/Fmsy');
-data.addColumn('number','SSB/MSYBtrigger');
-data.addColumn('number','value');
-data.addRows(datajson);
-return(data);
-}
- 
-// jsDrawChart
-function drawChartMotionChartID254848d274ad() {
-var data = gvisDataMotionChartID254848d274ad();
-var options = {};
-options["width"] = 600;
-options["height"] = 500;
-options["state"] = "";
-
-    var chart = new google.visualization.MotionChart(
-    document.getElementById('MotionChartID254848d274ad')
-    );
-    chart.draw(data,options);
-    
-
-}
-  
- 
-// jsDisplayChart
-(function() {
-var pkgs = window.__gvisPackages = window.__gvisPackages || [];
-var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
-var chartid = "motionchart";
-  
-// Manually see if chartid is in pkgs (not all browsers support Array.indexOf)
-var i, newPackage = true;
-for (i = 0; newPackage && i < pkgs.length; i++) {
-if (pkgs[i] === chartid)
-newPackage = false;
-}
-if (newPackage)
-  pkgs.push(chartid);
-  
-// Add the drawChart function to the global list of callbacks
-callbacks.push(drawChartMotionChartID254848d274ad);
-})();
-function displayChartMotionChartID254848d274ad() {
-  var pkgs = window.__gvisPackages = window.__gvisPackages || [];
-  var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
-  window.clearTimeout(window.__gvisLoad);
-  // The timeout is set to 100 because otherwise the container div we are
-  // targeting might not be part of the document yet
-  window.__gvisLoad = setTimeout(function() {
-  var pkgCount = pkgs.length;
-  google.load("visualization", "1", { packages:pkgs, callback: function() {
-  if (pkgCount != pkgs.length) {
-  // Race condition where another setTimeout call snuck in after us; if
-  // that call added a package, we must not shift its callback
-  return;
-}
-while (callbacks.length > 0)
-callbacks.shift()();
-} });
-}, 100);
-}
- 
-// jsFooter
-</script>
- 
-<!-- jsChart -->  
-<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartMotionChartID254848d274ad"></script>
- 
-<!-- divChart -->
-  
-<div id="MotionChartID254848d274ad" 
-  style="width: 600; height: 500;">
 </div>
-<br>
-
 ***
 
 # History of the catch and landings  
 
-**Table 8** Catch distribution by fleet in 2016 as estimated by ICES for hake in subareas 4, 6, and 7, and in divisions 3.a, 8.a–b, and 8.d, Northern stock.
+**Table 8** Catch distribution by fleet in 2017 as estimated by ICES for hake in subareas 4, 6, and 7, and in divisions 3.a, 8.a–b, and 8.d, Northern stock. All weights are in tonnes.
+<br>
 
 
-** Missing small table**
+<br>
+Catch 2017 | Landings | Discards|
+
+---|---|---|
+
+111770| 7% unspecified gear  34% longline  24% gillnet 35% trawl |7100| 
+NA  | 104670|na|  
+                                               
 
 <br>
 
 ***
 
 **Table 9** History of commercial catch and landings of hake in subareas 4, 6, and 7, and in divisions 3.a, 8.a–b, and 8.d, Northern stock. Both the official and ICES estimated values are presented by area for each country participating in the fishery. All weights are in tonnes.
+<br>
+<button class="btn btn-primary" data-toggle="collapse" data-target="#BlockName5"> Show/Download Table </button>  
+<div id="BlockName5" class="collapse"> 
+<br>
+<table class="table" style="margin-left: auto; margin-right: auto;">
+ <thead>
+  <tr>
+   <th style="text-align:left;font-weight: bold;color: black;background-color: lightgrey;"> Year </th>
+   <th style="text-align:right;font-weight: bold;color: black;background-color: lightgrey;"> Landings. </th>
+   <th style="text-align:right;font-weight: bold;color: black;background-color: lightgrey;"> X </th>
+   <th style="text-align:left;font-weight: bold;color: black;background-color: lightgrey;"> X.1 </th>
+   <th style="text-align:left;font-weight: bold;color: black;background-color: lightgrey;"> X.2 </th>
+   <th style="text-align:left;font-weight: bold;color: black;background-color: lightgrey;"> X.3 </th>
+   <th style="text-align:left;font-weight: bold;color: black;background-color: lightgrey;"> X.4 </th>
+   <th style="text-align:left;font-weight: bold;color: black;background-color: lightgrey;"> X.5 </th>
+   <th style="text-align:right;font-weight: bold;color: black;background-color: lightgrey;"> Discards.. </th>
+   <th style="text-align:right;font-weight: bold;color: black;background-color: lightgrey;"> X.6 </th>
+   <th style="text-align:right;font-weight: bold;color: black;background-color: lightgrey;"> X.7 </th>
+   <th style="text-align:right;font-weight: bold;color: black;background-color: lightgrey;"> X.8 </th>
+   <th style="text-align:left;font-weight: bold;color: black;background-color: lightgrey;"> X.9 </th>
+   <th style="text-align:left;font-weight: bold;color: black;background-color: lightgrey;"> X.10 </th>
+   <th style="text-align:right;font-weight: bold;color: black;background-color: lightgrey;"> Total.catches... </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:right;"> 3 </td>
+   <td style="text-align:right;"> 4 </td>
+   <td style="text-align:left;"> 6 </td>
+   <td style="text-align:left;"> 7 </td>
+   <td style="text-align:left;"> 8abd </td>
+   <td style="text-align:left;"> Unn. </td>
+   <td style="text-align:left;"> Total </td>
+   <td style="text-align:right;"> 3 </td>
+   <td style="text-align:right;"> 4 </td>
+   <td style="text-align:right;"> 6 </td>
+   <td style="text-align:right;"> 7 </td>
+   <td style="text-align:left;"> 8abd </td>
+   <td style="text-align:left;"> Total </td>
+   <td style="text-align:right;"> NA </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 1961 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> - </td>
+   <td style="text-align:left;"> - </td>
+   <td style="text-align:left;"> - </td>
+   <td style="text-align:left;"> 95600 </td>
+   <td style="text-align:left;"> 95600 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> - </td>
+   <td style="text-align:right;"> 95600 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 1962 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> - </td>
+   <td style="text-align:left;"> - </td>
+   <td style="text-align:left;"> - </td>
+   <td style="text-align:left;"> 86300 </td>
+   <td style="text-align:left;"> 86300 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> - </td>
+   <td style="text-align:right;"> 86300 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 1963 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> - </td>
+   <td style="text-align:left;"> - </td>
+   <td style="text-align:left;"> - </td>
+   <td style="text-align:left;"> 86200 </td>
+   <td style="text-align:left;"> 86200 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> - </td>
+   <td style="text-align:right;"> 86200 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 1964 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> - </td>
+   <td style="text-align:left;"> - </td>
+   <td style="text-align:left;"> - </td>
+   <td style="text-align:left;"> 76800 </td>
+   <td style="text-align:left;"> 76800 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> - </td>
+   <td style="text-align:right;"> 76800 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 1965 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> - </td>
+   <td style="text-align:left;"> - </td>
+   <td style="text-align:left;"> - </td>
+   <td style="text-align:left;"> 64700 </td>
+   <td style="text-align:left;"> 64700 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> - </td>
+   <td style="text-align:right;"> 64700 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 1966 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> - </td>
+   <td style="text-align:left;"> - </td>
+   <td style="text-align:left;"> - </td>
+   <td style="text-align:left;"> 60900 </td>
+   <td style="text-align:left;"> 60900 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> - </td>
+   <td style="text-align:right;"> 60900 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 1967 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> - </td>
+   <td style="text-align:left;"> - </td>
+   <td style="text-align:left;"> - </td>
+   <td style="text-align:left;"> 62100 </td>
+   <td style="text-align:left;"> 62100 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> - </td>
+   <td style="text-align:right;"> 62100 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 1968 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> - </td>
+   <td style="text-align:left;"> - </td>
+   <td style="text-align:left;"> - </td>
+   <td style="text-align:left;"> 62000 </td>
+   <td style="text-align:left;"> 62000 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> - </td>
+   <td style="text-align:right;"> 62000 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 1969 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> - </td>
+   <td style="text-align:left;"> - </td>
+   <td style="text-align:left;"> - </td>
+   <td style="text-align:left;"> 54900 </td>
+   <td style="text-align:left;"> 54900 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> - </td>
+   <td style="text-align:right;"> 54900 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 1970 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;"> - </td>
+   <td style="text-align:left;"> - </td>
+   <td style="text-align:left;"> - </td>
+   <td style="text-align:left;"> 64900 </td>
+   <td style="text-align:left;"> 64900 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> - </td>
+   <td style="text-align:right;"> 64900 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 1971 </td>
+   <td style="text-align:right;"> 8500 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> 19400 </td>
+   <td style="text-align:left;"> 23400 </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> 51300 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> - </td>
+   <td style="text-align:right;"> 51300 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 1972 </td>
+   <td style="text-align:right;"> 9400 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> 14900 </td>
+   <td style="text-align:left;"> 41200 </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> 65500 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> - </td>
+   <td style="text-align:right;"> 65500 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 1973 </td>
+   <td style="text-align:right;"> 9500 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> 31200 </td>
+   <td style="text-align:left;"> 37600 </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> 78300 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> - </td>
+   <td style="text-align:right;"> 78300 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 1974 </td>
+   <td style="text-align:right;"> 9700 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> 28900 </td>
+   <td style="text-align:left;"> 34500 </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> 73100 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> - </td>
+   <td style="text-align:right;"> 73100 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 1975 </td>
+   <td style="text-align:right;"> 11000 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> 29200 </td>
+   <td style="text-align:left;"> 32500 </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> 72700 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> - </td>
+   <td style="text-align:right;"> 72700 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 1976 </td>
+   <td style="text-align:right;"> 12900 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> 26700 </td>
+   <td style="text-align:left;"> 28500 </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> 68100 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> - </td>
+   <td style="text-align:right;"> 68100 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 1977 </td>
+   <td style="text-align:right;"> 8500 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> 21000 </td>
+   <td style="text-align:left;"> 24700 </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> 54200 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> - </td>
+   <td style="text-align:right;"> 54200 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 1978 </td>
+   <td style="text-align:right;"> 8000 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> 20300 </td>
+   <td style="text-align:left;"> 24500 </td>
+   <td style="text-align:left;"> -2249 </td>
+   <td style="text-align:left;"> 50551 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> - </td>
+   <td style="text-align:right;"> 50551 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 1979 </td>
+   <td style="text-align:right;"> 8700 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> 17600 </td>
+   <td style="text-align:left;"> 27200 </td>
+   <td style="text-align:left;"> -2404 </td>
+   <td style="text-align:left;"> 51096 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> - </td>
+   <td style="text-align:right;"> 51096 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 1980 </td>
+   <td style="text-align:right;"> 9700 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> 22000 </td>
+   <td style="text-align:left;"> 28400 </td>
+   <td style="text-align:left;"> -2835 </td>
+   <td style="text-align:left;"> 57265 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> - </td>
+   <td style="text-align:right;"> 57265 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 1981 </td>
+   <td style="text-align:right;"> 8800 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> 25600 </td>
+   <td style="text-align:left;"> 22300 </td>
+   <td style="text-align:left;"> -2782 </td>
+   <td style="text-align:left;"> 53918 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> - </td>
+   <td style="text-align:right;"> 53918 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 1982 </td>
+   <td style="text-align:right;"> 5900 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> 25200 </td>
+   <td style="text-align:left;"> 26200 </td>
+   <td style="text-align:left;"> -2306 </td>
+   <td style="text-align:left;"> 54994 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> - </td>
+   <td style="text-align:right;"> 54994 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 1983 </td>
+   <td style="text-align:right;"> 6200 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> 26300 </td>
+   <td style="text-align:left;"> 27100 </td>
+   <td style="text-align:left;"> -2093 </td>
+   <td style="text-align:left;"> 57507 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> - </td>
+   <td style="text-align:right;"> 57507 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 1984 </td>
+   <td style="text-align:right;"> 9500 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> 33000 </td>
+   <td style="text-align:left;"> 22900 </td>
+   <td style="text-align:left;"> -2114 </td>
+   <td style="text-align:left;"> 63286 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> - </td>
+   <td style="text-align:right;"> 63286 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 1985 </td>
+   <td style="text-align:right;"> 9224 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> 27459 </td>
+   <td style="text-align:left;"> 21044 </td>
+   <td style="text-align:left;"> -1628 </td>
+   <td style="text-align:left;"> 56099 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> - </td>
+   <td style="text-align:right;"> 56099 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 1986 </td>
+   <td style="text-align:right;"> 7320 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> 27408 </td>
+   <td style="text-align:left;"> 23903 </td>
+   <td style="text-align:left;"> -1539 </td>
+   <td style="text-align:left;"> 57092 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> - </td>
+   <td style="text-align:right;"> 57092 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 1987 </td>
+   <td style="text-align:right;"> 7800 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> 32900 </td>
+   <td style="text-align:left;"> 24700 </td>
+   <td style="text-align:left;"> -2031 </td>
+   <td style="text-align:left;"> 63369 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> - </td>
+   <td style="text-align:right;"> 63369 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 1988 </td>
+   <td style="text-align:right;"> 8800 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> 30900 </td>
+   <td style="text-align:left;"> 26600 </td>
+   <td style="text-align:left;"> -1477 </td>
+   <td style="text-align:left;"> 64823 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> - </td>
+   <td style="text-align:right;"> 64823 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 1989 </td>
+   <td style="text-align:right;"> 7375 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> 26938 </td>
+   <td style="text-align:left;"> 31957 </td>
+   <td style="text-align:left;"> 203 </td>
+   <td style="text-align:left;"> 66473 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> - </td>
+   <td style="text-align:right;"> 66473 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 1990 </td>
+   <td style="text-align:right;"> 6680 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> 23011 </td>
+   <td style="text-align:left;"> 34424 </td>
+   <td style="text-align:left;"> -4161 </td>
+   <td style="text-align:left;"> 59954 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> - </td>
+   <td style="text-align:right;"> 59954 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 1991 </td>
+   <td style="text-align:right;"> 8328 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> 21546 </td>
+   <td style="text-align:left;"> 31635 </td>
+   <td style="text-align:left;"> -3380 </td>
+   <td style="text-align:left;"> 58129 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> - </td>
+   <td style="text-align:right;"> 58129 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 1992 </td>
+   <td style="text-align:right;"> 8561 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> 22475 </td>
+   <td style="text-align:left;"> 23465 </td>
+   <td style="text-align:left;"> 2116 </td>
+   <td style="text-align:left;"> 56617 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> - </td>
+   <td style="text-align:right;"> 56617 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 1993 </td>
+   <td style="text-align:right;"> 8484 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> 20465 </td>
+   <td style="text-align:left;"> 19849 </td>
+   <td style="text-align:left;"> 3346 </td>
+   <td style="text-align:left;"> 52144 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> - </td>
+   <td style="text-align:right;"> 52144 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 1994 </td>
+   <td style="text-align:right;"> 5421 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> 21080 </td>
+   <td style="text-align:left;"> 24727 </td>
+   <td style="text-align:left;"> 31 </td>
+   <td style="text-align:left;"> 51259 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> * </td>
+   <td style="text-align:right;"> 51259 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 1995 </td>
+   <td style="text-align:right;"> 5335 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> 24056 </td>
+   <td style="text-align:left;"> 28144 </td>
+   <td style="text-align:left;"> 86 </td>
+   <td style="text-align:left;"> 57621 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> - </td>
+   <td style="text-align:right;"> 57621 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 1996 </td>
+   <td style="text-align:right;"> 4445 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> 24738 </td>
+   <td style="text-align:left;"> 18036 </td>
+   <td style="text-align:left;"> -9 </td>
+   <td style="text-align:left;"> 47210 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> - </td>
+   <td style="text-align:right;"> 47210 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 1997 </td>
+   <td style="text-align:right;"> 3312 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> 18949 </td>
+   <td style="text-align:left;"> 20339 </td>
+   <td style="text-align:left;"> -135 </td>
+   <td style="text-align:left;"> 42465 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> - </td>
+   <td style="text-align:right;"> 42465 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 1998 </td>
+   <td style="text-align:right;"> 3208 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> 18705 </td>
+   <td style="text-align:left;"> 13147 </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> 35060 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> - </td>
+   <td style="text-align:right;"> 35060 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 1999 </td>
+   <td style="text-align:right;"> 4256 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> 23955 </td>
+   <td style="text-align:left;"> 11604 </td>
+   <td style="text-align:left;"> -1 </td>
+   <td style="text-align:left;"> 39814 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> * </td>
+   <td style="text-align:right;"> 39814 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 2000 </td>
+   <td style="text-align:right;"> 4033 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> 25991 </td>
+   <td style="text-align:left;"> 11998 </td>
+   <td style="text-align:left;"> 4 </td>
+   <td style="text-align:left;"> 42026 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> * </td>
+   <td style="text-align:right;"> 42026 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 2001 </td>
+   <td style="text-align:right;"> 4367 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> 23065 </td>
+   <td style="text-align:left;"> 9244 </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> 36675 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> - </td>
+   <td style="text-align:right;"> 36675 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 2002 </td>
+   <td style="text-align:right;"> 2944 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> 21226 </td>
+   <td style="text-align:left;"> 15935 </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> 40105 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> - </td>
+   <td style="text-align:right;"> 40105 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 2003# </td>
+   <td style="text-align:right;"> 3284 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> 25438 </td>
+   <td style="text-align:left;"> 14440 </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> 43162 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> 1393 </td>
+   <td style="text-align:right;"> 44555 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 2004# </td>
+   <td style="text-align:right;"> 4438 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> 27483 </td>
+   <td style="text-align:left;"> 14494 </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> 46416 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> 2614 </td>
+   <td style="text-align:right;"> 49029 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 2005# </td>
+   <td style="text-align:right;"> 5461 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> 26623 </td>
+   <td style="text-align:left;"> 14467 </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> 46550 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> 4583 </td>
+   <td style="text-align:right;"> 51133 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 2006# </td>
+   <td style="text-align:right;"> 6127 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> 24709 </td>
+   <td style="text-align:left;"> 10633 </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> 41469 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> 1222 </td>
+   <td style="text-align:right;"> 42691 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 2007# </td>
+   <td style="text-align:right;"> 7017 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> 27456 </td>
+   <td style="text-align:left;"> 10620 </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> 45093 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> 2165 </td>
+   <td style="text-align:right;"> 47258 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 2008# </td>
+   <td style="text-align:right;"> 10654 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> 22834 </td>
+   <td style="text-align:left;"> 14334 </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> 47822 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> 3368 </td>
+   <td style="text-align:right;"> 51190 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 2009# </td>
+   <td style="text-align:right;"> 13057 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> 25300 </td>
+   <td style="text-align:left;"> 20424 </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> 58781 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> 11033 </td>
+   <td style="text-align:right;"> 69814 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 2010# </td>
+   <td style="text-align:right;"> 14187 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> 33500 </td>
+   <td style="text-align:left;"> 25073 </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> 72760 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> 12118 </td>
+   <td style="text-align:right;"> 84878 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 2011# </td>
+   <td style="text-align:right;"> 18789 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> 18574 </td>
+   <td style="text-align:left;"> 16604 </td>
+   <td style="text-align:left;"> 32000^ </td>
+   <td style="text-align:left;"> 87540 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> 13903 </td>
+   <td style="text-align:right;"> 101443 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 2012# </td>
+   <td style="text-align:right;"> 22415 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> 22166 </td>
+   <td style="text-align:left;"> 16716 </td>
+   <td style="text-align:left;"> 19300^ </td>
+   <td style="text-align:left;"> 85677 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:left;">  </td>
+   <td style="text-align:left;"> 14870 </td>
+   <td style="text-align:right;"> 100547 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 2013# </td>
+   <td style="text-align:right;"> 292 </td>
+   <td style="text-align:right;"> 10684 </td>
+   <td style="text-align:left;"> 5232 </td>
+   <td style="text-align:left;"> 28500 </td>
+   <td style="text-align:left;"> 19900 </td>
+   <td style="text-align:left;"> 13100^ </td>
+   <td style="text-align:left;"> 77708 </td>
+   <td style="text-align:right;"> 313 </td>
+   <td style="text-align:right;"> 2942 </td>
+   <td style="text-align:right;"> 1545 </td>
+   <td style="text-align:right;"> 6583 </td>
+   <td style="text-align:left;"> 4059 </td>
+   <td style="text-align:left;"> 15400 </td>
+   <td style="text-align:right;"> 93108 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 2014# </td>
+   <td style="text-align:right;"> 348 </td>
+   <td style="text-align:right;"> 12077 </td>
+   <td style="text-align:left;"> 11415 </td>
+   <td style="text-align:left;"> 40536 </td>
+   <td style="text-align:left;"> 25552 </td>
+   <td style="text-align:left;"> 0^ </td>
+   <td style="text-align:left;"> 89928 </td>
+   <td style="text-align:right;"> 287 </td>
+   <td style="text-align:right;"> 3105 </td>
+   <td style="text-align:right;"> 951 </td>
+   <td style="text-align:right;"> 4021 </td>
+   <td style="text-align:left;"> 1458 </td>
+   <td style="text-align:left;"> 9800 </td>
+   <td style="text-align:right;"> 99728 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 2015# </td>
+   <td style="text-align:right;"> 447 </td>
+   <td style="text-align:right;"> 14618 </td>
+   <td style="text-align:left;"> 7065 </td>
+   <td style="text-align:left;"> 44396 </td>
+   <td style="text-align:left;"> 28497 </td>
+   <td style="text-align:left;"> 0^ </td>
+   <td style="text-align:left;"> 95023 </td>
+   <td style="text-align:right;"> 93 </td>
+   <td style="text-align:right;"> 3444 </td>
+   <td style="text-align:right;"> 71 </td>
+   <td style="text-align:right;"> 4208 </td>
+   <td style="text-align:left;"> 3096 </td>
+   <td style="text-align:left;"> 10900 </td>
+   <td style="text-align:right;"> 105923 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 2016# </td>
+   <td style="text-align:right;"> 695 </td>
+   <td style="text-align:right;"> 19603 </td>
+   <td style="text-align:left;"> 11365 </td>
+   <td style="text-align:left;"> 49377 </td>
+   <td style="text-align:left;"> 26490 </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> 107530 </td>
+   <td style="text-align:right;"> 142 </td>
+   <td style="text-align:right;"> 4189 </td>
+   <td style="text-align:right;"> 344 </td>
+   <td style="text-align:right;"> 2281 </td>
+   <td style="text-align:left;"> 4150 </td>
+   <td style="text-align:left;"> 11114 </td>
+   <td style="text-align:right;"> 118644 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 2017# </td>
+   <td style="text-align:right;"> 775 </td>
+   <td style="text-align:right;"> 19690 </td>
+   <td style="text-align:left;"> 9614 </td>
+   <td style="text-align:left;"> 45737 </td>
+   <td style="text-align:left;"> 28853 </td>
+   <td style="text-align:left;"> 0 </td>
+   <td style="text-align:left;"> 104670 </td>
+   <td style="text-align:right;"> 148 </td>
+   <td style="text-align:right;"> 1777 </td>
+   <td style="text-align:right;"> 314 </td>
+   <td style="text-align:right;"> 1168 </td>
+   <td style="text-align:left;"> 3692 </td>
+   <td style="text-align:left;"> 7100 </td>
+   <td style="text-align:right;"> 111770 </td>
+  </tr>
+</tbody>
+</table>
+\* Spanish data for 1961–1972 are not revised; data for Subarea 8 for 1973–1978 include data for divisions 8.a,b only. Data for 1979–1981 are revised based on French surveillance data. Divisions 3.a and 4.b,c are included in the column "3.a, 4, and 6" only after 1976. There are some unallocated landings ( moreover for the period 1961–1970).
+\** Discard estimates from observer programmes. In years marked with # partial discard estimates are available and used in the assessment. For the remaining years where no values are presented, some estimates are available but are not considered valid and thus not used in the assessment. In the years with data only Spanish discards, and discards from French Nephrops trawlers are included.
+\*** The working group used total catches from 1978.
+\^ Unallocated landings for the years 2011–2014 were revised in 2015.
 
-**Missing big table**
+
+
+[Download CSV](data:text/csv;base64,WWVhcixMYW5kaW5ncyosLCwsLCwsRGlzY2FyZHMqKiwsLCwsLFRvdGFsIGNhdGNoZXMqKioKLDMsNCw2LDcsOGFiZCxVbm4uLFRvdGFsLDMsNCw2LDcsOGFiZCxUb3RhbCwKMTk2MSwsLC0sLSwtLDk1NjAwLDk1NjAwLCwsLCwsLSw5NTYwMAoxOTYyLCwsLSwtLC0sODYzMDAsODYzMDAsLCwsLCwtLDg2MzAwCjE5NjMsLCwtLC0sLSw4NjIwMCw4NjIwMCwsLCwsLC0sODYyMDAKMTk2NCwsLC0sLSwtLDc2ODAwLDc2ODAwLCwsLCwsLSw3NjgwMAoxOTY1LCwsLSwtLC0sNjQ3MDAsNjQ3MDAsLCwsLCwtLDY0NzAwCjE5NjYsLCwtLC0sLSw2MDkwMCw2MDkwMCwsLCwsLC0sNjA5MDAKMTk2NywsLC0sLSwtLDYyMTAwLDYyMTAwLCwsLCwsLSw2MjEwMAoxOTY4LCwsLSwtLC0sNjIwMDAsNjIwMDAsLCwsLCwtLDYyMDAwCjE5NjksLCwtLC0sLSw1NDkwMCw1NDkwMCwsLCwsLC0sNTQ5MDAKMTk3MCwsLC0sLSwtLDY0OTAwLDY0OTAwLCwsLCwsLSw2NDkwMAoxOTcxLDg1MDAsLCwxOTQwMCwyMzQwMCwwLDUxMzAwLCwsLCwsLSw1MTMwMAoxOTcyLDk0MDAsLCwxNDkwMCw0MTIwMCwwLDY1NTAwLCwsLCwsLSw2NTUwMAoxOTczLDk1MDAsLCwzMTIwMCwzNzYwMCwwLDc4MzAwLCwsLCwsLSw3ODMwMAoxOTc0LDk3MDAsLCwyODkwMCwzNDUwMCwwLDczMTAwLCwsLCwsLSw3MzEwMAoxOTc1LDExMDAwLCwsMjkyMDAsMzI1MDAsMCw3MjcwMCwsLCwsLC0sNzI3MDAKMTk3NiwxMjkwMCwsLDI2NzAwLDI4NTAwLDAsNjgxMDAsLCwsLCwtLDY4MTAwCjE5NzcsODUwMCwsLDIxMDAwLDI0NzAwLDAsNTQyMDAsLCwsLCwtLDU0MjAwCjE5NzgsODAwMCwsLDIwMzAwLDI0NTAwLC0yMjQ5LDUwNTUxLCwsLCwsLSw1MDU1MQoxOTc5LDg3MDAsLCwxNzYwMCwyNzIwMCwtMjQwNCw1MTA5NiwsLCwsLC0sNTEwOTYKMTk4MCw5NzAwLCwsMjIwMDAsMjg0MDAsLTI4MzUsNTcyNjUsLCwsLCwtLDU3MjY1CjE5ODEsODgwMCwsLDI1NjAwLDIyMzAwLC0yNzgyLDUzOTE4LCwsLCwsLSw1MzkxOAoxOTgyLDU5MDAsLCwyNTIwMCwyNjIwMCwtMjMwNiw1NDk5NCwsLCwsLC0sNTQ5OTQKMTk4Myw2MjAwLCwsMjYzMDAsMjcxMDAsLTIwOTMsNTc1MDcsLCwsLCwtLDU3NTA3CjE5ODQsOTUwMCwsLDMzMDAwLDIyOTAwLC0yMTE0LDYzMjg2LCwsLCwsLSw2MzI4NgoxOTg1LDkyMjQsLCwyNzQ1OSwyMTA0NCwtMTYyOCw1NjA5OSwsLCwsLC0sNTYwOTkKMTk4Niw3MzIwLCwsMjc0MDgsMjM5MDMsLTE1MzksNTcwOTIsLCwsLCwtLDU3MDkyCjE5ODcsNzgwMCwsLDMyOTAwLDI0NzAwLC0yMDMxLDYzMzY5LCwsLCwsLSw2MzM2OQoxOTg4LDg4MDAsLCwzMDkwMCwyNjYwMCwtMTQ3Nyw2NDgyMywsLCwsLC0sNjQ4MjMKMTk4OSw3Mzc1LCwsMjY5MzgsMzE5NTcsMjAzLDY2NDczLCwsLCwsLSw2NjQ3MwoxOTkwLDY2ODAsLCwyMzAxMSwzNDQyNCwtNDE2MSw1OTk1NCwsLCwsLC0sNTk5NTQKMTk5MSw4MzI4LCwsMjE1NDYsMzE2MzUsLTMzODAsNTgxMjksLCwsLCwtLDU4MTI5CjE5OTIsODU2MSwsLDIyNDc1LDIzNDY1LDIxMTYsNTY2MTcsLCwsLCwtLDU2NjE3CjE5OTMsODQ4NCwsLDIwNDY1LDE5ODQ5LDMzNDYsNTIxNDQsLCwsLCwtLDUyMTQ0CjE5OTQsNTQyMSwsLDIxMDgwLDI0NzI3LDMxLDUxMjU5LCwsLCwsKiw1MTI1OQoxOTk1LDUzMzUsLCwyNDA1NiwyODE0NCw4Niw1NzYyMSwsLCwsLC0sNTc2MjEKMTk5Niw0NDQ1LCwsMjQ3MzgsMTgwMzYsLTksNDcyMTAsLCwsLCwtLDQ3MjEwCjE5OTcsMzMxMiwsLDE4OTQ5LDIwMzM5LC0xMzUsNDI0NjUsLCwsLCwtLDQyNDY1CjE5OTgsMzIwOCwsLDE4NzA1LDEzMTQ3LDAsMzUwNjAsLCwsLCwtLDM1MDYwCjE5OTksNDI1NiwsLDIzOTU1LDExNjA0LC0xLDM5ODE0LCwsLCwsKiwzOTgxNAoyMDAwLDQwMzMsLCwyNTk5MSwxMTk5OCw0LDQyMDI2LCwsLCwsKiw0MjAyNgoyMDAxLDQzNjcsLCwyMzA2NSw5MjQ0LDAsMzY2NzUsLCwsLCwtLDM2Njc1CjIwMDIsMjk0NCwsLDIxMjI2LDE1OTM1LDAsNDAxMDUsLCwsLCwtLDQwMTA1CjIwMDMjLDMyODQsLCwyNTQzOCwxNDQ0MCwwLDQzMTYyLCwsLCwsMTM5Myw0NDU1NQoyMDA0Iyw0NDM4LCwsMjc0ODMsMTQ0OTQsMCw0NjQxNiwsLCwsLDI2MTQsNDkwMjkKMjAwNSMsNTQ2MSwsLDI2NjIzLDE0NDY3LDAsNDY1NTAsLCwsLCw0NTgzLDUxMTMzCjIwMDYjLDYxMjcsLCwyNDcwOSwxMDYzMywwLDQxNDY5LCwsLCwsMTIyMiw0MjY5MQoyMDA3Iyw3MDE3LCwsMjc0NTYsMTA2MjAsMCw0NTA5MywsLCwsLDIxNjUsNDcyNTgKMjAwOCMsMTA2NTQsLCwyMjgzNCwxNDMzNCwwLDQ3ODIyLCwsLCwsMzM2OCw1MTE5MAoyMDA5IywxMzA1NywsLDI1MzAwLDIwNDI0LDAsNTg3ODEsLCwsLCwxMTAzMyw2OTgxNAoyMDEwIywxNDE4NywsLDMzNTAwLDI1MDczLDAsNzI3NjAsLCwsLCwxMjExOCw4NDg3OAoyMDExIywxODc4OSwsLDE4NTc0LDE2NjA0LDMyMDAwXiw4NzU0MCwsLCwsLDEzOTAzLDEwMTQ0MwoyMDEyIywyMjQxNSwsLDIyMTY2LDE2NzE2LDE5MzAwXiw4NTY3NywsLCwsLDE0ODcwLDEwMDU0NwoyMDEzIywyOTIsMTA2ODQsNTIzMiwyODUwMCwxOTkwMCwxMzEwMF4sNzc3MDgsMzEzLDI5NDIsMTU0NSw2NTgzLDQwNTksMTU0MDAsOTMxMDgKMjAxNCMsMzQ4LDEyMDc3LDExNDE1LDQwNTM2LDI1NTUyLDBeLDg5OTI4LDI4NywzMTA1LDk1MSw0MDIxLDE0NTgsOTgwMCw5OTcyOAoyMDE1Iyw0NDcsMTQ2MTgsNzA2NSw0NDM5NiwyODQ5NywwXiw5NTAyMyw5MywzNDQ0LDcxLDQyMDgsMzA5NiwxMDkwMCwxMDU5MjMKMjAxNiMsNjk1LDE5NjAzLDExMzY1LDQ5Mzc3LDI2NDkwLDAsMTA3NTMwLDE0Miw0MTg5LDM0NCwyMjgxLDQxNTAsMTExMTQsMTE4NjQ0CjIwMTcjLDc3NSwxOTY5MCw5NjE0LDQ1NzM3LDI4ODUzLDAsMTA0NjcwLDE0OCwxNzc3LDMxNCwxMTY4LDM2OTIsNzEwMCwxMTE3NzA=) 
+<br>
+</div>
 
 ***
 
 # Sources and references  
 
 
-* EU. 2004. COUNCIL REGULATION (EC) No. 811/2004 of 21.4.2004 establishing measures for the recovery of the Northern hake stock. Official Journal of the European Union, L 150/1.
-http://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=OJ:L:2004:150:0001:0011:EN:PDF.
-
+* EU. 2018.  Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL establishing a multiannual plan for fish stocks in the Western Waters and adjacent waters, and for fisheries exploiting those stocks, amending Regulation (EU) 2016/1139 establishing a multiannual plan for the Baltic Sea, and repealing Regulations (EC) No 811/2004, (EC) No 2166/2005, (EC) No 388/2006, (EC) 509/2007 and (EC) 1300/2008.  COM/2018/0149 final. https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:52018PC0149&from=EN
+* EU. 2004. COUNCIL REGULATION (EC) No. 811/2004 of 21.4.2004 establishing measures for the recovery of the Northern hake stock. Official Journal of the European Union, L 150/1. http://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=OJ:L:2004:150:0001:0011:EN:PDF.
 * ICES. 2014. Report of the Benchmark Workshop on Southern Megrim and Hake (WKSOUTH), 3–7 February 2014, Copenhagen, Denmark. ICES CM 2014/ACOM:40. 236 pp.
-
 * ICES. 2016a. EU request to ICES to provide FMSY ranges for selected stocks in ICES subareas 5 to 10. In Report of the ICES Advisory Committee, 2016. ICES Advice 2016, Book 5, Section 5.4.1.
-
 * ICES. 2016b. Report of the Workshop to consider FMSY ranges for stocks in ICES categories 1 and 2 in Western Waters (WKMSYREF4), 13–16 October 2015, Brest, France. ICES CM 2015/ACOM:58. 183 pp.
-
 * ICES. 2016c. Advice basis. In Report of the ICES Advisory Committee, 2016. ICES Advice 2016, Book 1, Section 1.2.
-
-* ICES. 2017a. Report of the Working Group for the Bay of Biscay and the Iberian waters Ecoregion (WGBIE), 4–9 May 2017, Cadiz, Spain. ICES CM 2017/ACOM:12. In preparation.
-
-* ICES. 2017b. Report of the Working Group on Mixed-Fisheries Advice (WGMIXFISH-ADVICE), 22–26 May 2017, ICES Headquarters, Copenhagen, Denmark.ICES CM 2017/ACOM:18. In preparation.
-
+* ICES. 2017a. Report of the Working Group on Mixed-Fisheries Advice (WGMIXFISH-ADVICE), 22–26 May 2017, ICES Headquarters, Copenhagen, Denmark. ICES CM 2017/ACOM:18. In preparation.
+* ICES. 2017b. Report of the Working Group for the Bay of Biscay and Iberian waters Ecoregion (WGBIE). 4-11 May 2017. Cadiz, Spain. ICES CM 2017/ACOM:12. 534 pp.
+* ICES. 2018. Report of the Working Group for the Bay of Biscay and the Iberian Waters Ecoregion (WGBIE), 3 –10 May 2018, ICES HQ, Copenhagen, Denmark. ICES CM 2018/ACOM:12. 642 pp.
 * Martin, I. 1991. A preliminary analysis of some biological aspects of hake (Merluccius merluccius L. 1758) in the Bay of Biscay. ICES CM 1991/G:54. 31 pp.
+
 
 

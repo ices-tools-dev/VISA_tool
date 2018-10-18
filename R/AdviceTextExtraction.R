@@ -11,7 +11,7 @@ library(tidyr)
 library(ReporteRs)
 library(plotly)
 library(grid)
-get_filelist <- function(year = 2017) {
+get_filelist <- function(year = 2018) {
   
   # Note: You must log in to SharePoint and have this drive mapped
   sharePoint <- "//community.ices.dk/DavWWWRoot/"
@@ -56,6 +56,11 @@ get_filelist <- function(year = 2017) {
                       "CelticSea", "Faroes", "Iceland",
                       "NorthSea", "Salmon", "Widely")
     }
+    if(year == 2018){
+            folderNames = c("BalticSea", "BarentsSea", "BayOfBiscay", 
+                            "CelticSea", "Faroes", "Iceland",
+                            "NorthSea", "Salmon", "Widely")
+    }
     
     ### Hopefully, future folderNames are consistent, if not, map by hand, as above.
     adviceList <- lapply(advice[advice %in% folderNames],
@@ -85,7 +90,10 @@ get_filelist <- function(year = 2017) {
       left_join(advice_file_finder(2016), by = c("PreviousStockKeyLabel" = "StockCode")),
     rawsd %>%
       filter(YearOfLastAssessment == 2017) %>% 
-      left_join(advice_file_finder(2017), by = c("StockKeyLabel" = "StockCode"))
+      left_join(advice_file_finder(2017), by = c("StockKeyLabel" = "StockCode")),
+    rawsd %>%
+            filter(YearOfLastAssessment == 2018) %>% 
+            left_join(advice_file_finder(2018), by = c("StockKeyLabel" = "StockCode"))
     ## Repeat for additional years
   ) %>% 
     mutate(URL = ifelse(is.na(filepath),
@@ -98,11 +106,11 @@ get_filelist <- function(year = 2017) {
   return(fileList)
 } # Close get_filelist
 
-fileList <- get_filelist(2017)
+fileList <- get_filelist(2018)
 
 nipag<- fileList %>% filter(ExpertGroup == "NIPAG") 
   
-stock_name <- "pra.27.1-2"
+stock_name <- "hke.27.3a46-8abd"
   
   ## Start function here by grabbing info for a stock
   stock_sd <- fileList %>% 
@@ -113,7 +121,7 @@ stock_name <- "pra.27.1-2"
     pull(filepath)
   
   ## Grab the last advice
-  doc <- officer::read_docx(fileName)
+  doc <- officer::read_docx("hke.27.3a46-8abd.docx")
   
 
   ## Pull out a data.frame of text (content[]) and tables (both tabs[] and content[])

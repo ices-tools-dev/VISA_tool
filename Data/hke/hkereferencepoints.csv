@@ -1,8 +1,14 @@
 ,Framework,Reference point,Value,Technical basis,Source
 1,MSY approach,MSY Btrigger,45000  ,Bpa,ICES (2016a)
-2,MSY approach,FMSY,0.28,Stochastic simulations on a segmented regression stock–recruitment relationship.,ICES (2016a)
+2,MSY approach,FMSY,0.28,Stochastic simulations on a segmented regression stock–recruit,ICES (2016a)
 3,Precautionary approach,Blim,32000  ,A low biomass which was followed by a quick recovery.,ICES (2016b)
 4,Precautionary approach,Bpa,45000  ,1.4 × Blim,ICES (2016b)
 5,Precautionary approach,Flim,0.87,Fishing mortality resulting in a 5% probability of SSB falling below Blim.,ICES(2016b)
 6,Precautionary approach,Fpa,0.62,Flim/1.4,ICES(2016b)
-7,Management plan,SSBMGT,No  defined,,
+7,Precautionary approach,FMGT,No defined,,
+,Precautionary approach,SSBMGT,No defined,,
+,Precautionary approach,MAP MSY Btrigger,45000,MSY Btrigger,
+,Precautionary approach,MAP Blim,32000,Blim,
+,Precautionary approach,MAP FMSY,0.28,FMSY,
+,Precautionary approach,MAP range Flower,0.18,"Consistent with ranges resulting in no more than 5% reduction in long-term yield compared with MSY (ICES, 2016a)",
+,Precautionary approach,MAP range Fupper,0.45,Consistent with ranges resulting in no more than 5% reduction ,

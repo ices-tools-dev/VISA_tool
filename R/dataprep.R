@@ -3,9 +3,9 @@
 
 
 library(fisheryO)
-ecoregion = "Greater North Sea Ecoregion"
+ecoregion = "Baltic Sea Ecoregion"
 area_definition(ecoregion)
-file_name= "hke_map"
+file_name= "her_map"
 output_path <- "~/"
 
 xmin <- min(sf::st_bbox(stock_areas)[1])
@@ -19,10 +19,8 @@ ymax <- ymax/100000
 xlims <- c(xmin, xmax)
 ylims <- c(ymin, ymax)
 
-stock_areas <- ices_shape %>% filter(Area_27 %in% c("3.a.20", "3.a.21", "8.a",
-                                                    "8.b","8.d")| SubArea %in% c("4", "6", "7"))
-centroids <- ices_area_centroids %>% filter(Area_27 %in% c("3.a.20", "3.a.21", "8.a",
-                                                           "8.b","8.d")| SubArea %in% c("4", "6", "7"))
+stock_areas <- ices_shape %>% filter(Area_27 %in% c("6.a"))
+centroids <- ices_area_centroids %>% filter(Area_27 %in% c("3.d.25", "3.d.26", "3.d.27", "3.d.29", "3.d.32","3.d.28.2"))
 
 centroids <- data.frame(as.character(centroids$Area_27),
                         # ices_area_centroids$ECOREGION,
@@ -49,7 +47,10 @@ p1 <- ggplot() +
 
 map <-p1
 
-ggsave("hkemap.png", path = "~/", width = 178, height = 152, units = "mm", dpi = 300)
+ggsave("blimap.png", path = "~/", width = 178, height = 152, units = "mm", dpi = 300)
+
+
+
 
 #for SAG plots
 

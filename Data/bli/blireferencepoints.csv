@@ -1,2 +1,9 @@
-"","Advice basis","MSY approach."
-"1","Management plan","ICES is not aware of any agreed precautionary management plan for blue ling in this area. "
+Framework,Reference point,Value,Technical basis,Source
+MSY approach,FMSY,0.12,FMSY and F intervals estimated without the Advice Rule (AR),ICES
+,MSY Btrigger,75 037 t,Set equal to Bpa,-2018
+Precautionary approach,Blim,54 000 t,Set as Bloss,
+,Bpa,75 037 t,"Blim × e1.645?, ? = 0.20",
+,Flim,0.17,Based on simulated SSB to Blim,
+,Fpa,0.12,Flim × exp(?1.645 × ?); ? = 0.2,
+Management plan,SSBMGT,Not defined,,
+,FMGT,Not defined,,

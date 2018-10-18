@@ -1,7 +1,7 @@
-"","ICES stock data category","1 (ICES, 2016c)."
-"1","Assessment type","Length-based model (SS3; ICES, 2017a) that uses landings and some discards in the model. Additional discards are then included to calculate a catch forecast."
-"2","Input data","Commercial landings; four survey indices (EVHOE-WIBTS-Q4, SpPGFS-WIBTS-Q3, IGFS-WIBTS-Q4, and RESSGASC); maturity data: constant maturity (Martin, 1991); natural mortality: constant value (0.4)."
-"3","Discards and bycatch","Data series from most fleets are available; 75% of the observed discards are included in the assessment (ICES, 2017a). The discards not used in the assessment are used to top-up the catch advice."
-"4","Indicators","None."
-"5","Other information","Last benchmarked in 2014 WKSOUTH (ICES, 2014)."
-"6","Working group","Working Group for the Bay of Biscay and the Iberian Waters Ecoregion (WGBIE)"
+,ICES stock data category,"1 (ICES, 2016c)."
+1,Assessment type,"Length-based model (SS3; ICES, 2018) that uses landings and some discards. Additional discards are then included to calculate a catch forecast"
+2,Input data,"Commercial landings; four survey indices (FR-EVHOE-WIBTS-Q4, SP-PORC-WIBTS-Q3, IE-IGFS-WIBTS-Q4, and RESSGASC); maturity data: constant maturity (Martin, 1991); natural mortality: constant value of 0.4."
+3,Discards and bycatch,"Data series from most fleets are available; 75% of the observed discards are included in the assessment (ICES, 2017b, 2018). The discards not included in the assessment are used to top-up the catch advice."
+4,Indicators,None.
+5,Other information,"Last benchmarked in 2014 WKSOUTH (ICES, 2014)."
+6,Working group,Working Group for the Bay of Biscay and the Iberian Waters Ecoregion (WGBIE)

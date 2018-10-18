@@ -1,0 +1,25 @@
+Option,Type,Basis,Catch2020_Option1,Catch2020_Option2,F,SSB_2021_Option1,SSB_2021_Option2,,Catch2019,SSB_2020
+2,v.2 ICES advice basis,MSY approach (F2020 = FMSY),,12032,0.12,,100268,,,
+2,v.2 Other scenarios,Fpa,,12032,0.12,,100268,,,
+2,v.2 Other scenarios,F2020 = 0,,0,0,,111654,,,
+2,v.2 Other scenarios,F2020 = Flim,,16642,0.17,,95912,,,
+2,v.2 Other scenarios,SSB (2021) = Bpa,,38809,0.45,,75037,,,
+2,v.2 Other scenarios,SSB (2021) = Blim,,61325,0.85,,54000,,,
+2,v.2 Other scenarios,SSB (2021) = MSY Btrigger,,38809,0.45,,75037,,,
+2,v.2 Other scenarios,F2020 = Fsq = F2017,,3142,0.03,,108678,,,
+1,v.1 ICES advice basis,MSY approach (F2020 = FMSY),11150,,0.12,93408,,,,
+1,v.1 Other scenarios,Fpa,11150,,0.12,93408,,,,
+1,v.1 Other scenarios,F2020 = 0,0,,0,103921,,,,
+1,v.1 Other scenarios,F2020 = Flim,15422,,0.17,89387,,,,
+1,v.1 Other scenarios,SSB (2021) = Bpa,30700,,0.37,75037,,,,
+1,v.1 Other scenarios,SSB (2021) = Blim,53259,,0.77,54000,,,,
+1,v.1 Other scenarios,SSB (2021) = MSY Btrigger,30700,,0.37,75037,,,,
+1,v.1 Other scenarios,F2020 = Fsq = F2017,2912,,0.03,101173,,,,
+,ICES advice basis,MSY approach (F = FMSY),,,0.12,,,,11778,98331
+,Other scenarios,Fpa,,,0.12,,,,11778,98331
+,Other scenarios,F2019 = 0,,,0,,,,0,109470
+,Other scenarios,F2019 = Flim,,,0.17,,,,15115,94070
+,Other scenarios,SSB (2020) = Bpa,,,0.43,,,,36509,75037
+,Other scenarios,SSB (2020) = Blim,,,0.83,,,,59023,54000
+,Other scenarios,SSB (2020) = MSY Btrigger,,,0.43,,,,36509,75037
+,Other scenarios,F2019 = Fsq,,,0.03,,,,3076,106559

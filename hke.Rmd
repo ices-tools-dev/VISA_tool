@@ -27,7 +27,7 @@ output:
 
 # ICES advice 2018                              
 
-## "Hake (*Merluccius merluccius*) in subareas 4, 6, and 7, and in divisions 3.a, 8.a–b, and 8.d, Northern stock (Greater North Sea, Celtic Seas, and the northern Bay of Biscay)"
+## Hake (*Merluccius merluccius*) in subareas 4, 6, and 7, and in divisions 3.a, 8.a–b, and 8.d, Northern stock (Greater North Sea, Celtic Seas, and the northern Bay of Biscay)
 
 Published 29 June 2018
 
@@ -48,6 +48,7 @@ knitr::include_graphics("images/hkemap.png")
 
 
 [Go to latest advice](http://ices.dk/sites/pub/Publication%20Reports/Advice/2018/2018/hke.27.3a46-8abd.pdf)  
+[Go to Stock Information Database](http://sd.ices.dk/ViewStock.aspx?key=1661)  
 [Go to Standard Graphs page](http://standardgraphs.ices.dk/ViewCharts.aspx?key=9763)  
 [Go to Transparent Assessment Framework page](https://github.com/ices-taf/2016_cod-347d)
 
@@ -78,7 +79,9 @@ The spawning-stock biomass (SSB) has increased substantially since 2006 and is w
  library(widgetframe)
  library(icesSAG)
 SAGsummary <- getSAG("hke.27.3a46-8abd", 2018, data = "summary", combine = TRUE, purpose = "Advice") 
-data <- SAGsummary
+SAGrefpts <-getSAG("hke.27.3a46-8abd", 2018, data = "refpts", combine = TRUE, purpose = "Advice")
+data <- cbind(SAGsummary, SAGrefpts)
+data <- subset(data,select = -fishstock)
 
  dyBarChart <- function(dygraph) {
   dyPlotter(dygraph = dygraph,
@@ -146,12 +149,16 @@ SSB <- data %>% select(Year, low_SSB, SSB,high_SSB, Blim, Bpa, MSYBtrigger)
 **Figure 1** .Summary of the stock assessment of hake in subareas 4, 6, and 7, and in divisions 3.a, 8.a–b, and 8.d, Northern stock. Complete discard estimates are available only since 2003. Recruitment and SSB plots show 95% confidence intervals (shaded area). Assumed recruitment values are unshaded.
 <br>
 
+***
+
 # Summary of the assessment
+
+<br>
 
  Assessment summary for hake in subareas 4, 6, and 7, and in divisions 3.a, 8.a–b, and 8.d, Northern stock. Weights are in tonnes. Highs and lows are 95% confidence intervals
 <br>
-<button class="btn btn-primary" data-toggle="collapse" data-target="#BlockName"> Show/Download Table </button>  
-<div id="BlockName" class="collapse"> 
+<button class="btn btn-primary" data-toggle="collapse" data-target="#BlockName1"> Show/Download Table </button>  
+<div id="BlockName1" class="collapse"> 
 <br>
 ```{r summarysag, echo=FALSE, results= "asis"}
 
@@ -161,9 +168,7 @@ library(kableExtra)
 write.csv(SAGsummary, file = "SAGsummary.csv")
 kable(SAGsummary, "html")%>% 
   row_spec(0, bold = T, color = "black", background = "lightgrey", align = "c")%>%
-        
-         kable_styling(bootstrap_options = "striped", font_size = 10)%>%
-        scroll_box(width = "700px", height = "200px")
+        kable_styling(position = "center")
 
 
 ```
@@ -178,15 +183,13 @@ library(magrittr)
 [Download CSV](`r sprintf('data:text/csv;base64,%s', encoded)`)
 </div>
 <br>
-<br>
 [Go to Top](#top)
 
 ***  
 # Stock and explotation status
 
 <br>
-**State of the stock and fishery relative to reference points**
-<br>
+
 ![](images/MSY_1.png)
 
 
@@ -197,9 +200,6 @@ library(magrittr)
 <br>
 **Table 2**  Assumptions made for the interim year and in the forecast for hake in subareas 4, 6, and 7, and in divisions 3.a, 8.a–b, and 8.d, Northern stock. All weights are in tonnes.
 <br>
-<style >   {
-dataTable.css
-}
 ```{r catchoptionsbasis, echo=FALSE}
 library(knitr)
 library(readr)
@@ -208,14 +208,12 @@ dt <- read.csv("Data/hke/hkecatchoptionsbasis.csv",header = T, row.names = 1)
 # dt <- dt [,-1] 
 kable(dt, "html")%>% 
   row_spec(0, bold = T, color = "black", background = "lightgrey", align = "c")%>%
-  column_spec(1, width = "20em")%>%
-  column_spec(4, width = "45em")%>%
-  column_spec(3, width = "15em")%>%
-  kable_styling(position = "center", full_width = F, font_size = 10)
+  # column_spec(1, width = "20em")%>%
+  # column_spec(4, width = "45em")%>%
+  # column_spec(3, width = "15em")%>%
+  kable_styling(position = "center")
 
 ```
-
-</style>
 
 ```{r download5}
 library(magrittr)
@@ -225,37 +223,28 @@ library(magrittr)
 ```
 
 [Download CSV](`r sprintf('data:text/csv;base64,%s', encoded)`)
-
 <br>
 
 ***
 
 **Table 3**  Annual catch scenarios for hake in subareas 4, 6, and 7, and in divisions 3.a, 8.a–b, and 8.d, Northern stock. All weights are in tonnes. Note: The % change in TAC is not computed because the stock area does not correspond to the area for the TAC.
 <br>
-<button class="btn btn-primary" data-toggle="collapse" data-target="#BlockName"> Show/Download Table </button>  
-<div id="BlockName" class="collapse"> 
-<br>
+<button class="btn btn-primary" data-toggle="collapse" data-target="#BlockName2"> Show/Download Table </button>  
+<div id="BlockName2" class="collapse"> 
 ```{r catchoptionstable, echo=FALSE}
 library(knitr)
 library(readr)
 library(kableExtra)
-dt <- read.csv("Data/her/hkecatchoptions.csv", header = T, row.names = 1)
+dt <- read.csv("Data/hke/hkecatchoptions.csv", header = T, row.names = 1)
 # dt <- dt [,-1]
 dt <- dt[complete.cases(dt),]
  kable(dt, "html") %>% kable_styling(position = "center")%>%
    row_spec(0, bold = T, color = "black", background = "lightgrey")%>%
    column_spec(1, width = "30em")%>%
-         column_spec(2:7, width = "10em")%>%
+         column_spec(2:9, width = "10em")%>%
    group_rows("ICES advice basis",1,1) %>%
-   group_rows("Other options",2,11)
+   group_rows("Other scenarios",2,9)
 ```
-* “Wanted” and “unwanted” catch are used to describe fish that would be landed and discarded in the absence of the EU landing obligation.
-** SSB 2020 relative to SSB 2019.
-*** Total catch 2019 relative to the catch advice for 2018 (115 335 tonnes).
-^ Unwanted catch includes forecast unwanted catch (discards included in the assessment) and additional unwanted catch (the discards that were not included in the assessment, amounting to approximately 2.8% of the total catch).
-^^ Catch option corresponds to F2018 = 0.25.
-<br>
-The catch for 2019 corresponding to the MSY framework is 23% higher than the advice given for 2018. The increase is mainly a consequence of the increase in SSB in 2019 as a result of strong incoming year classes.
 
 ```{r download}
 library(magrittr)
@@ -266,127 +255,29 @@ library(magrittr)
 
 [Download CSV](`r sprintf('data:text/csv;base64,%s', encoded)`)
 
-## Catch scenarios Plots. Version 1
-```{r catchoptionsgraph, echo = FALSE,fig.height = 5, fig.width = 7}
-library(ggplot2)
-library(plotly)
- catchoptions <- read.csv("Data/hke/hkescenariosplot.csv")
- labels <- catchoptions$Basis
- labels <- as.character(labels)
- mypalette<-ggthemes::tableau_color_pal('tableau20')
- 
- data <- catchoptions[order(catchoptions$F),] 
- 
- 
- p1 <- plot_ly(data, x = ~F) %>%
-         layout(hovermode="TRUE", showlegend = TRUE,
-           shapes = list(
-             list(type = "line", fillcolor = "red", 
-               line    = list(color = "red",
-               width = 2,
-               dash = "dot"),
-               opacity = 0.5,
-               x0      = 0.87,
-               x1      = 0.87,
-               xref    = "Flim",
-               y0      = 0,
-               y1      = 450000,
-               yref    = "y",
-               name = "Flim"),
-             list(type = "line", fillcolor = "green", 
-               line    = list(color = "green",
-               width = 2,
-               dash = "dot"), 
-               opacity = 0.2, 
-               x0      = 0.28,
-               x1      = 0.28,
-               xref    = "Fmsy",
-               y0      = 0,
-               y1      = 450000,
-               yref    = "y",
-               name = "Fmsy"),
-             list(type = "line", fillcolor = "orange", 
-               line    = list(color = "orange",
-               width = 2,
-               dash = "dot"), 
-               opacity = 1, 
-               x0      = 0.62,
-               x1      = 0.62,
-               xref    = "Fpa",
-               y0      = 0,
-               y1      = 450000,
-               yref    = "y",
-               name = "Fpa"),
-             list(type = "line", fillcolor = "blue", 
-               line    = list(color = "blue",
-               width = 2,
-               dash = "dash"), 
-               opacity = 0.3, 
-               x0      = -0.3,
-               x1      = 3,
-               xref    = "x",
-               y0      = 32000,
-               y1      = 32000,
-               yref    = "Blim",
-               name = "Blim"),
-             list(type = "line", fillcolor = "lightblue", 
-               line    = list(color = "lightblue",
-               width = 2,
-               dash = "dash"), 
-               opacity = 0.3, 
-               x0      = -0.3,
-               x1      = 3,
-               xref    = "x",
-               y0      = 45000,
-               y1      = 45000,
-               yref    = "Bpa = MSY Btrigger",
-               text = "Bpa = MSY Btrigger",
-               textposition = "bottom right"),
-             list(type = "rect", fillcolor = "green", opacity = 0.2,
-                  line = list(color = "green", opacity=0.2),
-                  x0 = -0.3, x1 = 0.62, xref = "x",
-                  y0 = 0, y1 = 450000, yref = "y"),
-             list(type = "rect", fillcolor = "orange", opacity = 0.2,
-                  line = list(color = "orange", opacity=0.2),
-                  x0 = 0.62, x1 = 0.87, y0 = 0, y1 = 450000),
-             list(type = "rect", fillcolor = "red", opacity = 0.2,
-                  line = list(color = "red", opacity=0.2),
-                  x0 = 0.87, x1 = 3, y0 = 0, y1 = 450000)),
-           yaxis= list(title = 'tonnes', showgrid =FALSE),
-    xaxis=list(title = 'F', showgrid= FALSE, tickmode = "array",tickvals = c(0.28,0.62,0.87), ticktext = c("Fmsy","Fpa", "Flim"), showarrow = TRUE, tickangle = 45),
-    annotations=
-        list(
-            x= 3,
-            y=c(32000,45000),
-            xref= '1',
-            yref='y',
-            text=c('Blim','Bpa = MSY Btrigger'),
-            showarrow = TRUE,
-            ax= 70,
-            ay= 0
-        ),
-        list(
-            x= c(0.280, 0.620, 0.870),
-            y= -10,
-            xref= 'x',
-            yref='1',
-            text=c('Fmsy','Fpa', 'Flim'),
-            showarrow = TRUE,
-            ax= 30,
-            ay= -50
-        )
-    )%>%
-         add_trace(y = ~ SSB, name= 'SSB 2019', type = 'bar',opacity = 0.8, width= 0.2, color = ~ SSB,colors=c("darkblue","Yellow"), text = data$Basis, hoverinfo = "text + x+ y") %>%
-          add_trace(y = ~ Catch, name = 'Catch 2018', mode = 'lines+markers',text = data$Basis, hoverinfo = "text + x+ y")
-                  
-  p1$elementId <- NULL
-  p1
-```
+\* “Wanted” and “unwanted” catch are used to describe fish that would be landed and discarded in the absence of the EU landing obligation.
 
-** Missing F legend, horizontal bar color ** 
- 
-## Version 2:
-```{r catchoptionsgraphv2}
+\** SSB 2020 relative to SSB 2019.
+
+\*** Total catch 2019 relative to the catch advice for 2018 (115 335 tonnes).
+
+\^ Unwanted catch includes forecast unwanted catch (discards included in the assessment) and additional unwanted catch (the discards that were not included in the assessment, amounting to approximately 2.8% of the total catch).
+
+\^^ Catch option corresponds to F2018 = 0.25.
+
+<br>
+The catch for 2019 corresponding to the MSY framework is 23% higher than the advice given for 2018. The increase is mainly a consequence of the increase in SSB in 2019 as a result of strong incoming year classes.
+
+</div> 
+<br>
+***
+
+## Catch scenarios plot
+
+The following plot resumes Fishing mortality scenarios (see Table 3) and the related estimates of Catch and next years' Spawning Stock Biomass. Vertical and horizontal dashed lines show the available reference points (see also Reference Points section). 
+In the hover text appearing in each point is indicated the value in tonnes (of Cath or of SSB) and the scenario represented. At the same time, in the horizontal axis will show up the corresponding F value.
+<br>
+```{r catchoptionsgraphv2, fig.height=4.5, fig.width=10}
 library(ggplot2)
 library(plotly)
  catchoptions <- read.csv("Data/hke/hkescenariosplot.csv")
@@ -395,52 +286,93 @@ library(plotly)
  mypalette<-ggthemes::tableau_color_pal('tableau20')
  
  data <- catchoptions[order(catchoptions$F),]
- p1 <- ggplot(catchoptions, aes(F, colour = )) + theme_bw() +
-    geom_rect(xmin = -Inf, ymin = -Inf, xmax = 0.62, ymax = Inf,
-              fill = "lightgreen", alpha=0.50)+theme_bw()+
-    # geom_rect(xmin = 0.280, ymin = -Inf, xmax = 0.282, ymax = Inf,
-    #           fill = "gold", alpha=0.50)+theme_bw()+
-    geom_rect(xmin = 0.62, ymin = -Inf, xmax = 0.87, ymax = Inf,
-              fill = "coral")+theme_bw()+
-    geom_rect(xmin = 0.87, ymin = -Inf, xmax = Inf, ymax = Inf,
-              fill = "brown1")+theme_bw()+
-    geom_hline(yintercept=45000, linetype="dashed", color = "yellowgreen")+
-    geom_hline(yintercept=32000, linetype="dashed", color = "yellow4")+
-    geom_vline(xintercept = 0.28,linetype = "dotted",
-               color = "violet", size = 0.5)+
-    geom_vline(xintercept = 0.62, linetype="dotted",
-               color = "violetred", size=0.5)+
-    geom_vline(xintercept = 0.87, linetype="dotted",
-               color = "violetred1", size=0.5)+
-    # geom_col(aes(y = Catch), width = 0.15)+
-    geom_point(aes(y = Catch),size = 2) +
-    geom_line(aes(y = Catch),size = 0.5, colour= "orangered")+
-    geom_point(aes(y=SSB), size = 2)+
-    geom_line(aes(y = SSB),size = 0.5, colour= "lightskyblue")+
-    scale_y_continuous("tonnes",sec.axis = sec_axis(~., name = "SSB"))+
-    # scale_x_continuous(breaks = catchoptions$F)+
-    xlab("Fish mortality")+
-    ylab("Catches and SSB in tonnes")
+ data$my_text=paste(data$Type , data$Basis, sep=": ")
  
-  p2 <- p1 + theme(axis.text.x = element_text(face="bold", color="Black",
-                             size=10, angle=45))+
-    theme(legend.text = element_text(colour="blue", size = 16, face = "bold"))
-  # p3<- p2+ guide_colorbar(title = "Spawning Stock Biomass", label= TRUE,barheight = )
- # p3<- p2 + geom_hline(yintercept=45000, linetype="dashed", color = "red")+
- #   geom_hline(yintercept=32000, linetype="dashed", color = "black")+
- #   geom_vline(xintercept = 0.28,
- #                 color = "yellow", size=3)+
- #   geom_vline(xintercept = 0.62, linetype="dotted",
- #                   color = "blue", size=0.5)+
- #   geom_vline(xintercept = 0.87, linetype="dotted",
- #                 color = "blue", size=0.5)
+ p1 <- plot_ly(data, x = ~F) %>%
+        layout(hovermode="TRUE", showlegend = TRUE,
+               shapes = list(
+                       list(type = "line", fillcolor = "red", 
+                            line    = list(color = "red",
+                                           width = 3,
+                                           dash = "dash"),
+                            opacity = 0.5,
+                            x0      = 0.87,
+                            x1      = 0.87,
+                            xref    = "Flim",
+                            y0      = 0,
+                            y1      = 500000,
+                            yref    = "y",
+                            name = "Flim"),
+                       list(type = "line", fillcolor = "green", 
+                            line    = list(color = "green",
+                                           width = 3,
+                                           dash = "dash"), 
+                            opacity = 0.5, 
+                            x0      = 0.28,
+                            x1      = 0.28,
+                            xref    = "Fmsy",
+                            y0      = 0,
+                            y1      = 500000,
+                            yref    = "y",
+                            name = "Fmsy"),
+                       list(type = "line", fillcolor = "orange", 
+                            line    = list(color = "orange",
+                                           width = 3,
+                                           dash = "dash"), 
+                            opacity = 0.5, 
+                            x0      = 0.62,
+                            x1      = 0.62,
+                            xref    = "Fpa",
+                            y0      = 0,
+                            y1      = 500000,
+                            yref    = "y",
+                            name = "Fpa"),
+                       list(type = "line", fillcolor = "red", 
+                            line    = list(color = "red",
+                                           width = 3,
+                                           dash = "dash"), 
+                            opacity = 0.5, 
+                            x0      = 0,
+                            x1      = 2.8,
+                            xref    = "x",
+                            y0      = 32000,
+                            y1      = 32000,
+                            yref    = "Blim",
+                            name = "Blim"),
+                       list(type = "line", fillcolor = "green", 
+                            line    = list(color = "green",
+                                           width = 3,
+                                           dash = "dash"), 
+                            opacity = 0.5, 
+                            x0      = 0,
+                            x1      = 2.8,
+                            xref    = "x",
+                            y0      = 45000,
+                            y1      = 45000,
+                            yref    = "Bpa = MSY Btrigger",
+                            text = "Bpa = MSY Btrigger",
+                            textposition = "bottom right")),
+               yaxis= list(title = 'Tonnes', showgrid =FALSE),
+               xaxis=list(title = 'Fishing mortality scenarios', showgrid= FALSE, tickmode = "array",tickvals = c(0.28,0.62,0.87), ticktext = c("Fmsy","Fpa", "Flim")),
+    annotations=
+        list(
+            x= 3,
+            y=c(32000,45000),
+            xref= '1',
+            yref='y',
+            text=c('Blim              ','Bpa = MSY Btrigger'),
+            showarrow = TRUE,
+            ax= 40,
+            ay= 0
+        ) 
+    )%>%
+        add_trace(y = ~ SSB, name= 'SSB 2019', mode = 'lines+markers',text = data$my_text, hoverinfo = "text + x+ y") %>%
+        add_trace(y = ~ Catch, name = 'Catch 2018', mode = 'lines+markers',text = data$my_text, hoverinfo = "text + x+ y")
 
-
- ggplotly(p1, width = 600, height = 300)
-
+p1
 ```
-  
-<br>
+
+This plot is produced with plotly. Among available features, it can be downloaded as .png and it is possible to zoom in and out.
 
 [Go to Top](#top)
 
@@ -500,6 +432,10 @@ Some fleets fishing this stock have been under the EU landing obligation since 2
 # Reference Points  
 <br>
 **Table 5** Reference points, values, and their technical basis for hake in subareas 4, 6, and 7, and in divisions 3.a, 8.a–b, and 8.d, Northern stock.
+<br>
+<button class="btn btn-primary" data-toggle="collapse" data-target="#BlockName3"> Show/Download Table </button>  
+<div id="BlockName3" class="collapse"> 
+<br>
 ```{r referencepoints, echo=FALSE}
 library(knitr)
 library(readr)
@@ -511,7 +447,6 @@ kable(dt, "html")%>%kable_styling(position = "center")%>%
         collapse_rows(columns = 1)
 
 ```
-<br>
 
 ```{r download2}
 library(magrittr)
@@ -519,7 +454,9 @@ library(magrittr)
    paste0(collapse="\n") %>% 
    openssl::base64_encode() -> encoded
 ```
+<br>
 [Download CSV](`r sprintf('data:text/csv;base64,%s', encoded)`)
+</div>
 
 ***
 # Basis of the assessment  
@@ -551,26 +488,29 @@ library(magrittr)
 There is no information available
 
 ***
-# History of the advice, catch, and management    
+# History of the advice, catch, and management 
+
+<br>
 
 **Table 7**  ICES advice and catch for hake in subareas 4, 6, and 7, and in divisions 3.a, 8.a–b, and 8.d, Northern stock. All weights are in tonnes. 
-
-** This table should be hidden**
-
+<br>
+<button class="btn btn-primary" data-toggle="collapse" data-target="#BlockName4"> Show/Download Table </button>  
+<div id="BlockName4" class="collapse"> 
 <br>
 ```{r history, echo=FALSE }
 library(icesSAG)
 library(kableExtra)
 dt <- read.csv("Data/hke/hkecatchhistory.csv")
 # dt <- dt [,-1] 
-colnames(dt) <- c("Year", "ICES advice", "Pred. Catch", "Pred. landings","TAC", "ICES landings", "Discards", "ICES catch")
+# colnames(dt) <- c("Year", "ICES advice", "Pred. Catch", "Pred. landings","TAC", "ICES landings", "Discards", "ICES catch")
 kable(dt, "html")%>% 
   column_spec(2, width = "20em")%>%
         kable_styling(position = "center")%>%
         row_spec(0, bold = T, color = "black", background = "lightgrey")
 ```
-* Sum of area TACs, corresponding to northern stock plus Division 2.a (EC zone only).
-** Partial discard estimates are available and used in the assessment. For remaining years for which no values are presented, some estimates are available but not considered valid and thus not used in the assessment.
+\* Sum of area TACs, corresponding to northern stock plus Division 2.a (EC zone only).
+
+\** Partial discard estimates are available and used in the assessment. For remaining years for which no values are presented, some estimates are available but not considered valid and thus not used in the assessment.
 
 ```{r downloadhistory}
 library(magrittr)
@@ -581,44 +521,73 @@ library(magrittr)
 
 [Download CSV](`r sprintf('data:text/csv;base64,%s', encoded)`) 
 <br>
-<br> 
-
-
+</div>
 ***
 
 # History of the catch and landings  
 
+<br>
+
 **Table 8** Catch distribution by fleet in 2017 as estimated by ICES for hake in subareas 4, 6, and 7, and in divisions 3.a, 8.a–b, and 8.d, Northern stock. All weights are in tonnes.
+<br>
 ```{r catchlandings, echo = FALSE}
 library(kableExtra)
-dt <- read.csv("Data/hke/hkelandhist.csv", header = FALSE)
-colnames(dt) <- NULL
-# kable(dt, "html")%>%kable_styling(position = "center")%>%
-#         add_header_above(c("Catch" = 1, "Landings" = 4, "Discards" = 1))%>%
-#   row_spec(0, bold = T, color = "black", background = "lightgrey")%>%
-#         collapse_rows(columns = 1)
+dt <- read.csv("Data/hke/hkelandhist.csv", header = TRUE)
+# dt<-unname(dt)
+# dt <- dt[,-7]
+  kable(dt, "html")%>%kable_styling(position = "center")%>%
+#          add_header_above(c( " " , "Catch" = 1, "Landings" = 4, "Discards" = 1))%>%
+   row_spec(0, bold = T, color = "black", background = "lightgrey")
+#          collapse_rows(columns = 1)
 ```
+<br>
+Catch 2017 | Landings | Discards|
 
-** Missing small table**
+---|---|---|
+
+111770| 7% unspecified gear  34% longline  24% gillnet 35% trawl |7100| 
+NA  | 104670|na|  
+                                               
 
 <br>
 
-***
 
 **Table 9** History of commercial catch and landings of hake in subareas 4, 6, and 7, and in divisions 3.a, 8.a–b, and 8.d, Northern stock. Both the official and ICES estimated values are presented by area for each country participating in the fishery. All weights are in tonnes.
+<br>
+<button class="btn btn-primary" data-toggle="collapse" data-target="#BlockName5"> Show/Download Table </button>  
+<div id="BlockName5" class="collapse"> 
+<br>
+```{r table9, echo=FALSE }
+library(icesSAG)
+library(kableExtra)
+dt <- read.csv("Data/hke/hkelandings.csv", header = TRUE)
+# dt <- dt [,-1] 
+# colnames(dt) <- c("Year", "ICES advice", "Pred. Catch", "Pred. landings","TAC", "ICES landings", "Discards", "ICES catch")
+kable(dt, "html")%>% 
+        kable_styling(position = "center")%>%
+        row_spec(0, bold = T, color = "black", background = "lightgrey")
+```
+\* Spanish data for 1961–1972 are not revised; data for Subarea 8 for 1973–1978 include data for divisions 8.a,b only. Data for 1979–1981 are revised based on French surveillance data. Divisions 3.a and 4.b,c are included in the column "3.a, 4, and 6" only after 1976. There are some unallocated landings ( moreover for the period 1961–1970).
+\** Discard estimates from observer programmes. In years marked with # partial discard estimates are available and used in the assessment. For the remaining years where no values are presented, some estimates are available but are not considered valid and thus not used in the assessment. In the years with data only Spanish discards, and discards from French Nephrops trawlers are included.
+\*** The working group used total catches from 1978.
+\^ Unallocated landings for the years 2011–2014 were revised in 2015.
 
-**Missing big table**
+```{r downloadlandhistory}
+library(magrittr)
+ readLines("Data/hke/hkelandings.csv") %>% 
+   paste0(collapse="\n") %>% 
+   openssl::base64_encode() -> encoded
+```
 
-* Spanish data for 1961–1972 are not revised; data for Subarea 8 for 1973–1978 include data for divisions 8.a,b only. Data for 1979–1981 are revised based on French surveillance data. Divisions 3.a and 4.b,c are included in the column "3.a, 4, and 6" only after 1976. There are some unallocated landings ( moreover for the period 1961–1970).
-** Discard estimates from observer programmes. In years marked with # partial discard estimates are available and used in the assessment. For the remaining years where no values are presented, some estimates are available but are not considered valid and thus not used in the assessment. In the years with data only Spanish discards, and discards from French Nephrops trawlers are included.
-*** The working group used total catches from 1978.
-^ Unallocated landings for the years 2011–2014 were revised in 2015.
-# See ** footnote.
+[Download CSV](`r sprintf('data:text/csv;base64,%s', encoded)`) 
+<br>
+</div>
 
 ***
 
 # Sources and references  
 
+<br>
 
 * EU. 2018.  Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL establishing a multiannual plan for fish stocks in the Western Waters and adjacent waters, and for fisheries exploiting those stocks, amending Regulation (EU) 2016/1139 establishing a multiannual plan for the Baltic Sea, and repealing Regulations (EC) No 811/2004, (EC) No 2166/2005, (EC) No 388/2006, (EC) 509/2007 and (EC) 1300/2008.  COM/2018/0149 final. https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:52018PC0149&from=EN
 * EU. 2004. COUNCIL REGULATION (EC) No. 811/2004 of 21.4.2004 establishing measures for the recovery of the Northern hake stock. Official Journal of the European Union, L 150/1. http://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=OJ:L:2004:150:0001:0011:EN:PDF.

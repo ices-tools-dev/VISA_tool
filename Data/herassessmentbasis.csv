@@ -1,7 +1,0 @@
-"","ICES stock data category","1 (ICES, 2016)."
-"1","Assessment type","Age-based analytical assessment, XSA (ICES, 2017) that uses catches in the model and in the forecast."
-"2","Input data","Commercial catches (international landings, age and length frequencies from catch sampling); one survey acoustic index (BIAS); natural mortalities from multispecies model (SMS) until 2011, for 2012-2016 natural mortalities are based on regression of M against eastern Baltic cod SSB; fixed maturity ogive."
-"3","Discards and bycatch","Not included; considered negligible."
-"4","Indicators","None."
-"5","Other information","Last benchmarked in 2013 (ICES, 2013)."
-"6","Working group","Baltic Fisheries Assessment Working Group (WGBFAS)"

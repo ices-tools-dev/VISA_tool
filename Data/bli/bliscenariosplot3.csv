@@ -1,0 +1,9 @@
+Type,Basis,Catch2020,F2020,SSB_2021
+ICES advice basis,MSY approach (F2020 = FMSY),12032,0.12,100268
+Other scenarios,Fpa,12032,0.12,100268
+Other scenarios,F2020 = 0,0,0,111654
+Other scenarios,F2020 = Flim,16642,0.17,95912
+Other scenarios,SSB (2021) = Bpa,38809,0.45,75037
+Other scenarios,SSB (2021) = Blim,61325,0.85,54000
+Other scenarios,SSB (2021) = MSY Btrigger,38809,0.45,75037
+Other scenarios,F2020 = Fsq = F2017,3142,0.03,108678
