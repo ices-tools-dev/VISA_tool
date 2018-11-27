@@ -11,7 +11,7 @@ output:
 ---
 <style>
 #TOC {
-  background:url("images/iceslogo.png") ;
+  background:url("http://www.ices.dk/_layouts/15/1033/images/icesimg/iceslogo.png") ;
   background-size: contain;
   padding-top: 100px !important;
   background-repeat: no-repeat;
@@ -25,7 +25,9 @@ output:
 }
 </style>
 
-# ICES advice 2018                              
+# ICES advice 2018  
+
+## *hke.27.3a46-8abd*
 
 ## Hake (*Merluccius merluccius*) in subareas 4, 6, and 7, and in divisions 3.a, 8.a–b, and 8.d, Northern stock (Greater North Sea, Celtic Seas, and the northern Bay of Biscay)
 
@@ -160,19 +162,6 @@ SSB <- data %>% select(Year, low_SSB, SSB,high_SSB, Blim, Bpa, MSYBtrigger)
 <button class="btn btn-primary" data-toggle="collapse" data-target="#BlockName1"> Show/Download Table </button>  
 <div id="BlockName1" class="collapse"> 
 <br>
-```{r summarysag, echo=FALSE, results= "asis"}
-
-# library(icesSAG)
-library(kableExtra)
-# SAGsummary <- getSAG("hke.27.3a46-8abd", 2018, data = "summary", combine = TRUE, purpose = "Advice")
-write.csv(SAGsummary, file = "SAGsummary.csv")
-kable(SAGsummary, "html")%>% 
-  row_spec(0, bold = T, color = "black", background = "lightgrey", align = "c")%>%
-        kable_styling(position = "center")
-
-
-```
-
 ```{r download4}
 library(magrittr)
  readLines("SAGsummary.csv") %>% 
@@ -181,6 +170,21 @@ library(magrittr)
 ```
 
 [Download CSV](`r sprintf('data:text/csv;base64,%s', encoded)`)
+
+```{r summarysag, echo=FALSE, results= "asis"}
+
+# library(icesSAG)
+library(kableExtra)
+# SAGsummary <- getSAG("hke.27.3a46-8abd", 2018, data = "summary", combine = TRUE, purpose = "Advice")
+write.csv(SAGsummary, file = "SAGsummary.csv")
+kable(SAGsummary, "html")%>% 
+  row_spec(0, bold = T, color = "black", background = "lightgrey", align = "c")%>%
+        kable_styling(position = "center")%>%
+  scroll_box(width = "100%", height = "400px")
+
+
+```
+
 </div>
 <br>
 [Go to Top](#top)
@@ -190,6 +194,7 @@ library(magrittr)
 
 <br>
 
+**Table 1** State of the stock and fishery relative to reference points for hake in subareas 4, 6, and 7, and in divisions 3.a, 8.a–b, and 8.d, Northern stock.
 ![](images/MSY_1.png)
 
 
@@ -225,12 +230,26 @@ library(magrittr)
 [Download CSV](`r sprintf('data:text/csv;base64,%s', encoded)`)
 <br>
 
+\* Additional discards are the discards that were not included in the assessment, amounting to approximately 2.8% of the total catch.
+
+\** “Wanted” and “unwanted” catch are used to describe fish that would be landed and discarded in the absence of the EU landing
+obligation.
+
 ***
 
 **Table 3**  Annual catch scenarios for hake in subareas 4, 6, and 7, and in divisions 3.a, 8.a–b, and 8.d, Northern stock. All weights are in tonnes. Note: The % change in TAC is not computed because the stock area does not correspond to the area for the TAC.
 <br>
 <button class="btn btn-primary" data-toggle="collapse" data-target="#BlockName2"> Show/Download Table </button>  
 <div id="BlockName2" class="collapse"> 
+```{r download}
+library(magrittr)
+ readLines("Data/hke/hkecatchoptions.csv") %>% 
+   paste0(collapse="\n") %>% 
+   openssl::base64_encode() -> encoded
+```
+
+[Download CSV](`r sprintf('data:text/csv;base64,%s', encoded)`)
+
 ```{r catchoptionstable, echo=FALSE}
 library(knitr)
 library(readr)
@@ -243,17 +262,9 @@ dt <- dt[complete.cases(dt),]
    column_spec(1, width = "30em")%>%
          column_spec(2:9, width = "10em")%>%
    group_rows("ICES advice basis",1,1) %>%
-   group_rows("Other scenarios",2,9)
+   group_rows("Other scenarios",2,9)%>%
+  scroll_box(width = "100%", height = "400px")
 ```
-
-```{r download}
-library(magrittr)
- readLines("Data/hke/hkecatchoptions.csv") %>% 
-   paste0(collapse="\n") %>% 
-   openssl::base64_encode() -> encoded
-```
-
-[Download CSV](`r sprintf('data:text/csv;base64,%s', encoded)`)
 
 \* “Wanted” and “unwanted” catch are used to describe fish that would be landed and discarded in the absence of the EU landing obligation.
 
@@ -266,10 +277,14 @@ library(magrittr)
 \^^ Catch option corresponds to F2018 = 0.25.
 
 <br>
-The catch for 2019 corresponding to the MSY framework is 23% higher than the advice given for 2018. The increase is mainly a consequence of the increase in SSB in 2019 as a result of strong incoming year classes.
 
 </div> 
 <br>
+
+The catch for 2019 corresponding to the MSY framework is 23% higher than the advice given for 2018. The increase is mainly a consequence of the increase in SSB in 2019 as a result of strong incoming year classes.
+
+<br>
+
 ***
 
 ## Catch scenarios plot
@@ -436,6 +451,15 @@ Some fleets fishing this stock have been under the EU landing obligation since 2
 <button class="btn btn-primary" data-toggle="collapse" data-target="#BlockName3"> Show/Download Table </button>  
 <div id="BlockName3" class="collapse"> 
 <br>
+```{r download2}
+library(magrittr)
+ readLines("Data/hke/hkereferencepoints.csv") %>% 
+   paste0(collapse="\n") %>% 
+   openssl::base64_encode() -> encoded
+```
+<br>
+[Download CSV](`r sprintf('data:text/csv;base64,%s', encoded)`)
+
 ```{r referencepoints, echo=FALSE}
 library(knitr)
 library(readr)
@@ -448,14 +472,7 @@ kable(dt, "html")%>%kable_styling(position = "center")%>%
 
 ```
 
-```{r download2}
-library(magrittr)
- readLines("Data/hke/hkereferencepoints.csv") %>% 
-   paste0(collapse="\n") %>% 
-   openssl::base64_encode() -> encoded
-```
-<br>
-[Download CSV](`r sprintf('data:text/csv;base64,%s', encoded)`)
+
 </div>
 
 ***
@@ -497,6 +514,15 @@ There is no information available
 <button class="btn btn-primary" data-toggle="collapse" data-target="#BlockName4"> Show/Download Table </button>  
 <div id="BlockName4" class="collapse"> 
 <br>
+```{r downloadhistory}
+library(magrittr)
+ readLines("Data/hke/hkecatchhistory.csv") %>% 
+   paste0(collapse="\n") %>% 
+   openssl::base64_encode() -> encoded
+```
+
+[Download CSV](`r sprintf('data:text/csv;base64,%s', encoded)`) 
+
 ```{r history, echo=FALSE }
 library(icesSAG)
 library(kableExtra)
@@ -506,20 +532,13 @@ dt <- read.csv("Data/hke/hkecatchhistory.csv")
 kable(dt, "html")%>% 
   column_spec(2, width = "20em")%>%
         kable_styling(position = "center")%>%
-        row_spec(0, bold = T, color = "black", background = "lightgrey")
+        row_spec(0, bold = T, color = "black", background = "lightgrey")%>%
+  scroll_box(width = "100%", height = "400px")
 ```
 \* Sum of area TACs, corresponding to northern stock plus Division 2.a (EC zone only).
 
 \** Partial discard estimates are available and used in the assessment. For remaining years for which no values are presented, some estimates are available but not considered valid and thus not used in the assessment.
 
-```{r downloadhistory}
-library(magrittr)
- readLines("Data/hke/hkecatchhistory.csv") %>% 
-   paste0(collapse="\n") %>% 
-   openssl::base64_encode() -> encoded
-```
-
-[Download CSV](`r sprintf('data:text/csv;base64,%s', encoded)`) 
 <br>
 </div>
 ***
@@ -540,15 +559,7 @@ dt <- read.csv("Data/hke/hkelandhist.csv", header = TRUE)
    row_spec(0, bold = T, color = "black", background = "lightgrey")
 #          collapse_rows(columns = 1)
 ```
-<br>
-Catch 2017 | Landings | Discards|
-
----|---|---|
-
-111770| 7% unspecified gear  34% longline  24% gillnet 35% trawl |7100| 
-NA  | 104670|na|  
-                                               
-
+                                
 <br>
 
 
@@ -557,21 +568,6 @@ NA  | 104670|na|
 <button class="btn btn-primary" data-toggle="collapse" data-target="#BlockName5"> Show/Download Table </button>  
 <div id="BlockName5" class="collapse"> 
 <br>
-```{r table9, echo=FALSE }
-library(icesSAG)
-library(kableExtra)
-dt <- read.csv("Data/hke/hkelandings.csv", header = TRUE)
-# dt <- dt [,-1] 
-# colnames(dt) <- c("Year", "ICES advice", "Pred. Catch", "Pred. landings","TAC", "ICES landings", "Discards", "ICES catch")
-kable(dt, "html")%>% 
-        kable_styling(position = "center")%>%
-        row_spec(0, bold = T, color = "black", background = "lightgrey")
-```
-\* Spanish data for 1961–1972 are not revised; data for Subarea 8 for 1973–1978 include data for divisions 8.a,b only. Data for 1979–1981 are revised based on French surveillance data. Divisions 3.a and 4.b,c are included in the column "3.a, 4, and 6" only after 1976. There are some unallocated landings ( moreover for the period 1961–1970).
-\** Discard estimates from observer programmes. In years marked with # partial discard estimates are available and used in the assessment. For the remaining years where no values are presented, some estimates are available but are not considered valid and thus not used in the assessment. In the years with data only Spanish discards, and discards from French Nephrops trawlers are included.
-\*** The working group used total catches from 1978.
-\^ Unallocated landings for the years 2011–2014 were revised in 2015.
-
 ```{r downloadlandhistory}
 library(magrittr)
  readLines("Data/hke/hkelandings.csv") %>% 
@@ -581,6 +577,25 @@ library(magrittr)
 
 [Download CSV](`r sprintf('data:text/csv;base64,%s', encoded)`) 
 <br>
+```{r table9, echo=FALSE }
+library(icesSAG)
+library(kableExtra)
+dt <- read.csv("Data/hke/hkelandings.csv", header = TRUE)
+# dt <- dt [,-1] 
+# colnames(dt) <- c("Year", "ICES advice", "Pred. Catch", "Pred. landings","TAC", "ICES landings", "Discards", "ICES catch")
+kable(dt, "html")%>% 
+        kable_styling(position = "center")%>%
+        row_spec(0, bold = T, color = "black", background = "lightgrey")%>%
+  scroll_box(width = "100%", height = "400px")
+```
+\* Spanish data for 1961–1972 are not revised; data for Subarea 8 for 1973–1978 include data for divisions 8.a,b only. Data for 1979–1981 are revised based on French surveillance data. Divisions 3.a and 4.b,c are included in the column "3.a, 4, and 6" only after 1976. There are some unallocated landings ( moreover for the period 1961–1970).
+
+\** Discard estimates from observer programmes. In years marked with # partial discard estimates are available and used in the assessment. For the remaining years where no values are presented, some estimates are available but are not considered valid and thus not used in the assessment. In the years with data only Spanish discards, and discards from French Nephrops trawlers are included.
+
+\*** The working group used total catches from 1978.
+
+\^ Unallocated landings for the years 2011–2014 were revised in 2015.
+
 </div>
 
 ***

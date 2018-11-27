@@ -11,7 +11,7 @@ output:
 ---
 <style>
 #TOC {
-  background:url("images/iceslogo.png") ;
+  background:url("http://www.ices.dk/_layouts/15/1033/images/icesimg/iceslogo.png") ;
   background-size: contain;
   padding-top: 100px !important;
   background-repeat: no-repeat;
@@ -26,6 +26,8 @@ output:
 </style>
 
 # ICES advice 2018
+
+## *bli.27.5b67*
 
 ## Blue ling (*Molva dypterygia*) in subareas 6–7 and Division 5.b (Celtic Seas, English Channel, and Faroes grounds)
 
@@ -160,15 +162,6 @@ Blue ling in subareas 6–7 and Division 5.b. Assessment summary. Weights are in
 <button class="btn btn-primary" data-toggle="collapse" data-target="#BlockName1"> Show/Download Table </button>  
 <div id="BlockName1" class="collapse"> 
 <br>
-```{r summarysag, echo=FALSE}
-library(kableExtra)
-write.csv(SAGsummary, file = "SAGsummary.csv")
-kable(SAGsummary, "html")%>% 
-  row_spec(0, bold = T, color = "black", background = "lightgrey", align = "c")%>%
-        kable_styling(position = "center")
-
-```
-
 ```{r download4}
 library(magrittr)
  readLines("SAGsummary.csv") %>% 
@@ -177,6 +170,17 @@ library(magrittr)
 ```
 
 [Download CSV](`r sprintf('data:text/csv;base64,%s', encoded)`)
+
+```{r summarysag, echo=FALSE}
+library(kableExtra)
+write.csv(SAGsummary, file = "SAGsummary.csv")
+kable(SAGsummary, "html")%>% 
+  row_spec(0, bold = T, color = "black", background = "lightgrey", align = "c")%>%
+        kable_styling(position = "center")%>%
+  scroll_box(width = "100%", height = "400px")
+
+```
+
 </div>
 <br> 
 [Go to Top](#top)
@@ -188,7 +192,7 @@ library(magrittr)
 ICES assesses that fishing pressure on the stock is below FMSY and spawning stock size is above MSY Btrigger.
 
 <br>
-
+**Table 1** State of the stock and fishery relative to reference points for blue ling in subareas 6–7 and Division 5.b.
 ![](images/MSY_1.png)
 
 
@@ -223,6 +227,15 @@ kable(dt, "html")%>%
 <button class="btn btn-primary" data-toggle="collapse" data-target="#BlockName2"> Show/Download Table </button>  
 <div id="BlockName2" class="collapse"> 
 <br>
+```{r download}
+library(magrittr)
+ readLines("Data/bli/blicatchoptions.csv") %>% 
+   paste0(collapse="\n") %>% 
+   openssl::base64_encode() -> encoded
+```
+
+[Download CSV](`r sprintf('data:text/csv;base64,%s', encoded)`)
+
 ```{r catchoptionstable, echo=FALSE}
 library(knitr)
 library(readr)
@@ -238,25 +251,33 @@ dt <- dt[complete.cases(dt),]
    group_rows("Other scenarios",2,8)
 ```
 \* SSB is estimated from first of January and does not depend on fishing in the same year.
+
 \** SSB in 2020 in relation to SSB in 2019.
+
 \*** Catches (EU+ Faroes waters) in 2019 in relation to EU TAC in 2018.
+
 \^ Advice value 2019 relative to advice value 2018.
-```{r download}
+
+<br>
+
+</div>
+
+<br>
+
+**Table 3b** Annual catch scenarios for 2020 with F2019 = FMSY for blue ling in subareas 6–7 and Division 5.b. All weights are in tonnes.
+<br>
+<button class="btn btn-primary" data-toggle="collapse" data-target="#BlockName3"> Show/Download Table </button>  
+<div id="BlockName3" class="collapse"> 
+<br>
+```{r download2}
 library(magrittr)
- readLines("Data/bli/blicatchoptions.csv") %>% 
+ readLines("Data/bli/blicatchoptions2.csv") %>% 
    paste0(collapse="\n") %>% 
    openssl::base64_encode() -> encoded
 ```
 
 [Download CSV](`r sprintf('data:text/csv;base64,%s', encoded)`)
-</div>
-<br>
-<br>
-**Table 3b** Annual catch scenarios for 2020 with F2019 = FMSY for blue ling in subareas 6–7 and Division 5.b. All weights are in tonnes.
-<br>
-<button class="btn btn-primary" data-toggle="collapse" data-target="#BlockName2"> Show/Download Table </button>  
-<div id="BlockName2" class="collapse"> 
-<br>
+
 ```{r catchoptionstable2, echo=FALSE}
 library(knitr)
 library(readr)
@@ -272,26 +293,35 @@ dt <- read.csv("Data/bli/blicatchoptions2.csv", header = T, row.names = 1)
    group_rows("Other scenarios",2,8)
 ```
 \* SSB is estimated from first of January and does not depend on fishing in the same year.
+
 \** SSB in 2021 in relation to SSB in 2020 (98 331 t assuming FMSY in 2019).
+
 \*** Not provided: TAC 2019 not predicted because of the imbroglio between advised catch (for EU and Faroese waters) and EU TAC.
+
 \^ Advice value 2020 relative to advice value 2019.
+
 \^^ F driving the stock down to Bpa, Blim, and MSY Btrigger in 2021 when applied in 2020.
-```{r download2}
-library(magrittr)
- readLines("Data/bli/blicatchoptions2.csv") %>% 
-   paste0(collapse="\n") %>% 
-   openssl::base64_encode() -> encoded
-```
-[Download CSV](`r sprintf('data:text/csv;base64,%s', encoded)`)
-</div>
+
 <br>
+
+</div>
+
 <br>
 
 **Table 3c** Annual catch scenarios for 2020 with F2019 = Fsq = F2017 for blue ling in subareas 6–7 and Division 5.b. All weights are in tonnes.
 <br>
-<button class="btn btn-primary" data-toggle="collapse" data-target="#BlockName2"> Show/Download Table </button>  
-<div id="BlockName2" class="collapse"> 
+<button class="btn btn-primary" data-toggle="collapse" data-target="#BlockName4"> Show/Download Table </button>  
+<div id="BlockName4" class="collapse"> 
 <br>
+```{r download3}
+library(magrittr)
+ readLines("Data/bli/blicatchoptions3.csv") %>% 
+   paste0(collapse="\n") %>% 
+   openssl::base64_encode() -> encoded
+```
+
+[Download CSV](`r sprintf('data:text/csv;base64,%s', encoded)`)
+
 ```{r catchoptionstable3, echo=FALSE}
 library(knitr)
 library(readr)
@@ -307,20 +337,19 @@ dt <- read.csv("Data/bli/blicatchoptions3.csv", header = T, row.names = 1)
    group_rows("Other scenarios",2,8)
 ```
 \* SSB is estimated from first of January and does not depend on fishing in the same year.
+
 \** SSB in 2021 in relation to SSB in 2020 (106 559 t assuming Fsq in 2019).
-\*** Not provided: TAC 2019 not predicted because of the imbroglio between the advised catch (for EU and Faroese waters) and the EU
-TAC.
+
+\*** Not provided: TAC 2019 not predicted because of the imbroglio between the advised catch (for EU and Faroese waters) and the EU TAC.
+
 \^ Advice value 2020 relative to advice value 2019.
+
 \^^ F driving the stock down to Bpa, Blim, and MSY Btrigger in 2021 when applied in 2020.
 
-```{r download3}
-library(magrittr)
- readLines("Data/bli/blicatchoptions3.csv") %>% 
-   paste0(collapse="\n") %>% 
-   openssl::base64_encode() -> encoded
-```
-[Download CSV](`r sprintf('data:text/csv;base64,%s', encoded)`)
+<br>
+
 </div>
+
 <br>
 The advised catch in 2019 is higher than the advice for 2018 because of an increase in biomass. However, between 2019 and
 2020 the biomass declines, resulting in a decrease in advised catches.
@@ -334,303 +363,12 @@ The advised catch in 2019 is higher than the advice for 2018 because of an incre
 The following plot resumes Fishing mortality scenarios (see Table 3) and the related estimates of Catch and next years' Spawning Stock Biomass. Vertical and horizontal dashed lines show the available reference points (see also Reference Points section). 
 In the hover text appearing in each point is indicated the value in tonnes (of Cath or of SSB) and the scenario represented. At the same time, in the horizontal axis will show up the corresponding F value.
 <br>
-```{r catchoptionsgraph1, echo = FALSE,fig.height = 4.5, fig.width = 10}
-library(ggplot2)
-library(plotly)
- catchoptions <- read.csv("Data/bli/bliscenariosplot1.csv")
- labels <- catchoptions$Basis
- labels <- as.character(labels)
- mypalette<-ggthemes::tableau_color_pal('tableau20')
- 
- data <- catchoptions[order(catchoptions$F2019),] 
- data$my_text=paste(data$Type , data$Basis, sep=": ")
- 
- p1 <- plot_ly(data, x = ~F2019) %>%
-         layout(hovermode="TRUE", showlegend = TRUE,
-           shapes = list(
-             list(type = "line", fillcolor = "red", 
-               line    = list(color = "red",
-               width = 3,
-               dash = "dash"),
-               opacity = 0.5,
-               x0      = 0.17,
-               x1      = 0.17,
-               xref    = "Flim",
-               y0      = 0,
-               y1      = 110000,
-               yref    = "y",
-               name = "Flim"),
-             list(type = "line", fillcolor = "green", 
-               line    = list(color = "green",
-               width = 3,
-               dash = "dash"), 
-               opacity = 0.5, 
-               x0      = 0.12,
-               x1      = 0.12,
-               xref    = "Fmsy",
-               y0      = 0,
-               y1      = 110000,
-               yref    = "y",
-               name = "Fmsy"),
-             list(type = "line", fillcolor = "orange", 
-               line    = list(color = "orange",
-               width = 3,
-               dash = "dash"), 
-               opacity = 0.5, 
-               x0      = 0.12,
-               x1      = 0.12,
-               xref    = "Fpa",
-               y0      = 0,
-               y1      = 110000,
-               yref    = "y",
-               name = "Fpa"),
-             list(type = "line", fillcolor = "red", 
-               line    = list(color = "red",
-               width = 3,
-               dash = "dash"), 
-               opacity = 0.5, 
-               x0      = 0,
-               x1      = 0.83,
-               xref    = "x",
-               y0      = 54000,
-               y1      = 54000,
-               yref    = "Blim",
-               name = "Blim"),
-             list(type = "line", fillcolor = "green", 
-               line    = list(color = "green",
-               width = 3,
-               dash = "dash"), 
-               opacity = 0.5, 
-               x0      = 0,
-               x1      = 0.83,
-               xref    = "x",
-               y0      = 75037,
-               y1      = 75037,
-               yref    = "Bpa = MSY Btrigger",
-               text = "Bpa = MSY Btrigger",
-               textposition = "bottom right")),
-           yaxis= list(title = 'Tonnes', showgrid =FALSE),
-    xaxis=list(title = 'Fishing mortality scenarios', showgrid= FALSE, tickmode = "array",tickvals = c(0.12,0.17), ticktext = c("Fmsy = Fpa", "Flim")),
-    annotations=
-        list(
-            x= 0.83,
-            y=c(54000,75037),
-            xref= '1',
-            yref='y',
-            text=c('Blim            ','Bpa = MSY Btrigger'),
-            showarrow = FALSE,
-            ax= 70,
-            ay= 0
-        ) 
-    )%>%
-         add_trace(y = ~ SSB_2020, name= 'SSB 2020', mode = 'lines+markers',text = data$my_text, hoverinfo = "text + x+ y") %>%
-        add_trace(y = ~ Catch2019, name = 'Catch 2019', mode = 'lines+markers',text = data$my_text, hoverinfo = "text + x+ y")
-                  
-  p1
-  
-```
- 
-## Scenarios for 2020:
-<div class="col2">
-A. With F2019 = FMSY                                     B. With F2019 = Fsq = F2017
-```{r catchoptionsgraph2, fig.height=4.5, fig.width=4.5}
-library(ggplot2)
-library(plotly)
- catchoptions <- read.csv("Data/bli/bliscenariosplot2.csv")
- labels <- catchoptions$Basis
- labels <- as.character(labels)
- mypalette<-ggthemes::tableau_color_pal('tableau20')
- 
- data <- catchoptions[order(catchoptions$F2020),] 
- data$my_text=paste(data$Type , data$Basis, sep=": ")
- 
- p1 <- plot_ly(data, x = ~F2020) %>%
-         layout(hovermode="TRUE", showlegend = FALSE,
-           shapes = list(
-             list(type = "line", fillcolor = "red", 
-               line    = list(color = "red",
-               width = 3,
-               dash = "dash"),
-               opacity = 0.5,
-               x0      = 0.17,
-               x1      = 0.17,
-               xref    = "Flim",
-               y0      = 0,
-               y1      = 112000,
-               yref    = "y",
-               name = "Flim"),
-             list(type = "line", fillcolor = "green", 
-               line    = list(color = "green",
-               width = 3,
-               dash = "dash"), 
-               opacity = 0.5, 
-               x0      = 0.12,
-               x1      = 0.12,
-               xref    = "Fmsy",
-               y0      = 0,
-               y1      = 112000,
-               yref    = "y",
-               name = "Fmsy"),
-             list(type = "line", fillcolor = "orange", 
-               line    = list(color = "orange",
-               width = 3,
-               dash = "dash"), 
-               opacity = 0.5, 
-               x0      = 0.12,
-               x1      = 0.12,
-               xref    = "Fpa",
-               y0      = 0,
-               y1      = 112000,
-               yref    = "y",
-               name = "Fpa"),
-             list(type = "line", fillcolor = "red", 
-               line    = list(color = "red",
-               width = 3,
-               dash = "dash"), 
-               opacity = 0.5, 
-               x0      = 0,
-               x1      = 0.83,
-               xref    = "x",
-               y0      = 54000,
-               y1      = 54000,
-               yref    = "Blim",
-               name = "Blim"),
-             list(type = "line", fillcolor = "green", 
-               line    = list(color = "green",
-               width = 3,
-               dash = "dash"), 
-               opacity = 0.5, 
-               x0      = 0,
-               x1      = 0.83,
-               xref    = "x",
-               y0      = 75037,
-               y1      = 75037,
-               yref    = "Bpa = MSY Btrigger",
-               text = "Bpa = MSY Btrigger",
-               textposition = "bottom right")),
-           yaxis= list(title = 'Tonnes', showgrid =FALSE),
-    xaxis=list(title = 'Fishing mortality scenarios', showgrid= FALSE, tickmode = "array",tickvals = c(0.12,0.17), ticktext = c("Fmsy = Fpa", "Flim")),
-    annotations=
-        list(
-            x= 0.86,
-            y=c(54000,75037),
-            xref= '1',
-            yref='y',
-            text=c('Blim            ','Bpa = MSY Btrigger'),
-            showarrow = FALSE,
-            ax= 70,
-            ay= 0
-        ) 
-    )%>%
-         add_trace(y = ~ SSB_2021, name= 'SSB 2021', mode = 'lines+markers',text = data$my_text, hoverinfo = "text + x+ y") %>%
-        add_trace(y = ~ Catch2020, name = 'Catch 2020', mode = 'lines+markers',text = data$my_text, hoverinfo = "text + x+ y")
-                  
-  p1
-```
- 
- B. With F2019 = Fsq = F2017
-```{r catchoptionsgraph2b, fig.height=4.5, fig.width=4.5}
-library(ggplot2)
-library(plotly)
- catchoptions <- read.csv("Data/bli/bliscenariosplot3.csv")
- labels <- catchoptions$Basis
- labels <- as.character(labels)
- mypalette<-ggthemes::tableau_color_pal('tableau20')
- 
- data <- catchoptions[order(catchoptions$F2020),] 
- data$my_text=paste(data$Type , data$Basis, sep=": ")
- 
- p2 <- plot_ly(data, x = ~F2020) %>%
-         layout(hovermode="TRUE", showlegend = FALSE,
-           shapes = list(
-             list(type = "line", fillcolor = "red", 
-               line    = list(color = "red",
-               width = 3,
-               dash = "dash"),
-               opacity = 0.5,
-               x0      = 0.17,
-               x1      = 0.17,
-               xref    = "Flim",
-               y0      = 0,
-               y1      = 112000,
-               yref    = "y",
-               name = "Flim"),
-             list(type = "line", fillcolor = "green", 
-               line    = list(color = "green",
-               width = 3,
-               dash = "dash"), 
-               opacity = 0.5, 
-               x0      = 0.12,
-               x1      = 0.12,
-               xref    = "Fmsy",
-               y0      = 0,
-               y1      = 112000,
-               yref    = "y",
-               name = "Fmsy"),
-             list(type = "line", fillcolor = "orange", 
-               line    = list(color = "orange",
-               width = 3,
-               dash = "dash"), 
-               opacity = 0.5, 
-               x0      = 0.12,
-               x1      = 0.12,
-               xref    = "Fpa",
-               y0      = 0,
-               y1      = 112000,
-               yref    = "y",
-               name = "Fpa"),
-             list(type = "line", fillcolor = "red", 
-               line    = list(color = "red",
-               width = 3,
-               dash = "dash"), 
-               opacity = 0.5, 
-               x0      = 0,
-               x1      = 0.83,
-               xref    = "x",
-               y0      = 54000,
-               y1      = 54000,
-               yref    = "Blim",
-               name = "Blim"),
-             list(type = "line", fillcolor = "green", 
-               line    = list(color = "green",
-               width = 3,
-               dash = "dash"), 
-               opacity = 0.5, 
-               x0      = 0,
-               x1      = 0.83,
-               xref    = "x",
-               y0      = 75037,
-               y1      = 75037,
-               yref    = "Bpa = MSY Btrigger",
-               text = "Bpa = MSY Btrigger",
-               textposition = "bottom right")),
-           yaxis= list(title = 'Tonnes', showgrid =FALSE),
-    xaxis=list(title = 'Fishing mortality scenarios', showgrid= FALSE, tickmode = "array",tickvals = c(0.12,0.17), ticktext = c("Fmsy = Fpa", "Flim")),
-    annotations=
-        list(
-            x= 0.87,
-            y=c(54000,75037),
-            xref= '1',
-            yref='y',
-            text=c('Blim            ','Bpa = MSY Btrigger'),
-            showarrow = FALSE,
-            ax= 70,
-            ay= 0
-        ) 
-    )%>%
-         add_trace(y = ~ SSB_2021, name= 'SSB 2021', mode = 'lines+markers',text = data$my_text, hoverinfo = "text + x+ y") %>%
-        add_trace(y = ~ Catch2020, name = 'Catch 2020', mode = 'lines+markers',text = data$my_text, hoverinfo = "text + x+ y")
-                  
-  p2
-```
-</div> 
 
-***
-
-## Version 2: 
-A. Annual catch scenarios for 2019 and for 2020 with F2019 = FMSY
+**A. Annual catch scenarios for 2019 and for 2020 with F2019 = FMSY**
 
 ```{r catchoptionsgraphv2, echo = FALSE,fig.height = 4.5, fig.width = 10}
+library(ggplot2)
+library(plotly)
 catchoptions <- read.csv("Data/bli/bliscenariosplotALL.csv")
  labels <- catchoptions$Basis
  labels <- as.character(labels)
@@ -729,9 +467,11 @@ catchoptions <- read.csv("Data/bli/bliscenariosplotALL.csv")
 
 ```
 
-B. Annual catch scenarios for 2019 and for 2020 with F2019 = Fsq = F2017
+**B. Annual catch scenarios for 2019 and for 2020 with F2019 = Fsq = F2017**
 
 ```{r catchoptionsgraphv2B, echo = FALSE, fig.height = 4.5, fig.width = 10}
+library(ggplot2)
+library(plotly)
 catchoptions <- read.csv("Data/bli/bliscenariosplotALL.csv")
  labels <- catchoptions$Basis
  labels <- as.character(labels)
@@ -882,9 +622,8 @@ Because F in recent years has been much lower than the FMSY, the projections ass
 <br>
 **Table 5** Reference points, values, and their technical basis. Blue ling in subareas 6–7 and Division 5.b.
 <br>
-
-<button class="btn btn-primary" data-toggle="collapse" data-target="#BlockName3"> Show/Download Table </button>  
-<div id="BlockName3" class="collapse"> 
+<button class="btn btn-primary" data-toggle="collapse" data-target="#BlockName5"> Show/Download Table </button>  
+<div id="BlockName5" class="collapse"> 
 <br>
 ```{r referencepoints, echo=FALSE}
 library(knitr)
@@ -906,6 +645,7 @@ library(magrittr)
 <br>
 [Download CSV](`r sprintf('data:text/csv;base64,%s', encoded)`)
 </div>
+
 ***
 # Basis of the assessment  
 
@@ -944,9 +684,16 @@ There is no additional information available.
 
 **Table 7**  ICES advice and catch for blue ling in subareas 6–7 and Division 5.b. All weights are in tonnes. 
 <br>
-<button class="btn btn-primary" data-toggle="collapse" data-target="#BlockName4"> Show/Download Table </button>  
-<div id="BlockName4" class="collapse"> 
+<button class="btn btn-primary" data-toggle="collapse" data-target="#BlockName6"> Show/Download Table </button>  
+<div id="BlockName6" class="collapse"> 
 <br>
+```{r downloadhistory}
+library(magrittr)
+ readLines("Data/bli/blicatchhistory.csv") %>% 
+   paste0(collapse="\n") %>% 
+   openssl::base64_encode() -> encoded
+```
+[Download CSV](`r sprintf('data:text/csv;base64,%s', encoded)`) 
 ```{r history, echo=FALSE }
 library(icesSAG)
 library(kableExtra)
@@ -956,22 +703,23 @@ dt <- read.csv("Data/bli/blicatchhistory.csv")
 kable(dt, "html")%>% 
   column_spec(2, width = "20em")%>%
         kable_styling(position = "center")%>%
-        row_spec(0, bold = T, color = "black", background = "lightgrey")
+        row_spec(0, bold = T, color = "black", background = "lightgrey")%>%
+  scroll_box(width = "100%", height = "400px")
 ```
 \* 1987–2003 incl. Gulf of Riga herring.
+
 \** TAC for subdivisions 22–29S and 32.
+
 \*** TAC for subdivisions 25–28(2), 29, and 32.
+
 \^ EU TAC for subdivisions 25–28(2), 29, and 32.
+
 \^^ TAC is calculated as EU (subdivisions 25–28(2), 29, and 32) + Russian autonomous quotas.
-```{r downloadhistory}
-library(magrittr)
- readLines("Data/bli/blicatchhistory.csv") %>% 
-   paste0(collapse="\n") %>% 
-   openssl::base64_encode() -> encoded
-```
-[Download CSV](`r sprintf('data:text/csv;base64,%s', encoded)`) 
+
+
 <br>
 </div>
+
 ***
 
 # History of the catch and landings  
@@ -993,21 +741,9 @@ dt <- read.csv("Data/bli/blilandhist.csv", header = TRUE)
 
 **Table 9** History of commercial catch as estimated by ICES for blue ling in subareas 6–7 and Division 5.b. All weights are in tonnes.
 <br>
-<button class="btn btn-primary" data-toggle="collapse" data-target="#BlockName5"> Show/Download Table </button>  
-<div id="BlockName5" class="collapse"> 
+<button class="btn btn-primary" data-toggle="collapse" data-target="#BlockName7"> Show/Download Table </button>  
+<div id="BlockName7" class="collapse"> 
 <br>
-```{r table9, echo=FALSE }
-library(icesSAG)
-library(kableExtra)
-dt <- read.csv("Data/bli/blilandings.csv", header = TRUE)
-# dt <- dt [,-1] 
-# colnames(dt) <- c("Year", "ICES advice", "Pred. Catch", "Pred. landings","TAC", "ICES landings", "Discards", "ICES catch")
-kable(dt, "html")%>% 
-        kable_styling(position = "center")%>%
-        row_spec(0, bold = T, color = "black", background = "lightgrey")
-```
-\* Preliminary
-
 ```{r downloadlandhistorybis}
 library(magrittr)
  readLines("Data/bli/blilandings.csv") %>% 
@@ -1016,6 +752,20 @@ library(magrittr)
 ```
 
 [Download CSV](`r sprintf('data:text/csv;base64,%s', encoded)`) 
+
+```{r table9, echo=FALSE }
+library(icesSAG)
+library(kableExtra)
+dt <- read.csv("Data/bli/blilandings.csv", header = TRUE)
+# dt <- dt [,-1] 
+# colnames(dt) <- c("Year", "ICES advice", "Pred. Catch", "Pred. landings","TAC", "ICES landings", "Discards", "ICES catch")
+kable(dt, "html")%>% 
+        kable_styling(position = "center")%>%
+        row_spec(0, bold = T, color = "black", background = "lightgrey")%>%
+  scroll_box(width = "100%", height = "400px")
+```
+\* Preliminary
+
 <br>
 </div>
 <br>
@@ -1023,8 +773,8 @@ library(magrittr)
 **Table 10** Landings inside and outside the NEAFC Regulatory Area (RA) as estimated by
 ICES as well as official landings for blue ling in subareas 6–7 and Division 5.b.Weights are in tonnes.
 <br>
-<button class="btn btn-primary" data-toggle="collapse" data-target="#BlockName6"> Show/Download Table </button>  
-<div id="BlockName6" class="collapse"> 
+<button class="btn btn-primary" data-toggle="collapse" data-target="#BlockName8"> Show/Download Table </button>  
+<div id="BlockName8" class="collapse"> 
 <br>
 ```{r table10, echo=FALSE }
 library(icesSAG)

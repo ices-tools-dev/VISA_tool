@@ -7,19 +7,12 @@ output:
     toc: yes
     toc_depth: 1
     toc_float: yes
-  pdf_document:
-    toc: yes
-    toc_depth: '2'
-    code_folding: hide
+    css: style.css
 ---
 <style>
-    body .main-container {
-        width: 2000px;
-        margin-left: 20px;
-        margin-right: 20px;
-    }
+    
 #TOC {
-  background:url("images/iceslogo.png") ;
+  background:url("http://www.ices.dk/_layouts/15/1033/images/icesimg/iceslogo.png") ;
   background-size: contain;
   padding-top: 100px !important;
   background-repeat: no-repeat;
@@ -33,30 +26,13 @@ output:
 }
 </style>
 
-<style type="text/css"> body, td { font-size: 16px; } width: 800px code.r{ font-size: 12px; } pre { font-size: 12px }
-
-h1 { /* Header 1 */
-  font-size: 24px;
-  color: Grey;
-}
-h2 { /* Header 2 */
-    font-size: 18px;
-  color: Black;
-}
- .col2 {
-    columns: 2 220px;         /* number of columns and width in pixels*/
-    -webkit-columns: 2 220px; /* chrome, safari */
-    -moz-columns: 2 220px;    /* firefox */
-  }
-</style>
-
----
-<a id="top"></a>
-
 # ICES advice 2018
 
-## "Hake (*Merluccius merluccius*) in subareas 4, 6, and 7, and in divisions 3.a, 8.a–b, and 8.d, Northern stock (Greater North Sea, Celtic Seas, and the northern Bay of Biscay)"
+## *nep.fu.11*
 
+## Norway lobster (*Nephrops norvegicus*) in Division 6.a, Functional Unit 11 (West of Scotland, North Minch)
+
+Published 31 October 2018
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(
@@ -69,27 +45,33 @@ knitr::opts_chunk$set(
 
 ***
 ```{r  out.width = "50%"}
-knitr::include_graphics("images/hake.png")
-knitr::include_graphics("images/hkemap.png")
+knitr::include_graphics("images/nep.png")
+knitr::include_graphics("images/nepmap.png")
 ```
 
 
-[Go to latest advice](http://ices.dk/sites/pub/Publication%20Reports/Advice/2017/2017/hke.27.3a46-8abd.pdf)  
-[Go to Standard Graphs page](https://standardgraphs.ices.dk/manage/ViewGraphsAndTables.aspx?key=8988)  
-[Go to Transparent Assessment Framework page](https://github.com/ices-taf/2016_cod-347d)
+[Go to latest advice](http://www.ices.dk/sites/pub/Publication%20Reports/Advice/2018/2018/nep.fu.11.pdf)  
+[Go to Stock Information Database](http://sd.ices.dk/ViewStock.aspx?key=1641)   
+[Go to Standard Graphs page](https://standardgraphs.ices.dk/manage/ViewGraphsAndTables.aspx?key=10270)  
+[Go to Transparent Assessment Framework page](https://github.com/ices-taf/2018_nep.fu.11)
 
 ***
 
 # ICES advice on fishing opportunities
-ICES advises that when the MSY approach is applied, catches in 2018 should be no more than **115 335** tonnes.
+<br>
+
+ICES advises that when the MSY approach is applied, and assuming that discard rates and fishery selection patterns do not change from the average of 2015–2017, catches in 2019 should be no more than **3270** tonnes.
+
+To ensure that the stock in Functional Unit 11 is exploited sustainably, management should be implemented at the functional unit level.
+
  <br> 
 
 ***
 
 # Stock development over time
-The spawning-stock biomass (SSB) has increased significantly since 2006 and is well above historical estimates. Fishing mortality (F) has decreased significantly after 2005, and has been below FMSY since 2012. The recruitment (R) estimate for 2016 is above average
+The historical harvest rate has fluctuated around FMSY and has been below FMSY since 2013. The stock has been above MSY Btrigger since 1998.
 
-<div class="col2">
+
 ```{r sag1, echo=FALSE, fig.height=3.5, fig.width=3.5}
 
  library(htmlwidgets)
@@ -98,8 +80,11 @@ The spawning-stock biomass (SSB) has increased significantly since 2006 and is w
  library(dygraphs)
  library(htmltools)
  library(widgetframe)
- data <- read.csv("Data/hke/hkedata.csv")
-
+library(icesSAG)
+SAGsummary <- getSAG("nep.fu.11", 2018, data = "summary", combine = TRUE, purpose = "Advice")
+SAGrefpts <-getSAG("nep.fu.11", 2018, data = "refpts", combine = TRUE, purpose = "Advice")
+data <- cbind(SAGsummary, SAGrefpts)
+data <- subset(data,select = -fishstock)
  dyBarChart <- function(dygraph) {
   dyPlotter(dygraph = dygraph,
             name = "BarChart",
@@ -117,16 +102,15 @@ The spawning-stock biomass (SSB) has increased significantly since 2006 and is w
    dyAxis("y")%>%
    dyBarChart()
  
- dygraph(recruitment, main = "Recruitment(age 0)") %>%
-   dyRangeSelector()%>%
-   # dyOptions(colors = RColorBrewer::brewer.pal(3, "Set2"))%>%
-   dyAxis("y")%>%
-   dyBarChart()
-
- 
 ```
-</div>
-<div class="col2">
+
+
+<div class="col2"
+.col2 {
+    columns: 2 220px;         /* number of columns and width in pixels*/
+    -webkit-columns: 2 220px; /* chrome, safari */
+    -moz-columns: 2 220px;    /* firefox */
+  }>
 ```{r sag3, echo = FALSE, fig.height = 3.5, fig.width = 3.5}
 library(dygraphs)
 library(htmlwidgets)
@@ -143,7 +127,7 @@ dyBarChart <- function(dygraph) {
 } 
 
 F <- data %>% select(Year, low_F, F,high_F, FLim, Fpa, FMSY )
- dygraph(F, main = "F") %>%
+ dygraph(F, main = "Harvest rate") %>%
   dySeries(c("low_F", "F", "high_F"))%>%
    dyLimit(as.numeric(F[, 5]), color = "red")%>%
    dyRangeSelector()%>%
@@ -151,7 +135,7 @@ F <- data %>% select(Year, low_F, F,high_F, FLim, Fpa, FMSY )
              drawGrid= FALSE,maxNumberWidth = 4)%>%
    dyAxis("y")
 SSB <- data %>% select(Year, low_SSB, SSB,high_SSB, Blim, Bpa, MSYBtrigger)
- dygraph(SSB, main = "SSB") %>%
+ dygraph(SSB, main = "Stock Abundabce") %>%
   dySeries(c("low_SSB", "SSB", "high_SSB"))%>%
    dyLimit(as.numeric(F[, 5]), color = "red")%>%
    dyRangeSelector()%>%
@@ -163,21 +147,19 @@ SSB <- data %>% select(Year, low_SSB, SSB,high_SSB, Blim, Bpa, MSYBtrigger)
 </div>
 
 
-**Figure 1**  Hake in subareas 4, 6, and 7, and in divisions 3.a, 8.a–b, and 8.d, Northern stock. Summary of the stock assessment.Recruitment, F, and SSB plots show 95% confidence intervals (shaded area). Assumed recruitment values are unshaded.
+**Figure 1** Summary of the stock assessment of Norway lobster in Division 6.a, Functional Unit 11. Catches (discard data only available from 1990), harvest rate (sum of landings and dead discards in numbers, divided by total abundance), survey abundance (Underwater TV, millions; SSB proxy; approximate 95% confidence intervals). Harvest rates before 2006 may be unreliable due to underreporting of landings. Orange lines represent MSY Btrigger and the FMSY harvest rate proxy.
 <br>
+
+***
 
 ## Summary of the assessment
 
-Hake in subareas 4, 6, and 7, and in divisions 3.a, 8.a–b, and 8.d, Northern stock. Assessment summary. Weights are in tonnes. Highs and lows are 95% confidence intervals
-
-```{r summarysag, echo=FALSE}
-library(icesSAG)
-
-SAGsummary <- getSAG("hke.27.3a46-8abd", 2017, data = "summary", combine = TRUE, purpose = "Advice")
-write.csv(SAGsummary, file = "SAGsummary.csv")
-
-```
-
+Assessment summary for Norway lobster in Division 6.a, Functional Unit 11. 
+Recruitment in thousands.
+<br>
+<button class="btn btn-primary" data-toggle="collapse" data-target="#BlockName1"> Show/Download Table </button>  
+<div id="BlockName1" class="collapse"> 
+<br>
 ```{r download4}
 library(magrittr)
  readLines("SAGsummary.csv") %>% 
@@ -185,15 +167,44 @@ library(magrittr)
    openssl::base64_encode() -> encoded
 ```
 
-[Download CSV](`r sprintf('data:text/csv;base64,%s', encoded)`)
- ***  
+[Download CSV](`r sprintf('data:text/csv;base64,%s', encoded)`) 
+<br>
+```{r summarysag, echo=FALSE}
+library(kableExtra)
+write.csv(SAGsummary, file = "SAGsummary.csv")
+kable(SAGsummary, "html")%>% 
+  row_spec(0, bold = T, color = "black", background = "lightgrey", align = "c")%>%
+        kable_styling(position = "center") %>%
+  scroll_box(width = "100%", height = "400px")
+
+```
+\* Values prior to 2006 may be underestimates because of underreporting of landings.
+\** Dead + surviving discards.
+
+
+</div>
+<br> 
 [Go to Top](#top)
+
+```{r pict}
+knitr::include_graphics("images/nepcatch.png")
+```
+
+**Figure 2**  Catch length–frequency distribution and mean size in catches and landings of Norway lobster in Division 6.a, Functional Unit 11. Vertical lines are minimum landing size (20 mm) and 35 mm.
+<br>
+
+***
 
 # Stock and explotation status
 
 <br>
-**State of the stock and fishery relative to reference points**
+
+ICES assesses that fishing pressure on the stock is below FMSY, while spawning stock size is above MSY Btrigger.
+
 <br>
+
+**Table 1** State of the stock and fishery relative to reference points for Norway lobster in Division 6.a, Functional Unit 11. 
+
 ![](images/MSY_1.png)
 
 
@@ -202,205 +213,122 @@ library(magrittr)
 # Catch scenarios
 
 <br>
-**Table 2 Hake in subareas 4, 6, and 7, and in divisions 3.a, 8.a–b, and 8.d, Northern stock. The basis for the catch scenarios. All weights are in tonnes.**
+
+**Table 2** The basis for the catch scenarios. Norway lobster in Division 6.a, Functional Unit 11. 
 <br>
 ```{r catchoptionsbasis, echo=FALSE}
 library(knitr)
 library(readr)
 library(kableExtra)
-dt <- read.csv("Data/hke/hkecatchoptionsbasis.csv",header = T, row.names = 1)
-# dt <- dt [,-1] 
+dt <- read.csv("Data/nep/nepcatchoptionsbasis.csv",header = T)
+dt <- dt [,-1] 
 kable(dt, "html")%>% 
   row_spec(0, bold = T, color = "black", background = "lightgrey", align = "c")%>%
-  column_spec(1, width = "20em")%>%
-  column_spec(4, width = "45em")%>%
-  column_spec(3, width = "15em")%>%
-  kable_styling(position = "center", full_width = F, font_size = 7)
+  # column_spec(1, width = "20em")%>%
+  # column_spec(2, width = "20em")%>%
+  # column_spec(3, width = "45em")%>%
+  kable_styling(position = "center")
 
 ```
 
 <br>
-
-***
-
-**Table 3 Hake in subareas 4, 6, and 7, and in divisions 3.a, 8.a–b, and 8.d, Northern stock. Annual catch options. All weights are in tonnes.**
-
-<button class="btn btn-primary" data-toggle="collapse" data-target="#BlockName"> Show/Download Table </button>  
-<div id="BlockName" class="collapse"> 
-<br>
-```{r catchoptionstable, echo=FALSE}
-library(knitr)
-library(readr)
-library(kableExtra)
-dt <- read.csv("Data/hke/hkecatchoptions.csv", header = T, row.names = 1)
-# dt <- dt [,-1]
-dt <- dt[complete.cases(dt),]
- kable(dt, "html") %>% kable_styling(position = "center")%>%
-   row_spec(0, bold = T, color = "black", background = "lightgrey")%>%
-   column_spec(1, width = "30em")%>%
-         column_spec(2:10, width = "10em")%>%
-   group_rows("ICES advice basis",1,1) %>%
-   group_rows("Other options",2,9)
-```
-
-```{r download}
+```{r download5}
 library(magrittr)
- readLines("Data/hke/hkecatchoptions.csv") %>% 
+ readLines("Data/nep/nepcatchoptionsbasis.csv") %>% 
    paste0(collapse="\n") %>% 
    openssl::base64_encode() -> encoded
 ```
 
 [Download CSV](`r sprintf('data:text/csv;base64,%s', encoded)`)
-</div>
 <br>
+
+***
+
+**Table 3**  Annual catch advice and scenarios for Norway lobster in Division 6.a, Functional Unit 11; discarding is assumed to continue at the recent average.  All weights are in tonnes.
 <br>
-```{r catchscenariostable, echo=FALSE, fig.width=3}
+<button class="btn btn-primary" data-toggle="collapse" data-target="#BlockName2"> Show/Download Table </button>  
+<div id="BlockName2" class="collapse"> 
+
+```{r download}
+library(magrittr)
+ readLines("Data/nep/nepcatchoptions.csv") %>% 
+   paste0(collapse="\n") %>% 
+   openssl::base64_encode() -> encoded
+```
+
+[Download CSV](`r sprintf('data:text/csv;base64,%s', encoded)`)
+<br> 
+
+```{r catchoptionstable, echo=FALSE}
 library(knitr)
 library(readr)
 library(kableExtra)
-dt <- read.csv("Data/hke/hkescenariosplot.csv") %>%
-        select(Basis, F, Catch, SSB)
-write.table (dt, "thing.txt",sep = ",")
-
-colnames(dt)<- c("Basis", "F", "Catch 2018", "SSB 2019")
+dt <- read.csv("Data/nep/nepcatchoptions.csv", header = T, row.names = 1)
+# dt <- dt [,-1]
+dt <- dt[complete.cases(dt),]
  kable(dt, "html") %>% kable_styling(position = "center")%>%
-  kable_styling(bootstrap_options = "striped", full_width = F, font_size = 7)
-
+   row_spec(0, bold = T, color = "black", background = "lightgrey")%>%
+   column_spec(1, width = "30em")%>%
+         column_spec(2:8, width = "10em")%>%
+   group_rows("ICES advice basis",1,1) %>%
+   group_rows("Other scenarios",2,4)%>%
+  scroll_box(width = "100%", height = "400px")
 ```
+\* By number.
 
-Basis | F | Catch 2018 | SSB2019
-------|---|------------|--------
-MSY approach: FMSY | 0.280 | 115335 | 295193
-F = 0 | 0.000 | 0 | 401929
-Fpa | 0.620 | 211827 | 206120
-Flim | 0.870 | 261716 | 160047
+\** Advice value 2019 relative to the advice value 2018.
 
+\*** FMSY upper = FMSY for this stock.
+<br>
+</div>
+<br>
 
+The change in advice is a result of the inclusion of the 2018 survey and updating mean weights and discard rates.
+<br>
 
-## Version 1
-```{r catchoptionsgraph, echo = FALSE,fig.height = 5, fig.width = 7}
+## Catch scenarios plot
+
+The following plot resumes Fishing mortality scenarios (see Table 3) and the related estimates of Catch and next years' Spawning Stock Biomass. Vertical and horizontal dashed lines show the available reference points (see also Reference Points section). 
+In the hover text appearing in each point is indicated the value in tonnes (of Cath or of SSB) and the scenario represented. At the same time, in the horizontal axis will show up the corresponding F value.
+<br>
+```{r catchoptionsgraphv2, fig.height=4.5, fig.width=8}
 library(ggplot2)
 library(plotly)
- catchoptions <- read.csv("Data/nepscenariosplot.csv")
- 
- #for some reason the duplicates are added, ?
- data <- catchoptions [c(1,2,5),]
- plot_ly(data, x = ~ Harvest.rate)%>%
-         add_trace(y = ~Wanted.catch, type = 'bar', name = 'Wanted catch') %>%
-         add_trace(y = ~Dead.unwanted.catch,type = 'bar',name = 'Dead unwanted catch') %>%
-         add_trace(y = ~Surviving.unwanted.catch, type = 'bar',name = 'Surviving unwanted catch')%>%      
-  layout(yaxis = list(title = 'Tonnes'), barmode = 'stack')
- 
- 
-```
- 
-## Version 2:
- 
-```{r catchoptionsgraphv2}
-library(ggplot2)
-library(plotly)
- catchoptions <- read.csv("Data/hke/hkescenariosplot.csv")
- labels <- catchoptions$Basis
- labels <- as.character(labels)
+ catchoptions <- read.csv("Data/nep/nepcatchoptionsplot.csv")
+ # labels <- catchoptions$Basis
+ # labels <- as.character(labels)
  mypalette<-ggthemes::tableau_color_pal('tableau20')
  
- data <- catchoptions[order(catchoptions$F),]
- p1 <- ggplot(catchoptions, aes(F, colour = )) + theme_bw() +
-    geom_rect(xmin = -Inf, ymin = -Inf, xmax = 0.62, ymax = Inf,
-              fill = "lightgreen", alpha=0.50)+theme_bw()+
-    # geom_rect(xmin = 0.280, ymin = -Inf, xmax = 0.282, ymax = Inf,
-    #           fill = "gold", alpha=0.50)+theme_bw()+
-    geom_rect(xmin = 0.62, ymin = -Inf, xmax = 0.87, ymax = Inf,
-              fill = "coral")+theme_bw()+
-    geom_rect(xmin = 0.87, ymin = -Inf, xmax = Inf, ymax = Inf,
-              fill = "brown1")+theme_bw()+
-    geom_hline(yintercept=45000, linetype="dashed", color = "yellowgreen")+
-    geom_hline(yintercept=32000, linetype="dashed", color = "yellow4")+
-    geom_vline(xintercept = 0.28,linetype = "dotted",
-               color = "violet", size = 0.5)+
-    geom_vline(xintercept = 0.62, linetype="dotted",
-               color = "violetred", size=0.5)+
-    geom_vline(xintercept = 0.87, linetype="dotted",
-               color = "violetred1", size=0.5)+
-    # geom_col(aes(y = Catch), width = 0.15)+
-    geom_point(aes(y = Catch),size = 2) +
-    geom_line(aes(y = Catch),size = 0.5, colour= "orangered")+
-    geom_point(aes(y=SSB), size = 2)+
-    geom_line(aes(y = SSB),size = 0.5, colour= "lightskyblue")+
-    scale_y_continuous("tonnes",sec.axis = sec_axis(~., name = "SSB"))+
-    # scale_x_continuous(breaks = catchoptions$F)+
-    xlab("Fish mortality")+
-    ylab("Catches and SSB in tonnes")
+ data <- catchoptions[order(catchoptions$WC.DUC.SUC),] 
+ data$Basis <- factor(data$Basis, levels = c("FMSY lower", "F2017", "MSY approach","FMSY upper"))
+ data$my_text=paste(data$Type , data$Basis, sep=": ")
  
-  p2 <- p1 + theme(axis.text.x = element_text(face="bold", color="Black",
-                             size=10, angle=45))+
-    theme(legend.text = element_text(colour="blue", size = 16, face = "bold"))
-  # p3<- p2+ guide_colorbar(title = "Spawning Stock Biomass", label= TRUE,barheight = )
- # p3<- p2 + geom_hline(yintercept=45000, linetype="dashed", color = "red")+
- #   geom_hline(yintercept=32000, linetype="dashed", color = "black")+
- #   geom_vline(xintercept = 0.28,
- #                 color = "yellow", size=3)+
- #   geom_vline(xintercept = 0.62, linetype="dotted",
- #                   color = "blue", size=0.5)+
- #   geom_vline(xintercept = 0.87, linetype="dotted",
- #                 color = "blue", size=0.5)
-
-
- ggplotly(p1, width = 600, height = 300)
-
-```
+ p1 <- plot_ly(data, x = ~Basis) %>%
+        add_trace(y = ~ WC, name = 'Wanted catch',text = data$my_text, hoverinfo = "text + x+ y")%>%
+        add_trace(y = ~ DUC, name= 'Dead unwanted catch', text = data$my_text, hoverinfo = "text + x+ y") %>%
+        add_trace(y = ~ SUC, name= 'Surviving unwanted catch', text = data$my_text, hoverinfo = "text + x+ y")%>%
+  layout(yaxis = list(title = 'Catch(tonnes)'), barmode = 'stack') 
+p1
   
-## Version 3: 
- 
-```{r catchoptionsgraphv3, echo = FALSE}
-library(ggplot2)
-library(plotly)
- catchoptions <- read.csv("Data/hke/hkescenariosplot.csv")
- labels <- catchoptions$Basis
- labels <- as.character(labels)
- mypalette<-ggthemes::tableau_color_pal('tableau20')
- 
- data <- catchoptions[order(catchoptions$F),]
- catchoptions <- catchoptions[!duplicated(catchoptions[,c('F')]),]
-catch <- catchoptions %>% select(c(F,Catch))
-ssb <- catchoptions %>% select(c(F,SSB))
-labels <- catchoptions$F
-labels <- as.character(labels)
-
- p1 <- ggplot(catchoptions, aes(F))+
-    geom_col(data= ssb,aes(y = ssb$SSB, fill = SSB), width = 0.20)+
-     scale_fill_gradient(low="gray90", high="blue")+
-    geom_point(data= catch,aes(y= catch$Catch,size = Catch))+
-    geom_line(aes(y = catch$Catch))+
-    scale_x_continuous(breaks = round(seq(min(catchoptions$F), max(catchoptions$F), by = 0.5),3))+
-    xlab("Fishing mortality")+
-    ylab("tonnes")+
-         theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
-panel.background = element_blank(), axis.line = element_line(colour = "grey"))
- 
-  p2 <- p1 + theme(axis.text.x = element_text(face="bold", color="Black",
-                             size=10, angle=45))+
-    theme(legend.text = element_text(colour="blue", size = 16, face = "bold"))
-  
-
- ggplotly(p2, width = 600, height = 300)
-
 ```
- 
+ This plot is produced with plotly. Among available features, it can be downloaded as .png and it is possible to zoom in and out.
+  
 <br>
 
 [Go to Top](#top)
 
-# Basis of the advice  
 ***
+
+# Basis of the advice  
 <br>
-**Table 4** Hake in subareas 4, 6, and 7, and in divisions 3.a, 8.a–b, and 8.d, Northern stock. The basis of the advice.
+
+**Table 4** The basis of the advice for Norway lobster in Division 6.a, Functional Unit 11.
 ```{r advicebasis, echo=FALSE}
 library(knitr)
 library(readr)
 library(kableExtra)
-dt <- read.csv("Data/hke/hkeadvicebasis.csv", header = FALSE)
-#dt <- dt [-1,] 
+dt <- read.csv("Data/nep/nepadvicebasis.csv", header = FALSE)
+dt <- dt [,-1] 
 colnames(dt) <- NULL
 kable(dt, "html")%>%kable_styling(position = "center")%>%
   column_spec(1, bold = T, color = "black", background = "lightgrey")
@@ -409,78 +337,210 @@ kable(dt, "html")%>%kable_styling(position = "center")%>%
 
 <br>
 
-# Quality of the assessment  
 ***
-<br>
-The uncertainty in the assessment is relatively high, with large changes in biomass estimates in consecutive years. The model confidence intervals are an underestimate of uncertainty because they are narrower than interannual changes in estimates in consecutive years.
-There is a lack of tuning data for the earlier years of the assessment, for some areas outside of subareas 7 and 8, and for the larger individuals in the population. Given the expansion of the stock into northern areas (ICES, 2017b), there is a potential that not all catches are reported for this stock. Biological sampling from these areas is also limited.
-The data compilation of this stock is very complicated because it is exploited by several countries and the assessment model configuration is complex. In turn, the assessment model is very sensitive to the data and the settings used. Hence, it is extremely important for the quality of the assessment to have the complete data for all the countries on time and in the right format.
 
-# Reference Points  
-***
+# Quality of the assessment  
 <br>
-Herring in Subarea 4 and divisions 3.a and 7.d, autumn spawners. Reference points, values, and their technical basis.
+Since 1994 the underwater TV survey (UWTV) has provided abundance estimates by functional unit (FU) with acceptable precision. The UWTV survey for FU 11 does not cover Nephrops grounds in the inshore waters and sea lochs, waters that are typically fished by smaller vessels. The total area of these grounds is estimated to be less than 5% of the total stock areas and therefore the exclusion of these inshore areas from the survey is not considered to impact the quality of the assessment.
+
+In 2017, observer sampling from the Scottish Industry–Science observer sampling scheme was extended to include sampling of Norway lobster catches in FU 11. As a result the sampling levels have increased and discard proportions are more precisely estimated.
+
+Biological sampling for this stock is considered sufficient.
+
+The long-term average (rather than a three-year average) was considered more appropriate as input for the mean weight in landings and discards in the calculation of catch scenarios. This is due to interannual variation.
+<br>
+
+***
+
+# Issues relevant for the advice
+
+<br>
+
+From 2016, the EU landing obligation was applied to all catches of Norway lobster fisheries in ICES Subarea 6, with several exemptions. Observations from the 2016–2017 fishery indicate that some discarding above the minimum conservation reference size (MCRS) continues and has not changed markedly (Figure 3). Consequently, ICES is providing advice for 2019 assuming average discard rates as observed over the last three years, which is considered to be a more realistic assumption.
+
+For FU 11, the absolute density observed in the UWTV survey is intermediate compared to other Nephrops FUs, with an average density of around 0.6 individuals m−2. This suggests the stock may have a medium productivity capability. Historical harvest ratios in this FU have been around F35%SPR and landings have been relatively stable in the last thirty years. For these reasons, F35%SPR (combined between sexes) is considered to deliver high long-term yield with a low probability of recruitment overfishing and is therefore chosen as a proxy for FMSY.
+
+A single TAC covers the entire ICES Subarea 6. Management should be implemented at the functional unit level to ensure that fishing opportunities are in line with the scale of the resource for each of the stocks and the corresponding MSY approach.
+
+<br>
+
+```{r issueplots}
+knitr::include_graphics("images/nepissueplot.png")
+```
+
+**Figure 2**  Norway lobster functional units in subareas 6 and 7.
+
+<br>
+  
+***
+# Reference Points
+<br>
+
+**Table 5** Reference points, values, and their technical basis. Norway lobster in Division 6.a, Functional Unit 11.
+<br>
+<button class="btn btn-primary" data-toggle="collapse" data-target="#BlockName3"> Show/Download Table </button>  
+<div id="BlockName3" class="collapse"> 
+<br>
+```{r download2}
+library(magrittr)
+ readLines("Data/nep/nepreferencepoints.csv") %>% 
+   paste0(collapse="\n") %>% 
+   openssl::base64_encode() -> encoded
+```
+<br>
+[Download CSV](`r sprintf('data:text/csv;base64,%s', encoded)`) 
+<br> 
 ```{r referencepoints, echo=FALSE}
 library(knitr)
 library(readr)
 library(kableExtra)
-dt <- read.csv("Data/hke/hkereferencepoints.csv")
+dt <- read.csv("Data/nep/nepreferencepoints.csv")
 dt <- dt [,-1] 
 kable(dt, "html")%>%kable_styling(position = "center")%>%
-  row_spec(0, bold = T, color = "black", background = "lightgrey")
+  row_spec(0, bold = T, color = "black", background = "lightgrey")%>%
+        collapse_rows(columns = 1)
 
 ```
-<br>
-```{r download2}
-library(magrittr)
- readLines("Data/hke/hkereferencepoints.csv") %>% 
-   paste0(collapse="\n") %>% 
-   openssl::base64_encode() -> encoded
-```
-[Download CSV](`r sprintf('data:text/csv;base64,%s', encoded)`)
+\*Proposed EU multiannual plan (MAP) for the Western Waters (EU, 2018).
 
-# Basis of the assessment  
+</div>
+<br> 
+
 ***
+# Basis of the assessment  
+
 <br>
-Herring in Subarea 4 and divisions 3.a and 7.d, autumn spawners. Basis of the assessment and advice
+**Table 6** Basis of the assessment and advice for Norway lobster in Division 6.a, Functional Unit 11. 
 ```{r advicebla, echo=FALSE}
 library(knitr)
 library(readr)
 library(kableExtra)
-dt <- read.csv("Data/hke/hkeassessmentbasis.csv")
+dt <- read.csv("Data/nep/nepassessmentbasis.csv", header = FALSE)
 dt <- dt [,-1] 
+colnames(dt) <- NULL
 kable(dt, "html")%>%kable_styling(position = "center")%>%
-  row_spec(0, bold = T, color = "black", background = "lightgrey")
+  column_spec(1, width = "15em",bold = T, color = "black", background = "lightgrey")
 
 ```
 
 ```{r download3}
 library(magrittr)
- readLines("Data/hke/hkeassessmentbasis.csv") %>% 
+ readLines("Data/nep/nepassessmentbasis.csv") %>% 
    paste0(collapse="\n") %>% 
    openssl::base64_encode() -> encoded
 ```
 [Download CSV](`r sprintf('data:text/csv;base64,%s', encoded)`)
+
 [Go to Top](#top)
 
-# Historical trends
+***
 
-```{r, echo=FALSE}
-library(googleVis)
-library(tidyr)
-kobe <- read_csv("data/hke/kobe_data_2.csv")
-hke <- kobe %>% filter(StockCode == "hke.27.3a46-8abd", EcoRegion == "Greater North Sea Ecoregion")
-hke$StockCode <- NULL
-hke$FisheriesGuild <- NULL
-hke$EcoRegion <- NULL
+# Information from stakeholders  
 
-bla <- hke %>% gather(Measures, value, -Year, -`F/Fmsy`, -`SSB/MSYBtrigger`)
-# library(reshape2)
-# hkelong <- melt(hke, id.vars = c("Year", "F", "SSB", "FMSY", "MSYBtrigger","catches", "landings", "discards"))
+No additional information is available for this stock.
+<br>
 
-vis<- gvisMotionChart(bla, idvar= "Measures", timevar = "Year")
-plot(vis)
+***
+
+# History of the advice, catch, and management    
+
+**Table 7**  . ICES advice, landings and discards of Norway lobster in Division 6.a, Functional Unit 11. All weights are in tonnes.
+<br>
+<button class="btn btn-primary" data-toggle="collapse" data-target="#BlockName4"> Show/Download Table </button>  
+<div id="BlockName4" class="collapse"> 
+<br>
+```{r downloadhistory}
+library(magrittr)
+ readLines("Data/nep/nephistoryadvice.csv") %>% 
+   paste0(collapse="\n") %>% 
+   openssl::base64_encode() -> encoded
+```
+[Download CSV](`r sprintf('data:text/csv;base64,%s', encoded)`) 
+<br> 
+```{r history, echo=FALSE }
+library(icesSAG)
+library(kableExtra)
+dt <- read.csv("Data/nep/nephistoryadvice.csv")
+dt <- dt [,-1] 
+# colnames(dt) <- c("Year", "ICES advice", "Pred. Catch", "Pred. landings","TAC", "ICES landings", "Discards", "ICES catch")
+kable(dt, "html")%>% 
+  column_spec(2, width = "20em")%>%
+        kable_styling(position = "center")%>%
+        row_spec(0, bold = T, color = "black", background = "lightgrey")%>%
+  scroll_box(width = "100%", height = "400px")
+```
+\* Dead + surviving discards.
+
+\** Assuming all catches are landed.
+
+\*** Assuming recent discarding rates.
+
+</div> 
+<br>
+
+***
+
+# History of the catch and landings  
+
+**Table 8** Catch distribution by fleet in 2017 as estimated by ICES for Norway lobster in Division 6.a, Functional Unit 11.
+<br>
+```{r catchlandings, echo = FALSE}
+library(kableExtra)
+library(formattable)
+dt <- read.csv("Data/nep/neplandings.csv", header = TRUE)
+# dt<-unname(dt)
+# dt <- dt[,-7]
+#colnames(dt)<- ""
+  kable(dt, "html")%>%
+          kable_styling(position = "center")%>%
+          row_spec(0, bold = T, color = "black", background = "lightgrey")
 ```
 
-http://127.0.0.1:30673/custom/googleVis/MotionChartID7603b1f6d16.html
+<br>
+
+**Table 9** History of ICES estimates of landings (for Scotland by gear) and total discards of Norway lobster in Division 6.a, Functional Unit 11. All weights are in tonnes.
+<br>
+<button class="btn btn-primary" data-toggle="collapse" data-target="#BlockName5"> Show/Download Table </button>  
+<div id="BlockName5" class="collapse"> 
+<br>
+```{r downloadlandhistorybis}
+library(magrittr)
+ readLines("Data/nep/neplandhist.csv") %>% 
+   paste0(collapse="\n") %>% 
+   openssl::base64_encode() -> encoded
+```
+
+[Download CSV](`r sprintf('data:text/csv;base64,%s', encoded)`) 
+<br>
+
+```{r table9, echo=FALSE }
+library(icesSAG)
+library(kableExtra)
+dt <- read.csv("Data/nep/neplandhist.csv", header = TRUE)
+# dt <- dt [,-1] 
+# colnames(dt) <- c("Year", "ICES advice", "Pred. Catch", "Pred. landings","TAC", "ICES landings", "Discards", "ICES catch")
+kable(dt, "html")%>% 
+        kable_styling(position = "center")%>%
+        row_spec(0, bold = T, color = "black", background = "lightgrey")%>%
+  scroll_box(width = "100%", height = "400px")
+```
+\* Dead + surviving discards.
+
+\** Below minimum size landings are not rounded, showing the reported values.
+
+na = Not available
+
+</div>
+<br>
+
+***
+
+# Sources and references  
+
+* EU. 2018. Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL establishing a multiannual plan for fish stocks in the Western Waters and adjacent waters, and for fisheries exploiting those stocks, amending Regulation (EU) 2016/1139 establishing a multiannual plan for the Baltic Sea, and repealing Regulations (EC) No 811/2004, (EC) No 2166/2005, (EC) No 388/2006, (EC) 509/2007 and (EC) 1300/2008. COM/2018/0149 final. 30 pp. https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:52018PC0149&from=EN.
+* ICES. 2013. Report of the Benchmark Workshop on Nephrops (WKNEPH), 25 February–1 March 2013, Lysekil, Sweden. ICES CM 2013/ACOM:45. 230 pp.
+* ICES. 2016. EU request to ICES to provide FMSY ranges for selected stocks in ICES subareas 5 to 10. In Report of the ICES Advisory Committee, 2016. ICES Advice 2016, Book 5, Section 5.4.1. 13 pp.
+* ICES. 2018a. Advice basis. In Report of the ICES Advisory Committee, 2018. ICES Advice 2018, Book 1, Section 1.2. https://doi.org/10.17895/ices.pub.4503.
+* ICES. 2018b. Report of the Working Group for the Celtic Seas Ecoregion (WGCSE), 9–18 May 2018, ICES Headquarters, Copenhagen, Denmark. ICES CM 2018/ACOM:13. 1340 pp.
+
 

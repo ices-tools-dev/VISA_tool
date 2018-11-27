@@ -1,0 +1,12 @@
+,Framework,Reference point,Value,Technical basis,Source
+1,MSY approach,MSY Btrigger,540 million individuals,Lowest observed abundance estimate from UWTV survey time-series.,ICES (2016)
+2,MSY approach,FMSY,10.8% harves  ra e,FMSY proxy equivalent to F35%SPR combined sexes derived from length-based per recruit analysis.,ICES (2016)
+3,Precautionary approach,Blim,No  defined,,
+4,Precautionary approach,Bpa,No  defined,,
+5,Precautionary approach,Flim,No  defined,,
+6,Precautionary approach,Fpa,No  defined,,
+7,Management plan*,MAP MSY Btrigger,540 million individuals,MSY Btrigger,EU (2018)
+8,Management plan*,MAP Blim,No  defined,,
+9,Management plan*,MAP FMSY,10.8% harves  ra e,FMSY,EU (2018)
+10,Management plan*,MAP range Flower,8.4–10.8% harves  ra e,"Consistent with ranges provided by ICES (2016), resulting in no more than 5% reduction in long-term yield compared with MSY. ",EU (2018)
+11,Management plan*,MAP range Fupper,10.8–10.8% harves  ra e,"FMSY upper value capped at FMSY because it has not been possible to evaluate the probability of SSB < Blim (ICES, 2016).",EU (2018)
