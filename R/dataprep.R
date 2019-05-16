@@ -3,10 +3,68 @@
 
 
 library(fisheryO)
-ecoregion = "Baltic Sea Ecoregion"
+ecoregion = "Celtic Seas Ecoregion"
 area_definition(ecoregion)
-file_name= "her_map"
+file_name= "nep_map"
 output_path <- "~/"
+
+  get_map <- function(URL) {
+  tmp_file <- tempfile(fileext = ".zip")
+  download.file(url = URL,
+                destfile = tmp_file,
+                mode = "wb", quiet = TRUE)
+  unzip(tmp_file, exdir = tmp_path)
+}
+
+tmp_path <- tempdir()
+  get_map("http://gis.ices.dk/shapefiles/Nephrops_FU.zip")
+  # ggmap::get_map("http://gis.ices.dk/gis/services/ICES_reference_layers/nephrops_fu/MapServer/WMSServer?request=GetCapabilities&service=WMS")
+  layer_name <- grep("Nephrops_FU", gsub("\\..*", "", list.files(tmp_path)), value = TRUE)[1]
+  nephrops_fu <- sf::st_read(dsn = tmp_path, layer = layer_name, quiet = FALSE)
+  # devtools::use_data(nephrophs_fu, compress='xz', overwrite = TRUE)
+
+  # Centroids for labels
+  FU_centroids <- sf::st_centroid(nephrops_fu)
+  centroids <- data.frame(as.character(FU_centroids$FU),
+                          FU_centroids$FU_DESCRIP,
+                          matrix(unlist(FU_centroids$geometry),
+                                 ncol = 2,
+                                 byrow = TRUE),
+                          stringsAsFactors = FALSE)
+  
+  colnames(centroids) <- c("FU", "Description", "X", "Y")
+  
+ 
+  # cap_lab <- labs(caption = "Made with Natural Earth and ICES Marine Data",
+  #                 x = "",
+  #                 y = "")
+  xmin <- (sf::st_bbox(eco_areas)[1])
+  xmax <- (sf::st_bbox(eco_areas)[3])
+  ymin <- min(sf::st_bbox(eco_areas)[2])
+  ymax <- max(sf::st_bbox(eco_areas)[4])
+  
+  xlims <- c(xmin, xmax)
+  ylims <- c(ymin, ymax)
+  
+  p1 <- ggplot() +
+          # geom_sf(data = eco_areas, color = "grey90", fill = "gold") +
+          # geom_sf(data = visahke, color = "grey80", fill = "gold") +
+          geom_sf(data = europe_shape, fill = "grey80", color = "grey90") +
+          # geom_sf(data = ices_areas, color = "grey60", fill = "gold") +
+          # geom_sf(data = extraareas, color = "grey80", fill = "transparent")+
+          geom_sf(data = nephrops_fu, aes(alpha = 0.1), color = "grey60", fill = "gold") +
+          # geom_text(data = centroids, aes(x = X, y = Y, label = Description), size = 2.5) +
+          # geom_text(data = extracentroids, aes(x = X, y = Y, label = Area_27), size = 2.5) +
+          #geom_text(data = visahke, aes(x = X, y = Y, label = Area_27), size = 2.5) +
+          theme_bw(base_size = 8) +
+          # theme(plot.caption = element_text(size = 6),
+          #       plot.subtitle = element_text(size = 7)) +
+          coord_sf( xlim = xlims, ylim = ylims) +
+          theme(legend.position="none")#+
+          #cap_lab
+  
+  return(p1)  
+   
 
 xmin <- min(sf::st_bbox(stock_areas)[1])
 xmin <- xmin/100000
@@ -16,6 +74,15 @@ ymin <- min( sf::st_bbox(stock_areas)[2])
 ymin <- ymin/100000
 ymax <- max(sf::st_bbox(stock_areas)[4])
 ymax <- ymax/100000
+xlims <- c(xmin, xmax)
+ylims <- c(ymin, ymax)
+
+nep_geom <- c(-5,-7,57.5,59)
+
+xmin <- -10
+xmax <- 10
+ymin <- 50
+ymax <- 65
 xlims <- c(xmin, xmax)
 ylims <- c(ymin, ymax)
 
@@ -31,6 +98,8 @@ centroids <- data.frame(as.character(centroids$Area_27),
 
 colnames(centroids) <- c("Area_27", "X", "Y")
 
+fu_geom <- c(59)
+
 p1 <- ggplot() +
   # geom_sf(data = eco_shape, color = "grey60", fill = "transparent") +
   # geom_sf(data = visahke, color = "grey80", fill = "gold") +
@@ -44,6 +113,21 @@ p1 <- ggplot() +
   theme(plot.caption = element_text(size = 6),
         plot.subtitle = element_text(size = 7)) +
   coord_sf(xlim = xlims, ylim = ylims) 
+
+
+p1 <- ggplot() +
+        # geom_sf(data = eco_shape, color = "grey60", fill = "transparent") +
+        # geom_sf(data = visahke, color = "grey80", fill = "gold") +
+        geom_sf(data = europe_shape, fill = "grey80", color = "grey90") +
+        # geom_sf(data = ices_areas, color = "grey60", fill = "transparent") +
+        geom_sf(data = nep_geom, color = "grey60", fill = "gold") +
+        # geom_sf(data = ices_areas, color = "grey60", fill = "transparent") +
+        # geom_text(data = centroids, aes(x = X, y = Y, label = Area_27), size = 2.5) +
+        #geom_text(data = visahke, aes(x = X, y = Y, label = Area_27), size = 2.5) +
+        theme_bw(base_size = 8) +
+        theme(plot.caption = element_text(size = 6),
+              plot.subtitle = element_text(size = 7)) +
+        coord_sf(xlim = xlims, ylim = ylims) 
 
 map <-p1
 
@@ -185,7 +269,7 @@ fileName <- "bli-5b67"
 
 ## Grab the last advice
 #only for bli, because is 2018 advice
-doc <- officer::read_docx("bli-5b67.docx")
+doc <- officer::read_docx("nep.fu.11.docx")
 
 ## Start function here by grabbing info for a stock
 stock_sd <- fileList %>% 
@@ -282,6 +366,7 @@ catchoptions <- table_cells%>% filter(table_name =="catchoptions")
 advicebasis <- table_cells%>% filter(table_name =="advicebasis")
 referencepoints <- table_cells%>% filter(table_name =="referencepoints")
 assessmentbasis <- table_cells%>% filter(table_name =="assessmentbasis")
+historyadvice <- table_cells%>% filter(table_name =="advice")
 
 #coming back to normal table shape
 #catchoptionsbasis
@@ -417,12 +502,36 @@ table_header <- assessmentbasis %>%
 colnames(table_body) <- table_header[1,]
 assessmentbasis <- table_body
 
-write.csv(catchoptionsbasis, file = "hkecatchoptionsbasis.csv")
+#historyadvice
+
+table_body <- historyadvice %>% 
+        filter(!is_header) %>%
+        ungroup %>% 
+        select(-doc_index) %>%
+        spread(cell_id, text) %>% 
+        select(-table_name,
+               -is_header,
+               -row_id)
+table_header <- historyadvice %>% 
+        filter(is_header) %>% 
+        ungroup %>% 
+        select(-doc_index) %>% 
+        spread(cell_id, text) %>% 
+        select(-table_name,
+               -is_header,
+               -row_id)
+
+colnames(table_body) <- table_header[1,]
+historyadvice <- table_body
+
+
+write.csv(catchoptionsbasis, file = "nepcatchoptionsbasis.csv")
 # catchoptions[is.na(catchoptions)] <- ""
-write.csv(catchoptions, file = "hkecatchoptions.csv")
-write.csv(advicebasis, file = "hkeadvicebasis.csv")
-write.csv(referencepoints, file = "hkereferencepoints.csv")
-write.csv(assessmentbasis, file = "hkeassessmentbasis.csv")
+write.csv(catchoptions, file = "nepcatchoptions.csv")
+write.csv(advicebasis, file = "nepadvicebasis.csv")
+write.csv(referencepoints, file = "nepreferencepoints.csv")
+write.csv(assessmentbasis, file = "nepassessmentbasis.csv")
+write.csv(historyadvice, file = "nephistoryadvice.csv")
 
 
 write.csv(catchoptionsbasis, file = "hercatchoptionsbasis.csv")
