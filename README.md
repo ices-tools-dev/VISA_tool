@@ -22,7 +22,7 @@ The most difficult parts because of their heterogeneity are the catch scenarios.
 ## Comparison with other related institutions dissemination tools: 
 
 Similar but not identical sites, devoted to publish assessment information are:
-- IMR Stock book. 
+- Marine Institute (Ireland) Stock book. 
 https://shiny.marine.ie/speciesdash/
 Here they give info on species together with some weight-length from surveys. Downloadable.
 https://shiny.marine.ie/stockbook/
